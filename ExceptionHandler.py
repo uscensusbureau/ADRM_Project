@@ -9,7 +9,7 @@ import re
 from tqdm import tqdm
 import pandas as pd
 import json 
-
+#hg
 DF=[]
 ii=0
 count = 0
@@ -34,6 +34,7 @@ with open('ExceptionFile.json','r+',encoding='utf-8') as d:
         for Key1,Key2 in MaskComparision.items():
             if(Key==Key1):
                 FirstPhaseList.pop(Key)
+    Break=False
     for Key,Value in list(FirstPhaseList.items()):
         MaskI=1
         USAD_Mapping={"USAD_SNO":[],"USAD_SPR":[],"USAD_SPR":[],"USAD_SNM":[],"USAD_SFX":[],"USAD_SPT":[],"USAD_ANM":[],"USAD_ANO":[],"USAD_CTY":[],"USAD_STA":[],"USAD_ZIP":[],"USAD_ZP4":[],"USAD_BNM":[],"USAD_BNO":[],"USAD_RNM":[]}
@@ -49,12 +50,17 @@ with open('ExceptionFile.json','r+',encoding='utf-8') as d:
             print(Address)
             print(k,"---> (Enter Index of Component)")
             temp=(input(""))
+            if temp not in USAD_Conversion_Dict_Detail.keys():
+                Break=True
+                break
             USAD_Mapping[USAD_Conversion_Dict[temp]].append(MaskI)
             MaskI+=1
         dict={k: v for k, v in USAD_Mapping.items() if v}
         dictData={}
         dictData[Key]=dict
         Count_Of_Masks=0
+        if Break:
+            break
         with open('JSONMappingDefault.json', 'r+', encoding='utf-8') as f:
             data = json.load(f)
             Count_Of_Masks=len(data)+1
