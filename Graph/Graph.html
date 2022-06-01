@@ -1,0 +1,108 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "blue", "id": "C5", "label": "C5", "shape": "dot", "title": "C5"}, {"color": "blue", "id": "C4", "label": "C4", "shape": "dot", "title": "C4"}, {"color": "blue", "id": "C1", "label": "C1", "shape": "dot", "title": "C1"}, {"color": "blue", "id": "C2", "label": "C2", "shape": "dot", "title": "C2"}, {"color": "blue", "id": "C3", "label": "C3", "shape": "dot", "title": "C3"}, {"color": "yellow", "id": "R01", "label": "Mary Doe, 123 Oak St", "shape": "ellipse", "title": "R01"}, {"color": "yellow", "id": "R02", "label": "John Doe, 123 Oak St", "shape": "ellipse", "title": "R02"}, {"color": "yellow", "id": "R03", "label": "John Doe, 456 Elm St", "shape": "ellipse", "title": "R03"}, {"color": "yellow", "id": "R04", "label": "Becky Smith, 456 Elm St", "shape": "ellipse", "title": "R04"}, {"color": "yellow", "id": "R05", "label": "Mary Doe, 110 Main Street", "shape": "ellipse", "title": "R05"}, {"color": "yellow", "id": "R06", "label": "John Doe, 100 Main Street", "shape": "ellipse", "title": "R06"}, {"color": "yellow", "id": "R07", "label": "William Jones, 921 Rose Ave", "shape": "ellipse", "title": "R07"}, {"color": "yellow", "id": "R08", "label": "Susan Jones, 921 Rose Ave", "shape": "ellipse", "title": "R08"}, {"color": "yellow", "id": "R09", "label": "Bill Jones, 679 Pine", "shape": "ellipse", "title": "R09"}, {"color": "yellow", "id": "R10", "label": "Sue Jones, 679 Pine", "shape": "ellipse", "title": "R10"}]);
+        edges = new vis.DataSet([{"arrowStrikethrough": true, "arrows": "to", "color": "black", "from": "C4", "to": "C5", "width": 2}, {"arrowStrikethrough": true, "arrows": "to", "color": "black", "from": "C2", "to": "C3", "width": 2}, {"arrowStrikethrough": true, "arrows": "to", "color": "black", "from": "C1", "to": "C3", "width": 2}, {"arrowStrikethrough": true, "arrows": "to", "color": "black", "from": "C1", "to": "C2", "width": 2}, {"arrows": "to", "color": "red", "from": "C1", "to": "R01", "width": 2}, {"arrows": "to", "color": "red", "from": "C1", "to": "R02", "width": 2}, {"arrows": "to", "color": "red", "from": "C2", "to": "R03", "width": 2}, {"arrows": "to", "color": "red", "from": "C2", "to": "R04", "width": 2}, {"arrows": "to", "color": "red", "from": "C3", "to": "R05", "width": 2}, {"arrows": "to", "color": "red", "from": "C3", "to": "R06", "width": 2}, {"arrows": "to", "color": "red", "from": "C4", "to": "R07", "width": 2}, {"arrows": "to", "color": "red", "from": "C4", "to": "R08", "width": 2}, {"arrows": "to", "color": "red", "from": "C5", "to": "R09", "width": 2}, {"arrows": "to", "color": "red", "from": "C5", "to": "R10", "width": 2}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

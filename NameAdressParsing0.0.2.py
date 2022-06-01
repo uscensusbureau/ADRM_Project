@@ -17,6 +17,7 @@ count = 0
 FinalList=[]
 fileHandle = open('USAddressWordTable.txt', 'r')
 NamefileHandle = open('NamesWordTableOpt.txt', 'r')
+SplitWordTable = open('SplitWordTable.txt', 'r')
 
 # Strips the newline character
 Count=len(Lines)
@@ -31,7 +32,7 @@ dataFinal={}
 with open('NameAndAddressMainOutput.json', 'r+', encoding='utf-8') as M:
     dataFinal= json.load(M)
 
-    for line in tqdm(Lines):
+    for line in Lines:
         line=line.strip("\n").split("|")
         ID=line[0]
         line=line[1] .strip() 
@@ -52,6 +53,57 @@ with open('NameAndAddressMainOutput.json', 'r+', encoding='utf-8') as M:
         tmp1=0
         NameList=[]
         RevisedAddressList=[]
+        SplitMask=""
+        for A in AddressList:
+            FirstPhaseDict={}
+            NResult=False
+            try:
+                Compare=A[0].isdigit()
+            except:
+                a=0
+            if A==",":
+                SplitMask+=","
+            elif Compare:
+                SplitMask+="A"
+            else:
+                NR=True
+                for line in SplitWordTable:
+                
+                    fields=line.split('|')
+                    if A==(fields[0]):
+                        SplitMask+=fields[1].strip()
+                        NR=False
+                        break
+                if NR:
+                    SplitMask+="W"
+            SplitWordTable.seek(0)
+        Name=""
+        indexSplit=0
+        print("\n\n\n",SplitMask)
+        for m in range(len(SplitMask)):
+            if SplitMask[m] in ("W","P",",") :
+                continue
+            else:
+                indexSplit=m
+                break
+    
+        RevisedAddressList = AddressList[indexSplit:len(AddressList)]
+        NameList = AddressList[0:indexSplit]
+        
+        if NameList[len(NameList)-1]==",":
+            NameList.pop(len(NameList)-1)
+        print(NameList)
+        print(RevisedAddressList)
+    
+        break
+    
+    
+    
+    
+    
+    
+    
+        break
         for i in AddressList:
             if i=="PO" or i=="POBOX":
                 RevisedAddressList = AddressList[tmp1:len(AddressList)]
@@ -255,10 +307,10 @@ with open('NameAndAddressMainOutput.json', 'r+', encoding='utf-8') as M:
     json.dump(dataFinal, M,indent=4)
     M.truncate()
     
-print("Address Matching Report")
-print("Total=",Count)
-print("Matched Addresses=",Observation)
-print("Percentage of Matched",(Observation/Count)*100)
+# print("Address Matching Report")
+# print("Total=",Count)
+# print("Matched Addresses=",Observation)
+# print("Percentage of Matched",(Observation/Count)*100)
         # print("Mask Generated is ",Mask_1)
     # print("Index\tMaskToken\t\tAddress Token")
     # i=1
