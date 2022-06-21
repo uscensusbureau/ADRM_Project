@@ -12,12 +12,15 @@ import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
 from pyvis.network import Network
-
 import re
 from tqdm import tqdm
 import pandas as pd
 import json 
 import numpy as np
+import fuzzymatcher
+import fuzzywuzzy
+from fuzzywuzzy import fuzz
+from fuzzywuzzy import process
 #DWM.DWM_Cluster("S2-parms.txt")
 
 #Parsing 1st program
@@ -107,10 +110,11 @@ for line in tqdm(Lines):
     NameListFinal.append([ID,' '.join(NameList)])
     AddressListFinal.append([ID,' '.join(RevisedAddressList)])
 file_n = open("FileN.txt", "w")
-
+ID_Name={}
 for element in NameListFinal:
     file_n.write(element[0]+"|"+element[1])
     file_n.write("\n")
+    ID_Name[element[0]]=element[1]
 file_n.close()
 
 file_a = open("FileA.txt", "w")
@@ -205,16 +209,15 @@ for j in LinesRead:
             Final_Cluster.append((SplitW[1].strip(),SplitC[1].strip()))
                     
 out=list(set(map(tuple,map(sorted,Final_Cluster))))
-
+Cluster_to_Cluster=[]
 with open("FileNM.txt","w") as O:
     for k in out:
         O.writelines(k[0]+","+k[1])
         O.writelines("\n")
+        Cluster_to_Cluster.append([k[0],k[1]])
+    
 g=Network(height='100%', width='100%',directed=True)
         
-
-
-g.show('example.html')
 open_Cluster=open("FileNM.txt","r")
 listcluster=open_Cluster.readlines()
 ListFrom=[]
@@ -248,6 +251,7 @@ Map=Map_File.readlines()
 node_color=[]
 for k in range(len(rangeo)):
     node_color.append("#00ff00")
+Cluster_to_Nodes=[]
 for k in Map:
     SplitX=k.split("|")
     ListFrom.append(SplitX[2].strip())
@@ -256,27 +260,143 @@ for k in Map:
     g.add_edge(SplitX[2].strip(),SplitX[0].strip(),color='red',width=2)
     edge_color.append(10)
     node_color.append("#4CAF50")
+    Cluster_to_Nodes.append([SplitX[0].strip(),SplitX[2].strip(),SplitX[1].strip()])
 Map_File.close()
-
-
-
-
-
-
-
-
 df = pd.DataFrame({ 'from':ListFrom, 'to':ListTo, 'value':edge_color})
  # C1,C2
  # C2,C3
  # C4,C5
  # C1,C3
 # Build your graph
+Cluster_Dictionary={}
+for m in NodesCluster:
+    for j in Cluster_to_Nodes:
+        if j[1]==m:
+            try:
+                if Cluster_Dictionary[m]:
+                    temp=Cluster_Dictionary[m]
+                    Cluster_Dictionary[m].append(j[0])
+                    Cluster_Dictionary[m]=temp
+            except:
+                Cluster_Dictionary[m]=[j[0]]
+            
+print(Cluster_Dictionary)
+
+
+Pattern_Clusters={}
+list_of_key=[]
+for key,value in Cluster_Dictionary.items():
+    NextNode=''
+    Array_of_Path=[]
+    
+    for j in Cluster_to_Cluster:
+        temp=set()
+        temp.add(key)
+        t=set()
+        t.add(key)
+        t.add(j[0])
+        t1=set()
+        t1.add(key)
+        t1.add(j[1])
+        if (key in j) and (t not in list_of_key) and (t1 not in list_of_key):
+            if j[0]!=key:
+                NextNode=j[0]
+                temp.add(j[0])
+                Array_of_Path.append(NextNode)
+                list_of_key.append(temp)
+                temp=set()
+                continue
+            if j[1]!=key:
+                NextNode=j[1]
+                temp.add(j[0])
+                Array_of_Path.append(NextNode)
+                list_of_key.append(temp)
+                temp=set()
+                continue
+            
+        Pattern_Clusters[key]=Array_of_Path
+print(Pattern_Clusters)
+
+Visited=[]
+for key, val in Pattern_Clusters.items():
+    lst=[]
+    i=0
+    Left_Dict={}
+    for o in Cluster_Dictionary[key]:
+        lst.append([str(i)+"_left",o,ID_Name[o]])
+        Left_Dict[str(i)+"_left"]=o
+        i+=1
+    df_left=pd.DataFrame(lst,columns=["ID","R_ID","NAME"])
+   
+    for l in val:
+        temp2=set()
+        temp2.add(key)
+        temp2.add(l)
+        
+        if temp2 not in Visited:
+            
+            i=0
+            lst2=[]
+            Right_Dict={}
+            for ii in Cluster_Dictionary[l]:
+                lst2.append([str(i)+"_right",ii,ID_Name[ii]])
+                Right_Dict[str(i)+"_right"]=ii
+                i+=1
+            df_right=pd.DataFrame(lst2, columns=["ID","R_ID","NAME"])
+            DF=fuzzymatcher.fuzzy_left_join(df_left, df_right, left_on = "NAME", right_on = "NAME")
+            Check_Null=DF.isnull().values.any()
+            
+            TDF = DF.drop_duplicates(subset = ["__id_right"])
+            TDF = DF.drop_duplicates(subset = ["__id_left"])
+            two=TDF["__id_right"].duplicated().any()
+            print(TDF)
+            if (not Check_Null)and  (not two) and (len(DF)>1):
+                
+                for index, row in TDF.iterrows():
+                    temp=set()
+                    temp.add(Left_Dict[row["__id_left"]])
+                    temp.add(Right_Dict[row["__id_right"]])
+                
+                 
+                    g.add_edge(Left_Dict[row["__id_left"]],Right_Dict[row["__id_right"]],color='green',width=1)
+                    print(temp)
+                    Visited.append(temp)
+                    Visited.append(temp2)
+#        DF.to_csv("OOO.csv")
+            
+
+
+# Str_A = 'Onais Khan Mohammed' 
+# Str_B = 'Onais Khan'
+# ratio = fuzz.partial_ratio(Str_A.lower(), Str_B.lower())
+# print('Similarity score: {}'.format(ratio))
+
+# df_left = pd.read_csv("left_1.csv")
+# df_right = pd.read_csv("right_1.csv")
+# DF=fuzzymatcher.link_table(df_left, df_right, left_on = "name", right_on = "name")
+# DF.to_csv("OOO.csv")
+# fuzzymatcher.fuzzy_left_join(df_left, df_right, left_on = "name", right_on = "name")
+
+
 G=nx.from_pandas_edgelist(df, 'from', 'to', create_using=nx.Graph() )
 # Custom the nodes:
 nx.draw(G, with_labels=True,node_color=node_color, edge_color=df['value'],cmap=plt.get_cmap('jet'),
-              node_size=700, node_shape="o", alpha=0.8,font_size=8, font_color="black", font_weight="bold")
+              node_size=100, node_shape="o", alpha=0.8,font_size=8, font_color="black", font_weight="bold")
 
 g.show('Graph.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
