@@ -6,5 +6,7 @@ R05|Mary Doe, 110 Main Street
 R06|John Doe, 100 Main Street
 R07|William Jones, 921 Rose Ave
 R08|Susan Jones, 921 Rose Ave
-R09|Bill Jones, 679 Pine
-R10|Sue Jones, 679 Pine
+R09|William Jones, 679 Pine
+R10|Susann Jones, 679 Pine
+R11|Sam Doe, 110 Main Street
+R12|Becky Smith, 88 Water St
