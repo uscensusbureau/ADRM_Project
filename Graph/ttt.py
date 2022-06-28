@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jun 23 21:32:52 2022
+Created on Wed May 18 19:52:24 2022
 
 @author: onais
 """
-
 import sys
 sys.path.insert(0, '../dwm-refactor-v1/')
 import DWM00_Driver as DWM
@@ -317,7 +316,6 @@ for key,value in Cluster_Dictionary.items():
             
         Pattern_Clusters[key]=Array_of_Path
 print(Pattern_Clusters)
-
 Visited=[]
 for key, val in Pattern_Clusters.items():
     lst=[]
@@ -333,9 +331,7 @@ for key, val in Pattern_Clusters.items():
         temp2=set()
         temp2.add(key)
         temp2.add(l)
-        
         if temp2 not in Visited:
-            
             i=0
             lst2=[]
             Right_Dict={}
@@ -344,25 +340,46 @@ for key, val in Pattern_Clusters.items():
                 Right_Dict[str(i)+"_right"]=ii
                 i+=1
             df_right=pd.DataFrame(lst2, columns=["ID","R_ID","NAME"])
-            DF=fuzzymatcher.fuzzy_left_join(df_left, df_right, left_on = "NAME", right_on = "NAME")
-            Check_Null=DF.isnull().values.any()
-            
-            TDF = DF.drop_duplicates(subset = ["__id_right"])
-            TDF = DF.drop_duplicates(subset = ["__id_left"])
-            two=TDF["__id_right"].duplicated().any()
-            if (not Check_Null)and  (not two) and (len(DF)>1):
+            DFTotal=pd.DataFrame(columns=["ID","NAME"])
+            Final_Link=list()
+            for index, row in df_left.iterrows():
+                DictMax={}
                 
-                for index, row in TDF.iterrows():
-                    temp=set()
-                    temp.add(Left_Dict[row["__id_left"]])
-                    temp.add(Right_Dict[row["__id_right"]])
-                
-                     
-                    g.add_edge(Left_Dict[row["__id_left"]],Right_Dict[row["__id_right"]],color='green',width=1)
-                    print(temp)
-                    print(TDF)
+                for index2, row2 in df_right.iterrows():
+                    ra=fuzz.partial_ratio(row["NAME"],row2["NAME"])
+                    if ra>60.00:
+                        DictMax[row2["R_ID"]]=ra
+                try:
+                    fin_max = max(DictMax, key=DictMax.get)
+                    
+                    Final_Link.append([fin_max,df_left["R_ID"][index]])                                    
+                except:
+                    print("Except")
+           
+            if len(Final_Link)>1:     
+                for j in Final_Link:
+                    g.add_edge(j[0],j[1],color='green',width=1)
                     Visited.append(temp)
                     Visited.append(temp2)
+            # DF=fuzzymatcher.fuzzy_left_join(df_left, df_right, left_on = "NAME", right_on = "NAME")
+            # Check_Null=DF.isnull().values.any()
+            
+            # TDF = DF.drop_duplicates(subset = ["__id_right"])
+            # TDF = DF.drop_duplicates(subset = ["__id_left"])
+            # two=TDF["__id_right"].duplicated().any()
+            # if (not Check_Null)and  (not two) and (len(DF)>1):
+                
+            #     for index, row in TDF.iterrows():
+            #         temp=set()
+            #         temp.add(Left_Dict[row["__id_left"]])
+            #         temp.add(Right_Dict[row["__id_right"]])
+                
+                     
+            #        # g.add_edge(Left_Dict[row["__id_left"]],Right_Dict[row["__id_right"]],color='green',width=1)
+            #         #print(temp)
+            #         #print(TDF)
+            #         Visited.append(temp)
+            #         Visited.append(temp2)
 #        DF.to_csv("OOO.csv")
             
 
@@ -384,7 +401,40 @@ G=nx.from_pandas_edgelist(df, 'from', 'to', create_using=nx.Graph() )
 nx.draw(G, with_labels=True,node_color=node_color, edge_color=df['value'],cmap=plt.get_cmap('jet'),
               node_size=100, node_shape="o", alpha=0.8,font_size=8, font_color="black", font_weight="bold")
 
+
+
+
+
+
+
+
 g.show('Graph.html')
+
+
+# import pyTigerGraph as tg 
+
+
+
+# graph= tg.TigerGraphConnection(
+#     host="http://127.0.0.1:14240", 
+#     username="tigergraph",
+#     graphname='NameAddressGraph', 
+#     password="onais1234",restppPort=25900,gsPort=25240)
+
+# secrets="vcitnrnourll67gvb63fd6kv3qmho42a"
+# authtokens=graph.getToken(secret=secrets)
+# print(authtokens)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
