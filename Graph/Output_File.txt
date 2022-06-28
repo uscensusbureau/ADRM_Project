@@ -12,6 +12,7 @@ R09|BILL JONES
 R10|SUE JONES
 R11|SAM DOE
 R12|BECKY SMITH
+R13|JOHN DOE
 Address Splitting
 R01|123 OAK ST
 R02|123 OAK ST
@@ -25,19 +26,21 @@ R09|679 PINE
 R10|679 PINE
 R11|110 MAIN STREET
 R12|88 WATER ST
+R13|88 WATER ST
 Clusters Formation using Data Washing Machine
-R01|Mary Doe, 123 Oak St|C1|C1
-R02|John Doe, 123 Oak St|C1|C1
-R03|John Doe, 456 Elm St|C2|C2
-R04|Becky Smith, 456 Elm St|C2|C2
-R05|Mary Doe, 110 Main Street|C3|C3
-R06|John Doe, 100 Main Street|C3|C3
-R07|William Jones, 921 Rose Ave|C4|C4
-R08|Susan Jones, 921 Rose Ave|C4|C4
-R09|Bill Jones, 679 Pine|C5|C5
-R10|Sue Jones, 679 Pine|C5|C5
-R11|Sam Doe, 110 Main Street|C3|C3
-R12|Becky Smith, 88 Water St|C6|C6
+R01|Mary Doe, 123 Oak St|C1
+R02|John Doe, 123 Oak St|C1
+R03|John Doe, 456 Elm St|C2
+R04|Becky Smith, 456 Elm St|C2
+R05|Mary Doe, 110 Main Street|C3
+R06|John Doe, 100 Main Street|C3
+R07|William Jones, 921 Rose Ave|C4
+R08|Susan Jones, 921 Rose Ave|C4
+R09|Bill Jones, 679 Pine|C5
+R10|Sue Jones, 679 Pine|C5
+R11|Sam Doe, 110 Main Street|C3
+R12|Becky Smith, 88 Water St|C6
+R13|John Doe, 88 Water St|C6
 Appending the same clusters to the Names File
 
 
@@ -53,6 +56,7 @@ R09|BILL JONES|C5
 R10|SUE JONES|C5
 R11|SAM DOE|C3
 R12|BECKY SMITH|C6
+R13|JOHN DOE|C6
 Splitting.......
 
 MARY|C1
@@ -103,15 +107,23 @@ BECKY|C6
 
 SMITH|C6
 
+JOHN|C6
+
+DOE|C6
+
 Final Cluster Map.........
 C1,C3
+C3,C6
 C2,C6
 C1,C2
 C2,C3
 C4,C5
+C1,C6
 TRAVERSING.................
 LINK -1 ID  | LINK -2 ID
 R05		R01
 R06		R02
+R04		R12
+R03		R13
 R09		R07
 R10		R08

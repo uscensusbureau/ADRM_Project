@@ -95,7 +95,6 @@ with open('NameAndAddressMainOutput.json', 'r+', encoding='utf-8') as M:
         print(NameList)
         print(RevisedAddressList)
     
-        break
     
     
     
@@ -103,7 +102,7 @@ with open('NameAndAddressMainOutput.json', 'r+', encoding='utf-8') as M:
     
     
     
-        break
+        
         for i in AddressList:
             if i=="PO" or i=="POBOX":
                 RevisedAddressList = AddressList[tmp1:len(AddressList)]
