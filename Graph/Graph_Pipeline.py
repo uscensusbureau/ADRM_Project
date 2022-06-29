@@ -8,19 +8,13 @@ import sys
 sys.path.insert(0, '../dwm-refactor-v1/')
 import DWM00_Driver as DWM
 import pandas as pd
-import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
 from pyvis.network import Network
 import re
 from tqdm import tqdm
-import pandas as pd
-import json 
-import numpy as np
-import fuzzymatcher
-import fuzzywuzzy
+
 from fuzzywuzzy import fuzz
-from fuzzywuzzy import process
 #DWM.DWM_Cluster("S2-parms.txt")
 
 #Parsing 1st program

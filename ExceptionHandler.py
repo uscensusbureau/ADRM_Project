@@ -22,10 +22,9 @@ JsonData={}
 AllAddress_Key_Value_As_MASK_Comp={}
 USAD_Conversion_Dict={"1":"USAD_SNO","2":"USAD_SPR","3":"USAD_SNM","4":"USAD_SFX","5":"USAD_SPT","6":"USAD_ANM","7":"USAD_ANO","8":"USAD_CTY","9":"USAD_STA","10":"USAD_ZIP","11":"USAD_ZP4","12":"USAD_BNM","13":"USAD_BNO","14":"USAD_RNM"}
 USAD_Conversion_Dict_Detail={"1":"USAD_SNO Street Number","2":"USAD_SPR Street Pre-directional","3":"USAD_SNM Street Name","4":"USAD_SFX Street Suffix","5":"USAD_SPT Street Post-directional","6":"USAD_ANM Secondary Address Name","7":"USAD_ANO Secondary Address Number","8":"USAD_CTY City Name","9":"USAD_STA State Name","10":"USAD_ZIP Zip Code","11":"USAD_ZP4 Zip 4 Code","12":"USAD_BNM Box Name","13":"USAD_BNO Box Number","14":"USAD_RNM Route Name"}
-     
 i=1
 List_Index_Mask={}
-with open('ExceptionFile.json','r+',encoding='utf-8') as d:
+with open('ExceptionFile.json','r+') as d:
     FirstPhaseLisCopyt=json.load(d)
     FirstPhaseList=FirstPhaseLisCopyt
     AddOrRemove=False
@@ -37,7 +36,7 @@ with open('ExceptionFile.json','r+',encoding='utf-8') as d:
     Break=False
     for Key,Value in list(FirstPhaseList.items()):
         MaskI=1
-        USAD_Mapping={"USAD_SNO":[],"USAD_SPR":[],"USAD_SPR":[],"USAD_SNM":[],"USAD_SFX":[],"USAD_SPT":[],"USAD_ANM":[],"USAD_ANO":[],"USAD_CTY":[],"USAD_STA":[],"USAD_ZIP":[],"USAD_ZP4":[],"USAD_BNM":[],"USAD_BNO":[],"USAD_RNM":[]}
+        USAD_Mapping={"USAD_SNO":[],"USAD_SPR":[],"USAD_SNM":[],"USAD_SFX":[],"USAD_SPT":[],"USAD_ANM":[],"USAD_ANO":[],"USAD_CTY":[],"USAD_STA":[],"USAD_ZIP":[],"USAD_ZP4":[],"USAD_BNM":[],"USAD_BNO":[],"USAD_RNM":[]}
         Address=""
         for k in Value:
             for m,n in k.items():
@@ -48,8 +47,9 @@ with open('ExceptionFile.json','r+',encoding='utf-8') as d:
                 print(v1,"=",k1)
             print("Address For Reference")
             print(Address)
-            print(k,"---> (Enter Index of Component)")
-            temp=(input(""))
+            print(k)
+            temp=(input("---> (Enter Index of Component)"))
+            print("III")
             if temp not in USAD_Conversion_Dict_Detail.keys():
                 Break=True
                 break

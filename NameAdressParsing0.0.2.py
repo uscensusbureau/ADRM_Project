@@ -32,7 +32,7 @@ dataFinal={}
 with open('NameAndAddressMainOutput.json', 'r+', encoding='utf-8') as M:
     dataFinal= json.load(M)
 
-    for line in Lines:
+    for line in tqdm(Lines):
         line=line.strip("\n").split("|")
         ID=line[0]
         line=line[1] .strip() 
@@ -79,7 +79,6 @@ with open('NameAndAddressMainOutput.json', 'r+', encoding='utf-8') as M:
             SplitWordTable.seek(0)
         Name=""
         indexSplit=0
-        print("\n\n\n",SplitMask)
         for m in range(len(SplitMask)):
             if SplitMask[m] in ("W","P",",") :
                 continue
@@ -92,9 +91,7 @@ with open('NameAndAddressMainOutput.json', 'r+', encoding='utf-8') as M:
         
         if NameList[len(NameList)-1]==",":
             NameList.pop(len(NameList)-1)
-        print(NameList)
-        print(RevisedAddressList)
-    
+  
     
     
     
@@ -103,22 +100,22 @@ with open('NameAndAddressMainOutput.json', 'r+', encoding='utf-8') as M:
     
     
         
-        for i in AddressList:
-            if i=="PO" or i=="POBOX":
-                RevisedAddressList = AddressList[tmp1:len(AddressList)]
-                NameList = AddressList[0:tmp1]
-                break
-            try:
-                Compare=i.isdigit()
-            except:    
-                a=0
-            if Compare==True:
-                RevisedAddressList = AddressList[tmp1:len(AddressList)]
-                NameList = AddressList[0:tmp1]
-                break
-            tmp1+=1
-        if NameList[len(NameList)-1]==",":
-            NameList.pop(len(NameList)-1)
+        # for i in AddressList:
+        #     if i=="PO" or i=="POBOX":
+        #         RevisedAddressList = AddressList[tmp1:len(AddressList)]
+        #         NameList = AddressList[0:tmp1]
+        #         break
+        #     try:
+        #         Compare=i.isdigit()
+        #     except:    
+        #         a=0
+        #     if Compare==True:
+        #         RevisedAddressList = AddressList[tmp1:len(AddressList)]
+        #         NameList = AddressList[0:tmp1]
+        #         break
+        #     tmp1+=1
+        # if NameList[len(NameList)-1]==",":
+        #     NameList.pop(len(NameList)-1)
         
         #del(AddressList[len(AddressList)-1])
         TrackKey=[]
