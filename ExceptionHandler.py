@@ -49,7 +49,6 @@ with open('ExceptionFile.json','r+') as d:
             print(Address)
             print(k)
             temp=(input("---> (Enter Index of Component)"))
-            print("III")
             if temp not in USAD_Conversion_Dict_Detail.keys():
                 Break=True
                 break

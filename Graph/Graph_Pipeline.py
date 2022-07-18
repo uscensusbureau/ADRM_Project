@@ -222,7 +222,7 @@ with open("Output_File.txt","w") as out:
         SplitW=j.split("|")
         for p in LinesRead[1:len(LinesRead)-1]:
             SplitC=p.split("|")
-            if SplitW[0]==SplitC[0] and SplitW[1]!=SplitC[1]:
+            if SplitW[0]==SplitC[0] and SplitW[1].strip()!=SplitC[1].strip():
                 Final_Cluster.append((SplitW[1].strip(),SplitC[1].strip()))
                         
     outt=list(set(map(tuple,map(sorted,Final_Cluster))))
@@ -254,7 +254,6 @@ with open("Output_File.txt","w") as out:
     for i in NodesCluster:
         g.add_node(i,color='blue',title=i,label=i)
     NodesCluster.clear()
-    
     for m in listcluster:
         SplitX=m.split(",")
         ListFrom.append(SplitX[0].strip())

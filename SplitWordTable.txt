@@ -1,5 +1,6 @@
 QA|P
 RR|A
+HC|A
 ABBOT| P
 ADMIRAL|P
 ADM|P
