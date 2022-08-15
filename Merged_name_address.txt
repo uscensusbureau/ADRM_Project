@@ -1,8 +1,10 @@
-684|Mrs. Jim J. Johnson , Jr, QA, 12167 KATHERWOOD ST, ANY TOWN ,FL 34608
-685|Mr. Phil Collins , Jr, IQCP, PO BOX 34 MYTOWN, MN 55803
-686|Col. George Albert Pepper, Jr, CLIA, RR 3 BOX 9 SOMEWHERE OH 44730
-687|Mr. Sam Jones, Sr, QC, 18127 SPRING RUN LN, ANY TOWN ,TX 77469
-688|Mr. Mary Sue Doe, Sr, QA, 20917 MYRON ST, SOME CITY ,CA 92570
-689|Mr. Tom Jones, Sr, CLIA, HC 72 BOX 293A HOMETOWN MN 55811
-690|Mrs. Marie Curie , Sr, CLIA, 1000 N Pine ST, MY CITY, CA 94806
-691|Mr. James Doe, Jr, IQCP, 1081 Darren Cir E, SOMECITY, TN, 40032
+R01|Mrs. Mary Doe, 123 Oak Street, IJK, PP, 10711
+R02|Mr. John Doe, 123 Oak Street, IJK, PP, 10711
+R03|Mr. John Doe, 456 Elm St, DEF City, II, 01111
+R04|Miss. Becky Smith, 456 Elm St, DEF City, II, 01111
+R05|Mrs. Mary Doe, 110 Main Street, ABC City, TA, 88899
+R06|Mr.John Doe, 100 Main Street, ABC City, TA, 88899
+R07|Mr.William Jones, 921 Rose Ave, XYZ City, MR, 09000
+R08|Mrs. Susan Jones, 921 Rose Ave, XYZ City, MR, 09000
+R09|Mr. Bill Jones, 679 Pine Street, Unknown City, AR, 90009
+R10|Mrs. Sue Jones, 679 Pine Street, Unknown City, AR, 90009

@@ -6722,5 +6722,95 @@
             "Generational Suffix": "SR",
             "Suffix Title": "CLIA"
         }
+    },
+    "WWI": {
+        "R1": {
+            "Given Name": "CHERRY",
+            "Surname": "LINA",
+            "Generational Suffix": "D"
+        }
+    },
+    "WWWI": {
+        "R2": {
+            "Given Name": "MC DONNELL",
+            "Surname": "CAROLYN",
+            "Generational Suffix": "C"
+        },
+        "R3": {
+            "Given Name": "MC DONNELL",
+            "Surname": "WILLIAM",
+            "Generational Suffix": "C"
+        },
+        "R4": {
+            "Given Name": "MC DONNELL",
+            "Surname": "SANFORD",
+            "Generational Suffix": "N"
+        }
+    },
+    "WWW": {
+        "R5": {
+            "Given Name": "MC DONNELL",
+            "Surname": "CHERRY"
+        },
+        "R9": {
+            "Given Name": "CORE ELIZABETH",
+            "Surname": "ANN"
+        }
+    },
+    "WWJ": {
+        "R17": {
+            "Given Name": "JONES",
+            "Surname": "JJJ",
+            "Generational Suffix": "JR"
+        }
+    },
+    "WWWP": {
+        "R18": {
+            "Given Name": "MANN",
+            "Surname": "OO OOO",
+            "Generational Suffix": "SR"
+        }
+    },
+    "WW": {
+        "R6": {
+            "Given Name": "CORE",
+            "Surname": "ETHIE"
+        },
+        "R7": {
+            "Given Name": "CORE",
+            "Surname": "ETHEL"
+        },
+        "R8": {
+            "Given Name": "CORE",
+            "Surname": "HOWARD"
+        },
+        "R10": {
+            "Given Name": "LEOMOND",
+            "Surname": "HUGH"
+        },
+        "R11": {
+            "Given Name": "BUELL",
+            "Surname": "THELL"
+        },
+        "R12": {
+            "Given Name": "BUELL",
+            "Surname": "GRETA"
+        },
+        "R13": {
+            "Given Name": "BUELL",
+            "Surname": "CAROLE"
+        },
+        "R14": {
+            "Given Name": "BUELL",
+            "Surname": "CONSTANCE"
+        },
+        "R15": {
+            "Given Name": "JONES",
+            "Surname": "JACKSON"
+        },
+        "R16": {
+            "Given Name": "JONES",
+            "Surname": "IZETTA"
+        }
     }
 }

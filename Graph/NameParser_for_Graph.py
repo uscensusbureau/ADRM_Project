@@ -1,18 +1,20 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Aug 14 01:19:13 2022
+
+@author: onais
+"""
+
 import re
 from tqdm import tqdm
 import pandas as pd
 import json 
 #Parsing 1st program
-Name_4CAF50=open("Names.txt","r")
-Lines = Name_4CAF50.readlines()
-DF=[]
 ii=0
 count = 0
 FinalList=[]
 fileHandle = open('NamesWordTableOpt.txt', 'r')
 # Strips the newline character
-Count=len(Lines)
-DF=pd.DataFrame()
 C=1
 CC=1
 JsonData={}
@@ -107,4 +109,12 @@ def ExtractNames(line):
                        Temp+=" "+V3
                        Temp=Temp.strip()
                        Mappings[K2]=Temp
-        return Mappings
+            try:
+                Mappings=Mappings["Surname"]+Mappings["Given Name"]
+                return Mappings
+            except:
+                return Mappings
+        else:
+            NameList =' '.join(NameList)
+            return Name
+        
