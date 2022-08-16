@@ -36,7 +36,6 @@ def ExtractNames(line):
         Name=Name.upper()
         NameList = re.split("\s|\s,\s ", Name)
         NameList = ' '.join(NameList).split()
-        print(NameList)
         #del(NameList[len(NameList)-1])
         TrackKey=[]
         Mask=[]
@@ -110,7 +109,7 @@ def ExtractNames(line):
                        Temp=Temp.strip()
                        Mappings[K2]=Temp
             try:
-                Mappings=Mappings["Surname"]+Mappings["Given Name"]
+                Mappings=Mappings["Surname"]+" "+Mappings["Given Name"]
                 return Mappings
             except:
                 return Mappings

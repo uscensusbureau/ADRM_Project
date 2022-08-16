@@ -63,11 +63,10 @@ with open("Output_File.txt","w") as out:
     file_n_w = open("NewFileTemp.txt", "w")
     for k in LinesRead:
         splitData=k.split("|")
-        splitName = ' '.join(splitData[1].split())
-        splitName=NParser.ExtractNames(splitName)
-        splitName=splitName.split(" ")
+        splitName=NParser.ExtractNames(splitData[1])
+        splitName=splitName.split("..")
         for o in splitName:
-            file_n_w.write(sd.soundex(o)+"|"+splitData[2])
+            file_n_w.write(o+"|"+splitData[2])
             out.write(sd.soundex(o)+"|"+splitData[2])
             out.write("\n")
             file_n_w.write("\n")
@@ -318,7 +317,7 @@ with open("Output_File.txt","w") as out:
     
     
     
-    
+    g.show_buttons()
     g.show('Graph.html')
 
 
