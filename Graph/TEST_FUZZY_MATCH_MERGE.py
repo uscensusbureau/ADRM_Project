@@ -6,8 +6,6 @@
 
 import pandas as pd
 from thefuzz import process
-df1 = pd.DataFrame({'col_a':[ 'Owais Khan Mohammed', 'King Khan Mohammed', 'Saleem Khan Mohammed K'],'col_b':[1001,1002,1003]})
-df2 = pd.DataFrame({'col_a':['Onais Mohammed', 'Owais Mohammed', 'King Khan Mohamed', 'Saleem Khan Mohad'],'col_b':[2001,2002,2003,2004]})
 
 def fuzzy_match(
     df_left, df_right, column_left, column_right, threshold=90, limit=1):
@@ -38,31 +36,4 @@ def fuzzy_match(
 
 
 
-df_matches = fuzzy_match(
-    df1,
-    df2,
-    'col_a',
-    'col_a',
-    threshold=60,
-    limit=1
-)
-
-df_output = df1.merge(
-    df_matches,
-    how='left',
-    left_index=True,
-    right_on='df_left_id'
-).merge(
-    df2,
-    how='left',
-    left_on='df_right_id',
-    right_index=True,
-    suffixes=['_df1', '_df2']
-)
-
-df_output.set_index('df_left_id', inplace=True)       # For some reason the first merge operation wrecks the dataframe's index. Recreated from the value we have in the matches lookup table
-
-df_output = df_output[['col_a_df1', 'col_b_df1', 'col_b_df2']]      # Drop columns used in the matching
-df_output.index.name = 'id'
-print(df_output)
 
