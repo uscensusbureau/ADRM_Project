@@ -10,8 +10,10 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from pyvis.network import Network
 import re
-from tqdm import tqdm
+import TEST_FUZZY_MATCH_MERGE as ts
 
+from tqdm import tqdm
+import ER_Metrics__indiv
 from fuzzywuzzy import fuzz
 #DWM.DWM_Cluster("S2-parms.txt")
 
@@ -22,6 +24,7 @@ DF=[]
 ii=0
 count = 0
 FinalList=[]
+FinalLink={}
 fileHandle = open('USAddressWordTable.txt', 'r')
 NamefileHandle = open('NamesWordTableOpt.txt', 'r')
 SplitWordTable = open('SplitWordTable.txt', 'r')
@@ -272,10 +275,16 @@ with open("Output_File.txt","w") as out:
     Cluster_to_Nodes=[]
     for k in Map:
         SplitX=k.split("|")
+        #(SplitX[2])
         ListFrom.append(SplitX[2].strip())
         ListTo.append(SplitX[0].strip())
         g.add_node(SplitX[0].strip(),color='yellow',title=SplitX[0].strip(),label=SplitX[1].strip(),shape="ellipse")
-        g.add_edge(SplitX[2].strip(),SplitX[0].strip(),color='red',width=2)
+        try:
+            g.add_edge(SplitX[2].strip(),SplitX[0].strip(),color='red',width=2)
+        except:
+            g.add_node(SplitX[2].strip(),color='blue',title=SplitX[2].strip(),label=SplitX[2].strip())
+            g.add_edge(SplitX[2].strip(),SplitX[0].strip(),color='red',width=2)
+
         edge_color.append(10)
         node_color.append("#4CAF50")
         Cluster_to_Nodes.append([SplitX[0].strip(),SplitX[2].strip(),SplitX[1].strip()])
@@ -296,11 +305,8 @@ with open("Output_File.txt","w") as out:
                         Cluster_Dictionary[m].append(j[0])
                         Cluster_Dictionary[m]=temp
                 except:
-                    Cluster_Dictionary[m]=[j[0]]
-                
-    print(Cluster_Dictionary)
-    
-    
+                    Cluster_Dictionary[m]=[j[0]] 
+            
     Pattern_Clusters={}
     list_of_key=[]
     for key,value in Cluster_Dictionary.items():
@@ -324,19 +330,13 @@ with open("Output_File.txt","w") as out:
                     list_of_key.append(temp)
                     temp=set()
                     continue
-                if j[1]!=key:
-                    NextNode=j[1]
-                    temp.add(j[0])
-                    Array_of_Path.append(NextNode)
-                    list_of_key.append(temp)
-                    temp=set()
-                    continue
                 
+                    
             Pattern_Clusters[key]=Array_of_Path
-    print(Pattern_Clusters)
-    Visited=[]
+    Visited=[]    
     out.write("TRAVERSING.................\n")
     out.write("LINK -1 ID  | LINK -2 ID\n")
+    LinkedNodes=[]
     for key, val in Pattern_Clusters.items():
         lst=[]
         i=0
@@ -345,13 +345,9 @@ with open("Output_File.txt","w") as out:
             lst.append([str(i)+"_left",o,ID_Name[o]])
             Left_Dict[str(i)+"_left"]=o
             i+=1
-        df_left=pd.DataFrame(lst,columns=["ID","R_ID","NAME"])
-       
+        df_left=pd.DataFrame(lst,columns=["ID","col_b","col_a"])
         for l in val:
-            temp2=set()
-            temp2.add(key)
-            temp2.add(l)
-            if temp2 not in Visited:
+            if (l or key) not in Visited:
                 i=0
                 lst2=[]
                 Right_Dict={}
@@ -359,81 +355,55 @@ with open("Output_File.txt","w") as out:
                     lst2.append([str(i)+"_right",ii,ID_Name[ii]])
                     Right_Dict[str(i)+"_right"]=ii
                     i+=1
-                df_right=pd.DataFrame(lst2, columns=["ID","R_ID","NAME"])
-                DFTotal=pd.DataFrame(columns=["ID","NAME"])
-                Final_Link=list()
-                for index, row in df_left.iterrows():
-                    DictMax={}
-                    
-                    for index2, row2 in df_right.iterrows():
-                        ra=fuzz.partial_ratio(row["NAME"],row2["NAME"])
-                        if ra>60.00:
-                            DictMax[row2["R_ID"]]=ra
-                    try:
-                        fin_max = max(DictMax, key=DictMax.get)
-                        
-                        Final_Link.append([fin_max,df_left["R_ID"][index]])                                    
-                    except:
-                        print("Except")
-                
+                df_right=pd.DataFrame(lst2, columns=["ID","col_b","col_a"])
+                df_matches = ts.fuzzy_match(
+                    df_left,
+                    df_right,
+                    'col_a',
+                    'col_a',
+                    threshold=70,
+                    limit=1
+                )
 
-                if len(Final_Link)>1:     
-                    for j in Final_Link:
-                        out.write(j[0]+"\t\t"+j[1])
+                df_output = df_left.merge(
+                    df_matches,
+                    how='left',
+                    left_index=True,
+                    right_on='df_left_id'
+                ).merge(
+                    df_right,
+                    how='left',
+                    left_on='df_right_id',
+                    right_index=True,
+                    suffixes=['_df1', '_df2']
+                )
+
+                df_output.set_index('df_left_id', inplace=True)       # For some reason the first merge operation wrecks the dataframe's index. Recreated from the value we have in the matches lookup table
+                df_output = df_output[['col_a_df1', 'col_b_df1', 'col_b_df2']]      # Drop columns used in the matching
+                df_output.index.name = 'id'
+                df_output=df_output.dropna()
+                df_output=df_output.drop_duplicates(subset="col_b_df2")
+                if len(df_output)>1:
+                    Visited.append(l)
+                    Visited.append(key)
+                    for index, row in df_output.iterrows():
+                        if (row['col_b_df1'] or row['col_b_df1']) in LinkedNodes:
+                            continue
+                        out.write(row['col_b_df1']+"\t\t"+row['col_b_df2'])
+                        FinalLink[row['col_b_df1']]=row['col_b_df2']
                         out.write("\n")
-                        g.add_edge(j[0],j[1],color='green',width=1)
-                        Visited.append(temp)
-                        Visited.append(temp2)
-                # DF=fuzzymatcher.fuzzy_left_join(df_left, df_right, left_on = "NAME", right_on = "NAME")
-                # Check_Null=DF.isnull().values.any()
-                
-                # TDF = DF.drop_duplicates(subset = ["__id_right"])
-                # TDF = DF.drop_duplicates(subset = ["__id_left"])
-                # two=TDF["__id_right"].duplicated().any()
-                # if (not Check_Null)and  (not two) and (len(DF)>1):
-                    
-                #     for index, row in TDF.iterrows():
-                #         temp=set()
-                #         temp.add(Left_Dict[row["__id_left"]])
-                #         temp.add(Right_Dict[row["__id_right"]])
-                    
-                         
-                #        # g.add_edge(Left_Dict[row["__id_left"]],Right_Dict[row["__id_right"]],color='green',width=1)
-                #         #print(temp)
-                #         #print(TDF)
-                #         Visited.append(temp)
-                #         Visited.append(temp2)
-    #        DF.to_csv("OOO.csv")
-                
-    
-    
-    # Str_A = 'Onais Khan Mohammed' 
-    # Str_B = 'Onais Khan'
-    # ratio = fuzz.partial_ratio(Str_A.lower(), Str_B.lower())
-    # print('Similarity score: {}'.format(ratio))
-    
-    # df_left = pd.read_csv("left_1.csv")
-    # df_right = pd.read_csv("right_1.csv")
-    # DF=fuzzymatcher.link_table(df_left, df_right, left_on = "name", right_on = "name")
-    # DF.to_csv("OOO.csv")
-    # fuzzymatcher.fuzzy_left_join(df_left, df_right, left_on = "name", right_on = "name")
-    
-    
-    G=nx.from_pandas_edgelist(df, 'from', 'to', create_using=nx.Graph() )
-    # Custom the nodes:
-    nx.draw(G, with_labels=True,node_color=node_color, edge_color=df['value'],cmap=plt.get_cmap('jet'),
-                  node_size=100, node_shape="o", alpha=0.8,font_size=8, font_color="black", font_weight="bold")
-    
-    
-    
-    
-    
-    
-    
-    
-    g.show('Graph.html')
-
-
+                        
+                        
+                        g.add_edge(row['col_b_df1'],row['col_b_df2'],color='green',width=1)
+                        LinkedNodes.append(row['col_b_df1'])
+                        LinkedNodes.append(row['col_b_df2'])
+                    out.write("---- New Record- ------")
+                    out.write("\n")
+                    break
+    g.show_buttons()
+#    g.show('Graph.html')        
+print(FinalLink)
+ER_Metrics__indiv.generateMetrics(FinalLink)
 # import pyTigerGraph as tg 
 
 
