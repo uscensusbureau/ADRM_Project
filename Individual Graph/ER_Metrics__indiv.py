@@ -68,6 +68,8 @@ def generateMetrics(linkIndex):
     TP = countPairs(truePos)
     FP = float(L-TP)
     FN = float(E-TP)
+    print(TP)
+    print("kjkjk  jhj")
     if L > 0:
         precision = round(TP/float(L),4)
     else:
@@ -79,13 +81,6 @@ def generateMetrics(linkIndex):
   
     fmeas = round((2*precision*recall)/(precision+recall),4)
       
-    # for report process
-    DWM10_Parms.precision = precision
-    DWM10_Parms.recall = recall
-    DWM10_Parms.fmeasure = fmeas
-    DWM10_Parms.truePairs = TP
-    DWM10_Parms.expectedPairs = E
-    DWM10_Parms.linkedPairs = L
     
     print('True Pairs =',TP)
     print('Expected Pairs =',E)
@@ -95,9 +90,6 @@ def generateMetrics(linkIndex):
     print('F-measure=', fmeas)
     
     return
-
-linkIndex={'x1': 'w1', 'x2': 'w2', 'x3': 'w3', 'v1': 'u1', 'v2': 'u2', 'v3': 'u3', 'mk1': 'o01', 'mk2': 'o03', 'a1': 'b1', 'a2': 'b2', 'a3': 'b3', 'k1': 'l1', 'k2': 'l2', 'k3': 'l3', 'ik1': 'ck1', 'ik2': 'ck2', 'ik3': 'ck3', 'y1': 'z1', 'y2': 'z2', 'y3': 'z3', 'y4': 'z4', 'y5': 'z5', 'ac1': 'ad1', 'ac2': 'ad2', 'ac3': 'ad3', 'i1': 'j1', 'i2': 'j2', 'i3': 'j3', 'm1': 'n1', 'm2': 'n2', 't1': 's1', 't2': 's2', 't3': 's3', 'o1': 'p1', 'o2': 'p2', 'o3': 'p3', 'e1': 'f1', 'e2': 'f2', 'e3': 'f3', 'pk1': 'ok1', 'pk2': 'ok2', 'pk3': 'ok3', 'r1': 'q1', 'r2': 'q2', 'r3': 'q3', 'af1': 'ae1', 'af2': 'ae2', 'af3': 'ae3', 'h1': 'g1', 'h2': 'g2', 'h3': 'g3', 'ab1': 'aa1', 'ab2': 'aa2', 'ab3': 'aa3', 'c1': 'd1', 'c2': 'd2', 'c3': 'd3', 'ag1': 'ah1', 'ag2': 'ah2'}
-generateMetrics(linkIndex)
 
 
 

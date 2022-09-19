@@ -13,7 +13,7 @@ import re
 import TEST_FUZZY_MATCH_MERGE as ts
 
 from tqdm import tqdm
-import ER_Metrics__indiv
+import ER_Metrics_2
 from fuzzywuzzy import fuzz
 #DWM.DWM_Cluster("S2-parms.txt")
 
@@ -101,7 +101,7 @@ with open("Output_File.txt","w") as out:
         RevisedAddressList = AddressList[indexSplit:len(AddressList)]
      
         NameList = AddressList[0:indexSplit]
-        
+        print(NameList)
         if NameList[len(NameList)-1]==",":
             NameList.pop(len(NameList)-1)
        
@@ -361,7 +361,7 @@ with open("Output_File.txt","w") as out:
                     df_right,
                     'col_a',
                     'col_a',
-                    threshold=70,
+                    threshold=60,
                     limit=1
                 )
 
@@ -401,9 +401,9 @@ with open("Output_File.txt","w") as out:
                     out.write("\n")
                     break
     g.show_buttons()
-#    g.show('Graph.html')        
+    g.show('Graph.html')        
 print(FinalLink)
-ER_Metrics__indiv.generateMetrics(FinalLink)
+ER_Metrics_2.generateMetrics(0, FinalLink,"test_data.txt")
 # import pyTigerGraph as tg 
 
 
@@ -417,29 +417,3 @@ ER_Metrics__indiv.generateMetrics(FinalLink)
 # secrets="vcitnrnourll67gvb63fd6kv3qmho42a"
 # authtokens=graph.getToken(secret=secrets)
 # print(authtokens)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
