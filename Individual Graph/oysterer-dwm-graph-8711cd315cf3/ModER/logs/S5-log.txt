@@ -1,0 +1,54 @@
+Beta:5.0
+Sigma: 8.0
+Delta: 9.0
+GraphOG graph object
+Number of nodes: 3004
+Number of represented nodes: 2428
+Number of single nodes: 576
+Number of edges: 3206
+Modularity: 0.2005006971674966
+---------------------------
+Linked pairs (L): 1222.0
+---------------------------
+Ground truth pairs (E): 1526.0
+---------------------------
+True positives (TP): 1146.0
+---------------------------
+True negatives (TN): 4508904.0
+---------------------------
+False positives (FP): 76.0
+---------------------------
+False negatives (FN): 380.0
+---------------------------
+False positive rate (FPR): 0.0
+---------------------------
+True positive rate (TPR): 0.751
+---------------------------
+True negative rate (TNR): 1.0
+---------------------------
+Accuracy: 0.9999
+---------------------------
+Balanced accuracy: 0.8755
+---------------------------
+Precision: 0.9378
+---------------------------
+Recall: 0.751
+---------------------------
+F1-score: 0.8341
+---------------------------
+
+Cluster profile
+Size	count
+1 	 1200 	 1200
+2 	 638 	 1276
+3 	 142 	 426
+4 	 23 	 92
+5 	 2 	 10
+	Total	 3004
+---------------------------
+GraphOG graph object
+Number of nodes: 3004
+Number of represented nodes: 2428
+Number of single nodes: 576
+Number of edges: 3206
+Modularity: 0.6210927962116639

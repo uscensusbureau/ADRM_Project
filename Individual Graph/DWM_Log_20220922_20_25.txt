@@ -1,0 +1,4 @@
+Data Washing Machine Refactor Version 2.21
+Data/Time 20220922_20_25
+
+Running parms file  File_A_Parms.txt

@@ -410,210 +410,210 @@ bl1|6013 CHERRY HILL R MONTGOMERY AL 36116
 bl2|6013 CHERRY HILL RD MONTGOMERY AL 36116
 bl3|6013 CHR HILL ROAD MONTGOMERY AL 36116
 Clusters Formation using Data Washing Machine
-a1|Alivia Hogan ,44 E. West St Ashland, Ohio 44805|C1|C1
-a2|Giancarlo Hogan, 44 E. W Street Ashland, OH 44805|C1|C1
-a3|Madisyn Hogan, 44 E. W St AL, OH 44805|C1|C1
-b1|Alivia Hogan ,131 Iroquois St SG, MI 48195|C22|C22
-b2|Giancarlo Hogan ,131 Iroquois Street Southgate, Miami 48195|C22|C22
-b3|Madisyn Hogan ,131 Iroquois Street SG,  Miami 48195|C22|C22
-c1| Kaylin Lyons ,8779 Windsor Street. Fuquay Varina, NC 27526|C36|C36
-c2|Angela Wheeler ,8779 Windsor St. Fuquay Varina, NC 27526|C36|C36
-c3|Gerardo Mays ,8779 Windsor St. Fuquay Varina, North Carolina 27526|C36|C36
-d1|Kaylin Lyons ,611 Penn Str Long Branch, NJ 07740|C37|C37
-d2|Angela Wheeler ,611 Penn Street Long Branch, NJ 07740|C37|C37
-d3|Gerardo Mays ,611 Penn St Long Branch, New Jersey 07740|C37|C37
-e1|Kayla Willis ,7075 Princess St Linden, NJ 07036|C37|C37
-e2|Virginia Crosby ,7075 Princess Street Linden, New Jersey 07036|C37|C37
-e3|Iris Bowen ,7075 Princess Street Linden, NJ 07036|C37|C37
-f1|Kayla Willis,132 T R, Montgomery AL 36117|C38|C38
-f2|Virginia Crosby,132 Tensaw RD, Montgomery AL 36117|C39|C39
-f3| Iris Bowen,132 Tensaw Road, Montgomery AL 36117|C39|C39
-g1|Sabrina Andrews,7459 Gulf L. Raeford, NC 28376|C3|C3
-g2|Elena Curtis,7459 Gulf Lane Raeford, North Carolina 28376|C3|C3
-g3|Ruby Hopkins,7459 G Lane Raeford, NC 28376|C3|C3
-h1|Sabrina Andrews,4667 Benning Rd Southeast, Washington AR 20019|C32|C32
-h2|Elena Curtis,4667 Benning Road Southeast, Washington Arkansas 20019|C32|C32
-h3|Ruby Hopkins,4667 Benning R. Southeast, Washington AR 20019|C32|C32
-i1|Tamia Dunn,809 N Peg Shop Dr. Ladson, SC 29456|C40|C40
-i2|Carina Burnett,809 North Peg Shop Drive Ladson, SC 29456|C40|C40
-i3|Presley Colon,809 North Peg Shop Dr. Ladson, SC 29456|C40|C40
-j1|Tamia Dunn,9057 Vermont Rd Cockeysville, MD 21030|C24|C24
-j2|Carina Burnett,9057 Vermont Road Cockeysville, MD 21030|C24|C24
-j3|Presley Colon,9057 Vermont R. Cockeysville, MD 21030|C24|C24
-k1|Jewel Zimmerman,401 Fairhill Crt, Annapolis MD 21403|C41|C41
-k2|Prince Hoffman,401 Fairhill Court, Annapolis MD 21403|C41|C41
-k3|Gavin Bray,401 Fairhill Court, Annapolis MD 21403|C41|C41
-l1|Jewel Zimmerman,1521 159th Ave, San Leandro CA 94578|C42|C42
-l2|Prince Hoffman,1521 159th Avenue, SA. CA 94578|C42|C42
-l3|Gavin Bray,1521 159th Avenue, San Leandro CA 94578|C42|C42
-m1|Seamus Lowe,883 Rodney Dr, Nashville TN 37205|C43|C43
-m2|Noel Atkinson,883 Rodney Drive, Nashville TN 37205|C43|C43
-n1|Seamus Lowe,832 51st Street NE, Washington AR 20019|C44|C44
-n2|Noel Atkinson,832 51st str Northeast, Washington AR 20019|C44|C44
-o1|Joey Flowers,1427 H St, Anchorage AK 99501|C45|C45
-o2|Adalyn Le,1427 H Street, Anchorage AK 99501|C45|C45
-o3|Chana Young,1427 H St, Anchorage AK 99501|C45|C45
-p1|Joey Flowers,8772 W 79th Ave, Arvada CO 80005|C2|C2
-p2|Adalyn Le,8772 West 79th Ave, Arvada CO 80005|C2|C2
-p3|Chana Young,8772 W 79th Avenue, Arvada CO 80005|C2|C2
-q1|Rayan Gardner,712 Wilsonwood P, Nashville TN 37206|C43|C43
-q2|Vincent Larsen,712 Wilsonwood Place, Nashville TN 37206|C43|C43
-q3|Nayeli Mercer,712 Wilsonwood Place, Nashville TN 37206|C43|C43
-r1|Rayan Gardner,42223 Edgewood Str, Fremont CA 94538|C46|C46
-r2|Vincent Larsen,42223 EW Street, Fremont CA 94538|C47|C47
-r3|Nayeli Mercer,42223 Edgewood St, Fremont CA 94538|C46|C46
-s1|Aniya Winters,2821 T Place, Louisville KY 40218|C38|C38
-s2|Carlo Williamson,2821 Tyson Pl, Louisville KY 40218|C43|C43
-s3|Kale Armstrong,2821 Tyson Place, Louisville KY 40218|C43|C43
-t1|Aniya Winters,1536 N Main Street, Salinas CA 93906|C48|C48
-t2|Carlo Williamson,1536 N Main St, Salinas CA 93906|C48|C48
-t3|Kale Armstrong,1536 North Main Str, Salinas CA 93906|C48|C48
-u1|Jayvion Hansen,31250 Courthouse Dr, Union City CA 94587|C49|C49
-u2|Gerald Martinez,31250 Courthouse D, Union City CA 94587|C49|C49
-u3|Avery Saunders,31250 Courthouse Drive, Union City CA 94587|C49|C49
-v1|Jayvion Hansen,405 Flint R Court, Norman OK 73072|C3|C3
-v2|Gerald Martinez,405 Flint Ridge Crt, Norman OK 73072|C3|C3
-v3|Avery Saunders,405 Flint Ridge C, Norman OK 73072|C3|C3
-w1|Lane Brock,5628 West Tonopah Dr, Glendale AZ 85308|C50|C50
-w2|Dominique Walton,5628 W Tonopah Drive, Glendale AZ 85308|C50|C50
-w3|Giselle Mcknight,5628 West Tonopah Drive, Glendale AZ 85308|C50|C50
-x1|Lane Brock,475 Mpl Street, Holyoke MA 01040|C51|C51
-x2|Dominique Walton,475 Maple St, Holyoke MA 01040|C51|C51
-x3|Giselle Mcknight,475 Maple Str, Holyoke MA 01040|C51|C51
-y1|Isabela Blackwell,2604 13th St, Savannah GA 31408|C52|C52
-y2|Nora Schaefer,2604 13th S, Savannah GA 31408|C52|C52
-y3|Malakai Drake,2604 13th Str, Savannah GA 31408|C52|C52
-y4|Timothy Gonzalez,2604 13th S, Savannah GA 31408|C52|C52
-y5|Abby House,2604 13th Street, Savannah GA 31408|C52|C52
-z1|Isabela Blackwell,39247 Sundale D, Fremont CA 94538|C33|C33
-z2|Nora Schaefer,39247 Sundale Dr, Fremont CA 94538|C33|C33
-z3|Malakai Drake,39247 Sundale Drive, Fremont CA 94538|C33|C33
-z4|Timothy Gonzalez,39247 Sd Drive, Fremont CA 94538|C53|C53
-z5|Abby House,39247 Sundale Drive, Fremont CA 94538|C33|C33
-aa1|Meghan Rojas,9472 Noble Way, A CO 80007|C2|C2
-aa2|Janae Watts,9472 Noble Way, Arvada CO 80007|C2|C2
-aa3|August Fernandez,9472 Noble Way, Arvada CO 80007|C2|C2
-ab1|Meghan Rojas,4408 NW 55th Street, Oklahoma City OK 73112|C3|C3
-ab2|Janae Watts,4408 Northwest 55th St, Oklahoma City OK 73112|C3|C3
-ab3|August Fernandez,4408 Northwest 55th Str, Oklahoma City OK 73112|C3|C3
-ac1|Marlee Kane,318 Lydall St, Manchester CT 06042|C4|C4
-ac2|Ashlynn Logan,318 Lydall Str, Manchester CT 06042|C4|C4
-ac3|Mya Melton,318 Lydall S, Manchester CT 06042|C4|C4
-ad1|Marlee Kane,416 Ridge Street NW, Washington AR 20001|C3|C3
-ad2|Ashlynn Logan,416 Ridge St Northwest, Washington AR 20001|C3|C3
-ad3|Mya Melton,416 Ridge Street North W, Washington AR 20001|C3|C3
-ae1|Marquise Giles,12 Winter ST, Manchester CT 06040|C4|C4
-ae2|Cierra Davis,12 Winter S, Manchester CT 06040|C4|C4
-ae3|Mikaela Romero,12 Winter Street, Manchester CT 06040|C4|C4
-af1|Marquise Giles,2316 NW 113th Street, Oklahoma City OK 73120|C3|C3
-af2|Cierra Davis,2316 NorthW 113th Str, Oklahoma City OK 73120|C3|C3
-af3|Mikaela Romero,2316 Northwest 113th S, Oklahoma City OK 73120|C3|C3
-ag1|Arianna Spencer,201 W Montgomery Cross Road, Savannah GA 31406|C5|C5
-ag2|Hadassah Kim,201 West Montgomery Cross Rd, Savannah GA 31406|C5|C5
-ag3|Lennon Riley,201 West Montgomery Cross Road, Savannah GA 31406|C5|C5
-ah1|Arianna Spencer,20270 Andover Ave, Port Charlotte FL 33954|C6|C6
-ah2|Hadassah Kim,20270 Andover Avenue, Port Charlotte FL 33954|C6|C6
-ah3|Lennon Riley,20270 Andover Avenue, Port Char FL 33954|C6|C6
-ai1|Emily Ross,6740 Dickerson D, Anchorage AK 99504|C7|C7
-ai2|Kayla Arroyo,6740 Dickerson Dr, Anchorage AK 99504|C7|C7
-ai3|Jayda Kemp,6740 Dickerson Drive, Anchorage AK 99504|C7|C7
-aj1|Emily Ross,5329 A S, Greeley CO 80634|C8|C8
-aj2|Kayla Arroyo,5329 A Str, Greeley CO 80634|C8|C8
-aj3|Jayda Kemp,5329 A Street, Greeley CO 80634|C8|C8
-ak1|Keira Mccoy,9712 Stream View Tr, Louisville KY 40258|C9|C9
-ak2|Owen Bond,9712 Stream View Tr, Louisville KY 40258|C9|C9
-ak3|Kallie Osborn,9712 Str V Trail, Louisville KY 40258|C9|C9
-al1|Keira Mccoy,512 Tennyson Rd, Hayward CA 94544|C10|C10
-al2|Owen Bond,512 Tennyson R, Hayward CA 94544|C10|C10
-al3|Kallie Osborn,512 Tennyson Road, Hayward CA 94544|C10|C10
-am1|Paisley Watson,8325 NW 19th Street, Oklahoma City OK 73127|C3|C3
-am2|Josephine Mcintosh,8325 Northwest 19th S, Oklahoma City OK 73127|C3|C3
-am3|Priscilla Riley,8325 Northwest 19th Str, Oklahoma C OK 73127|C3|C3
-an1|Paisley Watson,1908 Peachtree Ave, Oklahoma City OK 73121|C3|C3
-an2|Josephine Mcintosh,1908 Peachtree Avenue, O C OK 73121|C3|C3
-an3|Priscilla Riley,1908 Peachtree A, Okl City OK 73121|C3|C3
-ao1|Santos Merritt,3413 Pheasant Run Rd, Nm OK 73072|C11|C11
-ao2|Alissa Cook,3413 Pheasant Run R, Norman OK 73072|C11|C11
-ao3|Darrell Fuentes,3413 Pheasant Run Road, Norman OK 73072|C11|C11
-ap1|Santos Merritt,19404 N 77th A, Glendale AZ 85308|C12|C12
-ap2|Alissa Cook,19404 North 77th Ave, Glendale AZ 85308|C12|C12
-ap3|Darrell Fuentes,19404 N 77th Avenue, Glendale AZ 85308|C12|C12
-aq1|Payton Nielsen,17800 Creekwood L, Choctaw OK 73020|C3|C3
-aq2|George Williams,17800 C Lane, Choctaw OK 73020|C3|C3
-aq3|Halle Valdez,17800 Creekwood Lane, Choctaw OK 73020|C3|C3
-ar1|Payton Nielsen,41 Fw Drive, Tewksbury MA 01876|C7|C7
-ar2|George Williams,41 Fairway D, Tewksbury MA 01876|C7|C7
-ar3|Halle Valdez,41 Fairway Drive, Tewksbury MA 01876|C7|C7
-as1|Dallas Giles,125 Heritage W, Savannah GA 31419|C13|C13
-as2|Jaxon Pena,125 Heritage Way, Savannah GA 31419|C13|C13
-as3|Paola Singleton,125 Htg Way, Savannah GA 31419|C13|C13
-at1|Dallas Giles,8219 Minor L, Louisville KY 40219|C3|C3
-at2|Jaxon Pena,8219 Minor Ln, Louisville KY 40219|C3|C3
-at3|Paola Singleton,8219 Minor Lane, Louisville KY 40219|C3|C3
-au1|Zavier Landry,3200 Sw 95th Street, Oklahoma City OK 73159|C14|C14
-au2|Eva Hebert,3200 Sw 95th S, Oklahoma City OK 73159|C14|C14
-au3|Pedro Pena,3200 Southwest 95th Str, OC OK 73159|C15|C15
-av1|Zavier Landry,200 Pheasant A, Louisville KY 40118|C11|C11
-av2|Eva Hebert,200 Pheasant Ave, Louisville KY 40118|C11|C11
-av3|Pedro Pena,200 Pheasant Avenue, Louisville KY 40118|C11|C11
-aw1|Aniya Spencer,42 W Louise Street, Fayetteville AR 72701|C16|C16
-aw2|Megan Livingston,42 West Louise St, Fayetteville AR 72701|C16|C16
-aw3|Lauryn Nolan,42 West Louise Str, Fayetteville AR 72701|C16|C16
-ax1|Aniya Spencer,3030 Br Lane, Louisville KY 40220|C17|C17
-ax2|Megan Livingston,3030 Breckenridge L, Louisville KY 40220|C3|C3
-ax3|Lauryn Nolan,3030 Breckenridge Lane, Louisville KY 40220|C3|C3
-ay1|Maya Lambert,15010 N 59th Ave, Glendale AZ 85306|C18|C18
-ay2|Halle Marks,15010 N 59th A, Glendale AZ 85306|C19|C19
-ay3|Alvin Diaz,15010 North 59th Avenue, Glendale AZ 85306|C20|C20
-az1|Maya Lambert,33655 5th S, Union City CA 94587|C21|C21
-az2|Halle Marks,33655 5th Str, Union City CA 94587|C21|C21
-az3|Alvin Diaz,33655 5th Street, Union City CA 94587|C21|C21
-ba1|Aileen Bryan,1219 N Storer Avenue, Fayetteville AR 72703|C23|C23
-ba2|Dania Ritter,1219 North Storer Ave, Fayetteville AR 72703|C23|C23
-ba3|Talan Gonzales,1219 N Storer Ave, Fayetteville AR 72703|C23|C23
-ba4|Cohen Barton,1219 North Storer Avenue, Fayetteville AR 72703|C23|C23
-bb1|Aileen Bryan,1433 Bretton V Road, Annapolis MD 21409|C9|C9
-bb2|Dania Ritter,1433 Bretton View Rd, Annapolis MD 21409|C9|C9
-bb3|Talan Gonzales,1433 Bretton View Road, Annapolis MD 21409|C9|C9
-bb4|Cohen Barton,1433 Bretton View R, Annapolis MD 21409|C9|C9
-bc1|Kenny Howard,721 Vemt5A, Westmore VT 05860|C24|C24
-bc2|Matthias Murphy,721 Vermont 5A, Westmore VT 05860|C24|C24
-bc3|Jon Case,721 Vermont 5A, Westmore VT 05860|C24|C24
-bc4|Deja Webb,721 Vermont 5A, Westmore VT 05860|C24|C24
-bd1|Kenny Howard,7041 Dover Avenue, N Beach MD 20714|C25|C25
-bd2|Matthias Murphy,7041 Dover Ave, North Beach MD 20714|C25|C25
-bd3|Jon Case,7041 Dover A, North Beach MD 20714|C25|C25
-bd4|Deja Webb,7041 Dover Avenue, North Beach MD 20714|C25|C25
-be1|Lauren Suarez,6617 N 59th A, Glendale AZ 85301|C26|C26
-be2|Aydan Rubio,6617 North 59th Avenue, Glendale AZ 85301|C27|C27
-be3|Trevin Mathews,6617 North 59th Ave, Glendale AZ 85301|C28|C28
-be4|Alina Cantrell,6617 North 59th A, Glendale AZ 85301|C29|C29
-be5|Braden Randall,6617 North 59th Avenue, Glendale AZ 85301|C30|C30
-bf1|Lauren Suarez,631 W 32nd A, Anchorage AK 99503|C31|C31
-bf2|Aydan Rubio,631 West 32nd Avenue, Anchorage AK 99503|C31|C31
-bf3|Trevin Mathews,631 W 32nd Ave, Anchorage AK 99503|C31|C31
-bf4|Alina Cantrell,631 West 32nd Avenue, Anchorage AK 99503|C31|C31
-bf5|Braden Randall,631 West 32nd Avenue, Anchorage AK 99503|C31|C31
-bg1|Cheyanne Estes,2245 SW Binkley Street, Oklahoma City OK 73119|C14|C14
-bg2|Chelsea Middleton,2245 Southwest Binkley Str, Oklahoma City OK 73119|C15|C15
-bg3|Dax Rowe,2245 Southwest Binkley Street, OC OK 73119|C7|C7
-bh1|Cheyanne Estes,1145 Chaseway Drive, Pike Rd AL 36064|C7|C7
-bh2|Chelsea Middleton,1145 Chaseway Dr, Pike Road AL 36064|C7|C7
-bg3|Dax Rowe,1145 Chaseway D, Pike R AL 36064|C7|C7
-bi1|Blaine Ferrell,1729 Frankford Street SE, Washington AR 20020|C32|C32
-bi2|Kaya Rowe,1729 Frankford Str Southeast, Washington AR 20020|C32|C32
-bi3|Iliana Johnson,1729 Frankford St Southeast, Washington AR 20020|C32|C32
-bi4|Jayda Soto,1729 Frankford Street Southeast, Washington AR 20020|C32|C32
-bj1|Blaine Ferrell,51035 Conifer Dr, Soda Springs CA 95728|C33|C33
-bj2|Kaya Rowe,51035 Conifer Drive, Soda Spr CA 95728|C33|C33
-bj3|Iliana Johnson,51035 Conifer D, Soda Springs CA 95728|C33|C33
-bj4|Jayda Soto,51035 Conifer Drive, Soda Springs CA 95728|C33|C33
-bk1|Ronnie Austin,5631 W Colter Street, Glendale AZ 85301|C34|C34
-bk2|Izabella Kidd,5631 West Colter Street, Glendale AZ 85301|C34|C34
-bk3|Kylie Brooks,5631 West Colter Street, Glendale AZ 85301|C34|C34
-bl1|Ronnie Austin,6013 Cherry Hill R, Montgomery AL 36116|C35|C35
-bl2|Izabella Kidd,6013 Cherry Hill Rd, Montgomery AL 36116|C35|C35
-bl3|Kylie Brooks,6013 Chr Hill Road, Montgomery AL 36116|C35|C35
+a1|Alivia Hogan ,44 E. West St Ashland, Ohio 44805|C1
+a2|Giancarlo Hogan, 44 E. W Street Ashland, OH 44805|C1
+a3|Madisyn Hogan, 44 E. W St AL, OH 44805|C1
+b1|Alivia Hogan ,131 Iroquois St SG, MI 48195|C22
+b2|Giancarlo Hogan ,131 Iroquois Street Southgate, Miami 48195|C22
+b3|Madisyn Hogan ,131 Iroquois Street SG,  Miami 48195|C22
+c1| Kaylin Lyons ,8779 Windsor Street. Fuquay Varina, NC 27526|C36
+c2|Angela Wheeler ,8779 Windsor St. Fuquay Varina, NC 27526|C36
+c3|Gerardo Mays ,8779 Windsor St. Fuquay Varina, North Carolina 27526|C36
+d1|Kaylin Lyons ,611 Penn Str Long Branch, NJ 07740|C37
+d2|Angela Wheeler ,611 Penn Street Long Branch, NJ 07740|C37
+d3|Gerardo Mays ,611 Penn St Long Branch, New Jersey 07740|C37
+e1|Kayla Willis ,7075 Princess St Linden, NJ 07036|C37
+e2|Virginia Crosby ,7075 Princess Street Linden, New Jersey 07036|C37
+e3|Iris Bowen ,7075 Princess Street Linden, NJ 07036|C37
+f1|Kayla Willis,132 T R, Montgomery AL 36117|C38
+f2|Virginia Crosby,132 Tensaw RD, Montgomery AL 36117|C39
+f3| Iris Bowen,132 Tensaw Road, Montgomery AL 36117|C39
+g1|Sabrina Andrews,7459 Gulf L. Raeford, NC 28376|C3
+g2|Elena Curtis,7459 Gulf Lane Raeford, North Carolina 28376|C3
+g3|Ruby Hopkins,7459 G Lane Raeford, NC 28376|C3
+h1|Sabrina Andrews,4667 Benning Rd Southeast, Washington AR 20019|C32
+h2|Elena Curtis,4667 Benning Road Southeast, Washington Arkansas 20019|C32
+h3|Ruby Hopkins,4667 Benning R. Southeast, Washington AR 20019|C32
+i1|Tamia Dunn,809 N Peg Shop Dr. Ladson, SC 29456|C40
+i2|Carina Burnett,809 North Peg Shop Drive Ladson, SC 29456|C40
+i3|Presley Colon,809 North Peg Shop Dr. Ladson, SC 29456|C40
+j1|Tamia Dunn,9057 Vermont Rd Cockeysville, MD 21030|C24
+j2|Carina Burnett,9057 Vermont Road Cockeysville, MD 21030|C24
+j3|Presley Colon,9057 Vermont R. Cockeysville, MD 21030|C24
+k1|Jewel Zimmerman,401 Fairhill Crt, Annapolis MD 21403|C41
+k2|Prince Hoffman,401 Fairhill Court, Annapolis MD 21403|C41
+k3|Gavin Bray,401 Fairhill Court, Annapolis MD 21403|C41
+l1|Jewel Zimmerman,1521 159th Ave, San Leandro CA 94578|C42
+l2|Prince Hoffman,1521 159th Avenue, SA. CA 94578|C42
+l3|Gavin Bray,1521 159th Avenue, San Leandro CA 94578|C42
+m1|Seamus Lowe,883 Rodney Dr, Nashville TN 37205|C43
+m2|Noel Atkinson,883 Rodney Drive, Nashville TN 37205|C43
+n1|Seamus Lowe,832 51st Street NE, Washington AR 20019|C44
+n2|Noel Atkinson,832 51st str Northeast, Washington AR 20019|C44
+o1|Joey Flowers,1427 H St, Anchorage AK 99501|C45
+o2|Adalyn Le,1427 H Street, Anchorage AK 99501|C45
+o3|Chana Young,1427 H St, Anchorage AK 99501|C45
+p1|Joey Flowers,8772 W 79th Ave, Arvada CO 80005|C2
+p2|Adalyn Le,8772 West 79th Ave, Arvada CO 80005|C2
+p3|Chana Young,8772 W 79th Avenue, Arvada CO 80005|C2
+q1|Rayan Gardner,712 Wilsonwood P, Nashville TN 37206|C43
+q2|Vincent Larsen,712 Wilsonwood Place, Nashville TN 37206|C43
+q3|Nayeli Mercer,712 Wilsonwood Place, Nashville TN 37206|C43
+r1|Rayan Gardner,42223 Edgewood Str, Fremont CA 94538|C46
+r2|Vincent Larsen,42223 EW Street, Fremont CA 94538|C47
+r3|Nayeli Mercer,42223 Edgewood St, Fremont CA 94538|C46
+s1|Aniya Winters,2821 T Place, Louisville KY 40218|C38
+s2|Carlo Williamson,2821 Tyson Pl, Louisville KY 40218|C43
+s3|Kale Armstrong,2821 Tyson Place, Louisville KY 40218|C43
+t1|Aniya Winters,1536 N Main Street, Salinas CA 93906|C48
+t2|Carlo Williamson,1536 N Main St, Salinas CA 93906|C48
+t3|Kale Armstrong,1536 North Main Str, Salinas CA 93906|C48
+u1|Jayvion Hansen,31250 Courthouse Dr, Union City CA 94587|C49
+u2|Gerald Martinez,31250 Courthouse D, Union City CA 94587|C49
+u3|Avery Saunders,31250 Courthouse Drive, Union City CA 94587|C49
+v1|Jayvion Hansen,405 Flint R Court, Norman OK 73072|C3
+v2|Gerald Martinez,405 Flint Ridge Crt, Norman OK 73072|C3
+v3|Avery Saunders,405 Flint Ridge C, Norman OK 73072|C3
+w1|Lane Brock,5628 West Tonopah Dr, Glendale AZ 85308|C50
+w2|Dominique Walton,5628 W Tonopah Drive, Glendale AZ 85308|C50
+w3|Giselle Mcknight,5628 West Tonopah Drive, Glendale AZ 85308|C50
+x1|Lane Brock,475 Mpl Street, Holyoke MA 01040|C51
+x2|Dominique Walton,475 Maple St, Holyoke MA 01040|C51
+x3|Giselle Mcknight,475 Maple Str, Holyoke MA 01040|C51
+y1|Isabela Blackwell,2604 13th St, Savannah GA 31408|C52
+y2|Nora Schaefer,2604 13th S, Savannah GA 31408|C52
+y3|Malakai Drake,2604 13th Str, Savannah GA 31408|C52
+y4|Timothy Gonzalez,2604 13th S, Savannah GA 31408|C52
+y5|Abby House,2604 13th Street, Savannah GA 31408|C52
+z1|Isabela Blackwell,39247 Sundale D, Fremont CA 94538|C33
+z2|Nora Schaefer,39247 Sundale Dr, Fremont CA 94538|C33
+z3|Malakai Drake,39247 Sundale Drive, Fremont CA 94538|C33
+z4|Timothy Gonzalez,39247 Sd Drive, Fremont CA 94538|C53
+z5|Abby House,39247 Sundale Drive, Fremont CA 94538|C33
+aa1|Meghan Rojas,9472 Noble Way, A CO 80007|C2
+aa2|Janae Watts,9472 Noble Way, Arvada CO 80007|C2
+aa3|August Fernandez,9472 Noble Way, Arvada CO 80007|C2
+ab1|Meghan Rojas,4408 NW 55th Street, Oklahoma City OK 73112|C3
+ab2|Janae Watts,4408 Northwest 55th St, Oklahoma City OK 73112|C3
+ab3|August Fernandez,4408 Northwest 55th Str, Oklahoma City OK 73112|C3
+ac1|Marlee Kane,318 Lydall St, Manchester CT 06042|C4
+ac2|Ashlynn Logan,318 Lydall Str, Manchester CT 06042|C4
+ac3|Mya Melton,318 Lydall S, Manchester CT 06042|C4
+ad1|Marlee Kane,416 Ridge Street NW, Washington AR 20001|C3
+ad2|Ashlynn Logan,416 Ridge St Northwest, Washington AR 20001|C3
+ad3|Mya Melton,416 Ridge Street North W, Washington AR 20001|C3
+ae1|Marquise Giles,12 Winter ST, Manchester CT 06040|C4
+ae2|Cierra Davis,12 Winter S, Manchester CT 06040|C4
+ae3|Mikaela Romero,12 Winter Street, Manchester CT 06040|C4
+af1|Marquise Giles,2316 NW 113th Street, Oklahoma City OK 73120|C3
+af2|Cierra Davis,2316 NorthW 113th Str, Oklahoma City OK 73120|C3
+af3|Mikaela Romero,2316 Northwest 113th S, Oklahoma City OK 73120|C3
+ag1|Arianna Spencer,201 W Montgomery Cross Road, Savannah GA 31406|C5
+ag2|Hadassah Kim,201 West Montgomery Cross Rd, Savannah GA 31406|C5
+ag3|Lennon Riley,201 West Montgomery Cross Road, Savannah GA 31406|C5
+ah1|Arianna Spencer,20270 Andover Ave, Port Charlotte FL 33954|C6
+ah2|Hadassah Kim,20270 Andover Avenue, Port Charlotte FL 33954|C6
+ah3|Lennon Riley,20270 Andover Avenue, Port Char FL 33954|C6
+ai1|Emily Ross,6740 Dickerson D, Anchorage AK 99504|C7
+ai2|Kayla Arroyo,6740 Dickerson Dr, Anchorage AK 99504|C7
+ai3|Jayda Kemp,6740 Dickerson Drive, Anchorage AK 99504|C7
+aj1|Emily Ross,5329 A S, Greeley CO 80634|C8
+aj2|Kayla Arroyo,5329 A Str, Greeley CO 80634|C8
+aj3|Jayda Kemp,5329 A Street, Greeley CO 80634|C8
+ak1|Keira Mccoy,9712 Stream View Tr, Louisville KY 40258|C9
+ak2|Owen Bond,9712 Stream View Tr, Louisville KY 40258|C9
+ak3|Kallie Osborn,9712 Str V Trail, Louisville KY 40258|C9
+al1|Keira Mccoy,512 Tennyson Rd, Hayward CA 94544|C10
+al2|Owen Bond,512 Tennyson R, Hayward CA 94544|C10
+al3|Kallie Osborn,512 Tennyson Road, Hayward CA 94544|C10
+am1|Paisley Watson,8325 NW 19th Street, Oklahoma City OK 73127|C3
+am2|Josephine Mcintosh,8325 Northwest 19th S, Oklahoma City OK 73127|C3
+am3|Priscilla Riley,8325 Northwest 19th Str, Oklahoma C OK 73127|C3
+an1|Paisley Watson,1908 Peachtree Ave, Oklahoma City OK 73121|C3
+an2|Josephine Mcintosh,1908 Peachtree Avenue, O C OK 73121|C3
+an3|Priscilla Riley,1908 Peachtree A, Okl City OK 73121|C3
+ao1|Santos Merritt,3413 Pheasant Run Rd, Nm OK 73072|C11
+ao2|Alissa Cook,3413 Pheasant Run R, Norman OK 73072|C11
+ao3|Darrell Fuentes,3413 Pheasant Run Road, Norman OK 73072|C11
+ap1|Santos Merritt,19404 N 77th A, Glendale AZ 85308|C12
+ap2|Alissa Cook,19404 North 77th Ave, Glendale AZ 85308|C12
+ap3|Darrell Fuentes,19404 N 77th Avenue, Glendale AZ 85308|C12
+aq1|Payton Nielsen,17800 Creekwood L, Choctaw OK 73020|C3
+aq2|George Williams,17800 C Lane, Choctaw OK 73020|C3
+aq3|Halle Valdez,17800 Creekwood Lane, Choctaw OK 73020|C3
+ar1|Payton Nielsen,41 Fw Drive, Tewksbury MA 01876|C7
+ar2|George Williams,41 Fairway D, Tewksbury MA 01876|C7
+ar3|Halle Valdez,41 Fairway Drive, Tewksbury MA 01876|C7
+as1|Dallas Giles,125 Heritage W, Savannah GA 31419|C13
+as2|Jaxon Pena,125 Heritage Way, Savannah GA 31419|C13
+as3|Paola Singleton,125 Htg Way, Savannah GA 31419|C13
+at1|Dallas Giles,8219 Minor L, Louisville KY 40219|C3
+at2|Jaxon Pena,8219 Minor Ln, Louisville KY 40219|C3
+at3|Paola Singleton,8219 Minor Lane, Louisville KY 40219|C3
+au1|Zavier Landry,3200 Sw 95th Street, Oklahoma City OK 73159|C14
+au2|Eva Hebert,3200 Sw 95th S, Oklahoma City OK 73159|C14
+au3|Pedro Pena,3200 Southwest 95th Str, OC OK 73159|C15
+av1|Zavier Landry,200 Pheasant A, Louisville KY 40118|C11
+av2|Eva Hebert,200 Pheasant Ave, Louisville KY 40118|C11
+av3|Pedro Pena,200 Pheasant Avenue, Louisville KY 40118|C11
+aw1|Aniya Spencer,42 W Louise Street, Fayetteville AR 72701|C16
+aw2|Megan Livingston,42 West Louise St, Fayetteville AR 72701|C16
+aw3|Lauryn Nolan,42 West Louise Str, Fayetteville AR 72701|C16
+ax1|Aniya Spencer,3030 Br Lane, Louisville KY 40220|C17
+ax2|Megan Livingston,3030 Breckenridge L, Louisville KY 40220|C3
+ax3|Lauryn Nolan,3030 Breckenridge Lane, Louisville KY 40220|C3
+ay1|Maya Lambert,15010 N 59th Ave, Glendale AZ 85306|C18
+ay2|Halle Marks,15010 N 59th A, Glendale AZ 85306|C19
+ay3|Alvin Diaz,15010 North 59th Avenue, Glendale AZ 85306|C20
+az1|Maya Lambert,33655 5th S, Union City CA 94587|C21
+az2|Halle Marks,33655 5th Str, Union City CA 94587|C21
+az3|Alvin Diaz,33655 5th Street, Union City CA 94587|C21
+ba1|Aileen Bryan,1219 N Storer Avenue, Fayetteville AR 72703|C23
+ba2|Dania Ritter,1219 North Storer Ave, Fayetteville AR 72703|C23
+ba3|Talan Gonzales,1219 N Storer Ave, Fayetteville AR 72703|C23
+ba4|Cohen Barton,1219 North Storer Avenue, Fayetteville AR 72703|C23
+bb1|Aileen Bryan,1433 Bretton V Road, Annapolis MD 21409|C9
+bb2|Dania Ritter,1433 Bretton View Rd, Annapolis MD 21409|C9
+bb3|Talan Gonzales,1433 Bretton View Road, Annapolis MD 21409|C9
+bb4|Cohen Barton,1433 Bretton View R, Annapolis MD 21409|C9
+bc1|Kenny Howard,721 Vemt5A, Westmore VT 05860|C24
+bc2|Matthias Murphy,721 Vermont 5A, Westmore VT 05860|C24
+bc3|Jon Case,721 Vermont 5A, Westmore VT 05860|C24
+bc4|Deja Webb,721 Vermont 5A, Westmore VT 05860|C24
+bd1|Kenny Howard,7041 Dover Avenue, N Beach MD 20714|C25
+bd2|Matthias Murphy,7041 Dover Ave, North Beach MD 20714|C25
+bd3|Jon Case,7041 Dover A, North Beach MD 20714|C25
+bd4|Deja Webb,7041 Dover Avenue, North Beach MD 20714|C25
+be1|Lauren Suarez,6617 N 59th A, Glendale AZ 85301|C26
+be2|Aydan Rubio,6617 North 59th Avenue, Glendale AZ 85301|C27
+be3|Trevin Mathews,6617 North 59th Ave, Glendale AZ 85301|C28
+be4|Alina Cantrell,6617 North 59th A, Glendale AZ 85301|C29
+be5|Braden Randall,6617 North 59th Avenue, Glendale AZ 85301|C30
+bf1|Lauren Suarez,631 W 32nd A, Anchorage AK 99503|C31
+bf2|Aydan Rubio,631 West 32nd Avenue, Anchorage AK 99503|C31
+bf3|Trevin Mathews,631 W 32nd Ave, Anchorage AK 99503|C31
+bf4|Alina Cantrell,631 West 32nd Avenue, Anchorage AK 99503|C31
+bf5|Braden Randall,631 West 32nd Avenue, Anchorage AK 99503|C31
+bg1|Cheyanne Estes,2245 SW Binkley Street, Oklahoma City OK 73119|C14
+bg2|Chelsea Middleton,2245 Southwest Binkley Str, Oklahoma City OK 73119|C15
+bg3|Dax Rowe,2245 Southwest Binkley Street, OC OK 73119|C7
+bh1|Cheyanne Estes,1145 Chaseway Drive, Pike Rd AL 36064|C7
+bh2|Chelsea Middleton,1145 Chaseway Dr, Pike Road AL 36064|C7
+bg3|Dax Rowe,1145 Chaseway D, Pike R AL 36064|C7
+bi1|Blaine Ferrell,1729 Frankford Street SE, Washington AR 20020|C32
+bi2|Kaya Rowe,1729 Frankford Str Southeast, Washington AR 20020|C32
+bi3|Iliana Johnson,1729 Frankford St Southeast, Washington AR 20020|C32
+bi4|Jayda Soto,1729 Frankford Street Southeast, Washington AR 20020|C32
+bj1|Blaine Ferrell,51035 Conifer Dr, Soda Springs CA 95728|C33
+bj2|Kaya Rowe,51035 Conifer Drive, Soda Spr CA 95728|C33
+bj3|Iliana Johnson,51035 Conifer D, Soda Springs CA 95728|C33
+bj4|Jayda Soto,51035 Conifer Drive, Soda Springs CA 95728|C33
+bk1|Ronnie Austin,5631 W Colter Street, Glendale AZ 85301|C34
+bk2|Izabella Kidd,5631 West Colter Street, Glendale AZ 85301|C34
+bk3|Kylie Brooks,5631 West Colter Street, Glendale AZ 85301|C34
+bl1|Ronnie Austin,6013 Cherry Hill R, Montgomery AL 36116|C35
+bl2|Izabella Kidd,6013 Cherry Hill Rd, Montgomery AL 36116|C35
+bl3|Kylie Brooks,6013 Chr Hill Road, Montgomery AL 36116|C35
 Appending the same clusters to the Names File
 
 
@@ -823,951 +823,1083 @@ bl2|IZABELLA KIDD|C35
 bl3|KYLIE BROOKS|C35
 Splitting.......
 
-ALIVIA|C1
+A410|C1
 
-HOGAN|C1
+H250|C1
 
-GIANCARLO|C1
+G526|C1
 
-HOGAN|C1
+H250|C1
 
-MADISYN|C1
+M325|C1
 
-HOGAN|C1
+H250|C1
 
-ALIVIA|C22
+A410|C22
 
-HOGAN|C22
+H250|C22
 
-GIANCARLO|C22
+G526|C22
 
-HOGAN|C22
+H250|C22
 
-MADISYN|C22
+M325|C22
 
-HOGAN|C22
+H250|C22
 
-KAYLIN|C36
+K450|C36
 
-LYONS|C36
+L520|C36
 
-ANGELA|C36
+A524|C36
 
-WHEELER|C36
+W460|C36
 
-GERARDO|C36
+G663|C36
 
-MAYS|C36
+M200|C36
 
-KAYLIN|C37
+K450|C37
 
-LYONS|C37
+L520|C37
 
-ANGELA|C37
+A524|C37
 
-WHEELER|C37
+W460|C37
 
-GERARDO|C37
+G663|C37
 
-MAYS|C37
+M200|C37
 
-KAYLA|C37
+K400|C37
 
-WILLIS|C37
+W420|C37
 
-VIRGINIA|C37
+V625|C37
 
-CROSBY|C37
+C621|C37
 
-IRIS|C37
+I620|C37
 
-BOWEN|C37
+B500|C37
 
-KAYLA|C38
+K400|C38
 
-WILLIS|C38
+W420|C38
 
-VIRGINIA|C39
+V625|C39
 
-CROSBY|C39
+C621|C39
 
-IRIS|C39
+I620|C39
 
-BOWEN|C39
+B500|C39
 
-SABRINA|C3
+S165|C3
 
-ANDREWS|C3
+A536|C3
 
-ELENA|C3
+E450|C3
 
-CURTIS|C3
+C632|C3
 
-RUBY|C3
+R100|C3
 
-HOPKINS|C3
+H125|C3
 
-SABRINA|C32
+S165|C32
 
-ANDREWS|C32
+A536|C32
 
-ELENA|C32
+E450|C32
 
-CURTIS|C32
+C632|C32
 
-RUBY|C32
+R100|C32
 
-HOPKINS|C32
+H125|C32
 
-TAMIA|C40
+T500|C40
 
-DUNN|C40
+D500|C40
 
-CARINA|C40
+C650|C40
 
-BURNETT|C40
+B653|C40
 
-PRESLEY|C40
+P624|C40
 
-COLON|C40
+C450|C40
 
-TAMIA|C24
+T500|C24
 
-DUNN|C24
+D500|C24
 
-CARINA|C24
+C650|C24
 
-BURNETT|C24
+B653|C24
 
-PRESLEY|C24
+P624|C24
 
-COLON|C24
+C450|C24
 
-JEWEL|C41
+J400|C41
 
-ZIMMERMAN|C41
+Z565|C41
 
-PRINCE|C41
+P652|C41
 
-HOFFMAN|C41
+H155|C41
 
-GAVIN|C41
+G150|C41
 
-BRAY|C41
+B600|C41
 
-JEWEL|C42
+J400|C42
 
-ZIMMERMAN|C42
+Z565|C42
 
-PRINCE|C42
+P652|C42
 
-HOFFMAN|C42
+H155|C42
 
-GAVIN|C42
+G150|C42
 
-BRAY|C42
+B600|C42
 
-SEAMUS|C43
+S520|C43
 
-LOWE|C43
+L000|C43
 
-NOEL|C43
+N400|C43
 
-ATKINSON|C43
+A325|C43
 
-SEAMUS|C44
+S520|C44
 
-LOWE|C44
+L000|C44
 
-NOEL|C44
+N400|C44
 
-ATKINSON|C44
+A325|C44
 
-JOEY|C45
+J000|C45
 
-FLOWERS|C45
+F462|C45
 
-ADALYN|C45
+A345|C45
 
-LE|C45
+L000|C45
 
-CHANA|C45
+C500|C45
 
-YOUNG|C45
+Y520|C45
 
-JOEY|C2
+J000|C2
 
-FLOWERS|C2
+F462|C2
 
-ADALYN|C2
+A345|C2
 
-LE|C2
+L000|C2
 
-CHANA|C2
+C500|C2
 
-YOUNG|C2
+Y520|C2
 
-RAYAN|C43
+R500|C43
 
-GARDNER|C43
+G635|C43
 
-VINCENT|C43
+V525|C43
 
-LARSEN|C43
+L625|C43
 
-NAYELI|C43
+N400|C43
 
-MERCER|C43
+M626|C43
 
-RAYAN|C46
+R500|C46
 
-GARDNER|C46
+G635|C46
 
-VINCENT|C47
+V525|C47
 
-LARSEN|C47
+L625|C47
 
-NAYELI|C46
+N400|C46
 
-MERCER|C46
+M626|C46
 
-ANIYA|C38
+A500|C38
 
-WINTERS|C38
+W536|C38
 
-CARLO|C43
+C640|C43
 
-WILLIAMSON|C43
+W452|C43
 
-KALE|C43
+K400|C43
 
-ARMSTRONG|C43
+A652|C43
 
-ANIYA|C48
+A500|C48
 
-WINTERS|C48
+W536|C48
 
-CARLO|C48
+C640|C48
 
-WILLIAMSON|C48
+W452|C48
 
-KALE|C48
+K400|C48
 
-ARMSTRONG|C48
+A652|C48
 
-JAYVION|C49
+J150|C49
 
-HANSEN|C49
+H525|C49
 
-GERALD|C49
+G643|C49
 
-MARTINEZ|C49
+M635|C49
 
-AVERY|C49
+A160|C49
 
-SAUNDERS|C49
+S536|C49
 
-JAYVION|C3
+J150|C3
 
-HANSEN|C3
+H525|C3
 
-GERALD|C3
+G643|C3
 
-MARTINEZ|C3
+M635|C3
 
-AVERY|C3
+A160|C3
 
-SAUNDERS|C3
+S536|C3
 
-LANE|C50
+L500|C50
 
-BROCK|C50
+B620|C50
 
-DOMINIQUE|C50
+D552|C50
 
-WALTON|C50
+W435|C50
 
-GISELLE|C50
+G240|C50
 
-MCKNIGHT|C50
+M252|C50
 
-LANE|C51
+L500|C51
 
-BROCK|C51
+B620|C51
 
-DOMINIQUE|C51
+D552|C51
 
-WALTON|C51
+W435|C51
 
-GISELLE|C51
+G240|C51
 
-MCKNIGHT|C51
+M252|C51
 
-ISABELA|C52
+I214|C52
 
-BLACKWELL|C52
+B424|C52
 
-NORA|C52
+N600|C52
 
-SCHAEFER|C52
+S160|C52
 
-MALAKAI|C52
+M420|C52
 
-DRAKE|C52
+D620|C52
 
-TIMOTHY|C52
+T530|C52
 
-GONZALEZ|C52
+G524|C52
 
-ABBY|C52
+A100|C52
 
-HOUSE|C52
+H200|C52
 
-ISABELA|C33
+I214|C33
 
-BLACKWELL|C33
+B424|C33
 
-NORA|C33
+N600|C33
 
-SCHAEFER|C33
+S160|C33
 
-MALAKAI|C33
+M420|C33
 
-DRAKE|C33
+D620|C33
 
-TIMOTHY|C53
+T530|C53
 
-GONZALEZ|C53
+G524|C53
 
-ABBY|C33
+A100|C33
 
-HOUSE|C33
+H200|C33
 
-MEGHAN|C2
+M250|C2
 
-ROJAS|C2
+R220|C2
 
-JANAE|C2
+J500|C2
 
-WATTS|C2
+W320|C2
 
-AUGUST|C2
+A223|C2
 
-FERNANDEZ|C2
+F655|C2
 
-MEGHAN|C3
+M250|C3
 
-ROJAS|C3
+R220|C3
 
-JANAE|C3
+J500|C3
 
-WATTS|C3
+W320|C3
 
-AUGUST|C3
+A223|C3
 
-FERNANDEZ|C3
+F655|C3
 
-MARLEE|C4
+M640|C4
 
-KANE|C4
+K500|C4
 
-ASHLYNN|C4
+A245|C4
 
-LOGAN|C4
+L250|C4
 
-MYA|C4
+M000|C4
 
-MELTON|C4
+M435|C4
 
-MARLEE|C3
+M640|C3
 
-KANE|C3
+K500|C3
 
-ASHLYNN|C3
+A245|C3
 
-LOGAN|C3
+L250|C3
 
-MYA|C3
+M000|C3
 
-MELTON|C3
+M435|C3
 
-MARQUISE|C4
+M622|C4
 
-GILES|C4
+G420|C4
 
-CIERRA|C4
+C600|C4
 
-DAVIS|C4
+D120|C4
 
-MIKAELA|C4
+M240|C4
 
-ROMERO|C4
+R560|C4
 
-MARQUISE|C3
+M622|C3
 
-GILES|C3
+G420|C3
 
-CIERRA|C3
+C600|C3
 
-DAVIS|C3
+D120|C3
 
-MIKAELA|C3
+M240|C3
 
-ROMERO|C3
+R560|C3
 
-ARIANNA|C5
+A650|C5
 
-SPENCER|C5
+S152|C5
 
-HADASSAH|C5
+H320|C5
 
-KIM|C5
+K500|C5
 
-LENNON|C5
+L550|C5
 
-RILEY|C5
+R400|C5
 
-ARIANNA|C6
+A650|C6
 
-SPENCER|C6
+S152|C6
 
-HADASSAH|C6
+H320|C6
 
-KIM|C6
+K500|C6
 
-LENNON|C6
+L550|C6
 
-RILEY|C6
+R400|C6
 
-EMILY|C7
+E540|C7
 
-ROSS|C7
+R200|C7
 
-KAYLA|C7
+K400|C7
 
-ARROYO|C7
+A600|C7
 
-JAYDA|C7
+J300|C7
 
-KEMP|C7
+K510|C7
 
-EMILY|C8
+E540|C8
 
-ROSS|C8
+R200|C8
 
-KAYLA|C8
+K400|C8
 
-ARROYO|C8
+A600|C8
 
-JAYDA|C8
+J300|C8
 
-KEMP|C8
+K510|C8
 
-KEIRA|C9
+K600|C9
 
-MCCOY|C9
+M200|C9
 
-OWEN|C9
+O500|C9
 
-BOND|C9
+B530|C9
 
-KALLIE|C9
+K400|C9
 
-OSBORN|C9
+O216|C9
 
-KEIRA|C10
+K600|C10
 
-MCCOY|C10
+M200|C10
 
-OWEN|C10
+O500|C10
 
-BOND|C10
+B530|C10
 
-KALLIE|C10
+K400|C10
 
-OSBORN|C10
+O216|C10
 
-PAISLEY|C3
+P240|C3
 
-WATSON|C3
+W325|C3
 
-JOSEPHINE|C3
+J215|C3
 
-MCINTOSH|C3
+M253|C3
 
-PRISCILLA|C3
+P624|C3
 
-RILEY|C3
+R400|C3
 
-PAISLEY|C3
+P240|C3
 
-WATSON|C3
+W325|C3
 
-JOSEPHINE|C3
+J215|C3
 
-MCINTOSH|C3
+M253|C3
 
-PRISCILLA|C3
+P624|C3
 
-RILEY|C3
+R400|C3
 
-SANTOS|C11
+S532|C11
 
-MERRITT|C11
+M630|C11
 
-ALISSA|C11
+A420|C11
 
-COOK|C11
+C200|C11
 
-DARRELL|C11
+D640|C11
 
-FUENTES|C11
+F532|C11
 
-SANTOS|C12
+S532|C12
 
-MERRITT|C12
+M630|C12
 
-ALISSA|C12
+A420|C12
 
-COOK|C12
+C200|C12
 
-DARRELL|C12
+D640|C12
 
-FUENTES|C12
+F532|C12
 
-PAYTON|C3
+P350|C3
 
-NIELSEN|C3
+N425|C3
 
-GEORGE|C3
+G620|C3
 
-WILLIAMS|C3
+W452|C3
 
-HALLE|C3
+H400|C3
 
-VALDEZ|C3
+V432|C3
 
-PAYTON|C7
+P350|C7
 
-NIELSEN|C7
+N425|C7
 
-GEORGE|C7
+G620|C7
 
-WILLIAMS|C7
+W452|C7
 
-HALLE|C7
+H400|C7
 
-VALDEZ|C7
+V432|C7
 
-DALLAS|C13
+D420|C13
 
-GILES|C13
+G420|C13
 
-JAXON|C13
+J250|C13
 
-PENA|C13
+P500|C13
 
-PAOLA|C13
+P400|C13
 
-SINGLETON|C13
+S524|C13
 
-DALLAS|C3
+D420|C3
 
-GILES|C3
+G420|C3
 
-JAXON|C3
+J250|C3
 
-PENA|C3
+P500|C3
 
-PAOLA|C3
+P400|C3
 
-SINGLETON|C3
+S524|C3
 
-ZAVIER|C14
+Z160|C14
 
-LANDRY|C14
+L536|C14
 
-EVA|C14
+E100|C14
 
-HEBERT|C14
+H163|C14
 
-PEDRO|C15
+P360|C15
 
-PENA|C15
+P500|C15
 
-ZAVIER|C11
+Z160|C11
 
-LANDRY|C11
+L536|C11
 
-EVA|C11
+E100|C11
 
-HEBERT|C11
+H163|C11
 
-PEDRO|C11
+P360|C11
 
-PENA|C11
+P500|C11
 
-ANIYA|C16
+A500|C16
 
-SPENCER|C16
+S152|C16
 
-MEGAN|C16
+M250|C16
 
-LIVINGSTON|C16
+L152|C16
 
-LAURYN|C16
+L650|C16
 
-NOLAN|C16
+N450|C16
 
-ANIYA|C17
+A500|C17
 
-SPENCER|C17
+S152|C17
 
-MEGAN|C3
+M250|C3
 
-LIVINGSTON|C3
+L152|C3
 
-LAURYN|C3
+L650|C3
 
-NOLAN|C3
+N450|C3
 
-MAYA|C18
+M000|C18
 
-LAMBERT|C18
+L516|C18
 
-HALLE|C19
+H400|C19
 
-MARKS|C19
+M620|C19
 
-ALVIN|C20
+A415|C20
 
-DIAZ|C20
+D200|C20
 
-MAYA|C21
+M000|C21
 
-LAMBERT|C21
+L516|C21
 
-HALLE|C21
+H400|C21
 
-MARKS|C21
+M620|C21
 
-ALVIN|C21
+A415|C21
 
-DIAZ|C21
+D200|C21
 
-AILEEN|C23
+A450|C23
 
-BRYAN|C23
+B650|C23
 
-DANIA|C23
+D500|C23
 
-RITTER|C23
+R360|C23
 
-TALAN|C23
+T450|C23
 
-GONZALES|C23
+G524|C23
 
-COHEN|C23
+C500|C23
 
-BARTON|C23
+B635|C23
 
-AILEEN|C9
+A450|C9
 
-BRYAN|C9
+B650|C9
 
-DANIA|C9
+D500|C9
 
-RITTER|C9
+R360|C9
 
-TALAN|C9
+T450|C9
 
-GONZALES|C9
+G524|C9
 
-COHEN|C9
+C500|C9
 
-BARTON|C9
+B635|C9
 
-KENNY|C24
+K500|C24
 
-HOWARD|C24
+H630|C24
 
-MATTHIAS|C24
+M320|C24
 
-MURPHY|C24
+M610|C24
 
-JON|C24
+J500|C24
 
-CASE|C24
+C200|C24
 
-DEJA|C24
+D200|C24
 
-WEBB|C24
+W100|C24
 
-KENNY|C25
+K500|C25
 
-HOWARD|C25
+H630|C25
 
-MATTHIAS|C25
+M320|C25
 
-MURPHY|C25
+M610|C25
 
-JON|C25
+J500|C25
 
-CASE|C25
+C200|C25
 
-DEJA|C25
+D200|C25
 
-WEBB|C25
+W100|C25
 
-LAUREN|C26
+L650|C26
 
-SUAREZ|C26
+S620|C26
 
-AYDAN|C27
+A350|C27
 
-RUBIO|C27
+R100|C27
 
-TREVIN|C28
+T615|C28
 
-MATHEWS|C28
+M320|C28
 
-ALINA|C29
+A450|C29
 
-CANTRELL|C29
+C536|C29
 
-BRADEN|C30
+B635|C30
 
-RANDALL|C30
+R534|C30
 
-LAUREN|C31
+L650|C31
 
-SUAREZ|C31
+S620|C31
 
-AYDAN|C31
+A350|C31
 
-RUBIO|C31
+R100|C31
 
-TREVIN|C31
+T615|C31
 
-MATHEWS|C31
+M320|C31
 
-ALINA|C31
+A450|C31
 
-CANTRELL|C31
+C536|C31
 
-BRADEN|C31
+B635|C31
 
-RANDALL|C31
+R534|C31
 
-CHEYANNE|C14
+C500|C14
 
-ESTES|C14
+E232|C14
 
-CHELSEA|C15
+C420|C15
 
-MIDDLETON|C15
+M343|C15
 
-DAX|C7
+D200|C7
 
-ROWE|C7
+R000|C7
 
-CHEYANNE|C7
+C500|C7
 
-ESTES|C7
+E232|C7
 
-CHELSEA|C7
+C420|C7
 
-MIDDLETON|C7
+M343|C7
 
-DAX|C7
+D200|C7
 
-ROWE|C7
+R000|C7
 
-BLAINE|C32
+B450|C32
 
-FERRELL|C32
+F640|C32
 
-KAYA|C32
+K000|C32
 
-ROWE|C32
+R000|C32
 
-ILIANA|C32
+I450|C32
 
-JOHNSON|C32
+J525|C32
 
-JAYDA|C32
+J300|C32
 
-SOTO|C32
+S300|C32
 
-BLAINE|C33
+B450|C33
 
-FERRELL|C33
+F640|C33
 
-KAYA|C33
+K000|C33
 
-ROWE|C33
+R000|C33
 
-ILIANA|C33
+I450|C33
 
-JOHNSON|C33
+J525|C33
 
-JAYDA|C33
+J300|C33
 
-SOTO|C33
+S300|C33
 
-RONNIE|C34
+R500|C34
 
-AUSTIN|C34
+A235|C34
 
-IZABELLA|C34
+I214|C34
 
-KIDD|C34
+K300|C34
 
-KYLIE|C34
+K400|C34
 
-BROOKS|C34
+B620|C34
 
-RONNIE|C35
+R500|C35
 
-AUSTIN|C35
+A235|C35
 
-IZABELLA|C35
+I214|C35
 
-KIDD|C35
+K300|C35
 
-KYLIE|C35
+K400|C35
 
-BROOKS|C35
+B620|C35
 
 Final Cluster Map.........
-C3,C32
-C37,C7
-C30,C31
-C18,C21
-C37,C38
-C16,C3
-C24,C25
-C11,C13
-C43,C47
-C11,C3
-C14,C7
-C36,C37
-C3,C7
-C20,C21
-C13,C3
-C50,C51
-C29,C31
-C27,C31
-C16,C48
-C16,C38
-C17,C48
-C17,C38
-C24,C40
-C10,C9
-C16,C6
-C43,C48
-C37,C39
-C33,C8
-C34,C35
-C32,C8
-C11,C15
-C23,C9
-C32,C7
-C3,C4
-C7,C8
-C33,C7
-C43,C44
-C33,C52
-C38,C8
-C3,C49
-C19,C21
-C2,C45
-C13,C4
-C19,C3
-C26,C31
-C11,C12
-C41,C42
-C5,C6
-C16,C17
-C2,C3
-C3,C6
-C16,C5
-C11,C14
-C3,C5
-C52,C53
-C19,C7
-C21,C3
-C17,C6
+C27,C32
 C1,C22
-C15,C3
-C13,C15
-C28,C31
+C7,C9
+C43,C48
+C23,C45
+C2,C7
+C24,C7
+C48,C8
+C23,C40
+C10,C9
+C31,C9
+C16,C3
+C21,C3
+C24,C25
+C41,C42
+C35,C7
+C2,C25
+C2,C24
+C14,C23
+C43,C45
+C43,C8
+C34,C43
+C3,C43
+C3,C6
 C32,C33
-C38,C7
-C21,C7
+C33,C34
+C31,C32
+C10,C35
+C34,C48
+C12,C24
+C3,C48
+C44,C45
+C35,C52
+C14,C7
+C50,C51
+C38,C43
+C17,C48
+C35,C38
+C10,C37
+C29,C9
+C23,C31
 C37,C8
-C17,C5
+C21,C7
+C3,C49
 C38,C48
-C15,C7
+C43,C44
+C35,C50
+C43,C47
+C2,C23
+C21,C25
+C21,C24
+C3,C4
+C3,C5
+C40,C9
+C25,C28
+C3,C40
+C25,C6
+C17,C5
+C8,C9
+C38,C8
+C11,C12
+C35,C51
+C10,C7
+C26,C3
 C43,C46
+C23,C30
+C19,C3
+C23,C53
+C33,C35
+C34,C9
+C36,C9
+C24,C28
+C37,C43
+C44,C46
+C11,C13
+C24,C6
+C30,C9
+C20,C7
+C3,C31
+C10,C38
+C10,C36
+C30,C31
+C16,C17
+C37,C48
+C25,C4
+C25,C5
+C34,C46
+C20,C24
+C17,C6
+C13,C4
+C19,C7
+C11,C3
+C12,C25
+C23,C9
+C36,C37
+C2,C45
+C48,C9
+C27,C31
+C33,C7
+C18,C4
+C24,C4
+C24,C5
+C43,C9
+C24,C40
+C35,C8
+C25,C31
+C32,C7
+C45,C9
+C15,C3
+C16,C48
+C34,C7
+C33,C52
+C53,C9
+C11,C24
+C23,C29
+C20,C21
+C2,C44
+C37,C9
+C14,C45
+C25,C3
+C24,C31
+C2,C43
+C11,C15
+C19,C21
+C21,C4
+C28,C31
+C16,C5
+C15,C7
+C34,C38
+C23,C7
+C7,C8
+C3,C32
+C34,C35
+C48,C7
+C20,C25
+C17,C38
+C35,C43
+C38,C9
+C34,C50
+C23,C24
+C35,C46
+C10,C8
+C43,C7
+C34,C37
+C35,C48
+C23,C52
+C52,C53
+C45,C7
+C34,C51
+C16,C31
+C4,C5
+C16,C6
+C37,C7
+C5,C6
+C27,C3
+C3,C7
+C11,C25
+C13,C15
+C52,C9
+C2,C9
+C24,C9
+C37,C39
+C10,C43
+C37,C38
+C14,C2
+C38,C7
+C34,C52
+C13,C3
+C33,C8
+C16,C2
+C4,C6
+C35,C9
+C10,C48
+C11,C14
+C32,C8
+C29,C31
+C18,C3
+C26,C31
+C2,C3
+C10,C34
+C24,C3
+C34,C8
+C25,C7
+C14,C9
+C18,C21
+C35,C37
+C16,C26
+C16,C38
 TRAVERSING.................
 LINK -1 ID  | LINK -2 ID
-i1		j1
-i2		j2
-i3		j3
+o1		ba4
+o2		ba1
 ---- New Record- ------
-aj2		bj2
-aj3		bj4
+o3		m1
 ---- New Record- ------
-bj1		bi1
-bj3		bi3
 ---- New Record- ------
-b1		a1
-b2		a2
-b3		a3
 ---- New Record- ------
-t2		s2
-t3		s3
+t1		bk1
+t3		bk3
 ---- New Record- ------
-o1		p1
-o2		p2
-o3		p3
+t2		v2
 ---- New Record- ------
-ap1		ao1
-ap2		ao2
-ap3		ao3
 ---- New Record- ------
-ac1		ad1
-ac2		ad2
-ac3		ad3
-ae1		af1
-ae2		af2
-ae3		af3
 ---- New Record- ------
-l1		k1
-l2		k2
-l3		k3
+---- New Record- ------
+---- New Record- ------
+---- New Record- ------
+h1		bf1
+h2		bf4
+---- New Record- ------
+ac1		bd2
+ac3		bd1
+ae1		bd3
+---- New Record- ------
+ac2		as2
+---- New Record- ------
+ae2		j2
+---- New Record- ------
+---- New Record- ------
+ai2		bj2
+ai3		bj4
+ar2		z1
+ar3		bj1
+bg3		z5
+bh1		z3
+---- New Record- ------
+ar1		au3
 ---- New Record- ------
 x1		w1
 x2		w2
 x3		w3
 ---- New Record- ------
+au1		av1
+bg1		ao1
+---- New Record- ------
+bd4		ap3
+---- New Record- ------
 d1		c1
-d2		c2
 d3		c3
 ---- New Record- ------
-ax2		aw2
-ax3		aw3
+ak1		i2
+ak2		i1
 ---- New Record- ------
-bl1		bk1
-bl2		bk2
-bl3		bk3
+bb2		aj1
 ---- New Record- ------
-ak1		al1
-ak2		al2
-ak3		al3
+ak3		y1
+bb1		y5
+---- New Record- ------
+l1		k1
+l2		k2
+l3		k3
+---- New Record- ------
+r1		n1
+r3		n2
 ---- New Record- ------
 ah1		ag1
 ah2		ag2
 ah3		ag3
+---- New Record- ------
+b1		a1
+b2		a2
+b3		a3
 ---- New Record- ------

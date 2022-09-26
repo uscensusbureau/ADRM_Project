@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from pyvis.network import Network
 import re
 import TEST_FUZZY_MATCH_MERGE as ts
-
+import jellyfish as sd
 from tqdm import tqdm
 import ER_Metrics_2
 from fuzzywuzzy import fuzz
@@ -115,7 +115,7 @@ with open("Output_File.txt","w") as out:
     for element in NameListFinal:
         file_n.write(element[0]+"|"+element[1])
         file_n.write("\n")
-        ID_Name[element[0]]=element[1]
+        ID_Name[element[0]]=sd.soundex(element[1])
         out.write(element[0]+"|"+element[1])
         out.write("\n")
     file_n.close()
@@ -155,7 +155,7 @@ with open("Output_File.txt","w") as out:
         Clusters_Dict[j]="C"+str(i)
         i+=1
     t=1
-    file_a_w = open("SOG Clean Occupancy Data.txt", "w")
+    file_a_w = open("SOG Clean Occupancy Data1.txt", "w")
     i=0
     for k in Clusters_With_ID:
         Clusters_With_ID[i][1]=Clusters_Dict[Clusters_With_ID[i][1]]
@@ -192,8 +192,6 @@ with open("Output_File.txt","w") as out:
                 break
             n+=1
     file_n_w.close()
-    
-    
     file_n_r = open("FileNM.txt", "r")
     LinesRead=file_n_r.readlines()
     file_n_r.close()
@@ -203,8 +201,8 @@ with open("Output_File.txt","w") as out:
         splitData=k.split("|")
         splitName=splitData[1].split(" ")
         for o in splitName:
-            file_n_w.write(o+"|"+splitData[2])
-            out.write(o+"|"+splitData[2])
+            file_n_w.write(sd.soundex(o)+"|"+splitData[2])
+            out.write(sd.soundex(o)+"|"+splitData[2])
             out.write("\n")
     file_n_w.close()
     
@@ -267,7 +265,7 @@ with open("Output_File.txt","w") as out:
     
     open_Cluster.close()
     rangeo=set(ListFrom+ListTo)
-    Map_File=open("SOG Clean Occupancy Data.txt","r")
+    Map_File=open("SOG Clean Occupancy Data1.txt","r")
     Map=Map_File.readlines()
     node_color=[]
     for k in range(len(rangeo)):
@@ -361,8 +359,8 @@ with open("Output_File.txt","w") as out:
                     df_right,
                     'col_a',
                     'col_a',
-                    threshold=60,
-                    limit=1
+                    threshold=50,
+                    limit=10
                 )
 
                 df_output = df_left.merge(
@@ -399,11 +397,11 @@ with open("Output_File.txt","w") as out:
                         LinkedNodes.append(row['col_b_df2'])
                     out.write("---- New Record- ------")
                     out.write("\n")
-                    break
+                    
     g.show_buttons()
     g.show('Graph.html')        
 print(FinalLink)
-ER_Metrics_2.generateMetrics(0, FinalLink,"test_data.txt")
+ER_Metrics_2.generateMetrics(204, FinalLink,"test_data.txt")
 # import pyTigerGraph as tg 
 
 

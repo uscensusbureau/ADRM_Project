@@ -115,10 +115,10 @@ mu=0.5
 # muIterate must be decimal value between 0.0 and 1.0
 # value added to mu at the end of each iteration
 # Default value 0.10
-muIterate=0.10
+muIterate=0.20
 # comparator must be the name of a valid comparator
 # 'Cosine','MongeElkan','ScoringMatrixStd', 'ScoringMatrixKris'
-# Default value ScoringMatrixKris
+# Default value ScoringMatrixStd
 comparator=ScoringMatrixKris
 # matrixNumTokenRule must be True of False
 # If True, requires exact match between two numeric tokens
