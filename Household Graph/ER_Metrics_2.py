@@ -23,6 +23,7 @@ def generateMetrics(N, linkIndex, truthFileName):
     print('Truth File Name = ', truthFileName)
     erDict = {}
     for pair in linkIndex:
+        p
         clusterID = pair[0]
         if clusterID != 'X':
             refID = pair[1]
