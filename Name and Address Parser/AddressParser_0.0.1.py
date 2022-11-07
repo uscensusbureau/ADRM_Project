@@ -2,6 +2,7 @@ import re
 from tqdm import tqdm
 import pandas as pd
 import json 
+import collections 
 #Parsing 1st program
 Address_4CAF50=open("AddressListRev.txt","r")
 Lines = Address_4CAF50.readlines()
@@ -19,6 +20,7 @@ JsonData={}
 AllAddress_Key_Value_As_MASK_Comp={}
 Observation=0
 Total=0
+Truth_Result={}
 dataFinal={}
 with open('ConvertedJSONAddressesOutput.json', 'r+', encoding='utf-8') as M:
     dataFinal= json.load(M)
@@ -30,8 +32,8 @@ with open('ConvertedJSONAddressesOutput.json', 'r+', encoding='utf-8') as M:
         Old_Address=line.strip()
         USAD_Conversion_Dict={"1":"USAD_SNO","2":"USAD_SPR","3":"USAD_SNM","4":"USAD_SFX","5":"USAD_SPT","6":"USAD_ANM","7":"USAD_ANO","8":"USAD_CTY","9":"USAD_STA","10":"USAD_ZIP","11":"USAD_ZP4","12":"USAD_BNM","13":"USAD_BNO","14":"USAD_RNM"}
         
-        USAD_Conversion_Dict_Detail={"1":"USAD_SNO Street Number","2":"USAD_SPR Street Pre-directional","3":"USAD_SNM Street Name","4":"USAD_SFX Street Suffix","5":"USAD_SPT Street Post-directional","6":"USAD_ANM Secondary Address Name","7":"USAD_ANO Secondary Address Number","8":"USAD_CTY City Name","9":"USAD_STA State Name","10":"USAD_ZIP Zip Code","11":"USAD_ZP4 Zip 4 Code","12":"USAD_BNM Box Name","13":"USAD_BNO Box Number","14":"USAD_RNM Route Name"}
-    
+        USAD_Conversion_Dict_Detail={"1":"USAD_SNO Street Number","2":"USAD_SPR Street Pre-directional","3":"USAD_SNM Street Name","4":"USAD_SFX Street Suffix","5":"USAD_SPT Street Post-directional","6":"USAD_ANM Secondary Address Name","7":"USAD_ANO Secondary Address Number","8":"USAD_CTY City Name","9":"USAD_STA State Name","10":"USAD_ZIP Zip Code","11":"USAD_ZP4 Zip 4 Code","12":". Box Name","13":"USAD_BNO Box Number","14":"USAD_RNM Route Name"}
+
         
         List=USAD_Conversion_Dict.keys()
         FirstPhaseList=[]
@@ -90,7 +92,7 @@ with open('ConvertedJSONAddressesOutput.json', 'r+', encoding='utf-8') as M:
         FirstPhase_WithComma=FirstPhaseList
         FirstPhaseList = [FirstPhaseList[b] for b in range(len(FirstPhaseList)) if FirstPhaseList[b] != ","]
         data={}
-        with open('JSONMappingDefault.json', 'r+', encoding='utf-8') as f:
+        with open('JSONMAPPING-DummyFile.json', 'r+', encoding='utf-8') as f:
             data = json.load(f)
         Found=False
         FoundDict={}
@@ -108,6 +110,7 @@ with open('ConvertedJSONAddressesOutput.json', 'r+', encoding='utf-8') as M:
             Observation+=1
             AllAddress_Key_Value_As_MASK_Comp={}
             Mappings={}
+            Truth_Result[ID]=FoundDict[Mask_1]
             for K2,V2 in FoundDict[Mask_1].items():
                 Temp=""
                 for p in V2:
@@ -116,7 +119,9 @@ with open('ConvertedJSONAddressesOutput.json', 'r+', encoding='utf-8') as M:
                        Temp=Temp.strip()
                        Mappings[K2]=Temp
             try:
+                
                 if dataFinal[Mask_1][ID]:
+                    
                     continue
             except:
                 a=0
@@ -125,20 +130,20 @@ with open('ConvertedJSONAddressesOutput.json', 'r+', encoding='utf-8') as M:
             except:
                 dataFinal[Mask_1]={}
                 dataFinal[Mask_1][ID]=Mappings
-            with open('JSONMappingDefault.json', 'r+', encoding='utf-8') as f:
+            with open('JSONMAPPING-DummyFile.json', 'r+', encoding='utf-8') as f:
                 data = json.load(f)
                 Count_Of_Masks=len(data)+1
-                with open('Statistics.json', 'r+', encoding='utf-8') as g:
-                    Stat = json.load(g)
-                    Stat["Total_Mask_Count"]=Count_Of_Masks
-                    try:
-                        temp=Stat["Masks_Count"][Mask_1]
-                        Stat["Masks_Count"][Mask_1]=temp+1
-                    except:
-                        Stat["Masks_Count"][Mask_1]=1
-                    g.seek(0)
-                    json.dump(Stat,g,indent=4)
-                    g.truncate
+                # with open('Statistics.json', 'r+', encoding='utf-8') as g:
+                #     Stat = json.load(g)
+                #     Stat["Total_Mask_Count"]=Count_Of_Masks
+                #     try:
+                #         temp=Stat["Masks_Count"][Mask_1]
+                #         Stat["Masks_Count"][Mask_1]=temp+1
+                #     except:
+                #         Stat["Masks_Count"][Mask_1]=1
+                #     g.seek(0)
+                #     json.dump(Stat,g,indent=4)
+                #     g.truncate
             
             
         elif not FoundExcept:  
@@ -152,7 +157,25 @@ with open('ConvertedJSONAddressesOutput.json', 'r+', encoding='utf-8') as M:
     M.seek(0)
     json.dump(dataFinal, M,indent=4)
     M.truncate()
-    
+print("\n")
+with open('AddressTruthFile.txt', 'r+', encoding='utf-8') as g:
+    Stat = json.load(g)
+    Count_of_Correct=0
+    Total_Count=0
+    for key,value in Truth_Result.items():
+        Total_Count=len(Truth_Result)
+        if key in Stat.keys():
+            Count1=0
+            Count_total=0
+            for k1,v1 in value.items():
+                Count_total+=len(Stat[key])
+                for k2,v2 in Stat[key].items():
+                    if collections.Counter(value[k1]) == collections.Counter(Stat[key][k2]) and k1==k2:
+                        Count1+=len(Stat[key]) 
+            print("ID:",key, "Percentage of Correctness",round((Count1/Count_total)*100,2),"%")
+            if (round((Count1/Count_total)*100))>99:
+                     Count_of_Correct+=1
+print("Final Correct Address Parsing Percentage",Count_of_Correct/Total_Count*100)
 print("Address Matching Report")
 print("Total=",Count)
 print("Matched Addresses=",Observation)

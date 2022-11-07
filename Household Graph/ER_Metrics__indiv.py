@@ -1,16 +1,23 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# In[1]:
 
 
+import sys
+import time
+import datetime
+from csv import reader
 import DWM10_Parms
+import DWM100_ReportData
 
 def generateMetrics(linkIndex):
+    logFile = open("LOGFile.txt","w")
     print('\n>>Starting DWM99')
-    print('>>Starting DWM99')
-    truthFileName =  "test_data.txt"
+    print('>>Starting DWM99', file=logFile)
+    truthFileName = "test_data.txt"
     print('Truth File Name=', truthFileName)
-    print('Truth File Name=', truthFileName)    
+    print('Truth File Name=', truthFileName, file=logFile)    
     def countPairs(dict):
         totalPairs = 0
         for cnt in dict.values():
@@ -39,7 +46,6 @@ def generateMetrics(linkIndex):
     truePos = {}
     clusterIndex = []
     for pair in erDict.values():
-        print(pair)
         clusterID = pair[0]
         truthID = pair[1]
         if pair in truePos:
@@ -68,8 +74,6 @@ def generateMetrics(linkIndex):
     TP = countPairs(truePos)
     FP = float(L-TP)
     FN = float(E-TP)
-    print(TP)
-    print("kjkjk  jhj")
     if L > 0:
         precision = round(TP/float(L),4)
     else:
@@ -81,21 +85,40 @@ def generateMetrics(linkIndex):
   
     fmeas = round((2*precision*recall)/(precision+recall),4)
       
-    
+    # for report process
+    DWM10_Parms.precision = precision
+    DWM10_Parms.recall = recall
+    DWM10_Parms.fmeasure = fmeas
+    DWM10_Parms.truePairs = TP
+    DWM10_Parms.expectedPairs = E
+    DWM10_Parms.linkedPairs = L
+    print('TP =',TP)
+    N=204
+    TN = abs(float((N * (N - 1)) / 2) - (TP + FP + FN))  # Pairs that were not linked and should not have been
+
+    print('TN =',TN)
+    print('FP =',FP)
+    print('FN =',FN)
+    FPR = round((FP / (FP + TN)), 4)
+    TPR = round((TP / (TP + FN)), 4)
+    TNR = round((1 - FPR), 4)
+    accuracy = round(((TP + TN) / (TP + TN + FP + FN)), 4)
+    balanced_accuracy = round(((TPR + TNR) / 2), 4)
+
     print('True Pairs =',TP)
+    print('True Pairs =',TP, file=logFile)
     print('Expected Pairs =',E)
+    print('Expected Pairs =',E, file=logFile)
     print('Linked Pairs =',L)
+    print('Linked Pairs =',L, file=logFile)
     print('Precision=',precision)
+    print('Precision=',precision, file=logFile)
+    print("Accuracy =",accuracy)
+    print("Balanced Accuracy =",balanced_accuracy )
     print('Recall=', recall)
+    print('Recall=', recall, file=logFile)
     print('F-measure=', fmeas)
+    print('F-measure=', fmeas, file=logFile)
     
     return
-
-
-
-
-
-
-
-
 

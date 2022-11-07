@@ -1,0 +1,2 @@
+Data Washing Machine Refactor Version 1.8
+Data/Time 20221028_14_30

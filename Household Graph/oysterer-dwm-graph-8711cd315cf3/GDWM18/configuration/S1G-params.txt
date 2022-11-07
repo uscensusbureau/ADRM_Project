@@ -3,7 +3,6 @@ delimiter=,
 hasHeader=True
 tokenizerType=Splitter
 removeDuplicateTokens=False
-runReplacement=False
 minFreqStdToken=5
 minLenStdToken=3
 maxFreqErrToken=3

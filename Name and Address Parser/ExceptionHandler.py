@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding utf-8 -*-
 """
 Created on Sat Mar  5 05:51:15 2022
 
@@ -55,6 +55,7 @@ with open('ExceptionFile.json','r+') as d:
             USAD_Mapping[USAD_Conversion_Dict[temp]].append(MaskI)
             MaskI+=1
         dict={k: v for k, v in USAD_Mapping.items() if v}
+        print(dict)
         dictData={}
         dictData[Key]=dict
         Count_Of_Masks=0
@@ -63,18 +64,18 @@ with open('ExceptionFile.json','r+') as d:
         with open('JSONMappingDefault.json', 'r+', encoding='utf-8') as f:
             data = json.load(f)
             Count_Of_Masks=len(data)+1
-            with open('Statistics.json', 'r+', encoding='utf-8') as g:
-                Stat = json.load(g)
-                Stat["Total_Mask_Count"]=Count_Of_Masks
-                try:
-                    temp=Stat["Masks_Count"][Key]
-                    print(temp)
-                    Stat["Masks_Count"][Key]=temp+1
-                except:
-                    Stat["Masks_Count"][Key]=1
-                g.seek(0)
-                json.dump(Stat,g,indent=4)
-                g.truncate
+            # with open('Statistics.json', 'r+', encoding='utf-8') as g:
+            #     Stat = json.load(g)
+            #     Stat["Total_Mask_Count"]=Count_Of_Masks
+            #     try:
+            #         temp=Stat["Masks_Count"][Key]
+            #         print(temp)
+            #         Stat["Masks_Count"][Key]=temp+1
+            #     except:
+            #         Stat["Masks_Count"][Key]=1
+            #     g.seek(0)
+            #     json.dump(Stat,g,indent=4)
+            #     g.truncate
             data[Key] =dict # <--- add `id` value.
             f.seek(0)        # <--- should reset file position to the beginning.
             json.dump(data, f)

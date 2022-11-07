@@ -1,5 +1,5 @@
 {
-    "Total_Mask_Count": 1805,
+    "Total_Mask_Count": 1,
     "Masks_Count": {
         "NWFFSW,WW,T,N": 166,
         "NDWF,WW,T,N": 416,
@@ -51,7 +51,7 @@
         "NTF,WW,T,N": 41,
         "NWF,DW,T,N": 6,
         "NFF,WW,T,N": 41,
-        "NWFD,W,T,N": 6,
+        "NWFD,W,T,N": 7,
         "NWRF,WW,T,N": 31,
         "NTWF,WF,T,N": 6,
         "NFF,RW,T,N": 11,
@@ -121,7 +121,7 @@
         "NDNF,SN,W,TN": 696,
         "NWF,SN,W,TN": 2586,
         "NWFF,WW,TN": 660,
-        "NWF,WW,TN": 7092,
+        "NWF,WW,TN": 7093,
         "NDWF,W,TN": 3901,
         "NRF,W,TN": 7,
         "NNFD,WW,TN": 209,
@@ -1839,6 +1839,10 @@
         "WWW": 2,
         "WWJ": 1,
         "WWWP": 1,
-        "WW": 10
+        "WW": 10,
+        "NWF,SN": 4,
+        "NDDFW,TN": 3,
+        "NWFW,TN": 3
     }
+}
 }

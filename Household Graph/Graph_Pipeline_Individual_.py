@@ -10,13 +10,18 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from pyvis.network import Network
 import re
+import ER_Metrics_22 as ER
+import functools
+import ER_Metrics__indiv as ERR
+import numpy as np
 import TEST_FUZZY_MATCH_MERGE as ts
 import jellyfish as sd
+import numpy_indexed as npi
 from tqdm import tqdm
 import ER_Metrics_2
 from fuzzywuzzy import fuzz
 #DWM.DWM_Cluster("S2-parms.txt")
-
+from sklearn.metrics import PrecisionRecallDisplay
 #Parsing 1st program
 Address_4CAF50=open("SOG Clean Occupancy Data.txt","r")
 Lines = Address_4CAF50.readlines()
@@ -28,6 +33,14 @@ FinalLink={}
 fileHandle = open('USAddressWordTable.txt', 'r')
 NamefileHandle = open('NamesWordTableOpt.txt', 'r')
 SplitWordTable = open('SplitWordTable.txt', 'r')
+
+def unique(a):
+    order = np.lexsort(a.T)
+    a = a[order]
+    diff = np.diff(a, axis=0)
+    ui = np.ones(len(a), 'bool')
+    ui[1:] = (diff != 0).any(axis=1) 
+    return a[ui]
 with open("Output_File.txt","w") as out:
     out.write("------------------ Output -----------------------")
     out.write("\n")
@@ -101,9 +114,11 @@ with open("Output_File.txt","w") as out:
         RevisedAddressList = AddressList[indexSplit:len(AddressList)]
      
         NameList = AddressList[0:indexSplit]
-        print(NameList)
-        if NameList[len(NameList)-1]==",":
-            NameList.pop(len(NameList)-1)
+        try:
+            if NameList[len(NameList)-1]==",":
+                NameList.pop(len(NameList)-1)
+        except:
+            continue
        
         NameListFinal.append([ID,' '.join(NameList)])
         AddressListFinal.append([ID,' '.join(RevisedAddressList)])
@@ -112,10 +127,14 @@ with open("Output_File.txt","w") as out:
     out.write("Name Splitting")
     out.write("\n")
     ID_Name={}
-    for element in NameListFinal:
+    Dict_of_Name={}
+    print("Name List Final")
+
+    for element in tqdm(NameListFinal):
+        Dict_of_Name[element[0]]=element[1]
         file_n.write(element[0]+"|"+element[1])
         file_n.write("\n")
-        ID_Name[element[0]]=sd.soundex(element[1])
+        ID_Name[element[0]]=element[1]
         out.write(element[0]+"|"+element[1])
         out.write("\n")
     file_n.close()
@@ -123,12 +142,16 @@ with open("Output_File.txt","w") as out:
     file_a = open("FileA.txt", "w")
     out.write("Address Splitting")
     out.write("\n")
-    for element in AddressListFinal:
+    Dict_of_Address={}
+    for element in tqdm(AddressListFinal):
+        Dict_of_Address[element[0]]=element[1]
+
         file_a.write(element[0]+"|"+element[1])
         file_a.write("\n")
         out.write(element[0]+"|"+element[1])
         out.write("\n")
     file_a.close()
+    
     DWM.DWM_Cluster("File_A_Parms.txt")
     
     file_Address=open("FileA-LinkIndex.txt","r")
@@ -141,81 +164,68 @@ with open("Output_File.txt","w") as out:
     LinesRead=file_n_r.readlines()
     Clusters_With_ID=[]
     Clusters=set()
-    for i in Address_Cluster:
+    print("Address List Final Dhee")
+    j=0
+    for i in tqdm(Address_Cluster):
         find_Address=i.split(",")
+        
         Clusters_With_ID.append([find_Address[0].strip(),find_Address[1].strip()])
-        if find_Address[1].strip()!="ClusterID":
-            Clusters.add(find_Address[1].strip())
+        
+        
     del Clusters_With_ID [0]
-    Clusters_Dict={}
-    i=1
-    Clusters=list(Clusters)
-    Clusters.sort(reverse=False)
-    for j in Clusters:
-        Clusters_Dict[j]="C"+str(i)
-        i+=1
-    t=1
-    file_a_w = open("SOG Clean Occupancy Data1.txt", "w")
-    i=0
-    for k in Clusters_With_ID:
-        Clusters_With_ID[i][1]=Clusters_Dict[Clusters_With_ID[i][1]]
-        i+=1
+    Clusters_With_ID=np.array(Clusters_With_ID)
+    # Clusters_Dict={}
+    # i=1
+    # Clusters=list(Clusters)
+    # Clusters.sort(reverse=False)
+    # for j in Clusters:
+    #     Clusters_Dict[j]="C"+str(i)
+    #     i+=1
+
+    # for k in Clusters_With_ID:
+    #     Clusters_With_ID[i][1]=Clusters_Dict[Clusters_With_ID[i][1]]
+    #     i+=1
     out.write("Clusters Formation using Data Washing Machine")
     out.write("\n")
-    for k in file_a_r:
-        splitData=k.split("|")
-        n=0
-        for l in Clusters_With_ID:
-            if splitData[0]==Clusters_With_ID[n][0]:
-                file_a_w.write(k.strip()+"|"+Clusters_With_ID[n][1])
-                out.write(k.strip()+"|"+Clusters_With_ID[n][1])
+    with open("SOG Clean Occupancy Data1.txt", "w") as file_n_w:
+        for cl in tqdm(Clusters_With_ID):
+            if cl[0] in Dict_of_Address.keys():
+                file_n_w.write(cl[0]+"|"+Dict_of_Address[cl[0]]+"|"+cl[1])
                 out.write("\n")
-                file_a_w.write("\n")
-                break
-            n+=1
-    file_n_r.close()  
-    file_a_w.close() 
-    file_n_w = open("FileNM.txt", "w")
+                file_n_w.write("\n")
+
     out.write("Appending the same clusters to the Names File")
     out.write("\n\n")
     out.write("\n")
-    for k in LinesRead:
-        splitData=k.split("|")
-        n=0
-        for l in Clusters_With_ID:
-            if splitData[0]==Clusters_With_ID[n][0]:
-                file_n_w.write(k.strip()+"|"+Clusters_With_ID[n][1])
-                file_n_w.write("\n")
-                
-                out.write(k.strip()+"|"+Clusters_With_ID[n][1])
-                out.write("\n")
-                break
-            n+=1
-    file_n_w.close()
+    
+
+    # for k,v in tqdm(Dict_of_Name.items()):
+    #     n=0
+    #     if k==Clusters_With_ID[n][0]:
+    #         print(k.strip()+"|"+Clusters_With_ID[n][1])
+    #         file_n_w.write(k.strip()+"|"+Clusters_With_ID[n][1])
+    #         file_n_w.write("\n")
+            
+    #     n+=1
+    with open("FileNM.txt", "w") as file_n_w:
+        for cl in tqdm(Clusters_With_ID):
+            if cl[0] in Dict_of_Name.keys():
+                splitData=Dict_of_Name[cl[0]].split(" ")
+                for o in splitData:
+                    file_n_w.write(sd.soundex(o)+"|"+cl[1])
+                    out.write(o+"|"+cl[1])
+                    out.write("\n")
+                    file_n_w.write("\n")
     file_n_r = open("FileNM.txt", "r")
+
+    print("Completed Soundex")
     LinesRead=file_n_r.readlines()
-    file_n_r.close()
-    out.write("Splitting.......\n\n")
-    file_n_w = open("FileNM.txt", "w")
-    for k in LinesRead:
-        splitData=k.split("|")
-        splitName=splitData[1].split(" ")
-        for o in splitName:
-            file_n_w.write(sd.soundex(o)+"|"+splitData[2])
-            out.write(sd.soundex(o)+"|"+splitData[2])
-            out.write("\n")
-    file_n_w.close()
-    
-    with open('FileNM.txt') as fl:
-        content = fl.read().split('\n')
-    content = set([line for line in content if line != ''])
-    content = '\n'.join(content)
-    with open('FileNM.txt', 'w') as fl:
-        fl.writelines(content)
-    
+
+      
     combining_centers=open("FileNM.txt","r")
     LinesRead=combining_centers.readlines()
     Final_Cluster=[]
+    Final_Cr=np.array([0,0])
     file_n_w = open("FileNM.txt", "w")
     for j in LinesRead:
         SplitW=j.split("|")
@@ -223,60 +233,44 @@ with open("Output_File.txt","w") as out:
             SplitC=p.split("|")
             if SplitW[0]==SplitC[0] and SplitW[1].strip()!=SplitC[1].strip():
                 Final_Cluster.append((SplitW[1].strip(),SplitC[1].strip()))
-                        
-    outt=list(set(map(tuple,map(sorted,Final_Cluster))))
+                new=[SplitW[1].strip(),SplitC[1].strip()]
+                Final_Cr = np.vstack([Final_Cr,new])
+                break
+    Final_Cr = np.delete(Final_Cr,(0), axis=0)     
+    Final_C=np.array(Final_Cr)
+    outt = np.vstack(list(set(map(tuple,map(sorted,Final_C)))))
+    print("Pairs Completed")        
+
     Cluster_to_Cluster=[]
     out.write("Final Cluster Map.........")
     out.write("\n")
+    edge_color=[]
+    g=Network(height='100%', width='100%')
+    NodesCluster=set()
+    print("Cluster-1.1")
     with open("FileNM.txt","w") as O:
-        for k in outt:
+        for k in tqdm(outt):
             O.writelines(k[0]+","+k[1])
             O.writelines("\n")
+            edge_color.append(10)
+            g.add_node(k[0],color='blue',title=k[0],label=k[0],shape="triangle")
+            g.add_node(k[1],color='blue',title=k[1],label=k[1],shape="triangle")
             out.write(k[0]+","+k[1])
             out.write("\n")
+            g.add_edge(k[0],k[1],color='black',width=2,arrowStrikethrough=False)
+            NodesCluster.add(k[0])
+            NodesCluster.add(k[1])
             Cluster_to_Cluster.append([k[0],k[1]])
-        
-    g=Network(height='100%', width='100%',directed=True)
-            
-    open_Cluster=open("FileNM.txt","r")
-    listcluster=open_Cluster.readlines()
-    ListFrom=[]
-    ListTo=[]
-    edge_color=[]
-    
-    NodesCluster=set()
-    for m in listcluster:
-        SplitX=m.split(",")
-        NodesCluster.add(SplitX[0].strip())
-        NodesCluster.add(SplitX[1].strip())
-        
-    for i in NodesCluster:
-        g.add_node(i,color='blue',title=i,label=i)
-    NodesCluster.clear()
-    for m in listcluster:
-        SplitX=m.split(",")
-        ListFrom.append(SplitX[0].strip())
-        ListTo.append(SplitX[1].strip())
-        edge_color.append(10)
-        g.add_edge(SplitX[0].strip(),SplitX[1].strip(),color='black',width=2,arrowStrikethrough=True)
-        NodesCluster.add(SplitX[0].strip())
-        NodesCluster.add(SplitX[1].strip())
-    
-    
-    open_Cluster.close()
-    rangeo=set(ListFrom+ListTo)
+    # open_Cluster.close()
     Map_File=open("SOG Clean Occupancy Data1.txt","r")
     Map=Map_File.readlines()
     node_color=[]
-    for k in range(len(rangeo)):
-        node_color.append("#00ff00")
     Cluster_to_Nodes=[]
     for k in Map:
         SplitX=k.split("|")
         #(SplitX[2])
-        ListFrom.append(SplitX[2].strip())
-        ListTo.append(SplitX[0].strip())
-        g.add_node(SplitX[0].strip(),color='yellow',title=SplitX[0].strip(),label=SplitX[1].strip(),shape="ellipse")
+     
+        g.add_node(SplitX[0].strip(),color='yellow',title=SplitX[1].strip(),label=SplitX[0].strip(),shape="rectangle")
         try:
             g.add_edge(SplitX[2].strip(),SplitX[0].strip(),color='red',width=2)
         except:
@@ -287,14 +281,13 @@ with open("Output_File.txt","w") as out:
         node_color.append("#4CAF50")
         Cluster_to_Nodes.append([SplitX[0].strip(),SplitX[2].strip(),SplitX[1].strip()])
     Map_File.close()
-    df = pd.DataFrame({ 'from':ListFrom, 'to':ListTo, 'value':edge_color})
      # C1,C2
      # C2,C3
      # C4,C5
      # C1,C3
     # Build your graph
     Cluster_Dictionary={}
-    for m in NodesCluster:
+    for m in tqdm(NodesCluster):
         for j in Cluster_to_Nodes:
             if j[1]==m:
                 try:
@@ -304,7 +297,7 @@ with open("Output_File.txt","w") as out:
                         Cluster_Dictionary[m]=temp
                 except:
                     Cluster_Dictionary[m]=[j[0]] 
-            
+    
     Pattern_Clusters={}
     list_of_key=[]
     for key,value in Cluster_Dictionary.items():
@@ -328,14 +321,15 @@ with open("Output_File.txt","w") as out:
                     list_of_key.append(temp)
                     temp=set()
                     continue
-                
-                    
             Pattern_Clusters[key]=Array_of_Path
     Visited=[]    
     out.write("TRAVERSING.................\n")
     out.write("LINK -1 ID  | LINK -2 ID\n")
     LinkedNodes=[]
-    for key, val in Pattern_Clusters.items():
+    Map_File=open("SOG Clean Occupancy Data1.txt","r")
+
+
+    for key, val in tqdm(Pattern_Clusters.items()):
         lst=[]
         i=0
         Left_Dict={}
@@ -359,8 +353,8 @@ with open("Output_File.txt","w") as out:
                     df_right,
                     'col_a',
                     'col_a',
-                    threshold=50,
-                    limit=10
+                    threshold=52,
+                   
                 )
 
                 df_output = df_left.merge(
@@ -384,24 +378,24 @@ with open("Output_File.txt","w") as out:
                 if len(df_output)>1:
                     Visited.append(l)
                     Visited.append(key)
+                    check_for=0
+                    first=""
                     for index, row in df_output.iterrows():
-                        if (row['col_b_df1'] or row['col_b_df1']) in LinkedNodes:
-                            continue
-                        out.write(row['col_b_df1']+"\t\t"+row['col_b_df2'])
-                        FinalLink[row['col_b_df1']]=row['col_b_df2']
-                        out.write("\n")
-                        
-                        
-                        g.add_edge(row['col_b_df1'],row['col_b_df2'],color='green',width=1)
-                        LinkedNodes.append(row['col_b_df1'])
-                        LinkedNodes.append(row['col_b_df2'])
+                            first=row['col_b_df2']
+                            out.write(row['col_b_df1']+"\t\t"+first)
+                            out.write("\n")
+                            FinalLink[first]=first
+                            FinalLink[row['col_b_df1']]=first
+                            g.add_edge(row['col_b_df1'],first,color='green',width=1)
+                            LinkedNodes.append(row['col_b_df1'])
+                            LinkedNodes.append(row['col_b_df2'])
+
                     out.write("---- New Record- ------")
-                    out.write("\n")
-                    
+                out.write("\n")
     g.show_buttons()
     g.show('Graph.html')        
-print(FinalLink)
 ER_Metrics_2.generateMetrics(204, FinalLink,"test_data.txt")
+#ERR.generateMetrics(FinalLink)
 # import pyTigerGraph as tg 
 
 

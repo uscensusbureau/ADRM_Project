@@ -20,7 +20,9 @@ def generateMetrics(logFile, N, cluster_modularities, linkIndex, truthFileName):
     print('Truth File Name = ', truthFileName)
     print('Truth File Name = ', truthFileName, file=logFile)
     erDict = {}
+    print(linkIndex)
     for pair in linkIndex:
+        print(pair)
         clusterID = pair[0]
         if clusterID != 'X':
             refID = pair[1]

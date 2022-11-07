@@ -60,11 +60,11 @@ def main():
     # parmFileName = input('Enter Parameter File Name->')
 
     # read parameters from configuration file
-    DWM10_Parms.getParms(parmFileName)
+    DWM10_Parms.getParms(parmFileName,logName=logFile)
     # tokenize input reference file
     tokenFreqDict = DWM20_TokenizerFunctions.tokenizeInput(logFile)
     # If global replacement configured, populate stdTokenDict of corrections in DWM25
-    if DWM10_Parms.runReplacement:
+    if False:
         # Create dictionary of corrections (stdTokenDict), leave empty if not running replacement
         stdTokenDict = {}
         DWM25_GlobalTokenReplace.globalReplace(logFile, tokenFreqDict, stdTokenDict)
@@ -122,7 +122,7 @@ def main():
     #     t_ns.append(str(p.split(":")[1]))
     # all_compare_cache_nodes = np.unique(np.array(s_ns + t_ns))
     # print(str(len(all_compare_cache_nodes)))
-    clusterList = DWM80_TransitiveClosure.transitiveClosure(logFile, pairList)
+    clusterList = DWM80_TransitiveClosure.transitiveClosure( pairList)
     # print(str(len(clusterList)))
     # print(str(len(compareCache)))
     linkIndex, cluster_modularities = DWM91_ModularityGraphClustering.configuration2(logFile, clusterList, refList, compareCache, "louvain")

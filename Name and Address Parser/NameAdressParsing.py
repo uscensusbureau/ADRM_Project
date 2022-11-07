@@ -263,16 +263,14 @@ with open('NameAndAddressMainOutput.json', 'r+', encoding='utf-8') as M:
                        Temp=Temp.strip()
                        Mappings["Name"][K2]=Temp
             CombinedMask=Mask_1+","+NameMask_1
+          
             try:
-                if dataFinal[Mask_1][ID]:
-                    continue
-            except:
-                a=0
-            try:
-                dataFinal[CombinedMask][ID] =Mappings # <--- add `id` value.
+                dataFinal[CombinedMask][ID] =Mappings
+                print(Mappings)# <--- add `id` value.
             except:
                 dataFinal[CombinedMask]={}
                 dataFinal[CombinedMask][ID]=Mappings
+                print(Mappings)
         elif not FoundExcept:  
             with open('ExceptionFile.json', 'r+', encoding='utf-8') as g:
                 Stat = json.load(g)

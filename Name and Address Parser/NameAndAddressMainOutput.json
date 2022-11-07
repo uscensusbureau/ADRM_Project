@@ -133,5 +133,22 @@
                 "USAD_ZIP": "34608"
             }
         }
+    },
+    "NFF,WW,T,N,PWW": {
+        "R09": {
+            "Name": {
+                "Prefix Title": "MR",
+                "Given Name": "BILL",
+                "Surname": "JONES"
+            },
+            "Address": {
+                "USAD_SNO": "679",
+                "USAD_SNM": "PINE",
+                "USAD_SFX": "STREET",
+                "USAD_CTY": "UNKNOWN CITY",
+                "USAD_STA": "AR",
+                "USAD_ZIP": "90009"
+            }
+        }
     }
 }

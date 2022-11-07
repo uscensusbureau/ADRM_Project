@@ -1,0 +1,8 @@
+>>Starting DWM99
+Truth File Name= test_data.txt
+True Pairs = 83.0
+Expected Pairs = 83.0
+Linked Pairs = 83.0
+Precision= 1.0
+Recall= 1.0
+F-measure= 1.0

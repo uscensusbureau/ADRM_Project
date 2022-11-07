@@ -9,7 +9,7 @@ import DWM10_Parms
 def buildRefList(logFile, stdTokenDict):
     print('\n>>Starting DWM30')
     print('\n>>Starting DWM30', file=logFile)
-    tokenizedFileName = DWM10_Parms.tokenizedFileName
+    tokenizedFileName = "Tokenized.txt"
     tokenizedFile = open(tokenizedFileName, 'r')
     refList = []
     tokenChgCnt = 0
@@ -36,7 +36,7 @@ def buildRefList(logFile, stdTokenDict):
                 refChgCnt += 1
         refList.append(('', refID, body))
         line = tokenizedFile.readline()
-    if DWM10_Parms.runReplacement:
+    if False:
         print('Number of tokens changed = ', tokenChgCnt)
         print('Number of references changed = ', refChgCnt)
     tokenizedFile.close()

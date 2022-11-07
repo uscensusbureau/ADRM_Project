@@ -3,28 +3,21 @@ from tqdm import tqdm
 import pandas as pd
 import json 
 #Parsing 1st program
-Name_4CAF50=open("Names.txt","r")
-Lines = Name_4CAF50.readlines()
-DF=[]
-ii=0
-count = 0
-FinalList=[]
-fileHandle = open('NamesWordTableOpt.txt', 'r')
-# Strips the newline character
-Count=len(Lines)
-DF=pd.DataFrame()
-C=1
-CC=1
-JsonData={}
-AllName_Key_Value_As_MASK_Comp={}
-Observation=0
-Total=0
-dataFinal={}
-def ExtractNames(line):
 
+def ExtractNames(File):
+    FinalMappings={}
+    Name_4CAF50=open(File,"r")
+    Lines = Name_4CAF50.readlines()
+    fileHandle = open('NamesWordTableOpt.txt', 'r')
+    # Strips the newline character
+
+    for line in Lines:
+            
         Names_Conversion_Dict={"1":"Prefix Title","2":"Given Name", "3":"Surname","4" :"Generational Suffix", "5":"Suffix Title"}    
         List=Names_Conversion_Dict.keys()
-        
+        Nm=line.split("|")
+        line=Nm[1]
+        ID=Nm[0]
         FirstPhaseList=[]
         Name=re.sub(',',' , ',line)
         Name=re.sub(' +', ' ',Name)
@@ -99,7 +92,6 @@ def ExtractNames(line):
                 FoundExcept=True
         Mappings={}
         if Found:
-            
             for K2,V2 in FoundDict[Mask_1].items():
                 Temp=""
                 for p in V2:
@@ -107,4 +99,5 @@ def ExtractNames(line):
                        Temp+=" "+V3
                        Temp=Temp.strip()
                        Mappings[K2]=Temp
-        return Mappings
+            FinalMappings[ID]=Mappings
+    return FinalMappings

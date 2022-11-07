@@ -33,7 +33,7 @@ def main():
     now = datetime.datetime.now()
     tag = str(now.year) + (str(now.month)).zfill(2) + (str(now.day)).zfill(2)
     tag = tag + '_' + (str(now.hour)).zfill(2) + '_' + (str(now.minute)).zfill(2)
-    logFile = open('logs/DWM_Log_' + tag + '.txt', 'w')
+    logFile = open('logfile.txt', 'w')
     print("Data Washing Machine Refactor Version", version)
     print("Data Washing Machine Refactor Version", version, file=logFile)
     print("Date/Time", tag)
@@ -57,12 +57,12 @@ def main():
     # parmFileName = "configuration/S17PX-params.txt"
     # parmFileName = "configuration/S18PX-params.txt"
     # parmFileName = input('Enter Parameter File Name->')
-    DWM10_Parms.getParms(parmFileName)
+    DWM10_Parms.getParms(parmFileName,logName=logFile)
     tokenFreqDict = DWM20_TokenizerFunctions.tokenizeInput(logFile)
     # create dictionary of corrections (stdTokenDict), leave empty if not running replacement
     stdTokenDict = {}
     # if global replacement configured, populate stdTokenDict of corrections in DWM25
-    if DWM10_Parms.runReplacement:
+    if False:
         DWM25_GlobalTokenReplace.globalReplace(logFile, tokenFreqDict, stdTokenDict)
     refList = DWM30_BuildRefList.buildRefList(logFile, stdTokenDict)
     moreToDo = True
@@ -126,7 +126,9 @@ def main():
             print('Ending because mu > 1.0', file=logFile)
     # End of iterations
     # Add unclustered references to linkIndex
+    print(refList)
     for x in refList:
+        print(x)
         refID = x[1]
         body = x[2]
         newTuple = (refID, refID)
@@ -151,11 +153,11 @@ def main():
     print('Size\tCount')
     print('Size\tCount', file=logFile)
     total = 0
-    for key in sorted(profile.keys()):
-        clusterTotal = key * profile[key]
-        total += clusterTotal
-        print(key, '\t', profile[key], '\t', clusterTotal)
-        print(key, '\t', profile[key], '\t', clusterTotal, file=logFile)
+    # for key in sorted(profile.keys()):
+    #     clusterTotal = key * profile[key]
+    #     total += clusterTotal
+    #     print(key, '\t', profile[key], '\t', clusterTotal)
+    #     print(key, '\t', profile[key], '\t', clusterTotal, file=logFile)
     print('\tTotal\t', total)
     print('\tTotal\t', total, file=logFile)
     # Generat ER Metrics if truthFileName was given

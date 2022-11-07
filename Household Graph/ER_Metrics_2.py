@@ -23,7 +23,6 @@ def generateMetrics(N, linkIndex, truthFileName):
     print('Truth File Name = ', truthFileName)
     erDict = {}
     for pair in linkIndex:
-        p
         clusterID = pair[0]
         if clusterID != 'X':
             refID = pair[1]
@@ -68,7 +67,7 @@ def generateMetrics(N, linkIndex, truthFileName):
     # End of counts
     # Compute measures
     L = countPairs(linkedPairs)  # Pairs that were linked
-    E = countPairs(equivPairs)  # Pairs ground truth
+    E = countPairs(equivPairs) 
     TP = countPairs(truePos)  # Pairs that were linked correctly
     FP = float(L - TP)  # Pairs that were linked but shouldn't have been
     FN = float(E - TP)  # Pairs that were not linked but should have been
