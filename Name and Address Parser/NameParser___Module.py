@@ -5,19 +5,21 @@ Created on Sun Oct 30 13:32:17 2022
 @author: onais
 """
 import re
-
+import collections 
 import json 
 #Parsing 1st program
 
-def ExtractNames(File):
+def ExtractNames(File,TruthSet):
     FinalMappings={}
+    Truth_Result={}
     Name_4CAF50=open(File,"r")
     Lines = Name_4CAF50.readlines()
     fileHandle = open('NamesWordTableOpt.txt', 'r')
     # Strips the newline character
-
+    Observation=0
+    Total=0
     for line in Lines:
-            
+        Total+=1
         Names_Conversion_Dict={"1":"Prefix Title","2":"Given Name", "3":"Surname","4" :"Generational Suffix", "5":"Suffix Title"}    
         Nm=line.split("|")
         line=Nm[1]
@@ -90,6 +92,8 @@ def ExtractNames(File):
                 FoundExcept=True
         Mappings={}
         if Found:
+            Truth_Result[ID]=FoundDict[Mask_1]
+            Observation+=1
             for K2,V2 in FoundDict[Mask_1].items():
                 Temp=""
                 for p in V2:
@@ -98,4 +102,34 @@ def ExtractNames(File):
                        Temp=Temp.strip()
                        Mappings[K2]=Temp
             FinalMappings[ID]=Mappings
-    return FinalMappings
+        elif not FoundExcept:  
+            with open('NameExceptionFile.json', 'r+', encoding='utf-8') as g:
+                Stat = json.load(g)
+                Stat[Mask_1]=FirstPhaseList
+                g.seek(0)
+                json.dump(Stat,g,indent=4)
+                g.truncate
+    Result={}      
+    with open(TruthSet, 'r+', encoding='utf-8') as g:
+        Stat = json.load(g)
+        Count_of_Correct=0
+        Total_Count=0
+        for key,value in Truth_Result.items():
+            Total_Count=len(Truth_Result)
+            if key in Stat.keys():
+                Count1=0
+                Count_total=0
+                for k1,v1 in value.items():
+                    Count_total+=len(Stat[key])
+                    for k2,v2 in Stat[key].items():
+                        if collections.Counter(value[k1]) == collections.Counter(Stat[key][k2]) and k1==k2:
+                            Count1+=len(Stat[key]) 
+                print("ID:",key, "Percentage of Correctness",round((Count1/Count_total)*100,2),"%")
+                if (round((Count1/Count_total)*100))>99:
+                          Count_of_Correct+=1
+    print(FinalMappings)
+    return (FinalMappings,(Observation/Total)*100,Count_of_Correct/Total_Count*100)
+        
+    
+    
+    

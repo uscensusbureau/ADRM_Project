@@ -1,114 +1,19 @@
 {
-    "PWW": [
-        {
-            "P": "MRS"
-        },
-        {
-            "W": "MARY"
-        },
-        {
-            "W": "DOE"
-        }
-    ],
-    "WW": [
-        {
-            "W": "MRJOHN"
-        },
-        {
-            "W": "DOE"
-        }
-    ],
-    "PWW,P,W,WWWW,WW,W": [
-        {
-            "P": "MS"
-        },
-        {
-            "W": "MOLLY"
-        },
-        {
-            "W": "BARCALOW"
-        },
-        {
-            "P": "SR"
-        },
-        {
-            "W": "QA"
-        },
-        {
-            "W": "9279B"
-        },
-        {
-            "W": "LAKE"
-        },
-        {
-            "W": "MURRAY"
-        },
-        {
-            "W": "BLVD"
-        },
-        {
-            "W": "SAN"
-        },
-        {
-            "W": "DIEGO"
-        },
-        {
-            "W": "CA"
-        }
-    ],
-    "PWW,J,W,WWP,WW,W": [
-        {
-            "P": "MS"
-        },
-        {
-            "W": "CASEY"
-        },
-        {
-            "W": "AGUILAR"
-        },
-        {
-            "J": "JR"
-        },
-        {
-            "W": "QA"
-        },
-        {
-            "W": "47-325"
-        },
-        {
-            "W": "BORDEAUX"
-        },
+    "PWWP,Q": [
         {
             "P": "DR"
         },
         {
-            "W": "LA"
+            "W": "MUJAHID"
         },
         {
-            "W": "QUINTA"
-        },
-        {
-            "W": "CA"
-        }
-    ],
-    "PWQW,P,W": [
-        {
-            "P": "DEAN"
-        },
-        {
-            "W": ""
-        },
-        {
-            "Q": "GRANT"
-        },
-        {
-            "W": "BALENTYNE"
+            "W": "HUSSAIN"
         },
         {
             "P": "SR"
         },
         {
-            "W": "CLIA"
+            "Q": "PHD"
         }
     ]
 }

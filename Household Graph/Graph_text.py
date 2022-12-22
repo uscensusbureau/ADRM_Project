@@ -4,13 +4,6 @@ Created on Wed Oct  5 17:14:34 2022
 
 @author: onais
 """
-
-from py2neo import Node, Relationship"""
-Created on Wed May 18 19:52:24 2022
-@author: onais
-"""
-import sys
-sys.path.insert(0, 'dwm-refactor-v1/')
 import DWM00_Driver as DWM
 import pandas as pd
 import networkx as nx

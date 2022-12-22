@@ -5,7 +5,6 @@ Created on Mon Oct 17 22:10:39 2022
 @author: onais
 """
 import sys
-sys.path.insert(0, 'dwm-refactor-v1/')
 import DWM00_Driver as DWM
 import pandas as pd
 import networkx as nx
