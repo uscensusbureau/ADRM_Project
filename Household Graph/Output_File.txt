@@ -1024,145 +1024,122 @@ GONZALEZ|C71
 ABBY|C70
 HOUSE|C70
 Final Cluster Map.........
-C65,C66
-C20,C23
-C31,C38
-C28,C29
-C12,C13
-C26,C4
-C57,C61
-C43,C44
-C33,C4
-C39,C40
-C24,C64
-C31,C32
-C20,C21
-C28,C33
-C24,C7
-C14,C7
-C33,C34
-C2,C34
-C4,C6
-C16,C17
-C7,C8
-C33,C37
-C48,C50
-C21,C4
-C2,C25
-C64,C9
-C14,C53
-C18,C27
-C43,C9
-C45,C70
-C45,C69
-C2,C3
-C31,C41
-C45,C57
-C44,C9
-C57,C60
-C28,C42
-C11,C47
-C18,C63
-C4,C7
-C57,C62
-C31,C60
-C45,C68
-C2,C33
-C24,C40
-C57,C58
-C22,C23
-C16,C33
-C10,C9
-C12,C9
-C45,C67
-C42,C43
-C36,C52
-C49,C9
-C51,C52
-C31,C53
-C2,C24
-C20,C22
-C57,C59
-C36,C40
-C38,C40
-C26,C29
-C47,C48
-C31,C59
-C11,C48
-C34,C4
-C45,C46
-C14,C54
-C31,C71
-C35,C40
-C20,C4
-C53,C54
-C24,C63
-C31,C39
-C25,C7
-C4,C8
 C18,C64
-C67,C68
-C15,C7
-C13,C9
-C48,C49
+C57,C58
 C27,C29
-C45,C61
-C4,C5
-C41,C42
-C37,C40
-C63,C9
-C46,C9
-C28,C34
-C42,C44
-C48,C9
-C14,C15
-C59,C60
-C18,C19
-C31,C69
-C29,C4
-C16,C34
-C24,C25
-C45,C9
-C69,C70
-C36,C51
-C1,C30
-C31,C54
 C55,C56
-C11,C13
-C24,C35
-C33,C40
-C31,C42
-C69,C71
-C63,C64
+C16,C33
+C57,C62
+C24,C64
+C31,C39
+C31,C53
 C31,C40
+C11,C47
+C67,C68
+C36,C52
+C11,C13
+C33,C34
+C45,C70
+C15,C7
+C18,C19
+C48,C49
+C26,C29
+C45,C61
+C43,C9
+C34,C4
+C31,C54
+C42,C43
+C31,C41
+C31,C32
+C2,C34
+C28,C34
+C2,C25
+C20,C22
+C24,C35
+C69,C70
+C14,C15
+C21,C4
+C35,C40
+C4,C7
+C12,C9
+C33,C4
+C2,C33
+C36,C40
+C18,C27
+C39,C40
+C12,C13
+C38,C40
+C14,C53
+C69,C71
+C45,C69
+C48,C9
 C18,C29
+C2,C3
+C29,C4
+C14,C7
+C57,C61
+C2,C24
+C31,C38
+C25,C7
+C24,C40
+C11,C48
+C59,C60
+C13,C9
+C45,C46
+C28,C42
+C45,C57
+C24,C7
+C4,C8
+C51,C52
+C22,C23
+C33,C37
+C14,C54
+C45,C9
+C7,C8
+C43,C44
+C10,C9
+C20,C21
+C20,C4
+C63,C64
+C1,C30
+C48,C50
+C28,C33
+C31,C69
+C36,C51
+C46,C9
+C65,C66
+C45,C68
+C31,C42
+C53,C54
+C33,C40
+C31,C71
+C31,C59
+C4,C5
+C26,C4
+C37,C40
+C47,C48
+C41,C42
+C49,C9
+C57,C59
+C20,C23
+C16,C17
+C63,C9
+C16,C34
+C31,C60
+C18,C63
+C28,C29
+C4,C6
+C24,C25
+C64,C9
+C24,C63
+C45,C67
+C42,C44
+C57,C60
+C44,C9
 TRAVERSING.................
 LINK -1 ID  | LINK -2 ID
 
 
-af1		ae1
-af2		ae2
-af3		ae3
----- New Record- ------
-
-al1		ak1
-al2		ak2
----- New Record- ------
-bd1		bc1
-bd2		bc2
-bd3		bc3
-bd4		bc4
----- New Record- ------
-
-
-
-
-
-
-v1		u1
-v2		u2
-v3		u3
----- New Record- ------
 
 
 p1		o1
@@ -1172,9 +1149,52 @@ p3		o3
 
 
 
-an1		am1
-an2		am2
-an3		am3
+
+
+
+ax1		aw1
+ax2		aw2
+ax3		aw3
+---- New Record- ------
+av1		au1
+av2		au2
+av3		au3
+---- New Record- ------
+
+bl1		bk1
+bl2		bk2
+bl3		bk3
+---- New Record- ------
+f2		e2
+f3		e3
+---- New Record- ------
+
+b1		a1
+b2		a2
+b3		a3
+---- New Record- ------
+l1		k1
+l2		k2
+l3		k3
+---- New Record- ------
+
+ap1		ao1
+ap2		ao2
+ap3		ao3
+---- New Record- ------
+
+
+
+
+
+
+
+
+
+
+ab1		aa1
+ab2		aa2
+ab3		aa3
 ---- New Record- ------
 
 
@@ -1183,84 +1203,71 @@ j2		i2
 j3		i3
 ---- New Record- ------
 
-ar1		aq1
-ar2		aq2
-ar3		aq3
+
+
+
+bh1		bg1
+bh2		bg2
+---- New Record- ------
+ad1		ac1
+ad2		ac2
+ad3		ac3
 ---- New Record- ------
 
-
-
-
-
-
-
-
-at1		as1
-at2		as2
-at3		as3
----- New Record- ------
-ap1		ao1
-ap2		ao2
-ap3		ao3
----- New Record- ------
-
-
-bb1		ba1
-bb2		ba2
-bb3		ba3
-bb4		ba4
+r1		q1
+r3		q3
 ---- New Record- ------
 
 ah1		ag1
 ah2		ag2
 ah3		ag3
 ---- New Record- ------
-n1		m1
-n2		m2
+bj1		bi1
+bj2		bi2
+bj3		bi3
+bj4		bi4
 ---- New Record- ------
 
+
+
+
+
+
+an1		am1
+an2		am2
+an3		am3
+---- New Record- ------
+
+at1		as1
+at2		as2
+at3		as3
+---- New Record- ------
+x1		w1
+x2		w2
+x3		w3
+---- New Record- ------
 
 h1		g1
 h2		g2
 h3		g3
 ---- New Record- ------
-f2		e2
-f3		e3
----- New Record- ------
-ab1		aa1
-ab2		aa2
-ab3		aa3
+
+z1		y1
+z2		y2
+z3		y3
+z5		y5
 ---- New Record- ------
 
+bd1		bc1
+bd2		bc2
+bd3		bc3
+bd4		bc4
+---- New Record- ------
 
 
 d1		c1
 d2		c2
 d3		c3
----- New Record- ------
-
-av1		au1
-av2		au2
-av3		au3
----- New Record- ------
-
-
-l1		k1
-l2		k2
-l3		k3
----- New Record- ------
-ax1		aw1
-ax2		aw2
-ax3		aw3
----- New Record- ------
-b1		a1
-b2		a2
-b3		a3
----- New Record- ------
-
-x1		w1
-x2		w2
-x3		w3
 ---- New Record- ------
 
 
@@ -1272,33 +1279,25 @@ ai3		aj3
 
 
 
-
-
-
-z1		y1
-z2		y2
-z3		y3
-z5		y5
----- New Record- ------
-bl1		bk1
-bl2		bk2
-bl3		bk3
+ar1		aq1
+ar2		aq2
+ar3		aq3
 ---- New Record- ------
 
+al1		ak1
+al2		ak2
+---- New Record- ------
 
 t1		s1
 t2		s2
 t3		s3
 ---- New Record- ------
-
-bh1		bg1
-bh2		bg2
+bb1		ba1
+bb2		ba2
+bb3		ba3
+bb4		ba4
 ---- New Record- ------
-bj1		bi1
-bj2		bi2
-bj3		bi3
-bj4		bi4
+v1		u1
+v2		u2
+v3		u3
 ---- New Record- ------
-
-
-
