@@ -42,6 +42,8 @@ def Address_Parser(Address_4CAF50,TruthSet):
             Mask=[]
             Combine=""
             LoopCheck=1
+            AddressList.remove("")
+            print(AddressList)
             for A in AddressList:
                 FirstPhaseDict={}
                 NResult=False
