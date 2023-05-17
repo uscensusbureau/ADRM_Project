@@ -1,4 +1,5 @@
-inputFileName=FileA.txt
+inputFileName=2020FileA.txt
+#2020FileA.txt
 delimiter=|
 hasHeader=False
 tokenizerType=Splitter

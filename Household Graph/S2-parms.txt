@@ -3,11 +3,11 @@
 #######################################
 # inputFileName must a valid path to file of entity references
 # No default value, this parameter must be specified
-inputFileName=FileA.txt
+inputFileName=temp.txt
 # delimiter the field sparator character, must be comma, 
 # semi-colon, colon, pipe character, or tab character. 
 # Default value is comma
-delimiter=|
+delimiter=,
 # hasHeader must be True or False
 # If True, the first line of the file is not processed
 # If False, all lines of the file are processed as references

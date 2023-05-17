@@ -8,7 +8,7 @@ import pandas as pd
 from thefuzz import process
 
 def fuzzy_match(
-    df_left, df_right, column_left, column_right, threshold=90, limit=1):
+    df_left, df_right, column_left, column_right, threshold=60, limit=1):
     # Create a series
     series_matches = df_left[column_left].apply(
         lambda x: process.extract(x, df_right[column_right], limit=limit) )           # Creates a series with id from df_left and column name _column_left_, with _limit_ matches per item)

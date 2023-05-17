@@ -1,0 +1,1000 @@
+1|Melanie L Herrod,10233,north burgher avenue
+2|Jordan C Herrod,10233,north burgher avenue
+3|John E Mckeever,147-153,browning ave
+4|Sharon T ,109,stallion st
+5|Ronnie A Arthur,214,s vine lane
+6|Gail K Durand,2115,cannon dr
+7|John J Williams,146,delaware av
+8|Linda L Williams,146,delaware av
+9|Shelley J Williams,146,delaware av
+10|Child L Williams,146,delaware av
+11|Michael M Ticas,1312,commonwealth avnue
+12|Michelle M Ticas,1312,commonwealth avnue
+13|Mason L Ticas,1312,commonwealth avnue
+14|Jeffrey S Quintana,2265,erik paul dr
+15|Brianna C Quintana,2265,erik paul dr
+16|Gloria A Quintana,2265,erik paul dr
+17|Joe S Sosa,15,julian dr
+18|Tamara D Sosa,15,julian dr
+19|Ryan C Sosa,15,julian dr
+20|Zachary C Sosa,15,julian dr
+21|Ryan L Sosa,15,julian dr
+22|Stephanie A Castaneda,15,julian dr
+23|Raul M Everett,1754,ocean vw ave
+24|W L Everett,1754,ocean vw ave
+25|Marlee L Everett,1754,ocean vw ave
+26|Darrell R Lemieux,123,rancho sta fe rd
+27|Sandra C Lythgoe,77722,picciola rd
+28|Brian A Lythgoe,77722,picciola rd
+29|Christopher B Lythgoe,77722,picciola rd
+30|Harley S Garrett,401,carol dr
+31|Robert K Wallen,1451,atlanta st
+32|Cathie K Wallen,1451,atlanta st
+33|Brian J Medina,9635,lambert st
+34|Dominic B Medina,9635,lambert st
+35|Dylan A Medina,9635,lambert st
+36|Barbara C Schneider,1451,atlanta st
+37|John J Oedekoven,6691,matthew dr
+38|Catherine I Garrett,401,carol dr
+39|Frankie T Garrett,401,carol dr
+40|Pamela M Reed,850,ashmount avenu
+41|Randy M Reed,850,ashmount avenu
+42|Joseph R Ramme,507,renz dr
+43|Valerie E Ramme,507,renz dr
+44|Jacob J Ramme,507,renz dr
+45|Terrance Z Ramme,507,renz dr
+46|Jennifer L Martinez-Valerio,2055,n 60th ave
+47|Robert S Martinez-Valerio,2055,n 60th ave
+48|Cody A Martinez-Valerio,2055,n 60th ave
+49|Victoria D Martinez-Valerio,2055,n 60th ave
+50|Linda C Martinez-Valerio,2055,n 60th ave
+51|Nicole R Martinez-Valerio,2055,n 60th ave
+52|Pamela M Houze,19461,fire twr rd
+53|Randy M Houze,19461,fire twr rd
+54|Jordan C Houze,19461,fire twr rd
+55|Mr M Houze,19461,fire twr rd
+56|Richard O Ramirez,215,bauman ave
+57|Andrew J Goodfriend,73,fairlawn st
+58|Erika L Goodfriend,73,fairlawn st
+59|Ashleigh R Regan,73,fairlawn st
+60|Alexander G Mcbee,73,faurlawn sr
+61|Gabriel L Vesey,73,fairlawn st
+62|Christina K Wesley,670,good hope ro
+63|Alejandra J Monroe,8063,n tillotson ave
+64|Iker L Monroe,8063,n tillotson ave
+65|Pam D Mccann,102,days end trl
+66|Zachary R Hill,6132,n pine
+67|Nancy M Alvarado,1521,kenzie ln
+68|Michelle M Alvarado,1521,kenzie ln
+69|Mateo L Alvarado,1521,kenzie ln
+70|Johnny C Alvarado,1521,kenzie ln
+71|Carol R Holcomb,3113,shelton hall rd
+72|Rachel S Johnson,5898,berryleaf dr
+73|Thomas C Johnson,,berryleaf dr
+74|Pamela M Schroeder,15,
+75|Joseph  Schroeder,15,o'neal raod
+76|Laura D Elliott,10834,glenorchy place
+77|Marissa L Elliott,10834,glenorchy place
+78|Anthony S Ralston,1130,putnam ave
+79|Tangela J Ralston,1130,putnam ave
+80|Alexa H Ralston,1130,putnam ave
+81|Isabelle B Ralston,1130,putnam ave
+82|Aruyah R Ralston,1130,putnam ave
+83|Thomas E Copple,774,spring hl dr
+84|Yvette R Wisner,3600,el rancho dr
+85|William C Wisner,,el rancho dr
+86|Michael M Sanders,3817,mcferon road
+87|Kacie C Bryan-Uptmore,237,norfolk ct
+88|Joseph D Bryan-Uptmore,237,norfolk ct
+89|Crystal B Miller,88,starlight village lp
+90|Robin L Starker,1909,willa wy
+91|Anthony  Starker,1909,willa wy
+92|Jacob A Starker,1909,willa wy
+93|Dennis J Musselman,88,starlight village lp
+94|Francine L Musselman,88,starlight village lp
+95|Kathleen D Freeman,4729,harbor hls roa
+96|Andrea J Meeks,838,lock dr
+97|Jody C Meeks,838,lock dr
+98|Evan L Meeks,838,
+99|Mary M Callier,1426,n fourth st
+100|Alison H Callier,1426,n fourth st
+101|Stella I Crooks,6755,w ash st
+102|Sara T Hill,6040,gladys glen rd
+103|Amelia A Hill,6040,gladys glen rd
+104|Nathan B Hill,6040,gladys glen rd
+105|Henry M Price,15010,hanover
+106|Reid A Price,15010,hanover
+107|Janet A Kelley,15010,hanover
+108|Joseph J Rose,15010,hanover
+109|Lori D Seifert,2612,pleasant creek dr
+110| F Seifert,2612,pleasant creek dr
+111|Brian J Beauchamp,12912,nw 2nd ave
+112|Stephanie A Beauchamp,12912,nw 2nd ave
+113|William M Beauchamp,12912,nw 2nd ave
+114|Mikayla C Beauchamp,12912,nw 2nd ave
+115|Brady J Beauchamp,12912,
+116|Helen S Quick,4831,highway 65
+117|Richard P Stallard,670,blooming vlly ct
+118|Kathie D Stallard,671,blooming vlly ct
+119|John D Saleen,1577,maria dr
+120|Danny B Stephens,1577,maria dr
+121|John J Stephens,1577,maria dr
+122|Timothy Z Stephens,1577,maria dr
+123|Andrew J Hahn,701,delaire landing rd
+124|Tammy A Hahn,701,delaire landing rd
+125|Nancy B Clark,7210,gifford raod
+126|Ryan G Clark,7210,gifford raod
+127|Edgar C Clark,7210,gifford raod
+128|Chad J Nelson,3315,w griswold rd
+129|Daniel J Mcinnis,,red ruby rd
+130|Stacie A Mcinnis,,red ruby rd
+131|Nicholas W Mcinnis,,red ruby rd
+132|Shaylynn G Mcinnis,,red ruby rd
+133|Robert G Marlar,,lester st
+134|Jacob A Clark,7210,gifford raod
+135|Megan L Davis,107,w old oak ln
+136|Kyle J Galvan,3705,royal palm cir
+137|Katrina C Shannon,124,bee rdge rd
+138|Carol M Mazzoni,304,fm 1468 n
+139|Dana C Lockett,3705,royal palm cir
+140|Geraldine M Cardwell,5408,sw allen blvd
+141|Madison S Baker,1470,elrod
+142|Jonathan C Irizarry,900,n los altos wy
+143|Michael M Irizarry,900,n los altos wy
+144|Kristina D Irizarry,900,n los altos wy
+145|Beth C Lawler,4048,mundy dr
+146|Charles J Lawler,4048,mundy dr
+147|Kent T Lawler,4048,mundy dr
+148|Jennifer L Ogbonna,17922,lost garden ter
+149|Jeffery T Ogbonna,17922,lost garden ter
+150|Shannan V Ogbonna,17922,lost garden ter
+151|Enzo N Ogbonna,17922,lost garden ter
+152| N Ogbonna,17922,lost garden ter
+153|Alaina S Ogbonna,17922,lost garden ter
+154|Thomas G Ogfonna,17922,lost garden ter
+155|Mary D Harris,4260,townhall st
+156|Mauricio L Harris,4260,townhall st
+157|James C ,4260,townhall st
+158|Jeremy C Diaz,37615,elysian ave
+159|Bryan J Williams,715,mark twain dr
+160|Ronald M Garrett,1605,cherry hill ct
+161|Patricia C Garrett,1605,cherry hill ct
+162|Vivian B ,4260,townhall st
+163|Anita J Morgan,66-68,southwestern dv
+164|Richard N Dahlen,2220 1 2,bauer dr
+165|William D Dolloff,470,bream ave 101
+166|Alexandra J Dolloff,470,bream ave 101
+167|Patricia M Gibbons Ruiz,8121,freeland
+168|Matthew L Gibbons Ruiz,8121,freeland
+169|Brittany C Rahman,1938,38th st north
+170|Annabelle J Rahman,1938,38th st north
+171|Alexander M Rahman,1938,38th st north
+172|Andrew C ,1938,38th st north
+173|Joy J Whicker,11403,
+174|Finn J Whicker,11403,hudson bay way
+175|Jordan A Kurpiel,11403,hudson bay way
+176|Mildred M Dionisio,9436,sw 11th ave
+177|Michael M Dionisio,9436,sw 11th ave
+178|Gina L Colby,1533,e 1720 s
+179|Joseph D Banks,22605,s hill st
+180|Kimberly D Banks,22605,s hill st
+181|Stephanie Y ,843,millcreek boulevard
+182|Christopher C Meece,843,millcreek boulevard
+183|Daredll B Petersen,134-56,calle huerto
+184|David B Faiella,134-56,calle huerto
+185|Justin T Fitch,134-56,
+186|Ronnie S Stibbe,360,fawn trl
+187|Charlotte L Stibbe,360,fawn trl
+188|James M White,2515,manor avenue
+189|Linda C White,2515,manor avenue
+190|Louis J Petry,3367,mcmurray st
+191|Patricia D Day,355,lowry dr
+192|Mary M Moore,126,garland street
+193|Joyce M Gallegos Jennings,63,blacksmith trail
+194|Charles C Gallegos Jennings,63,blacksmith trail
+195|Natalie E Gallegos Jennings,63,blacksmith trail
+196|Violet E Gallegos Jennings,63,blacksmith trail
+197|Trace G Gallegos Jennings,63,blacksmith trail
+198|Andrew C Gallegos Jennings,63,blacksmith trail
+199|George C Gallegos Jennings,63,blacksmith trail
+200|Jordan J Antonio,63,blacksmith trail
+201|Tara E Rios,180,brookside way
+202|Mary M Perdomo,6998,e mesquite st
+203|Caroline J Perdomo,6998,e mesquite st
+204|Misty M Kelley,402,e hwy ab
+205|Robert J Chastain,2562,somerset bay
+206|Milissa M Shorter,13,e loudoun valley dr
+207|Mark C Shorter,13,e loudoun valley dr
+208|Damian A Shorter,13,e loudoun valley dr
+209|Christine H Conder,482,western hill rd
+210|William G Nedza,3242,holiday park dr
+211|Deborah K Whiteaker,,n 675 w
+212|Ray M Thomas,14107,myrtle ct
+213|Maureen M Thomas,14107,myrtle ct
+214|Jamie M Rahn,7486,plantain ln
+215|Brian S Rahn,7416,plantain ln
+216|Anthony A Rahn,7416,plantain ln
+217|Axel R Rahn,7416,plantain ln
+218|Phillip I Rahn,7416,plantain ln
+219|Brzxton R Rahn,7416,plantain ln
+220|Milton J Lint,148,hermosa dr
+221|Reggie N Kennedy,1721,gregory pkw
+222|Noreen M Kennedy,1721,gregory pkw
+223|Maryann M Mccrory,11214,seawall road
+224|Danette A Feikces-Lzra,1614,shadow rock ct
+225|Jimmy T Felices-Lara,1614,shadow rock ct
+226|Daylen H Felices-Lara,1614,shadow rock ct
+227|Terri  Rao,535,calla & grape
+228|Sandra C Erks,4920,
+229|Mabel S Nagy,27415,the ketta ln
+230|A  Hammill,8,ayliffe avenue
+231|Anaya K Hammill,8,ayliffe avenue
+232|Marjorie D Sokolow,34,north main str
+233|Glenda M Williams,31,patton st
+234|Scott K Moos,800,n 49th street
+235|William H Hendricks,800,n 49th street
+236|Person S Hendricks,800,n 49th street
+237| A Sharif,22,armfield cir
+238|Steven Z Sharif,22,armfield cir
+239|Noah J Sharif,22,armfield cir
+240|Lisa T ,22,armfield cir
+241|Richard O Coleman,3575,w aspen ave
+242|Jason C Coleman,3575,w aspen ave
+243|Michael M Coleman,3575,w aspen ave
+244|Annette S Smith,130,manida str
+245|Elizabeth C Martinez-Sano,3575,w aspen ave
+246|John A Pearcy,6876,morgan valley dr
+247|Vickie D Pearcy,6876,morgan valley dr
+248|Ray M Joplin,142,cardinal rd
+249|Patrica M Joplin,142,cardinal rd
+250|Doris J Harris,186,davis rd
+251|Ronald A Harris,186,davis rd
+252|John E Cole,7506,at cape ann
+253|John R Murphy,6424,260th st
+254|Michael D Sepulveda,22949,stonybrook lane
+255|Dorene A Kaitz,184,potter ave
+256|Joyce C Parker,21,w pelican dr
+257|Elizabeth C Draper,5204,18th street e
+258|Lucille B Mejia,10421,107 avenue
+259|Russell H Miers,31743,beachside two dr
+260|Anna K Noble,23266,horne hollow rd
+261|Joseph J Noble,23266,horne hollow rd
+262|Kenneth A Deserio,2545,e grand blvd
+263|Phyllis L Deserio,2545,e grand blvd
+264|Amos J Mancillas,3021,merry pl
+265|Chase B Noble,23266,horne hollow rd
+266|Michael L Elliott,8370,chervil ct
+267|Joel C Ballerini,8382,chervil ct
+268|Micheal M Burke,8370,chervil ct
+269|James C Barron,8370,chervil ct
+270|Brian R Thomas,8370,chervil ct
+271|Ashton A Vazquez,8370,chervil ct
+272|Jasmine S Fisher,8370,chervil ct
+273|Ryan K Schafer,8370,chervil ct
+274|Jalen T Woolf,8370,chervil ct
+275|Roberto A Baker,8370,chervil ct
+276|Robert K Kelly,8370,chervil ct
+277|John J Hernandez,1695,carnegie ln
+278|Celia M Lalena,8370,chervil ct
+279|Sean  Yu,8370,chervil ct
+280|David J Gaut,8370,chervil ct
+281|Ernest D Harris,8370,chervil ct
+282|Hunter K ,8370,chervil ct
+283|Hannah L Bednarz,8370,chervil ct
+284|Jacob K Jimenez Rivera,8370,chervil ct
+285|Hannah L Patton,8370,chervil ct
+286|Sophia C H,8370,chervil ct
+287|Anthony M Davis,8370,chervil ct
+288|Tony Z Pulliam,8370,chervil ct
+289|Pedro S Hernandez,8370,chervil ct
+290|Timothy J Lane,8370,chervil ct
+291|Jamie S Vliet,8370,chervil ct
+292|Isaac I Liu,8370,chervil ct
+293|Steven R Thomas,8370,chervil ct
+294|Johnathon C Taylor,8370,chervil ct
+295|Dylan N Torres-Corado,8370,chervil ct
+296|Johnny H Serrato,8370,chervil ct
+297|Israel J Mediavilla,8370,chervil ct
+298|Gregg E Hollister,8370,chervil ct
+299|Gordon K Gunnell,n1476,spring park rd
+300|Joceline A Gunnell,n1476,spring park rd
+301|Elijah J Gunnell,n1476,spring park rd
+302|Ridley E Gunnell,n1476,spring park rd
+303|Sierra A Wade,8370,chervil ct
+304|Olga J Fournier,8370,chervil ct
+305|Sydney C Desilva,8370,chervil ct
+306|Morris C Hill,8370,chervil ct
+307|Jeffrey R Mejia,8370,chervil ct
+308|Nicholas C Carter,8370,chervil ct
+309|Destiny N Gibson,8370,chervil ct
+310|Joseph E Ward,8370,chervil ct
+311|Albert R Pita,8370,chervil ct
+312|Catherine M Harris,8370,chervil ct
+313|Joyce J Richardson,8370,chervil ct
+314|Dan G Coleman,8370,chervil ct
+315|Brenda K Flory,8370,chervil ct
+316|Arthur S Pruzansky,8370,chervil ct
+317|Marco A Hoyos,8370,chervil ct
+318|Sheila E Brinkmann,8370,chervil ct
+319|Corey C Brady,8370,chervil ct
+320|Douglas J Black,8370,chervil ct
+321|Earnest C Matias Rivas,8370,chervil ct
+322|Roderick T Shouse,8370,chervil ct
+323|William H Hagens,8370,chervil ct
+324|Joshua G Ankrah,8370,chervil ct
+325|Logan B Brisco,8370,chervil ct
+326|Grady E Lam,8370,chervil ct
+327|Marcus I Hawkins,8370,chervil ct
+328|O J Brunson,8370,chervil ct
+329|Carolyn E Harris,8370,chervil ct
+330|John A Worden,8370,chervil ct
+331|Franklin B Campbell,8370,chervil ct
+332|Benjamin J Harris,8370,chervil ct
+333|Susan D Rennie,8370,xhervkl ct
+334|Coleen P Slavsky,8370,chervil ct
+335|Keith C Camps,8370,chervil ct
+336|Timothy D Martinez-Vargas,8370,chervil ct
+337|Jeremy J Jester,8370,chervil ct
+338| A Dion,8370,chervil ct
+339|Travis A Wilson,8370,chervil ct
+340|Randy J Banks,8370,chervil ct
+341|Alec J Covert,8370,chervil ct
+342|Randolph E Lilley,8370,chervil ct
+343|Sergio T Castillo,8370,chervil ct
+344|Timothy D Grabski,8370,chervil ct
+345|Gail J Daniels,8370,chervil ct
+346|Samuel W Connolly,8370,
+347|Ralph J Heard,8370,chervil ct
+348|David B Qualls,8370,chervil ct
+349|Jerome H Cavuoto,8370,chervil ct
+350|Betty R Morgan,8370,chervil ct
+351|Angel J Balderas,8370,chervil ct
+352|Gerald K Mandujano,8370,chervil ct
+353|Gary R Tirado,8370,chervil ct
+354|Bobby D Johnson,8370,chervil ct
+355|Thomas D Purcell,8370,chervil ct
+356|Matthew B Chalet,8370,chervil ct
+357| P Blakey,8370,chervil ct
+358|Christine D Mckinley,8370,chervil ct
+359|Sean T Killebrew,8370,chervil ct
+360|Eddie R Carrillo,8370,chervil ct
+361|Bonnie J Mann,8370,chervil ct
+362|David L Frey,8370,chervil ct
+363|Christian R Evans,8370,chervil ct
+364|William G Zopp,8370,chervil ct
+365|Adrian A Junge,8370,chervil ct
+366|Diane B Blake,8370,chervil ct
+367|Brett J King,8370,chervil ct
+368|Douglas J Austin,8370,chervil ct
+369|Francisco D Rabadan,8370,chervil ct
+370|Brandon L Perry-Waiters,8370,chervil ct
+371|Ricky J Jones,8370,chervil ct
+372|Clayton G Catchings,8370,chervil ct
+373|Judy D Hoeppner,8370,chervil ct
+374|Isabella M Cox,8370,chervil ct
+375|James F Huang,8370,chervil ct
+376|Justin A Herzig,8370,chervil ct
+377|Javier G Dry,8370,chervil ct
+378|Wanda E Brumfield,8370,chervil ct
+379|Penny L Mccauley,8370,chervil ct
+380|Connie P Ohara,8370,chervil ct
+381| A Murphy,8370,chervil ct
+382|Rashawn J Reynolds,8370,chervil ct
+383|Gladys B Goodman,8370,
+384|Cesar J Warner,8370,chervil ct
+385|Willie D Ortiz,8370,chervil ct
+386|Christopher J Bowers,8370,chervil ct
+387|Felix D Castillo,8370,chervil ct
+388|William G Griggs,8370,chervil ct
+389|Zachary E Gwin,8370,chervil ct
+390|David L Wolford,8370,chervil ct
+391|Willie R Hughes,8370,chervil ct
+392|Eric P Reyes,8370,chervil ct
+393|David J Henry,8370,chervil ct
+394|Ima P Moreno,8370,chervil ct
+395|Joseph R Thibodeau,8370,chervil ct
+396|Johnathon C Phelps,8370,chervil ct
+397|Carolyn L Ganaden,8370,chervil ct
+398|Bonnie L Sabata,8370,chervil ct
+399|Carolyn H Green,8370,chervil ct
+400|Julius D Wiltse,8370,chervil ct
+401|Mary M Pierce,,chervil ct
+402|John A Woolfolk,8370,chervil ct
+403|Jimmy J Agosto,8370,chervil ct
+404|Mae S Ramos,8370,chervil ct
+405|Clifford K Wolfe,8370,chervil ct
+406|Daniel B Olivo,8370,chervil ct
+407|Sean W Marmolejos-Garcia,8370,chervil ct
+408|Keith C Rawson,8370,chervil ct
+409|Jillian C Fisher,1702,meisner rd
+410|Daniel A Rivera,1760,4th street northwest
+411|James M Norman,1702,meisner rd
+412|Chloe A Murray,1702,meisner rd
+413|Alex M Sullivan,1702,meisner rd
+414|Ian B Rushton,1702,meisner rd
+415|Arline M Weyrich,9200,110th ave
+416|Michael D Weyrich,9200,110th ave
+417|Natalie A Pakootas,1702,meisner rd
+418|Louis J Ryan,1702,meisner rd
+419|Ryan L Lassiter,1702,meisner rd
+420|Timothy W Mcgilvary,1702,meisner rd
+421|Derek A Sosa,1702,meisner rd
+422|Nicholas C Renobato Torres,1702,meisner rd
+423|Brooke M Brown,1702,meisner rd
+424|Christopher C Ricnelbedfer,1702,meisner rd
+425|Thomas  Imperiale,1702,meisner rd
+426|Valeria C Petrin,1702,meisnrr rc
+427|Jean Q Mcneill,1702,meisner rd
+428| G Gillcrist,1702,meisner rd
+429|Amanda L Lim,1702,meisner rd
+430|Kenneth D Duncan,1702,meisner rd
+431|Rebecca J Forbes,1702,meisner rd
+432|Jimmy J Nguyen,1702,meisner rd
+433|Ryan E Burk,1702,meisner rd
+434|Dustin P Rudolph,1702,meisner rd
+435|Harrison M Staehling,,jurassic avenue
+436|James E Waddingham,1702,meisner rd
+437|Leo M Macleod,1702,meisner rd
+438|Ruby V Barber,1702,meisner rd
+439|Colin B Ponce,1702,meisner rd
+440|Robert W Skyberg,1702,meisner rd
+441|Isidro K Rivera,1702,meisner rd
+442|Tavares B Semel,1702,meisner rd
+443|Gregory T Poston,1702,meisner rd
+444|Nicholas C Thao,1702,meisner rd
+445|Eric J Broderick,1702,meisner rd
+446|Andrew J Solomon,1702,meisner rd
+447|Daniel M Eubanks,1702,meisner rd
+448|Jay T Fiedler,542,kennelworth lane
+449|Tracie A Hammill,1702,meisner rd
+450|Daniel M Bonome,1702,meisner rd
+451|John J Wolfe,3339,floyd pike
+452|Ruben H Vela,3339,floyd pike
+453|Tayoor A Bagnato,1702,meisner rd
+454|Frances J Wickett,1702,meisner rd
+455|Edward J James,1702,meisner rd
+456|Nelson C Lade,1702,meisner rd
+457|Casey  Douglas,2702,meisner rd
+458|Elmer A Cohan,1702,meisner rd
+459|Robert S Radtke,1702,meisner rd
+460|David B Rhinehart,1702,meisner rd
+461|Alan A Gilmore,1702,meisner rd
+462|Willa D Jarrell,1702,meisner rd
+463|Anna L Smith,1702,meisner rd
+464|Carol L Wallace,1702,meisner rd
+465|Aaron S Brown,1702,meisner rd
+466|Morris J Melton,1702,meisner rd
+467|Willie D Davis,1702,meisner rd
+468|David M Nash,1702,meisner rd
+469|Zain R Hargrove,1702,meisner rd
+470|Lottie D Rodriguez,1702,meisner rd
+471|Timothy D Mcgill,1702,meisner rd
+472|Matthew B Trevino,1702,meisner rd
+473|Timothy A Rennert,1702,meisner rd
+474|Kent C Gutierrez,1702,meisner rd
+475|Cesar D Duchene,1702,meisner rd
+476|Betty J Douglas,1702,meisner rd
+477|Aaron S Gregory,1702,meisner rd
+478|Timothy A Garvey,1702,meisner rd
+479|Cory G Simpson,1702,meisner rd
+480|Christopher L Gradel,1702,meisner rd
+481|Jonah N Guerra-Bernal,1702,meisner rd
+482|Kierra B Guess,1702,meisner rd
+483|Benjamin M Schellenberg-Morrison,1702,meisner rd
+484|Janet S Pierce,1702,meisner rd
+485|Timothy R Martinez-Pagan,1702,meisner rd
+486|Jessica H Adams,1702,meisner rd
+487|Katie O Brown,1702,meisner rd
+488|Jacob E Scott,1702,meisner rd
+489|Sheryl A Kelch,1702,meisner rd
+490|Leah A Mcgibbon,,meisner rd
+491|Billy D Fields,1702,meisner rd
+492|Thomas A Wingo,1702,meisner rd
+493|Jeffery R Stevens,1702,meisner rd
+494|Sean V Cushing,1702,meisner rd
+495|Nancy J Curtright,1702,meisner rd
+496|Henrietta P Certain,1702,meisner rd
+497|Shirley J Paxton,1702,meisner rd
+498|Charlene L Turner,1702,meisner rd
+499|Mark T Munn,1702,meisner rd
+500|Justin T Mackey,1702,meisner rd
+501|Zackary R Saunier,1702,meisner rd
+502|Ronnie S Hernandez,1702,meisner rd
+503|Freddy D Bentley,1702,meisner rd
+504|Robert R Gricius,1702,meisner rd
+505|Justin T Rosales,,meisner rd
+506|Michael P Ahmed,1702,meisner rd
+507|Betty J Siniard,1702,meisner rd
+508|Austin J Betancourt,1702,meisner rd
+509|Beckham A Smith,1702,meisner rd
+510|Timothy A Allen,1702,meisner rd
+511|Alex R Martinez-Salguero,1702,meisner rd
+512|Gregory E Jenkins,1702,meisner rd
+513|Michael D Reese,1702,meisner rd
+514|Joyce G Kruk,1702,meisner rd
+515|Benjamin J Bienaime,1702,meisner rd
+516|Trevor A Towne,1702,meisner rd
+517|Tabitha A Bermudez-Urbina,1702,meisner rd
+518|Jerome D Conley,1702,meisner rd
+519|Brendan M Mcnamara,1702,meisner rd
+520|Douglas J Chein,1702,meisner rd
+521|Michael J Montgomery,1702,meisner rd
+522|Kelly J Lady Of House,1702,meisner rd
+523|Joseph R Piper,1702,meisner rd
+524|Aaron S Forte,1702,meisner rd
+525|Jamal T Dial,1702,meisner rd
+526|Jim J Summers,1702,meisner rd
+527|Harold L Steen,,meisner rd
+528|Sheldon T Rodriguez,1702,meisner rd
+529|Paisley K Guess,1702,meisner rd
+530|Raymond N Schaff,,bramblewood dr
+531|Nancy M Schaff,,bramblewood dr
+532|Cathleen M Gilton,54,eastside ct
+533|Marcell C Ward,3564,s jacinto dr
+534|Kimberly D Ward,3564,s jacinto dr
+535|Jamison C Ward,3564,s jacinto dr
+536|Melody M Ward,3564,s jacinto dr
+537|Derek J Shields,1211,s bay mdw dr
+538|Hunter T Shields,1211,s bay mdw dr
+539|Laurence A Kohlmeyer,26,healey st nw
+540|Steven J Makler,568,116th ave se
+541|Kathleen C Dinca,5726,brandon hill loop
+542|Michael M Dinca,5726,brandon hill loop
+543|Jessica C Dinca,5726,brandon hill loop
+544|Mariyah L Dinca,5726,brandon hill loop
+545|Armando P Calhoun,2178,brookhaven wy
+546|Marilyn C Harris,2178,brookhaven wy
+547|Frank J Maloney,250,sw campus dr
+548|Sean C Blair,1331,peachtree blvd
+549|Nathaniel D Blair,1331,peachtree blvd
+550|Deandre B Blair,1331,peachtree blvd
+551|Kevin T Blair,1331,peachtree blvd
+552|Jeffrey M Hodge,11004,taraval street
+553|Ann J Hodge,11004,taraval street
+554|Robert W Greenwell,8233,lexington rd
+555|David A Hubbard,17063,foxborough dr
+556|Margaret C Hubbard,17063,foxborough dr
+557|Jason C Hubbard,17063,foxborough dr
+558|Martin L Hubbard,17063,foxborough dr
+559|Sandra C Willis,109,raspberry l
+560|Gary B Willis,109,raspberry l
+561|Evan K Willis,109,raspberry l
+562|Dorothy J Cohen,,ne 32 st
+563|Nickolas J Rogers,22710,turner ave ne
+564|Ronnie J Rogers,22710,turner ave ne
+565|Natalie A Rogers,22710,turner ave ne
+566|Ronald C Rogers,22710,turner ave ne
+567|John E Kluver,553,hummingbird tr
+568|Betty R Kluver,553,hummingbird tr
+569|Louise D Berry,14014,oak dr
+570|Kyle L Berry,14014,oak dr
+571|Lucille A Santos,2416,mchenry street
+572|Brian D Santos,2416,mchenry street
+573|Monique C Welch,553,hummingbird tr
+574|Marc C Rodriguez,27,wst ogden avenue
+575|Jessica C Rodriguez,27,wst ogden avenue
+576|Korbin C Rodriguez,27,wst ogden avenue
+577|Melanie L Rodriguez,27,wst ogden avenue
+578|Jennifer B Rodriguez,27,wst ogden avenue
+579|Jaxon C Rodriguez,27,wst ogden avenue
+580|Michael J Ziarko,861,drew st
+581|Patricia J Ziarko,861,drew st
+582|Tanya D Andrade,118,southeast weitz lane
+583|Nelanjs M Ortiz,,forest gln
+584|Linda E Piper,27,wst ogden avenue
+585|Benjamin J Bartlett,901,south myrtle avenue
+586|Cindy L Williams,800,w white chapel ave
+587|Patricia M Hargis,4806,toledo pl
+588|Andrew S Limon,1250,glen eagle ln
+589|Brenda S Limon,1250,glen eagle ln
+590|Robert J Limon,1250,glen eagle ln
+591|Hayden T Limon,1250,glen eagle ln
+592|Porter I Limon,1250,glen eagle ln
+593|James D Maricle,1923,maples road
+594|Barbara M Maricle,1923,maples road
+595|Shameka T Maricle,1923,maples road
+596|Dangelo G Maricle,1923,maples road
+597|Gary C Witt,959,golden ivy wy
+598|Ruby M Witt,959,golden ivy wy
+599|Clayton J Helms,5619,e 94th st
+600|Candace P Royer,634,palisade avn
+601|Nicholas C Royer,634,palisade avn
+602|Nathaniel W Royer,634,palisade avn
+603| A Royer,634,palisade avn
+604|Kristen D New,644,rdge roa
+605|Karl D New,644,rdge roa
+606|Barry R Estalilla,6338,lincoln rd
+607|Ruth M Estalilla,6338,lincoln rd
+608|Chris  ,512,logan road
+609|Bruce D Hearn,256,w 1300 s
+610|Gwendolyn D Carpenter,25930,donna dr
+611|Paul C Huey,,kingsbury
+612|Benjamin J Huey,,kingsbury
+613|Nina J Disalvo,1070,s abrego dr
+614|Shawn W Disalvo,1070,s abrego dr
+615|Nicholas  Disalvo,1070,s abrego dr
+616|Mary D Kohtz,4698,stelling av
+617|Timothy J Singh,119,w beech st w
+618|Frank J Welch,8029,forest gn dr
+619|Brenda A Welch,8029,forest gn dr
+620|James D Santiago,1435,messara ct
+621|Sandra T Lougee,3500,mckone street
+622|Bailey M Lougee,3500,mckone street
+623|Robert K Beadles,420,prairie
+624|Timothy J Beadles,420,prairie
+625|Grace B Potter,17,e cr 750 s
+626|Clarence R Potter,17,e cr 761 s
+627|Maurice B Potter,17,e cr 750 s
+628|Charlotte B Lockett,490,charter oak road
+629|Alyssa C Lockett,490,charter oak road
+630|Annette M Duryea,2451,willowood circle
+631|Lewis B Morelli,6897,maxine st
+632|Marianne M Morelli,6897,maxine st
+633|Lisa J Dimino,4201,ortega dr
+634|John J Dimino,4201,ortega dr
+635|John C Dellarosa,102,elba dve
+636|Timothy J Roberts,427,marlboro ave
+637|Wendy D Roberts,427,marlboro ave
+638|Luis C Lavin,102,elba dve
+639|Anarosa A Lavin,102,elba dve
+640|Charlotte B Pinkerton,4260,s florentine wy
+641|Jeremy T Pinkerton,4260,s florentine wy
+642|Anthony D Schlager,1670,evergreen drive
+643|Elise A Schlager,1670,evergreen drive
+644|Trent G Schlager,1670,evergreen drive
+645|Walter H Hulme,40301,windham la
+646|Edith H Hulme,40301,windham la
+647|Jayce C Dellarosa,,wilcox rd
+648|Kathryn C Alsaadi,11446,germaine ave
+649|Marc C Alsaadi,11446,germaine ave
+650|Michael L Alsaadi,11446,germaine ave
+651|Jacob C Alsaadi,11446,germaine ave
+652|Matthew L Alsaadi,11446,germaine ave
+653|Jillian C Alsaadi,11446,germaine ave
+654|Pam M Alsaadi,11446,germaine ave
+655|Richard O Alsaadi,11446,germaine ave
+656|Laura D Izzo,595,shooting star drive
+657|John D Izzo,595,shooting star drive
+658|Jayson C Izzo,,shooting star drive
+659|Conner A Izzo,595,shooting star drive
+660|Shea J Boskovic,2423,sweetfield dr
+661|Chris S Boskovic,2423,sweetfield dr
+662|Ashley S Boskovic,2423,sweetfield dr
+663|Ashley R Boskovic,2423,sweetfield dr
+664|Sophia F Boskovic,2423,sweetfield dr
+665|Benjamin R Boskovic,2423,sweetfield dr
+666|Akira S Boskovic,2423,sweetfield dr
+667|Timothy W Holthusen,275,clopton ct
+668|Paula L Dyer,270,new hartford street
+669|Neil M Coppola,374,s lipan st
+670|Kimberly D Coppola,374,s lipan st
+671|Lauren B Coppola,374,s lipan st
+672|Lilly B Coppola,374,s lipan st
+673|Lucille B Coppola,374,s lipan st
+674|Matthew L Coppola,374,s lipan st
+675|Jonathan C Coppola,374,s lipan st
+676|Christine H Hittler,4,e lake samish dr
+677|Thomas G Hittler,4,e lake samish dr
+678|Ava M Coppola,374,s lipan st
+679|Julian A Coppola,374,s lipan st
+680|Melissa M Board,68,n pennsylvania st
+681|Daniel A Board,68,n pennsylvania st
+682|Linnea B Board,68,n pennsylvania st
+683|Jaylyn B Board,68,n pennsylvania st
+684|Margaret C Campbell,10700,s monaco wy
+685|Maria A Martinez-Deltoro,2126,airline dr
+686|David D Martinez-Deltoro,2126,airline dr
+687|Josephine S Martinez-Deltoro,2126,airline dr
+688|Alex R Hettich,1573,kingfisher vill
+689|Loh S Hettich,1573,kingfisher vill
+690|Isaac P Hettich,1573,kingfisher vill
+691|Avery O Hettich,1573,kingfisher vill
+692|Viviana M Hettich,1573,kingfisher vill
+693|Arianna K Hettich,1573,kingfisher vill
+694|Michael D Helton,69411,n holly rd
+695|Michael L Helton,69411,n holly rd
+696|Susan S Bradford,49781,twin sisters lane
+697|Stacey R Bradford,49781,twin sisters lane
+698|Rose K Myers,8751,laurence brooke road
+699|John S Myers,8751,laurence brooke road
+700|Laura D Helton,84-60,erie st
+701|Rose J Scully,13032,blum road
+702| C Morimoto,606,devonshire wy
+703|Isaac T Morimoto,606,devonshire wy
+704|James D Morimoto,606,devonshire wy
+705|Vivian C Tanner,32038,sw houston dr
+706|Tammy A Choi,2001,south green bay avnue
+707|Jolene A Choi,2001,south green bay avnue
+708|Greyson T Choi,2001,south green bay avnue
+709|Ophelia K ,2001,south green bay avnue
+710|Brandon J Lyons,2001,south green bay avnue
+711|Melissa C Bender,15119,north bell avenue
+712|Kolby C Bender,15119,north bell avenue
+713|James C Bender,15119,north bell avenue
+714|Kelby C Bender,15119,north bell avenue
+715|Donnie A Bender,15119,north bell avenue
+716|Marvin D Strite,202,10th st s
+717|Felix L Overbey,17588,s sierrita mountain rd
+718|Brett D Strawbridge,17588,s sierrita mountain rd
+719|Beth D Strawbridge,17588,s sierrita mountain rd
+720|Dawn J Scott,832,switzler st
+721|Jerry J Scott,832,switzler st
+722|Justin  ,832,switzler st
+723|Thomas R Scott,832,switzler st
+724|Ashton J Scott,832,switzler st
+725|Timothy R Scott,832,switzler st
+726|John E Smith,7864,jeff cir
+727|Judith D Smith,7864,jeff cir
+728|Kimberly A Nappi,13795,124th ave se
+729|Danny G Mcdowell,13795,124th ave se
+730|Robin V Mcdowell,13795,124th ave se
+731|Clarence R Langenfeld,6800,ne 12th ave
+732|Helen S Langenfeld,6800,ne 12th ave
+733|Jimmy C Delano,5006,huntington rd
+734|Melissa C Delano,5006,huntington rd
+735|Rebecca J Mccarty,,willmas r
+736|Alejandro J Delano,5006,huntington rd
+737|Richard N Sherwood,821,illinois dr
+738|Jason T Shafer,14443,forest hill st
+739|Karen B Shafer,14443,forest hill st
+740|Lisa S Hughes,105,spirit lake hwy
+741|Aimee S Hughes,105,spirit lake hwy
+742|Michelle A Hughes,105,spirit lake hwy
+743|Raymond M Smith,310,glenmoor dr
+744|Marie C Smith,310,glenmoor dr
+745|Lyle D Archer,1558,dewey ave
+746|Doris A Archer,1558,dewey ave
+747|Charles J Bacon,9,carrolton way
+748|David B Bacon,9,carrolton way
+749|Ryan L Bacon,9,carrolton way
+750|Patricia K Bacon,9,carrolton way
+751|Jeffrey T Allen,63389,callbram ln
+752|Ann S Allen,63389,callbram ln
+753|Melissa D Mitchell,914,w 40th st
+754|Jean M Ray,5946,crest hl dr
+755|Ivan T Ray,5946,crest hl dr
+756|Arturo A Ray,5946,crest hl dr
+757|Brittany A Ray,5946,crest hl dr
+758|Roy W Box,,kittery pt
+759|Cecilia D Box,,kittery pt
+760|Thomas A Pickens,,gn st
+761|Chana L Pickens,,gn st
+762|Jose C Pickens,,gn st
+763|Collin J Pickens,,gn st
+764|Melissa D James,5429,ferry lndg
+765|Kimberly T Willwerth,7029,
+766|Steven D Tunnell,605,2nd pl w
+767|Cheryl C Orio,144,mosel avenue
+768|Terrence J Orio,144,mosel avenue
+769|Vanessa P Neff,903,coldwater rd
+770|Monica A Neff,903,coldwater rd
+771|Johnny D Jackson,26255,willamette drive
+772|Lilia B Jackson,26255,willamette drive
+773|Charlotte A Jackson,26255,willamette drive
+774|Lenny C T,26255,willamette drive
+775|Tabatha S Bowyer,636,south main street
+776|Man A ,15503,victoria pointe cir
+777|Carol L Phelps,15503,victoria pointe cir
+778|Jeffery R Miller,224,gleeson lane
+779|Carmen J Ross,224,gleeson lane
+780|Patrick M Freddie,720,carousel dr
+781|Kathy C Freddie,720,carousel dr
+782|Kevin C A,720,carousel dr
+783|James C Freddie,720,carousel dr
+784|Wendy D Zhou,546,washington street
+785|John T Zhou,546,washington street
+786|Timothy R Tollefsrud,7205,robbins nest way
+787|Riley A Berry,7205,robbins nest way
+788|Beatriz M Yap,557,57th avenue
+789|Robin E Nguyen,557,57th avenue
+790|Derrick P Flanagan,11310,e southland blvd
+791|Rebecca S Flanagan,11310,e southland blvd
+792|Michael C Flanagan,11310,e southland blvw
+793|Derek M Davis,324,illinois road
+794|John D Prendergast,2492,s main st
+795|Connor A Prendergast,2492,s main st
+796|Jan M Kinney,3536,kingsbury roa
+797|Rita A Meyer,413,vanport ave
+798|Thomas C Schofield,25,premium point rd
+799|Virginia D Schofield,25,premium point rd
+800|Gianna L Schofield,25,premium point rd
+801|Denise A Harting-Conant,241,lake road
+802|Jeremy C Harting-Conant,241,lake road
+803|Alexis G Harting-Conant,241,lake road
+804|Robert A Rautenberg,1520,concord ave n
+805|Violeta C Rautenberg,1520,concord ave n
+806|Raina I Rautenberg,1520,concord ave n
+807|Claire H Rautenberg,1520,concord ave n
+808|Laken C Medlock,43,flower st
+809|Robert J Medlock,43,flower st
+810|Angie J Medlock,43,flower st
+811|Christian J Medlock,43,flower st
+812|Katelyn B Medlock,43,flower st
+813|Kylie C Medlock,43,flower st
+814|Lori D Medlock,43,flower st
+815|Peggy A Perez,868,conley ct
+816|Roxanne V Longer,2315,yarbrough ave
+817|Richard D Longer,2315,yarbrough ave
+818|Catrina A Longer,2315,yarbrough ave
+819|Rebecca L Wilbert,868,conley ct
+820|Garland D Wilbert,868,conley ct
+821|Noah C Tapia,43,flower st
+822|Kim D Hennessee,9019,ridgegreen dr
+823|Janet M Sax,721,eastleigh circle
+824|Arthur J Sax,721,eastleigh circle
+825|Brenda S Moore,3830,shady morning ln
+826|Ralph M Moore,3830,shady morning ln
+827|Ashley J Daly,10022,w 138 st
+828|Paul J Daly,10022,w 138 st
+829|Carter A Daly,10022,w 138 st
+830|Zoe B Daly,10022,w 138 st
+831|Joyce S Hale,4107,auburn grove ln
+832|Henry M X,4107,auburn grove ln
+833|Delbert D Rains-Govoni,4349,mammoth cave loop
+834|Betty D Rains-Govoni,4349,mammoth cave loop
+835|Tammy C Glass,4442,west foundry stree
+836|Marie C Orlando,6005,lawler street
+837|Lisa C Orlando,6005,lawler street
+838|Mary M Orlando,6005,lawler street
+839|Collin A Orlando,6005,lawler street
+840|Jennifer B Orlando,6005,lawler street
+841|Cassidy A Orlando,6005,lawler street
+842|Stephanie S Bartolomeo,7523,sunnyhills rd
+843|Ethan K Bartolomeo,7523,sunnyhills rd
+844|Grace S Bartolomeo,7523,sunnyhills rd
+845|Brett D Sanders,719,polk st
+846|Chasity C Sanders,719,polk st
+847|Pamela D Kennedy,142,11th ave ne
+848|Matthew P Kennedy,142,11th ave ne
+849|Cindy D Sizer,4410,washington street
+850|Thomas C Sizer,4410,washington street
+851| A Williams,6219,sugarbark dr
+852|Michael M Williams,6219,sugarbark dr
+853|Lindsey B Williams,6219,sugarbark dr
+854|London A Williams,6219,sugarbark dr
+855|Elizabeth B Neto,9,willow dr
+856|John D Rahman,,silver run
+857|Maria C Rahman,,silver run
+858|James C Rahman,,silver run
+859|Cooper A Rahman,,silver run
+860|Susan C Hanna-Fountain,4953,west vega dve
+861|Robert J Hanna-Fountain,4953,west vega dve
+862|John J Mendez,3207,w main st
+863|Chad L Dolce,2232,hickory crk rd
+864|Tevin G Dolce,2232,hickory crk rd
+865|Jessica J Dolce,2232,hickory crk rd
+866|Lydia J Dolce,2232,hickory crk rd
+867|Randy M Ballerini,4825,s ocean dr
+868|Mckenzie M Ballerini,4825,s ocean dr
+869|Timothy J Brooks,1373,stone mill way
+870|Jesse T Brooks,1373,stone mill way
+871|Brady S Brooks,1373,stone mill way
+872|Zachary C Whitmore,160,tonita wy
+873|Anne M Cicci,160,
+874|Christa K Perry,4825,s ocean dr
+875|Janet L Lippincott,3121,pinewood ave
+876|Robert W Pritchett,,captains quarters rd
+877|Sarah L Pritchett,,captains quarters rd
+878|Carlos K Vaught,25,devonshire avenue
+879|Emily K Vaught,25,devonshire avenue
+880|Keith D Nisbet,,tequila wy
+881|Sharon V Nisbet,4191,tequila wy
+882|Hamza T Nisbet,4191,tequila wy
+883|Grayson L Vaught,25,devonshire avenue
+884|Zoe B Vaught,25,devonshire avenue
+885|Kimberly D Suttle,29,claudia drive
+886|Mark J Goodreau,2715,williams st
+887|Leah C Roberts,730,white marsh ln
+888|Marvin J Roberts,730,white marsh ln
+889|Joel C Roberts,730,white marsh ln
+890| C Roberts,730,white marsh ln
+891|Bonnie M Sackett,710,richards dr
+892|Michael D Kazmierczak,5207,yucca rd
+893|Debra A Kazmierczak,5207,yucca rd
+894|Jimmy T Limuel,16022,villa de lobo dr
+895|Darlene C Limuel,16022,villa de lobo dr
+896|Dwight C Mejia,466,ne 4th st
+897|Ronnie T Mejia,466,ne 4th st
+898|Charlotte K Weese,114,masefield st
+899|Stanley M Weese,114,masefield st
+900|Rickey D Armbrister,3232,wilson ave
+901|Robert L Hawkins,580,s ryan rd
+902|Teresa S Hawkins,580,s ryan rd
+903|Carolyn C Bryan-Garrett,243,cascade canyon ct
+904|Rayburn D Bryan-Garrett,243,cascade canyon ct
+905|Dale L Carter,9322,ashford street
+906|Lisa A Carter,9322,ashford street
+907|Crystal M Carter,9322,ashford street
+908|Luis A Carter,9322,ashford street
+909|Jonathan C Carter,9322,ashford street
+910|Evelyn L Carter,9322,ashford street
+911|Jillian A Carter,9322,ashford street
+912|Liam C Dietrick,9335,parkway office ct
+913|John E Harte Quinones,325,3rd st
+914|Melanie M Ontiveros,16633,canberry ct
+915|John  Ontiveros,16633,canberry ct
+916|Daniel J Jones,12854,old hwy 18
+917|Nancy C Jones,12854,old hwy 18
+918|Marc C Hernandez,6,clark str
+919|Crystal A Hernandez,6,clark str
+920|Wanda C Hillman,3929,abalar way
+921|Brittany H Lassiter,34,university blvd
+922|Nathaniel J Lassiter,34,university blvd
+923|Azul C Lassiter,34,university blvd
+924|Brandon J Keeney,2122,west easy street
+925|Stephanie Y Keeney,2122,west easy street
+926|Brody J Keeney,2122,west easy street
+927|Jayla J Keeney,2122,west easy street
+928|Kathy K Ryder,806,herrick av
+929|William G Ryder,806,herrick av
+930|Thomas D Ryder,806,herrick av
+931|Letitia E Gibbs,461,west alhambra av
+932|Kyle J Sabol,30,east center str
+933|Enid R Sabol,30,east center str
+934|Michael M Parks Easter,401,deer park trl
+935|Ronnie M Stevens Jaeger,1010,harden parkwy
+936|Melanie P Stevens Jaeger,1010,harden parkwy
+937|Shanna V Stevens Jaeger,1010,harden parkwy
+938|Sergio G Stevens Jaeger,1010,harden parkwy
+939|Rafe J Stevens Jaeger,1010,harden parkwy
+940|Noah B Stevens Jaeger,1010,harden parkwy
+941|Ricky D Williams,,northeast 50th avenue
+942|Resident J Williams,,northeast 50th avenue
+943|Brianna A Williams,,northeast 50th avenue
+944|Melissa L Field,9,driftwood
+945|Wendy D Gandarilla,301,cedar cir se
+946|Robert G Gandarilla,301,cedar cir se
+947|Catherine J Hirschfield,9,driftwood
+948|Ivy E Hirschfield,9,driftwood
+949|Lori A Klinck,2406,16th ave
+950|Robert W Laclair,41180,n 24th st
+951|Dawn A Davis,562,ranchero raod
+952|David A Davis,562,ranchero raod
+953|Corbin A Davis,562,ranchero raod
+954|David A Horton,10531 1 2,four seasons py
+955|Christopher S Hh,238,s 19th st
+956|Jaclyn M Benson,238,s 19th st
+957|Jacob C Benson,238,s 19th st
+958|Brandon  Benson,238,s 19th st
+959|Charles M Martunez-Marcado,562,ranchero raod
+960|Georgia M Graham,1920,lt canada road east
+961|Kyle J Grotsky,430,newton drive
+962|Rowan L Grotsky,430,newton drive
+963|Tanya J Norbu,5r,adwick ct
+964|Rodney L Norbu,5r,adwick ct
+965|Wendy D Rogers,13,44th avenue south
+966|Dennis E Rogers,13,44th avenue south
+967|Joanne S Miller,6422,birkhill dr
+968|Kristin D Victor,7965,milton street
+969|Melvin D Mckay,7965,milton street
+970|Donna A Mckay,7965,milton street
+971|Susann G Shelby,8954,sawmill commons ln
+972|Barry S Shelby,8954,sawmill commons ln
+973|Wendi C Lohrman,3018,rhode island se
+974|Jerry T Lohrman,3018,rhode island se
+975|Alexandria M Lohrman,3018,rhode island se
+976|Kerry A Villanueva Perez,1063,gen lee d
+977|Tammy E Brouillette,8605,w main st
+978|Devan A Brouillette,8605,w main st
+979|Pamela C Graham,904,nw poppy dr
+980|Joseph D Mitchell,,oak st
+981|Megan L Mitchell,,oak st
+982|Shannon T Stonitsch,222,rhone park dr
+983|Jordan J Guerra-Alvarez,1473,port sheldon street
+984|Catherine D Stutzman,7901,campo florido
+985|Elizabeth J Sims,301,richards ave
+986|Jill B Willis,5452,panther ct
+987|Kayla E Willis,5452,panther ct
+988|Bianca D Willis,5452,panther ct
+989|Aaliyah S Willis,5452,panther ct
+990|Aiden I Willis,5452,panther ct
+991|Regan E Willis,5452,panther ct
+992|Hannah E Willis,5452,panther ct
+993|Davion B Willis,5452,panther ct
+994|Elijah J Slade,5452,panther ct
+995|Diane  Gonsalves,18234,crab apple drive
+996|Juan D Gonsalves,18234,crab apple drive
+997|Christopher D Allen,4540,cavacade dr
+998|Daivd R Cain,4851,iowa st sw
+999|Sharon M Cain,4851,iowa st sw
+1000|Jade E Cain,4851,iowa st sw

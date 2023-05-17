@@ -5,7 +5,7 @@ Created on Wed May 18 19:52:24 2022
 @author: onais
 """
 import sys
-sys.path.insert(0, '../dwm-refactor-v1/')
+sys.path.insert(0, './dwm-refactor-v1/')
 import DWM00_Driver as DWM
 import pandas as pd
 import networkx as nx
@@ -66,7 +66,7 @@ with open("Output_File.txt","w") as out:
         splitName=NParser.ExtractNames(splitData[1])
         splitName=splitName.split("..")
         for o in splitName:
-            file_n_w.write(sd.soundex(o)+"|"+splitData[2])
+            file_n_w.write(o+"|"+splitData[2])
             out.write(sd.soundex(o)+"|"+splitData[2])
             out.write("\n")
             file_n_w.write("\n")
@@ -334,4 +334,30 @@ with open("Output_File.txt","w") as out:
 # secrets="vcitnrnourll67gvb63fd6kv3qmho42a"
 # authtokens=graph.getToken(secret=secrets)
 # #(authtokens)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
