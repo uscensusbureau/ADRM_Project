@@ -276,7 +276,7 @@ Output From Active Learning
 }
 
 Number of Exceptions Thrown: -	0
-Number of Parsed Address: -	50
+Number of Parsed Name: -	50
 Percentage of Parsed Result: -	100.0
 
 

@@ -51,7 +51,18 @@ class NameAddressParser:
                                row = 0,
                                padx = 0,
                                pady = 0)  
-        
+        def Process_Name_Parser_input():
+            msg.showinfo("Choose File","Select Input File")
+
+            df = fd.askopenfilenames( filetypes=[("TXT", ".txt"),("JSON",".json")]) 
+            if df:
+                Output=NModule.ExtractNames(df[0])
+                if Output[0]:
+                    msg.showinfo("Success",Output[1])
+                else:
+                    msg.showerror("Error!", Output[1])
+            else: msg.showerror("Alert","Please select input file.")
+            return
         
         def Process_Name_Parser():
             msg.showinfo("Choose File","Select Input File")
@@ -60,50 +71,50 @@ class NameAddressParser:
             if(df):
                 msg.showinfo("Choose File","Select Truth File")
                 #this file is used to give UI for the user to open a truth file
-                truth = fd.askopenfilenames( filetypes=[("TXT", ".txt")]) 
+                truth = fd.askopenfilenames( filetypes=[("TXT", ".txt"),("JSON",".json")]) 
+                
+                
+                
                 if truth:
-                    NameAddressParser.tabControl.add(tab1, text ='Name Parser')
-                    ttk.Label(tab1, 
-                    text ="Please Choose a Pipe Delimitted File").grid(column = 0, 
-                                        row = 0,
-                                        padx = 0,
-                                        pady = 0)  
+                    Output=NModule.ExtractNames(df[0],TruthSet=truth[0])
+                    if Output[0]:
+                        msg.showinfo("Success",Output[1])
+                    else:
+                        msg.showerror("Error!", Output[1])                
                     
-                    Output=NModule.ExtractNames(df[0],truth[0])
-                    jsonData = json.dumps(Output[0], indent=2)
-                    with open('OutputNameParsedFile.txt', 'w') as out_file:
-                        json.dump(Output[0], out_file, sort_keys = True, indent = 4,ensure_ascii = False)
-                        msg.showinfo("Success!","Parsing is Successful !  Output File Name 'OutputAddressParsedFile' is Generated")
-                    
-                
-                    
-                    
-                
-                    # create a scrollbar widget and set its command to the text widget
-                    
-                    #  communicate back to the scrollbar
-                    String="% of Parsed Name and Address"
-                    String+="= "+str(round(Output[1],2))
-                    String+="\n% of Correctly parsed Addresses= "+str(round(Output[2],2))
-                    text.delete("1.0",'end-1c')
-                    text_result.delete("1.0",'end-1c')
-                    
-                    text.insert('end', jsonData)
-                    text_result.insert('end', String)
-                else: msg.showerror("Warning","Trush file is required!")
-            else: msg.showerror("Warning","Input File is not selected.")
+                  
+                    # except:
+                    #     msg.showinfo("Alert!","File Reading Error !")
+                else: msg.showerror("Alert!","Truth file is required!")
+            else: msg.showerror("Alert","Please select input file.")
             return
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+               
+
+        Nbutton = ttk.Button(tab1, text ="Choose Two Files (input and test)",width=30, command=Process_Name_Parser).grid(column = 5, 
+                             row = 60,
+                             padx = 10,
+                             pady = 10)
+        NbuttonSingle = ttk.Button(tab1, text ="Choose Single File (input)",width=30, command=Process_Name_Parser_input).grid(column = 5, 
+                             row = 50,
+                             padx = 10,
+                             pady = 10)
         
-                        
-       
         Or_Label=ttk.Label(tab1,text="Enter Name").grid(column = 4, 
                                  row = 10,
                                  padx = 10,
                                  pady = 10) 
-        Nbutton = ttk.Button(tab1, text ="Choose Two Files",width=30, command= Process_Name_Parser).grid(column = 5, 
-                             row = 50,
-                             padx = 10,
-                             pady = 10)
         nad=tk.StringVar()
         single_input = ttk.Entry(tab1,width=100,textvariable=nad).grid(column = 5, 
                                  row = 10,
@@ -114,21 +125,8 @@ class NameAddressParser:
                                row = 15,
                                padx = 0,
                                pady = 0) 
-        text = tk.Text(tab1, height=24)
-        text.grid(row=55, column=5, sticky=tk.EW)
-        
-        # create a scrollbar widget and set its command to the text widget
-        scrollbar = tk.Scrollbar(tab1, orient='vertical', command=text.yview)
-        scrollbar.grid(column=6, row=55, rowspan=2,  sticky="ns")
-        
-        #  communicate back to the scrollbar
-        text['yscrollcommand'] = scrollbar.set
-        
-        
-        text_result = tk.Text(tab1, height=5,width=30)
-        text_result.grid(row=55, column=7,padx=20,pady=20)
-        
 
+        
         
         def Single_Name(): 
             Convert=NAD_API.ExtractNames(nad.get())

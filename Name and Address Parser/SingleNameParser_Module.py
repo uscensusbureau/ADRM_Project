@@ -11,7 +11,7 @@ import json
 #Parsing 1st program
 
 def ExtractNames(line):
-    fileHandle = open('NamesWordTableOpt.txt', 'r')
+    fileHandle = open('NamesWordTable.txt', 'r')
     # Strips the newline character
     FinalMappings={}
     Names_Conversion_Dict={"1":"Prefix Title","2":"Given Name", "3":"Surname","4" :"Generational Suffix", "5":"Suffix Title"}    
