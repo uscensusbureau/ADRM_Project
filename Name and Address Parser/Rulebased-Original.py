@@ -9,7 +9,7 @@ class RuleBasedAddressParser:
 
         MASK=[] #In String
         Old_Address=line.strip()
-        USAD_Conversion_Dict={"USAD_SNO":"","USAD_SPR":"","USAD_SPR":"","USAD_SNM":"","USAD_SFX":"","USAD_SPT":"","USAD_ANM":"","USAD_ANO":"","USAD_CTY":"","USAD_STA":"","USAD_ZIP":"","USAD_ZP4":"","USAD_BNM":"","USAD_BNO":"","USAD_RNM":"","USAD_RNO":"","USAD_HNM":"","USAD_HNO":"","USAD_MDG":"","USAD_MGN":""}
+        USAD_Conversion_Dict={"USAD_SNO":"","USAD_SPR":"","USAD_SPR":"","USAD_SNM":"","USAD_SFX":"","USAD_SPT":"","USAD_ANM":"","USAD_ANO":"","USAD_CTY":"","USAD_STA":"","USAD_ZIP":"","USAD_ZP4":"","USAD_BNM":"","USAD_BNO":"","USAD_RNM":"","USAD_RNO":"","USAD_HNM":"","USAD_HNO":""}
         List=USAD_Conversion_Dict.keys()
         FirstPhaseList=[]
         Address=line.strip()
@@ -61,7 +61,7 @@ class RuleBasedAddressParser:
                 Mask.append(Combine)
             fileHandle.seek(0)
             LoopCheck+=1
-        USAD_Mapping={"USAD_SNO":[],"USAD_SPR":[],"USAD_SPR":[],"USAD_SNM":[],"USAD_SFX":[],"USAD_SPT":[],"USAD_ANM":[],"USAD_ANO":[],"USAD_CTY":[],"USAD_STA":[],"USAD_ZIP":[],"USAD_ZP4":[],"USAD_BNM":[],"USAD_BNO":[],"USAD_RNM":[],"USAD_RNO":[],"USAD_HNM":[],"USAD_HNO":[],"USAD_MDG":[],"USAD_MGN":[]}
+        USAD_Mapping={"USAD_SNO":[],"USAD_SPR":[],"USAD_SPR":[],"USAD_SNM":[],"USAD_SFX":[],"USAD_SPT":[],"USAD_ANM":[],"USAD_ANO":[],"USAD_CTY":[],"USAD_STA":[],"USAD_ZIP":[],"USAD_ZP4":[],"USAD_BNM":[],"USAD_BNO":[],"USAD_RNM":[],"USAD_RNO":[],"USAD_HNM":[],"USAD_HNO":[]}
         Start=0
         Counts=0
         if "X" not in TrackKey:
@@ -493,212 +493,141 @@ class RuleBasedAddressParser:
                             USAD_Mapping["USAD_ZIP"].append(j+1)
                             USAD_Conversion_Dict["USAD_ZIP"]+=Value.strip()+" "
                             Counts+=1
+                
+                # else:
+                #     for j in range(Counts,len(TrackKey)):
+                #         Dictionary=FirstPhaseList[j]
+                #         Key=""
+                #         Value=""
+                #         for K,V in Dictionary.items():
+                #             Key=K
+                #             Value=V
                             
-                elif "RR" in list_of_values:
-                    for j in range(Counts,len(TrackKey)):
-                        Dictionary=FirstPhaseList[j]
-                        Key=""
-                        Value=""
-                        for K,V in Dictionary.items():
-                            Key=K
-                            Value=V
-                            
-                        if Key=="R":
-                            USAD_Mapping["USAD_RNM"].append(j+1)
-                            USAD_Conversion_Dict["USAD_RNM"]+=Value.strip()+" "
-                            Counts+=1
+                #         if Key=="R":
+                #             USAD_Mapping["USAD_RNM"].append(j+1)
+                #             USAD_Conversion_Dict["USAD_RNM"]+=Value.strip()+" "
+                #             Counts+=1
                 
                 
-                    for j in range(Counts,len(TrackKey)):
-                        Dictionary=FirstPhaseList[j]
-                        Key=""
-                        Value=""
-                        for K,V in Dictionary.items():
-                            Key=K
-                            Value=V
+                #     for j in range(Counts,len(TrackKey)):
+                #         Dictionary=FirstPhaseList[j]
+                #         Key=""
+                #         Value=""
+                #         for K,V in Dictionary.items():
+                #             Key=K
+                #             Value=V
                             
-                        if Key=="N" or Key=="D":
-                            USAD_Mapping["USAD_RNO"].append(j+1)
-                            USAD_Conversion_Dict["USAD_RNO"]+=Value.strip()+" "
-                            Counts+=1
-                        try:          
-                            if TrackKey[j+1]!="T":
-                                USAD_Mapping["USAD_RNO"]=USAD_Mapping["USAD_RNO"]
+                #         if Key=="N":
+                #             USAD_Mapping["USAD_RNO"].append(j+1)
+                #             USAD_Conversion_Dict["USAD_RNO"]+=Value.strip()+" "
+                #             Counts+=1
+                #         try:          
+                #             if TrackKey[j+1]!="N":
+                #                 USAD_Mapping["USAD_RNO"]=USAD_Mapping["USAD_RNO"]
         
-                                USAD_Conversion_Dict["USAD_RNO"]=USAD_Conversion_Dict["USAD_RNO"].strip()
-                                break
-                        except:
-                            USAD_Mapping["USAD_RNO"]=USAD_Mapping["USAD_RNO"]
-                            USAD_Conversion_Dict["USAD_RNO"]=USAD_Conversion_Dict["USAD_RNO"].strip()
+                #                 USAD_Conversion_Dict["USAD_RNO"]=USAD_Conversion_Dict["USAD_RNO"].strip()
+                #                 break
+                #         except:
+                #             USAD_Mapping["USAD_RNO"]=USAD_Mapping["USAD_RNO"]
+                #             USAD_Conversion_Dict["USAD_RNO"]=USAD_Conversion_Dict["USAD_RNO"].strip()
 
-                    for j in range(Counts,len(TrackKey)):
-                        Dictionary=FirstPhaseList[j]
-                        Key=""
-                        Value=""
-                        for K,V in Dictionary.items():
-                            Key=K
-                            Value=V
+                #     for j in range(Counts,len(TrackKey)):
+                #         Dictionary=FirstPhaseList[j]
+                #         Key=""
+                #         Value=""
+                #         for K,V in Dictionary.items():
+                #             Key=K
+                #             Value=V
                             
-                        if Key=="X":
-                            USAD_Mapping["USAD_BNM"].append(j+1)
-                            USAD_Conversion_Dict["USAD_BNM"]+=Value.strip()+" "
-                            Counts+=1
+                #         if Key=="X":
+                #             USAD_Mapping["USAD_BNM"].append(j+1)
+                #             USAD_Conversion_Dict["USAD_BNM"]+=Value.strip()+" "
+                #             Counts+=1
                 
                 
-                    for j in range(Counts,len(TrackKey)):
-                        Dictionary=FirstPhaseList[j]
-                        Key=""
-                        Value=""
-                        for K,V in Dictionary.items():
-                            Key=K
-                            Value=V
+                #     for j in range(Counts,len(TrackKey)):
+                #         Dictionary=FirstPhaseList[j]
+                #         Key=""
+                #         Value=""
+                #         for K,V in Dictionary.items():
+                #             Key=K
+                #             Value=V
                             
-                        if Key=="N":
-                            USAD_Mapping["USAD_BNO"].append(j+1)
-                            USAD_Conversion_Dict["USAD_BNO"]+=Value.strip()+" "
-                            Counts+=1
-                        try:          
-                            if TrackKey[j+1]!="T":
-                                USAD_Mapping["USAD_BNO"]=USAD_Mapping["USAD_BNO"]
+                #         if Key=="N":
+                #             USAD_Mapping["USAD_BNO"].append(j+1)
+                #             USAD_Conversion_Dict["USAD_BNO"]+=Value.strip()+" "
+                #             Counts+=1
+                #         try:          
+                #             if TrackKey[j+1]!="T":
+                #                 USAD_Mapping["USAD_BNO"]=USAD_Mapping["USAD_BNO"]
         
-                                USAD_Conversion_Dict["USAD_BNO"]=USAD_Conversion_Dict["USAD_BNO"].strip()
-                                break
-                        except:
-                            USAD_Mapping["USAD_BNO"]=USAD_Mapping["USAD_BNO"]
-                            USAD_Conversion_Dict["USAD_BNO"]=USAD_Conversion_Dict["USAD_BNO"].strip()
+                #                 USAD_Conversion_Dict["USAD_BNO"]=USAD_Conversion_Dict["USAD_BNO"].strip()
+                #                 break
+                #         except:
+                #             USAD_Mapping["USAD_BNO"]=USAD_Mapping["USAD_BNO"]
+                #             USAD_Conversion_Dict["USAD_BNO"]=USAD_Conversion_Dict["USAD_BNO"].strip()
                     
-                    for j in range(Counts,len(TrackKey)):
-                        Dictionary=FirstPhaseList[j]
-                        Key=""
-                        Value=""
-                        for K,V in Dictionary.items():
-                            Key=K
-                            Value=V
+                #     for j in range(Counts,len(TrackKey)):
+                #         Dictionary=FirstPhaseList[j]
+                #         Key=""
+                #         Value=""
+                #         for K,V in Dictionary.items():
+                #             Key=K
+                #             Value=V
                             
-                        if Key=="W" or Key=="D":
-                            USAD_Mapping["USAD_CTY"].append(j+1)
-                            currentValue = USAD_Conversion_Dict["USAD_CTY"]
-                            StrippedValue = Value.strip()+" "
-                            if currentValue:
-                                appendedValue = currentValue + " " +StrippedValue
-                            else:
-                                appendedValue = StrippedValue
-                            USAD_Conversion_Dict["USAD_CTY"] = appendedValue
-                            Counts+=1
-                        try:          
-                            if TrackKey[j+1]!="W":
-                                USAD_Mapping["USAD_CTY"]=USAD_Mapping["USAD_CTY"]
+                #         if Key=="W":
+                #             USAD_Mapping["USAD_CTY"].append(j+1)
+                #             USAD_Conversion_Dict["USAD_CTY"]+=Value.strip()+" "
+                #             Counts+=1
+                #         try:          
+                #             if TrackKey[j+1]!="W":
+                #                 USAD_Mapping["USAD_CTY"]=USAD_Mapping["USAD_CTY"]
         
-                                USAD_Conversion_Dict["USAD_CTY"]=USAD_Conversion_Dict["USAD_CTY"].strip()
-                                break
-                        except:
-                            USAD_Mapping["USAD_CTY"]=USAD_Mapping["USAD_CTY"]
-                            USAD_Conversion_Dict["USAD_CTY"]=USAD_Conversion_Dict["USAD_CTY"].strip()
+                #                 USAD_Conversion_Dict["USAD_CTY"]=USAD_Conversion_Dict["USAD_CTY"].strip()
+                #                 break
+                #         except:
+                #             USAD_Mapping["USAD_CTY"]=USAD_Mapping["USAD_CTY"]
+                #             USAD_Conversion_Dict["USAD_CTY"]=USAD_Conversion_Dict["USAD_CTY"].strip()    
                 
-                    for j in range(Counts,len(TrackKey)):
-                        Dictionary=FirstPhaseList[j]
-                        Key=""
-                        Value=""
-                        for K,V in Dictionary.items():
-                            Key=K
-                            Value=V
+                #     for j in range(Counts,len(TrackKey)):
+                #         Dictionary=FirstPhaseList[j]
+                #         Key=""
+                #         Value=""
+                #         for K,V in Dictionary.items():
+                #             Key=K
+                #             Value=V
                             
-                        if Key=="T":
-                            USAD_Mapping["USAD_STA"].append(j+1)
-                            USAD_Conversion_Dict["USAD_STA"]+=Value.strip()+" "
-                            Counts+=1
+                #         if Key=="T":
+                #             USAD_Mapping["USAD_STA"].append(j+1)
+                #             USAD_Conversion_Dict["USAD_STA"]+=Value.strip()+" "
+                #             Counts+=1
                         
-                        try:          
-                            if TrackKey[j+1]!="T":
-                                USAD_Mapping["USAD_STA"]=USAD_Mapping["USAD_STA"]
+                #         try:          
+                #             if TrackKey[j+1]!="T":
+                #                 USAD_Mapping["USAD_STA"]=USAD_Mapping["USAD_STA"]
         
-                                USAD_Conversion_Dict["USAD_STA"]=USAD_Conversion_Dict["USAD_STA"].strip()
-                                break
-                        except:
-                            USAD_Mapping["USAD_STA"]=USAD_Mapping["USAD_STA"]
-                            USAD_Conversion_Dict["USAD_STA"]=USAD_Conversion_Dict["USAD_STA"].strip()
+                #                 USAD_Conversion_Dict["USAD_STA"]=USAD_Conversion_Dict["USAD_STA"].strip()
+                #                 break
+                #         except:
+                #             USAD_Mapping["USAD_STA"]=USAD_Mapping["USAD_STA"]
+                #             USAD_Conversion_Dict["USAD_STA"]=USAD_Conversion_Dict["USAD_STA"].strip()
                 
                 
-                    for j in range(Counts,len(TrackKey)):
-                        Dictionary=FirstPhaseList[j]
-                        Key=""
-                        Value=""
-                        for K,V in Dictionary.items():
-                            Key=K
-                            Value=V
+                #     for j in range(Counts,len(TrackKey)):
+                #         Dictionary=FirstPhaseList[j]
+                #         Key=""
+                #         Value=""
+                #         for K,V in Dictionary.items():
+                #             Key=K
+                #             Value=V
                             
-                        if Key=="N":
-                            USAD_Mapping["USAD_ZIP"].append(j+1)
-                            USAD_Conversion_Dict["USAD_ZIP"]+=Value.strip()+" "
-                            Counts+=1
-                            
-                elif "FPO" and "M" in list_of_values:
-                    for j in range(Counts,len(TrackKey)):
-                        Dictionary=FirstPhaseList[j]
-                        Key=""
-                        Value=""
-                        for K,V in Dictionary.items():
-                            Key=K
-                            Value=V
-                            
-                        if Key=="M":
-                            USAD_Mapping["USAD_MDG"].append(j+1)
-                            USAD_Conversion_Dict["USAD_MDG"]+=Value.strip()+" "
-                            Counts+=1
-                
-                
-                    
-                    
-                
-                
-                    
-                    for j in range(Counts,len(TrackKey)):
-                        Dictionary=FirstPhaseList[j]
-                        Key=""
-                        Value=""
-                        for K,V in Dictionary.items():
-                            Key=K
-                            Value=V
-                            
-                        if Key=="W":
-                            USAD_Mapping["USAD_MGN"].append(j+1)
-                            currentValue = USAD_Conversion_Dict["USAD_MGN"]
-                            StrippedValue = Value.strip()+" "
-                            if currentValue:
-                                appendedValue = currentValue + " " +StrippedValue
-                            else:
-                                appendedValue = StrippedValue
-                            USAD_Conversion_Dict["USAD_MGN"] = appendedValue
-                            Counts+=1
-                        try:          
-                            if TrackKey[j+1]!="W":
-                                USAD_Mapping["USAD_MGN"]=USAD_Mapping["USAD_MGN"]
-        
-                                USAD_Conversion_Dict["USAD_MGN"]=USAD_Conversion_Dict["USAD_MGN"].strip()
-                                break
-                        except:
-                            USAD_Mapping["USAD_MGN"]=USAD_Mapping["USAD_MGN"]
-                            USAD_Conversion_Dict["USAD_MGN"]=USAD_Conversion_Dict["USAD_MGN"].strip()
-                
-                    
-                    for j in range(Counts,len(TrackKey)):
-                        Dictionary=FirstPhaseList[j]
-                        Key=""
-                        Value=""
-                        for K,V in Dictionary.items():
-                            Key=K
-                            Value=V
-                            
-                        if Key=="N":
-                            USAD_Mapping["USAD_ZIP"].append(j+1)
-                            USAD_Conversion_Dict["USAD_ZIP"]+=Value.strip()+" "
-                            Counts+=1
-                        
-                        
-                
+                #         if Key=="N":
+                #             USAD_Mapping["USAD_ZIP"].append(j+1)
+                #             USAD_Conversion_Dict["USAD_ZIP"]+=Value.strip()+" "
+                #             Counts+=1
                      
         dic = {key:value for key,value in USAD_Conversion_Dict.items() if value != ''}
         return dic
         
-parser = RuleBasedAddressParser.AddressParser("RR 47 BOX 47 South Colton NY 13687")
+parser = RuleBasedAddressParser.AddressParser("HC 68 BOX 23 Chicago, IL 44432")
 print(parser)
