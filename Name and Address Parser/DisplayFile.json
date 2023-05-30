@@ -1,0 +1,42 @@
+{
+    "NWF,SN,WW,TN": [
+        " 1701 WESTPARK DRIVE APT 110 LITTLE ROCK AR 72204",
+        {
+            "USAD_SNO": "1701",
+            "USAD_SNM": "WESTPARK",
+            "USAD_SFX": "DRIVE",
+            "USAD_ANM": "APT",
+            "USAD_ANO": "110",
+            "USAD_CTY": "LITTLE ROCK",
+            "USAD_STA": "AR",
+            "USAD_ZIP": "72204"
+        },
+        {
+            "USAD_SNO": [
+                1
+            ],
+            "USAD_SNM": [
+                2
+            ],
+            "USAD_SFX": [
+                3
+            ],
+            "USAD_ANM": [
+                4
+            ],
+            "USAD_ANO": [
+                5
+            ],
+            "USAD_CTY": [
+                6,
+                7
+            ],
+            "USAD_STA": [
+                8
+            ],
+            "USAD_ZIP": [
+                9
+            ]
+        }
+    ]
+}

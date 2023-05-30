@@ -96,9 +96,11 @@ with open(FileName,'r+') as d:
                 FirstPhaseList.pop(Key)
     Break=False
     print()
+    
     for Key,Value in list(FirstPhaseList.items()):
         MaskI=1
         USAD_Mapping={"USAD_SNO":[],"USAD_SPR":[],"USAD_SNM":[],"USAD_SFX":[],"USAD_SPT":[],"USAD_ANM":[],"USAD_ANO":[],"USAD_CTY":[],"USAD_STA":[],"USAD_ZIP":[],"USAD_ZP4":[],"USAD_BNM":[],"USAD_BNO":[],"USAD_RNM":[],"USAD_RNO":[],"USAD_ORG":[],"USAD_MDG":[],"USAD_MGN":[],"USAD_HNO":[],"USAD_HNM":[]}
+        USAD_Mapping_Tokens={"USAD_SNO":"","USAD_SPR":"","USAD_SNM":"","USAD_SFX":"","USAD_SPT":"","USAD_ANM":"","USAD_ANO":"","USAD_CTY":"","USAD_STA":"","USAD_ZIP":"","USAD_ZP4":"","USAD_BNM":"","USAD_BNO":"","USAD_RNM":"","USAD_RNO":"","USAD_ORG":"","USAD_MDG":"","USAD_MGN":"","USAD_HNO":"","USAD_HNM":""}
         Address=""
         for k in Value:
             for m,n in k.items():
@@ -110,28 +112,37 @@ with open(FileName,'r+') as d:
             print("Address For Reference")
             print(Address)
             print(k)
+            token=""
+            for ke,v in k.items():
+                token=v
             temp=(input("---> (Enter Index of Component)"))
             if temp not in USAD_Conversion_Dict_Detail.keys():
                 Break=True
                 break
+            USAD_Mapping_Tokens[USAD_Conversion_Dict[temp]]+=" "+token
+            USAD_Mapping_Tokens[USAD_Conversion_Dict[temp]]=USAD_Mapping_Tokens[USAD_Conversion_Dict[temp]].strip()
             USAD_Mapping[USAD_Conversion_Dict[temp]].append(MaskI)
             MaskI+=1
+        dict2={k: v for k, v in USAD_Mapping_Tokens.items() if v}
+        print(dict2)
         dict={k: v for k, v in USAD_Mapping.items() if v}
         print(dict)
+        list_of_dict=[Address,dict2,dict]
+        
         dictData={}
         dictData[Key]=dict
         Count_Of_Masks=0
         if Break:
             break
-        with open('JSONMappingDefault.json', 'r+', encoding='utf-8') as f:
+        with open('DisplayFile.json', 'r+', encoding='utf-8') as f:
             data = json.load(f)
             Count_Of_Masks=len(data)+1
           
-            data[Key] =dict # <--- add `id` value.
+            data[Key] =list_of_dict # <--- add `id` value.
             f.seek(0)        # <--- should reset file position to the beginning.
-            json.dump(data, f)
+            json.dump(data, f,indent=4)
             f.truncate()# remove remaining part
-        FirstPhaseList.pop(Key)
+        # FirstPhaseList.pop(Key)
         d.seek(0)        # <--- should reset file position to the beginning.
         json.dump(FirstPhaseList, d,indent=4)
         d.truncate()# remove re
