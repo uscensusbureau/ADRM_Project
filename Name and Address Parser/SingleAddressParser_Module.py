@@ -114,7 +114,17 @@ def Address_Parser(line,initials):
             Result["Output"]=Mappings
         except:
             Result["Output"]=Mappings
-            
+        
+        
+        
+        Output_file_name=initials+'_Output_'+str(today)+".txt"
+        Output_file_name=re.sub(r'[^\w_. -]', '_', Output_file_name)
+        path= 'Output/'+Output_file_name
+        with open(path,'w', encoding='utf-8') as g:
+            g.seek(0)
+            Stat=Mappings
+            json.dump(Stat,g,indent=4)
+            g.truncate
         
     else:  
         Exception_file_name=initials+'_ExceptionFile_'+str(today)+".txt"

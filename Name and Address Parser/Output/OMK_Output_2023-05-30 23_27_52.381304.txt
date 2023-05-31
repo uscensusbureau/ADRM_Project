@@ -1,0 +1,22 @@
+{
+    "USAD_SNO": [
+        "N",
+        "1701"
+    ],
+    "USAD_SNM": [
+        "W",
+        "WESTPARK"
+    ],
+    "USAD_SFX": [
+        "F",
+        "DRIVE"
+    ],
+    "USAD_ANM": [
+        "S",
+        "APT"
+    ],
+    "USAD_ANO": [
+        "N",
+        "110"
+    ]
+}
