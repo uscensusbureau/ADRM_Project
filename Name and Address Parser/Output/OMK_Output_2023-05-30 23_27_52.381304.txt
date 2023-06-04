@@ -1,22 +1,71 @@
+
+Name _and_Main File....
+
+----> Add a check box, try to preserve the selection of the user while he submits the buttons (if it is selected we have to preserve the mask, original address,
+maks tokens)
+
+1. Single Address File..... Handle....... (Parameter_Flag=False)
+
+Sub-Function(Address, FirstPhaseList{Tokens})
+True:
+	Original Adddress Preserve in a varaible, force exception
+False:
+	Follow the normal convention ---- Parse the address
+	and look for exception (if any)
+
+
+
+1. Address_Module Address File..... Handle....... (Parameter_Flag=False)	
+
+Sub-Function(Address, FirstPhaseList{Tokens})
+loop: -
+True:
+
+
+True:
+	Original Adddress Preserve in a varaible, force exception
+False:
+	Follow the normal convention ---- Parse the address
+	and look for exception (if any)
+
+
+
+
+
+1701 westpark drive, apt 110
+
+
+Exception File: -
 {
-    "USAD_SNO": [
-        "N",
-        "1701"
-    ],
-    "USAD_SNM": [
-        "W",
-        "WESTPARK"
-    ],
-    "USAD_SFX": [
-        "F",
-        "DRIVE"
-    ],
-    "USAD_ANM": [
-        "S",
-        "APT"
-    ],
-    "USAD_ANO": [
-        "N",
-        "110"
-    ]
+
+Tokens with Mask Tokens
+Input Address:"..."
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
