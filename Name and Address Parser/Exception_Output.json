@@ -2,7 +2,7 @@
     "INPUT": "123 Oak St., Anytown, AR 12345",
     "NWF,W,TN": [
         {"N": "123"},
-        {"W": "OAK I am onais khan and testing this for accuracy and cheking "},
+        {"W": "OAK"},
         {"F": "ST"},
         {"W": "ANYTOWN"},
         {"R": "AR"},

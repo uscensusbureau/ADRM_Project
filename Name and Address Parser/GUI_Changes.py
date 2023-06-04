@@ -112,7 +112,7 @@ def set_row_colors():
 
 # Create the main window
 window = tk.Tk()
-window.title("Registration Form")
+window.title("Approval Form")
 
 # Set the window background color
 window.configure(bg="#ffffff")
