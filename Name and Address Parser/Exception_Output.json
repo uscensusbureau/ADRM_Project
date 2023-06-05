@@ -2,7 +2,7 @@
     "INPUT": "123 Oak St., Anytown, AR 12345",
     "NWF,W,TN": [
         {"N": "123"},
-        {"W": "OAK"},
+        {"W": "OAK St Jjj jshdjas skdjsad sdasjd jsdjhas jasd"},
         {"F": "ST"},
         {"W": "ANYTOWN"},
         {"R": "AR"},

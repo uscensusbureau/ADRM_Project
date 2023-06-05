@@ -14,6 +14,11 @@ with open('Exception_Output.json', 'r+', encoding='utf8') as g:
 Input_name=Stat["INPUT"]
 Stat.pop("INPUT")
 
+def toggle_button():
+    if toggle_state.get() == "No":
+        toggle_state.set("Yes")
+    else:
+        toggle_state.set("No")
 
 def submit_form():
     # Retrieve the entered values and process the form data
@@ -22,7 +27,8 @@ def submit_form():
     Input = Input_entry.get()
     region = region_var.get()
     table_data = []
-    for row in table_rows:
+    print(toggle_state.get())
+    for row in table_rows[1:]:
         column1 = row[0].get("1.0", tk.END).strip()
         column2 = row[1].get("1.0", tk.END).strip()
         column3 = row[2].get()
@@ -123,7 +129,7 @@ form_frame.pack(padx=20, pady=20)
 
 
 style = ThemedStyle(window)
-style.set_theme("adapta")  # Apply the "adapta" theme
+style.set_theme("xpnative")  # Apply the "adapta" theme
 
 # Create the form frame
 form_frame = ttk.Frame(window)
@@ -168,7 +174,7 @@ Type_dropdown.grid(row=4, column=1, pady=5)
 table_frame = ttk.Frame(window)
 table_frame.pack(pady=10)
 
-canvas = tk.Canvas(table_frame, width=600, height=200)
+canvas = tk.Canvas(table_frame, width=650, height=200)
 canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
 table_inner_frame = ttk.Frame(canvas)
@@ -181,16 +187,58 @@ canvas.configure(scrollregion=canvas.bbox("all"))
 canvas.create_window((0, 0), window=table_inner_frame, anchor=tk.NW)
 
 
+# Create a variable to store the toggle state
+toggle_state = tk.StringVar(value="No")
+
+
+# Create the form elements with custom styling
+Forced_exception_name_label = ttk.Label(form_frame, text="Want to throw this as a Forced Exception? ", font=("Arial", 12))
+Forced_exception_name_label.grid(row=5, column=0, sticky=tk.W, pady=5)
+toggle_button = ttk.Checkbutton(form_frame, onvalue="Yes",command=toggle_state, offvalue="No",variable=toggle_state,style="Toggle.TCheckbutton")
+toggle_button.grid(row=5, column=0,columnspan=2, pady=5)
+style.configure("Toggle.TCheckbutton", font=("Arial", 14))
+
+
+
+
+
+
 submit_button = ttk.Button(window, text="Submit", command=submit_form, style="Submit.TButton")
 submit_button.pack(pady=10)
 
 # Create a custom style for the buttons
 style = ttk.Style(window)
-style.configure("AddRow.TButton", font=("Arial", 12), foreground="#ccc", background="#4285f4")
-style.configure("Submit.TButton", font=("Arial", 12, "bold"), foreground="#ccc", background="#4285f4")
+style.configure("Submit.TButton", font=("Arial", 12, "bold"), foreground="black", background="#4CAF50")
+
+table_rows = []
 
 # Store the table rows in a list
-table_rows = []
+label1 = tk.Label(table_inner_frame, height=2, width=20,text="Mask Token")
+label1.configure(font=("Arial", 12), relief=tk.SOLID,state=DISABLED)
+label1.grid(row=len(table_rows) + 1, column=0, sticky="nsew", padx=5, pady=5)
+
+label2 = tk.Label(table_inner_frame, height=2, width=20,text="Adress Token")
+label2.configure(font=("Arial", 12), relief=tk.SOLID,state=DISABLED)
+label2.grid(row=len(table_rows) + 1, column=0, sticky="nsew", padx=5, pady=5)
+
+label3 = tk.Label(table_inner_frame, height=2, width=20,text="Address Component")
+label3.configure(font=("Arial", 12), relief=tk.SOLID,state=DISABLED)
+label3.grid(row=len(table_rows) + 1, column=0, sticky="nsew", padx=5, pady=5)
+rows=[]
+
+rows.append(label1)
+rows.append(label2)
+rows.append(label3)
+
+for r in range(len(table_rows)):
+    table_rows[r][0].grid(row=r + 1, column=0, sticky="e")
+    table_rows[r][1].grid(row=r + 1, column=1, sticky="e")
+    table_rows[r][2].grid(row=r + 1, column=2, sticky="e")
+
+# Append the new row to the table rows list
+table_rows=[]
+table_rows.append(rows)
+
 
 for key, value in Stat.items():
     for m in value:
