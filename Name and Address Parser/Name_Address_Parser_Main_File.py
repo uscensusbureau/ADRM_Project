@@ -11,7 +11,7 @@ import NameAddressParser__Module as NaM
 import Address_Parser__Module as AdM
 import SingleNameParser_Module as NAD_API
 import SingleAddressParser_Module as AD_API
-import SingleNameAddressParser_Module as ADN_API
+import SingleNameAddressParser_Module as ADN_APIhttps://github.com/Univ-Of-Arkansas-at-LITTLE-ROCK/CensusBureauNameAddress
 
 # Main Class for the name and address parsing, on individual level
 class NameAddressParser:
@@ -53,6 +53,7 @@ class NameAddressParser:
                                pady = 0)  
         def Process_Name_Parser_input():
             msg.showinfo("Choose File","Select Input File")
+            #Changed by salman
 
             df = fd.askopenfilenames( filetypes=[("TXT", ".txt"),("JSON",".json")]) 
             if df:
