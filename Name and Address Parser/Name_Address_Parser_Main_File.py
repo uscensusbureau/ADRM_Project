@@ -11,7 +11,7 @@ import NameAddressParser__Module as NaM
 import Address_Parser__Module as AdM
 import SingleNameParser_Module as NAD_API
 import SingleAddressParser_Module as AD_API
-import SingleNameAddressParser_Module as ADN_APIhttps://github.com/Univ-Of-Arkansas-at-LITTLE-ROCK/CensusBureauNameAddress
+import SingleNameAddressParser_Module as ADN_API
 
 # Main Class for the name and address parsing, on individual level
 class NameAddressParser:
@@ -249,6 +249,43 @@ class NameAddressParser:
         
         
         def Single_Address():
+            
+            def submit():
+                # Get the checkbox state
+                checkbox_state = checkbox_var.get()
+                txtMask_1 = tk.StringVar()
+                txtFirstPhaseList = tk.StringVar()
+                txtInitials = tk.StringVar()
+                Mask_1 = txtMask_1.get()
+                FirstPhaseList = txtFirstPhaseList.get()
+                initials = txtInitials.get()
+                # Print the checkbox state
+                if checkbox_var.get():
+                    # AD_API.Address_Parser()
+                    print("Forced Exception Clicked")
+
+                else:
+                    print("Not a Forced Exception")
+            checkbox_var = tk.IntVar()
+
+            # Create the checkbox
+            checkbox = ttk.Checkbutton(tab2, text="Forced Exception", variable=checkbox_var)
+            checkbox.grid(row=12, column=5, padx=10, pady=10)
+
+            # Create the submit button
+            submit_button = ttk.Button(tab2, text="Forced Exception", command=submit)
+            submit_button.grid(row=13, column=5, padx=10, pady=10)
+            # toggle_state = tk.StringVar(value="No")
+
+
+            # Create the form elements with custom styling
+            # Forced_Except_Label = ttk.Label(tab2, text="Forced Exception? ", font=("Arial", 12))
+            # Forced_Except_Label.grid(row=5, column=0, sticky=tk.W, pady=5)
+            # toggle_button = ttk.Checkbutton(tab2, onvalue="Yes", offvalue="No", variable=toggle_state, style="Toggle.TCheckbutton")
+
+            # toggle_button.grid(row=5, column=0,columnspan=2, pady=5)
+            # style.configure("Toggle.TCheckbutton", font=("Arial", 14))
+            
             
             s = ttk.Style()
             s.configure('Treeview', rowheight=35, background="black", 

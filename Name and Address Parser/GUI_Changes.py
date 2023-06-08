@@ -21,6 +21,8 @@ def submit_form():
     
     Exception_file_name = Exception_file_name_entry.get()
     Input = Input_entry.get()
+    # for i in table_rows:
+        
     region = region_var.get()
     type_value = Type_var.get()
     # component_values = dropdown_var.get()
@@ -75,9 +77,9 @@ def submit_form():
             # Write the updated data back to the file
             json.dump(existing_data, file, indent=4)
             file.truncate()
-        messagebox.showinfo("Demo", "Address is added to Validation DataBase")
+        # messagebox.showinfo("Demo", "Address is added to Validation DataBase")
     else:
-        messagebox.showinfo("Demo", "Address not added to Validation DataBase")
+        pass# messagebox.showinfo("Demo", "Address not added to Validation DataBase")
     print(f"Exception_file_name: {Exception_file_name}")
     print(f"Input: {Input}")
     print(f"Region: {region}")
@@ -274,7 +276,7 @@ style.configure("Toggle.TCheckbutton", font=("Arial", 14))
 
 
 
-submit_button = ttk.Button(window, text="Submit", command=submit_form, style="Submit.TButton")
+submit_button = ttk.Button(window, text="Submit", style="Submit.TButton") #, command=submit_form
 submit_button.pack(pady=10)
 
 # Create a custom style for the buttons

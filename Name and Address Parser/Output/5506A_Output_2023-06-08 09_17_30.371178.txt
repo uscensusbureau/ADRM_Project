@@ -1,0 +1,29 @@
+[
+    "INPUT: 5506 A Street, Little Rock, AR 72205",
+    {
+        "USAD_SNO": [
+            "N",
+            "5506"
+        ],
+        "USAD_SNM": [
+            "W",
+            "A"
+        ],
+        "USAD_SFX": [
+            "F",
+            "STREET"
+        ],
+        "USAD_CTY": [
+            "W",
+            "LITTLE ROCK"
+        ],
+        "USAD_STA": [
+            "T",
+            "AR"
+        ],
+        "USAD_ZIP": [
+            "N",
+            "72205"
+        ]
+    }
+]

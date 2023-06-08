@@ -226,5 +226,81 @@
                 "USAD_ZP4"
             ]
         ]
+    },
+    {
+        "Exception_file_name": "File_Name_Exception.json",
+        "Input": "123 Oak St., Anytown, AR 12345",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Table Data": [
+            [
+                "N",
+                "123",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "OAK St Jjj jshdjas skdjsad sdasjd jsdjhas jasd",
+                "USAD_SNO"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "ANYTOWN",
+                "USAD_SNO"
+            ],
+            [
+                "R",
+                "AR",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "12345",
+                "USAD_SFX"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "File_Name_Exception.json",
+        "Input": "123 Oak St., Anytown, AR 12345",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Table Data": [
+            [
+                "N",
+                "123",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "OAK St Jjj jshdjas skdjsad sdasjd jsdjhas jasd",
+                "USAD_SNO"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "ANYTOWN",
+                "USAD_SNO"
+            ],
+            [
+                "R",
+                "AR",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "12345",
+                "USAD_SFX"
+            ]
+        ]
     }
 ]
