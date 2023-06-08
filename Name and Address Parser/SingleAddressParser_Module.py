@@ -31,6 +31,7 @@ root_folder = Path(__file__).parents[1]
 
 
 def Address_Parser(line,initials):
+    originalInput = f"INPUT: {line}"
     Result={}
     Exception_file_name=""
     fileHandle = open('USAddressWordTable.txt', 'r',encoding="utf8")
@@ -111,9 +112,12 @@ def Address_Parser(line,initials):
                    Temp=Temp.strip()
                    Mappings[K2]=[K3,Temp]       
         try:
+            Result["Input"]= originalInput[7:]
             Result["Output"]=Mappings
         except:
+            Result["Input"]= originalInput[7:]
             Result["Output"]=Mappings
+
         
         
         
@@ -122,7 +126,7 @@ def Address_Parser(line,initials):
         path= 'Output/'+Output_file_name
         with open(path,'w', encoding='utf-8') as g:
             g.seek(0)
-            Stat=Mappings
+            Stat=originalInput,Mappings
             json.dump(Stat,g,indent=4)
             g.truncate
         
@@ -133,7 +137,8 @@ def Address_Parser(line,initials):
         with open(path,'w', encoding='utf-8') as g:
             g.seek(0)
             Stat={}
-            Stat[Mask_1]=FirstPhaseList
+            # Stat=originalInput
+            Stat[Mask_1]=originalInput,FirstPhaseList
             json.dump(Stat,g,indent=4)
             g.truncate
     Total+=1
