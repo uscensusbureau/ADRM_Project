@@ -1,305 +1,45 @@
 [
     {
-        "Exception_file_name": "File_Name_Exception.json",
-        "Input": "123 Oak St., Anytown, AR 12345",
-        "Region": "US",
-        "Type": "PO Box Address",
-        "Table Data": [
-            [
-                "N",
-                "123",
-                "USAD_SNO"
-            ],
-            [
-                "W",
-                "OAK St Jjj jshdjas skdjsad sdasjd jsdjhas jasd",
-                "USAD_SNO"
-            ],
-            [
-                "F",
-                "ST",
-                ""
-            ],
-            [
-                "W",
-                "ANYTOWN",
-                ""
-            ],
-            [
-                "R",
-                "AR",
-                ""
-            ],
-            [
-                "N",
-                "12345",
-                ""
-            ]
-        ]
-    },
-    {
-        "Exception_file_name": "File_Name_Exception.json",
-        "Input": "123 Oak St., Anytown, AR 12345",
-        "Region": "US",
-        "Type": "PO Box Address",
-        "Table Data": [
-            [
-                "N",
-                "123",
-                "USAD_SNO"
-            ],
-            [
-                "W",
-                "OAK St Jjj jshdjas skdjsad sdasjd jsdjhas jasd",
-                "USAD_SNO"
-            ],
-            [
-                "F",
-                "ST",
-                "USAD_ANM"
-            ],
-            [
-                "W",
-                "ANYTOWN",
-                ""
-            ],
-            [
-                "R",
-                "AR",
-                ""
-            ],
-            [
-                "N",
-                "12345",
-                ""
-            ]
-        ]
-    },
-    {
-        "Exception_file_name": "File_Name_Exception.json",
-        "Input": "123 Oak St., Anytown, AR 12345",
-        "Region": "US",
-        "Type": "PO Box Address",
-        "Table Data": [
-            [
-                "N",
-                "123",
-                "USAD_SPR"
-            ],
-            [
-                "W",
-                "OAK St Jjj jshdjas skdjsad sdasjd jsdjhas jasd",
-                "USAD_SPR"
-            ],
-            [
-                "F",
-                "ST",
-                "USAD_SPT"
-            ],
-            [
-                "W",
-                "ANYTOWN",
-                ""
-            ],
-            [
-                "R",
-                "AR",
-                ""
-            ],
-            [
-                "N",
-                "12345",
-                ""
-            ]
-        ]
-    },
-    {
-        "Exception_file_name": "File_Name_Exception.json",
-        "Input": "123 Oak St., Anytown, AR 12345",
-        "Region": "US",
-        "Type": "PO Box Address",
-        "Table Data": [
-            [
-                "N",
-                "123",
-                "USAD_SPR"
-            ],
-            [
-                "W",
-                "OAK St Jjj jshdjas skdjsad sdasjd jsdjhas jasd",
-                "USAD_SPR"
-            ],
-            [
-                "F",
-                "ST",
-                "USAD_SPT"
-            ],
-            [
-                "W",
-                "ANYTOWN",
-                ""
-            ],
-            [
-                "R",
-                "AR",
-                ""
-            ],
-            [
-                "N",
-                "12345",
-                ""
-            ]
-        ]
-    },
-    {
-        "Exception_file_name": "File_Name_Exception.json",
-        "Input": "123 Oak St., Anytown, AR 12345",
-        "Region": "Puerto Rico",
-        "Type": "Military Address",
-        "Table Data": [
-            [
-                "N",
-                "123",
-                "USAD_SPR"
-            ],
-            [
-                "W",
-                "OAK St Jjj jshdjas skdjsad sdasjd jsdjhas jasd",
-                "USAD_ANM"
-            ],
-            [
-                "F",
-                "ST",
-                "USAD_SPR"
-            ],
-            [
-                "W",
-                "ANYTOWN",
-                "USAD_SNM"
-            ],
-            [
-                "R",
-                "AR",
-                "USAD_SNM"
-            ],
-            [
-                "N",
-                "12345",
-                "USAD_SNO"
-            ]
-        ]
-    },
-    {
-        "Exception_file_name": "File_Name_Exception.json",
-        "Input": "123 Oak St., Anytown, AR 12345",
-        "Region": "Puerto Rico",
-        "Type": "Military Address",
-        "Table Data": [
-            [
-                "N",
-                "123",
-                "USAD_SPR"
-            ],
-            [
-                "W",
-                "OAK St Jjj jshdjas skdjsad sdasjd jsdjhas jasd",
-                "USAD_ANM"
-            ],
-            [
-                "F",
-                "ST",
-                "USAD_SPR"
-            ],
-            [
-                "W",
-                "ANYTOWN",
-                "USAD_SNM"
-            ],
-            [
-                "R",
-                "AR",
-                "USAD_ANO"
-            ],
-            [
-                "N",
-                "12345",
-                "USAD_ZP4"
-            ]
-        ]
-    },
-    {
-        "Exception_file_name": "File_Name_Exception.json",
-        "Input": "123 Oak St., Anytown, AR 12345",
+        "Exception_file_name": "JSONexcept_ExceptionFile_2023-06-11 12_51_41.889706.json",
+        "Input": "5506 A Street. Little Rock AR 72205",
         "Region": "US",
         "Type": "Individual Address",
+        "Approved By": "Committee Member_2 at 2023-06-11 23:31:43.195468",
         "Table Data": [
             [
                 "N",
-                "123",
-                "USAD_SFX"
+                "5506",
+                "USAD_SNO"
             ],
             [
                 "W",
-                "OAK St Jjj jshdjas skdjsad sdasjd jsdjhas jasd",
-                "USAD_SNO"
+                "A",
+                "USAD_SNM"
             ],
             [
                 "F",
-                "ST",
-                "USAD_SPR"
+                "STREET",
+                "USAD_SFX"
             ],
             [
                 "W",
-                "ANYTOWN",
-                "USAD_SNO"
+                "LITTLE",
+                "USAD_CTY"
             ],
             [
-                "R",
+                "W",
+                "ROCK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
                 "AR",
-                "USAD_SNO"
+                "USAD_STA"
             ],
             [
                 "N",
-                "12345",
-                "USAD_SFX"
-            ]
-        ]
-    },
-    {
-        "Exception_file_name": "File_Name_Exception.json",
-        "Input": "123 Oak St., Anytown, AR 12345",
-        "Region": "US",
-        "Type": "Individual Address",
-        "Table Data": [
-            [
-                "N",
-                "123",
-                "USAD_SFX"
-            ],
-            [
-                "W",
-                "OAK St Jjj jshdjas skdjsad sdasjd jsdjhas jasd",
-                "USAD_SNO"
-            ],
-            [
-                "F",
-                "ST",
-                "USAD_SPR"
-            ],
-            [
-                "W",
-                "ANYTOWN",
-                "USAD_SNO"
-            ],
-            [
-                "R",
-                "AR",
-                "USAD_SNO"
-            ],
-            [
-                "N",
-                "12345",
-                "USAD_SFX"
+                "72205",
+                "USAD_ZIP"
             ]
         ]
     }

@@ -130,17 +130,28 @@ def Address_Parser(line,initials):
             json.dump(Stat,g,indent=4)
             g.truncate
         
-    else:  
-        Exception_file_name=initials+'_ExceptionFile_'+str(today)+".txt"
-        Exception_file_name=re.sub(r'[^\w_. -]', '_', Exception_file_name)
-        path= 'Exceptions/SingleException/'+Exception_file_name
-        with open(path,'w', encoding='utf-8') as g:
-            g.seek(0)
-            Stat={}
-            # Stat=originalInput
-            Stat[Mask_1]=originalInput,FirstPhaseList
-            json.dump(Stat,g,indent=4)
-            g.truncate
+    else:
+        ExceptionDict = {
+            "INPUT": originalInput[7:],
+            Mask_1: FirstPhaseList
+        }
+        Exception_file_name = initials + '_ExceptionFile_' + str(today) + ".json"
+        Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
+        path = 'Exceptions/SingleException/' + Exception_file_name
+        with open(path, 'w', encoding='utf-8') as g:
+            json.dump(ExceptionDict, g, indent=4)
+        # Exception_file_name=initials+'_ExceptionFile_'+str(today)+".txt"
+        # Exception_file_name=re.sub(r'[^\w_. -]', '_', Exception_file_name)
+        # path= 'Exceptions/SingleException/'+Exception_file_name
+        # with open(path,'w', encoding='utf-8') as g:
+        #     g.seek(0)
+        #     Stat={}
+        #     # Stat=originalInput
+        #     Stat[Mask_1]=originalInput,FirstPhaseList
+        #     json.dump(Stat,g,indent=4)
+        #     g.truncate
+        
+        
     Total+=1
     print(Result)
     return (Result, Mask_1,Exception_file_name)
