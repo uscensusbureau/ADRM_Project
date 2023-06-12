@@ -262,10 +262,11 @@ class NameAddressParser:
                 # Print the checkbox state
                 if checkbox_var.get():
                     # AD_API.Address_Parser()
-                    print("Forced Exception Clicked")
-
+                    AD_API.throwException(originalInput=nad.get(), initials=initial)
+                    msg.showinfo("Exception","Forced Exception is Created!")
                 else:
-                    print("Not a Forced Exception")
+                    msg.showinfo("Exception","Check the box to create an Exception")
+
             # checkbox_var = tk.IntVar()
 
             # # Create the checkbox
@@ -294,7 +295,7 @@ class NameAddressParser:
             
             initial = simpledialog.askstring("Optional", "Your Initials")
            
-            Convert=AD_API.Address_Parser(nad.get(),initial)
+            Convert=AD_API.Address_Parser(nad.get(),initial,originalInput=nad.get())
             
             Result=Convert[0]
             
