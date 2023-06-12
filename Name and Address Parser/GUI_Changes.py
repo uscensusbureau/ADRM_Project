@@ -1,17 +1,40 @@
 import tkinter as tk
 from tkinter import ttk,DISABLED
 from tkinter import messagebox
-import datetime
+from datetime import datetime
 from ttkthemes import ThemedStyle
 import tkinter.filedialog as fd
 import tkinter.messagebox as msg
 import json
 import os
+import sys
+import subprocess
 
 
 Stat={}
 file_name = ""
 Input_name = ""
+
+def DateTime():
+    # Get the current date and time
+    # label = ""
+    now = datetime.now()
+    current_date = now.strftime("%m-%d-%Y")
+    
+
+    # Update the label text
+    # label.config(text=f"Date: {current_date}\nTime: {current_time}")
+    DateTime_label = ttk.Label(window, text=f"Date: {current_date}", font=("Arial", 12))
+    DateTime_label.pack(side=tk.TOP, padx=10, pady=5)
+
+    # Schedule the next update after 1 second (1000 milliseconds)
+    
+
+
+def Clear():
+    # Run the file again using subprocess
+    window.destroy()
+    subprocess.call(["python", "GUI_Changes.py"])
 
 def Browse_File():
     global df, Stat, file_name, Input_name
@@ -20,6 +43,7 @@ def Browse_File():
     if df:
         with open(df[0], "r+", encoding="utf8") as f:
             Stat = json.load(f)
+        Mask = list(Stat.keys())[1]
         file_name = os.path.basename(df[0])
         if "INPUT" in Stat:
             Input_name = Stat["INPUT"]
@@ -40,6 +64,13 @@ def Browse_File():
         Input_entry.configure(state=DISABLED)
         Input_entry.grid(row=2, column=1, pady=5)
         Input_entry.configure(background="#ffffff", foreground="#000000")
+        
+        
+        Mask_entry = ttk.Entry(form_frame, font=("Arial", 12),width=40)
+        Mask_entry.insert(0,Mask)
+        Mask_entry.configure(state=DISABLED)
+        Mask_entry.grid(row=5, column=1, pady=5)
+        Mask_entry.configure(background="#ffffff", foreground="#000000")
         def submit_form():
             # Retrieve the entered values and process the form data
             global Stat
@@ -54,10 +85,10 @@ def Browse_File():
             type_value = Type_var.get()
             approval = Approval_List_var.get()
             addValid = toggle_state.get() == "Yes"
-            
+            pattern = Mask_entry.get()
             # component_values = dropdown_var.get()
             table_data = []
-            today = datetime.datetime.now()
+            today = datetime.now()
             
             for row in table_rows[1:]:
                 column1 = row[0].get("1.0", tk.END).strip()
@@ -90,6 +121,7 @@ def Browse_File():
                 "Input": Input,
                 "Region": region,
                 "Type": type_value,
+                "Token Pattern": pattern,
                 "Approved By": (f"{approval} at {today}"),
                 "Table Data": table_data
             }
@@ -120,12 +152,14 @@ def Browse_File():
             print(f"Input: {Input}")
             print(f"Region: {region}")
             print(f"Type: {type_value}")
+            print(f"Token Pattern: {pattern}")
             
             if addValid:
                 messagebox.showinfo("Info", "Address Added to Validation DataBase!")
                 print(f"Approved By: {approval} at {today}")
-            else:
-                messagebox.showinfo("Info", "Address not Added to Validation DB")
+            elif toggle_state.get() == "No":
+                messagebox.showinfo("Info", "Address is not Approved\nPlease Select a New Exception File")
+                Clear()
             print("Table Data:")
             
             for data in table_data:
@@ -269,15 +303,25 @@ def Browse_File():
         # Create a custom style for the buttons
         style = ttk.Style(window)
         style.configure("Submit.TButton", font=("Arial", 12, "bold"), foreground="black", background="#4CAF50")
+        # clear_button = ttk.Button(window, text="Clear", command=Clear, style="Submit.TButton") #, 
+        # clear_button.pack(side=tk.BOTTOM,pady=10)
+        # # Create a custom style for the buttons
+        # style = ttk.Style(window)
+        # style.configure("Submit.TButton", font=("Arial", 12, "bold"), foreground="black", background="#4CAF50")
     else:
         msg.showerror("Alert", "Please select an Exception File.")
     return Stat,Input_name,file_name
 # Create the main window
 window = tk.Tk()
 window.title("Approval Form")
-
+screen_width = window.winfo_screenwidth()
+screen_height = window.winfo_screenheight()
+window.geometry(f"{screen_width}x{screen_height}")
 # Set the window background color
 window.configure(bg="#ffffff")
+
+ttk.Button(window, text="Choose an Exception File", width=30, command=Browse_File).pack(side="top", padx=1, pady=1)
+
 
 # Create the form frame
 form_frame = ttk.Frame(window)
@@ -291,15 +335,15 @@ style.set_theme("xpnative")  # Apply the "adapta" theme
 form_frame_2 = ttk.Frame(window)
 form_frame_2.pack(padx=20, pady=20)
 
-
+# DateTime()
 
 # Create the form elements with custom styling
 Exception_file_name_label = ttk.Label(form_frame, text="Exception File Name:", font=("Arial", 12))
 Exception_file_name_label.grid(row=1, column=0, sticky=tk.W, pady=5)
 Input_label = ttk.Label(form_frame, text="Input:", font=("Arial", 12))
 Input_label.grid(row=2, column=0, sticky=tk.W, pady=5)
-
-
+Mask_label = ttk.Label(form_frame, text="Token Pattern:", font=("Arial", 12))
+Mask_label.grid(row=5, column=0, sticky=tk.W, pady=5)
 
 region_label = ttk.Label(form_frame, text="Region: *", font=("Arial", 12))
 region_label.grid(row=3, column=0, sticky=tk.W, pady=5)
@@ -309,8 +353,6 @@ region_dropdown = ttk.Combobox(form_frame, textvariable=region_var, values=regio
 region_dropdown.grid(row=3, column=1, pady=5)
 region_dropdown.configure(state="readonly")
 
-
-
 Type_label = ttk.Label(form_frame, text="Type: *", font=("Arial", 12))
 Type_label.grid(row=4, column=0, sticky=tk.W, pady=5)
 Types=["","Individual Address","PO Box Address","Highway Contract Address","Military Address","Attention line Address","Roural Route Address","Puerto Rico Address","University Address"]
@@ -319,49 +361,30 @@ Type_dropdown = ttk.Combobox(form_frame, textvariable=Type_var, values=Types, fo
 Type_dropdown.grid(row=4, column=1, pady=5)
 Type_dropdown.configure(state = "readonly")
 
-
-
 table_frame = ttk.Frame(window)
 table_frame.pack(pady=10)
 
 canvas = tk.Canvas(table_frame, width=650, height=200)
 canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
-
-
-
-# Create a variable to store the toggle state
-# toggle_state = tk.StringVar(value="No")
-
-
-# # Create the form elements with custom styling
-# Validation_DB_Label = ttk.Label(form_frame_2, text="Add this address to DataBase Validation?", font=("Arial", 12))
-# Validation_DB_Label.grid(row=7, column=0, sticky=tk.W, pady=5)
-# toggle_button = ttk.Checkbutton(form_frame_2, onvalue="Yes", offvalue="No", variable=toggle_state, style="Toggle.TCheckbutton")
-# toggle_button.grid(row=7, column=1,columnspan=10, pady=10)
-# style.configure("Toggle.TCheckbutton", font=("Arial", 14))
-
 toggle_state = tk.StringVar(value="")
 
 # Create the form elements with custom styling
-Validation_DB_Label = ttk.Label(form_frame_2, text="Add this address to DataBase Validation?", font=("Arial", 12))
-Validation_DB_Label.grid(row=7, column=0, sticky=tk.W, pady=5)
+Validation_DB_Label = ttk.Label(form_frame, text="Add this address to DataBase Validation?", font=("Arial", 12))
+Validation_DB_Label.grid(row=6, column=0, sticky=tk.W, pady=5)
+toggle_dropdown = ttk.Combobox(form_frame, textvariable=toggle_state, values=["","Yes", "No"], font=("Arial", 12),width=40, state="readonly")
+toggle_dropdown.grid(row=6, column=1, sticky=tk.W, pady=5)
 
-toggle_dropdown = ttk.Combobox(form_frame_2, textvariable=toggle_state, values=["","Yes", "No"], font=("Arial", 12), state="readonly")
-toggle_dropdown.grid(row=7, column=1, columnspan=10, pady=10)
-
-
-Approval_label = ttk.Label(form_frame_2, text="Approved By:", font=("Arial", 12))
-Approval_label.grid(row=8, column=0, sticky=tk.W, pady=5)
+Approval_label = ttk.Label(form_frame, text="Approved By:", font=("Arial", 12))
+Approval_label.grid(row=7, column=0, sticky=tk.W, pady=5)
 Approval_List = ["", "Committee Member_1", "Committee Member_2", "Committee Member_3"]
 Approval_List_var = tk.StringVar(window)
-Approval_List_dropdown = ttk.Combobox(form_frame_2,textvariable=Approval_List_var,values=Approval_List,font=("Arial", 12),width=15)
-Approval_List_dropdown.grid(row=8, column=1, sticky=tk.W, pady=5)
+Approval_List_dropdown = ttk.Combobox(form_frame,textvariable=Approval_List_var,values=Approval_List,font=("Arial", 12),width=40)
+Approval_List_dropdown.grid(row=7, column=1, sticky=tk.W, pady=5)
 Approval_List_dropdown.configure(state="readonly")
 
 
 
-ttk.Button(window, text="Choose an Exception File", width=30, command=Browse_File).pack(side="top", padx=1, pady=1)
 
 
 window.mainloop()

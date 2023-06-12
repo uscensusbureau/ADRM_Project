@@ -7,12 +7,12 @@ Created on Wed Dec  7 00:06:20 2022
 
 
 import re
-from tqdm import tqdm
-import pandas as pd
+# from tqdm import tqdm
+# import pandas as pd
 import json 
-import collections 
+# import collections 
 #Parsing 1st program
-import re
+# import re
 
 
 from datetime import datetime,timedelta
@@ -30,9 +30,21 @@ from pathlib import Path
 root_folder = Path(__file__).parents[1]
 
 
-def Address_Parser(line,initials):
-    originalInput = f"INPUT: {line}"
+def throwException(originalInput,initials):
+    ExceptionDict = {
+        "INPUT": originalInput,
+        str(Mask_1): FirstPhaseList
+    }
+    Exception_file_name = initials + '_ExceptionFile_' + str(today) + ".json"
+    Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
+    path = 'Exceptions/ForcedExceptions/' + Exception_file_name
+    with open(path, 'w', encoding='utf-8') as g:
+        json.dump(ExceptionDict, g, indent=4)
+    return
+def Address_Parser(line,initials,originalInput):
+    global Result, Exception_file_name, FirstPhaseList, Mask_1
     Result={}
+    
     Exception_file_name=""
     fileHandle = open('USAddressWordTable.txt', 'r',encoding="utf8")
     # Strips the newline character
@@ -120,26 +132,31 @@ def Address_Parser(line,initials):
 
         
         
-        
-        Output_file_name=initials+'_Output_'+str(today)+".txt"
+        OutputDict = {
+                "INPUT": originalInput,
+                str(Mask_1): FirstPhaseList
+            }
+        Output_file_name=initials+'_Output_'+str(today)+".json"
         Output_file_name=re.sub(r'[^\w_. -]', '_', Output_file_name)
         path= 'Output/'+Output_file_name
         with open(path,'w', encoding='utf-8') as g:
             g.seek(0)
-            Stat=originalInput,Mappings
-            json.dump(Stat,g,indent=4)
+            # Stat=originalInput,Mappings
+            json.dump(OutputDict,g,indent=4)
             g.truncate
         
     else:
         ExceptionDict = {
-            "INPUT": originalInput[7:],
-            Mask_1: FirstPhaseList
+            "INPUT": originalInput,
+            str(Mask_1): FirstPhaseList
         }
         Exception_file_name = initials + '_ExceptionFile_' + str(today) + ".json"
         Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
         path = 'Exceptions/SingleException/' + Exception_file_name
         with open(path, 'w', encoding='utf-8') as g:
             json.dump(ExceptionDict, g, indent=4)
+            
+        
         # Exception_file_name=initials+'_ExceptionFile_'+str(today)+".txt"
         # Exception_file_name=re.sub(r'[^\w_. -]', '_', Exception_file_name)
         # path= 'Exceptions/SingleException/'+Exception_file_name
@@ -154,7 +171,7 @@ def Address_Parser(line,initials):
         
     Total+=1
     print(Result)
-    return (Result, Mask_1,Exception_file_name)
+    return (Result, Mask_1,Exception_file_name, throwException)
 # print("Final Correct Address Parsing Percentage",Count_of_Correct/Total_Count*100)
 # print("Address Matching Report")
 # print("Total=",Count)
