@@ -184,10 +184,10 @@ class NameAddressParser:
             return
         
         
-        Nbutton = ttk.Button(tab2, text ="Choose Two Files (input and test)",width=30, command=Process_Address_Parser).grid(column = 5, 
-                             row = 60,
-                             padx = 10,
-                             pady = 10)
+        # Nbutton = ttk.Button(tab2, text ="Choose Two Files (input and test)",width=30, command=Process_Address_Parser).grid(column = 5, 
+        #                      row = 60,
+        #                      padx = 10,
+        #                      pady = 10)
         NbuttonSingle = ttk.Button(tab2, text ="Choose Single File (input)",width=30, command=Process_Address_Parser_input).grid(column = 5, 
                              row = 50,
                              padx = 10,
@@ -266,25 +266,25 @@ class NameAddressParser:
 
                 else:
                     print("Not a Forced Exception")
-            checkbox_var = tk.IntVar()
+            # checkbox_var = tk.IntVar()
 
-            # Create the checkbox
-            checkbox = ttk.Checkbutton(tab2, text="Forced Exception", variable=checkbox_var)
-            checkbox.grid(row=12, column=5, padx=10, pady=10)
+            # # Create the checkbox
+            # checkbox = ttk.Checkbutton(tab2, text="Forced Exception", variable=checkbox_var)
+            # checkbox.grid(row=12, column=5, padx=10, pady=10)
 
-            # Create the submit button
-            submit_button = ttk.Button(tab2, text="Forced Exception", command=submit)
-            submit_button.grid(row=13, column=5, padx=10, pady=10)
-            # toggle_state = tk.StringVar(value="No")
+            # # Create the submit button
+            # submit_button = ttk.Button(tab2, text="Forced Exception", command=submit)
+            # submit_button.grid(row=13, column=5, padx=10, pady=10)
+            ### toggle_state = tk.StringVar(value="No")
 
 
-            # Create the form elements with custom styling
-            # Forced_Except_Label = ttk.Label(tab2, text="Forced Exception? ", font=("Arial", 12))
-            # Forced_Except_Label.grid(row=5, column=0, sticky=tk.W, pady=5)
-            # toggle_button = ttk.Checkbutton(tab2, onvalue="Yes", offvalue="No", variable=toggle_state, style="Toggle.TCheckbutton")
+            ### Create the form elements with custom styling
+            ### Forced_Except_Label = ttk.Label(tab2, text="Forced Exception? ", font=("Arial", 12))
+            ### Forced_Except_Label.grid(row=5, column=0, sticky=tk.W, pady=5)
+            ### toggle_button = ttk.Checkbutton(tab2, onvalue="Yes", offvalue="No", variable=toggle_state, style="Toggle.TCheckbutton")
 
-            # toggle_button.grid(row=5, column=0,columnspan=2, pady=5)
-            # style.configure("Toggle.TCheckbutton", font=("Arial", 14))
+            ### toggle_button.grid(row=5, column=0,columnspan=2, pady=5)
+            ### style.configure("Toggle.TCheckbutton", font=("Arial", 14))
             
             
             s = ttk.Style()
@@ -297,6 +297,17 @@ class NameAddressParser:
             Convert=AD_API.Address_Parser(nad.get(),initial)
             
             Result=Convert[0]
+            
+            if Result:
+                checkbox_var = tk.IntVar()
+
+                # Create the checkbox
+                checkbox = ttk.Checkbutton(tab2, text="Forced Exception", variable=checkbox_var)
+                checkbox.grid(row=60, column=5, padx=10, pady=10)
+
+                # Create the submit button
+                submit_button = ttk.Button(tab2, text="Submit", command=submit)
+                submit_button.grid(row=61, column =5 , padx=10, pady=10)
             
             try:  
                 
