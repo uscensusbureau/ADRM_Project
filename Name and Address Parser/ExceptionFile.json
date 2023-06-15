@@ -7829,5 +7829,4115 @@
         {
             "W": "WHITE"
         }
+    ],
+    "NRF,WW,TN": [
+        {
+            "N": "43"
+        },
+        {
+            "R": "STATE"
+        },
+        {
+            "F": "AVE"
+        },
+        {
+            "W": "NEW"
+        },
+        {
+            "W": "ALBANY"
+        },
+        {
+            "T": "IN"
+        },
+        {
+            "N": "47150"
+        }
+    ],
+    "NWFDWF,TN": [
+        {
+            "N": "815"
+        },
+        {
+            "W": "MARVON"
+        },
+        {
+            "F": "ST"
+        },
+        {
+            "D": "SOUTH"
+        },
+        {
+            "W": "OZONE"
+        },
+        {
+            "F": "PARK"
+        },
+        {
+            "T": "NY"
+        },
+        {
+            "N": "11420"
+        }
+    ],
+    "NWF,W,TN": [
+        {
+            "N": "109"
+        },
+        {
+            "W": "MARKHAN"
+        },
+        {
+            "F": "ST"
+        },
+        {
+            "W": "CORONA"
+        },
+        {
+            "T": "NY"
+        },
+        {
+            "N": "11368"
+        }
+    ],
+    "NWF,WF,TN": [
+        {
+            "N": "8190"
+        },
+        {
+            "W": "MARSH"
+        },
+        {
+            "F": "AVE"
+        },
+        {
+            "W": "THE"
+        },
+        {
+            "F": "VILLAGES"
+        },
+        {
+            "T": "FL"
+        },
+        {
+            "N": "32162"
+        }
+    ],
+    "NFF,WF,TN": [
+        {
+            "N": "151"
+        },
+        {
+            "F": "MEADOW"
+        },
+        {
+            "F": "LANE"
+        },
+        {
+            "W": "TOMS"
+        },
+        {
+            "F": "RIVER"
+        },
+        {
+            "T": "NJ"
+        },
+        {
+            "N": "08753"
+        }
+    ],
+    "NDW,W,TN": [
+        {
+            "N": "88"
+        },
+        {
+            "D": "NORTH"
+        },
+        {
+            "W": "LOCKPORT"
+        },
+        {
+            "W": "LOCKPORT"
+        },
+        {
+            "T": "NY"
+        },
+        {
+            "N": "14094"
+        }
+    ],
+    "NWWF,W,TN": [
+        {
+            "N": "3864"
+        },
+        {
+            "W": "CAMEL"
+        },
+        {
+            "W": "BACK"
+        },
+        {
+            "F": "ROAD"
+        },
+        {
+            "W": "TULSA"
+        },
+        {
+            "T": "OKLAHOMA"
+        },
+        {
+            "N": "74145"
+        }
+    ],
+    "NFFF,W,TN": [
+        {
+            "N": "2169"
+        },
+        {
+            "F": "GREEN"
+        },
+        {
+            "F": "HILL"
+        },
+        {
+            "F": "ROAD"
+        },
+        {
+            "W": "BENTONVILLE"
+        },
+        {
+            "T": "ARKANSAS"
+        },
+        {
+            "N": "72712"
+        }
+    ],
+    "NW,WW,TN": [
+        {
+            "N": "4806"
+        },
+        {
+            "W": "TENMILE"
+        },
+        {
+            "W": "LOS"
+        },
+        {
+            "W": "ANGELES"
+        },
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "N": "90017"
+        }
+    ],
+    "NWF,W,DWN": [
+        {
+            "N": "3006"
+        },
+        {
+            "W": "HAVANNA"
+        },
+        {
+            "F": "STREET"
+        },
+        {
+            "W": "GREENSBORO"
+        },
+        {
+            "D": "NORTH"
+        },
+        {
+            "W": "CAROLINA"
+        },
+        {
+            "N": "27401"
+        }
+    ],
+    "NWF,WF,WWN": [
+        {
+            "N": "3168"
+        },
+        {
+            "W": "OAK"
+        },
+        {
+            "F": "AVENUE"
+        },
+        {
+            "W": "CEDAR"
+        },
+        {
+            "F": "KNOLLS"
+        },
+        {
+            "W": "NEW"
+        },
+        {
+            "W": "JERSEY"
+        },
+        {
+            "N": "07927"
+        }
+    ],
+    "NWF,W,WWN": [
+        {
+            "N": "3662"
+        },
+        {
+            "W": "BICETOWN"
+        },
+        {
+            "F": "ROAD"
+        },
+        {
+            "W": "CORONA"
+        },
+        {
+            "W": "NEW"
+        },
+        {
+            "W": "YORK"
+        },
+        {
+            "N": "11368"
+        }
+    ],
+    "NWFF,FF,TN": [
+        {
+            "N": "4325"
+        },
+        {
+            "W": "HIDDEN"
+        },
+        {
+            "F": "MEADOW"
+        },
+        {
+            "F": "DRIVE"
+        },
+        {
+            "F": "CAMP"
+        },
+        {
+            "F": "HILL"
+        },
+        {
+            "T": "PENNSYLVANIA"
+        },
+        {
+            "N": "17012"
+        }
+    ],
+    "NWWF,W,DWN": [
+        {
+            "N": "693"
+        },
+        {
+            "W": "JERRY"
+        },
+        {
+            "W": "DOVE"
+        },
+        {
+            "F": "DRIVE"
+        },
+        {
+            "W": "BEAUFORT"
+        },
+        {
+            "D": "SOUTH"
+        },
+        {
+            "W": "CAROLINA"
+        },
+        {
+            "N": "29902"
+        }
+    ],
+    "NFF,FT,TN": [
+        {
+            "N": "1405"
+        },
+        {
+            "F": "SPRING"
+        },
+        {
+            "F": "AVENUE"
+        },
+        {
+            "F": "FORT"
+        },
+        {
+            "T": "WASHINGTON"
+        },
+        {
+            "T": "PENNSYLVANIA"
+        },
+        {
+            "N": "19034"
+        }
+    ],
+    "NWW,W,TN": [
+        {
+            "N": "1977"
+        },
+        {
+            "W": "LAUREL"
+        },
+        {
+            "W": "LEE"
+        },
+        {
+            "W": "MINNEAPOLIS"
+        },
+        {
+            "T": "MINNESOTA"
+        },
+        {
+            "N": "55415"
+        }
+    ],
+    "XXNWTN": [
+        {
+            "X": "PO"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "1599"
+        },
+        {
+            "W": "WOONSOCKET"
+        },
+        {
+            "T": "RI"
+        },
+        {
+            "N": "02895"
+        }
+    ],
+    "XXNWFN": [
+        {
+            "X": "PO"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "4211"
+        },
+        {
+            "W": "ENTERPRISE"
+        },
+        {
+            "F": "CT"
+        },
+        {
+            "N": "36330"
+        }
+    ],
+    "XXNFWTN": [
+        {
+            "X": "PO"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "4599"
+        },
+        {
+            "F": "MOUNT"
+        },
+        {
+            "W": "PLEASANT"
+        },
+        {
+            "T": "SC"
+        },
+        {
+            "N": "29464"
+        }
+    ],
+    "RNXNWTN": [
+        {
+            "R": "RR"
+        },
+        {
+            "N": "15"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "36"
+        },
+        {
+            "W": "AUSTIN"
+        },
+        {
+            "T": "PA"
+        },
+        {
+            "N": "16720"
+        }
+    ],
+    "RNXNWFN": [
+        {
+            "R": "RR"
+        },
+        {
+            "N": "12"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "19"
+        },
+        {
+            "W": "TOPMOST"
+        },
+        {
+            "F": "KY"
+        },
+        {
+            "N": "41862"
+        }
+    ],
+    "RNXNFTN": [
+        {
+            "R": "RR"
+        },
+        {
+            "N": "39"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "87"
+        },
+        {
+            "F": "PUEBLO"
+        },
+        {
+            "T": "CO"
+        },
+        {
+            "N": "81001"
+        }
+    ],
+    "RNXNDWTN": [
+        {
+            "R": "RR"
+        },
+        {
+            "N": "47"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "47"
+        },
+        {
+            "D": "SOUTH"
+        },
+        {
+            "W": "COLTON"
+        },
+        {
+            "T": "NY"
+        },
+        {
+            "N": "13687"
+        }
+    ],
+    "RNXNWFTN": [
+        {
+            "R": "RR"
+        },
+        {
+            "N": "57"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "91"
+        },
+        {
+            "W": "MOUND"
+        },
+        {
+            "F": "VALLEY"
+        },
+        {
+            "T": "KS"
+        },
+        {
+            "N": "67354"
+        }
+    ],
+    "NW,FSN,WW,T,N": [
+        {
+            "N": "1701"
+        },
+        {
+            "W": "WESTPARK"
+        },
+        {
+            "F": "DRIVE"
+        },
+        {
+            "S": "APT"
+        },
+        {
+            "N": "110"
+        },
+        {
+            "W": "LITTLE"
+        },
+        {
+            "W": "ROCK"
+        },
+        {
+            "T": "ARK"
+        },
+        {
+            "N": "72203-22522"
+        }
+    ],
+    "MWN": [
+        {
+            "M": "APO"
+        },
+        {
+            "W": "AE"
+        },
+        {
+            "N": "09427"
+        }
+    ],
+    "FNXNW,TN": [
+        {
+            "F": "HC"
+        },
+        {
+            "N": "68"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "23"
+        },
+        {
+            "W": "CHICAGO"
+        },
+        {
+            "T": "IL"
+        },
+        {
+            "N": "44432"
+        }
+    ],
+    "FNXNWF,TN": [
+        {
+            "F": "HC"
+        },
+        {
+            "N": "02"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "45"
+        },
+        {
+            "W": "STERLING"
+        },
+        {
+            "F": "HEIGHTS"
+        },
+        {
+            "T": "MI"
+        },
+        {
+            "N": "48310"
+        }
+    ],
+    "FNXNWW,TN": [
+        {
+            "F": "HC"
+        },
+        {
+            "N": "22"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "12"
+        },
+        {
+            "W": "BATON"
+        },
+        {
+            "W": "ROUGE"
+        },
+        {
+            "T": "LA"
+        },
+        {
+            "N": "70806"
+        }
+    ],
+    "FNXNW,T,N": [
+        {
+            "F": "HC"
+        },
+        {
+            "N": "4013"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "4"
+        },
+        {
+            "W": "WANETTE"
+        },
+        {
+            "T": "OKLAHOMA"
+        },
+        {
+            "N": "74878"
+        }
+    ],
+    "FNXNDF,TN": [
+        {
+            "F": "HC"
+        },
+        {
+            "N": "002"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "11"
+        },
+        {
+            "D": "SOUTH"
+        },
+        {
+            "F": "BEND"
+        },
+        {
+            "T": "IN"
+        },
+        {
+            "N": "46614"
+        }
+    ],
+    "FNXNFW,TN": [
+        {
+            "F": "HC"
+        },
+        {
+            "N": "9900"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "9"
+        },
+        {
+            "F": "FORT"
+        },
+        {
+            "W": "WORTH"
+        },
+        {
+            "T": "TX"
+        },
+        {
+            "N": "76110"
+        }
+    ],
+    "FNXNDF,FN": [
+        {
+            "F": "HC"
+        },
+        {
+            "N": "09"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "31"
+        },
+        {
+            "D": "EAST"
+        },
+        {
+            "F": "HAVEN"
+        },
+        {
+            "F": "CT"
+        },
+        {
+            "N": "06512"
+        }
+    ],
+    "FNXW,TN": [
+        {
+            "F": "HC"
+        },
+        {
+            "N": "902"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "W": "WATERFORD"
+        },
+        {
+            "T": "MI"
+        },
+        {
+            "N": "48329"
+        }
+    ],
+    "FNXNW,FN": [
+        {
+            "F": "HC"
+        },
+        {
+            "N": "787"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "2"
+        },
+        {
+            "W": "HENDERSON"
+        },
+        {
+            "F": "KY"
+        },
+        {
+            "N": "42420"
+        }
+    ],
+    "FNXNFWF,TN": [
+        {
+            "F": "HC"
+        },
+        {
+            "N": "706"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "11"
+        },
+        {
+            "F": "POINT"
+        },
+        {
+            "W": "PLEASANT"
+        },
+        {
+            "F": "BEACH"
+        },
+        {
+            "T": "NJ"
+        },
+        {
+            "N": "08742"
+        }
+    ],
+    "FNXNFF,TN": [
+        {
+            "F": "HC"
+        },
+        {
+            "N": "954"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "9"
+        },
+        {
+            "F": "VALLEY"
+        },
+        {
+            "F": "STREAM"
+        },
+        {
+            "T": "NY"
+        },
+        {
+            "N": "11580"
+        }
+    ],
+    "FNXNDW,TN": [
+        {
+            "F": "HC"
+        },
+        {
+            "N": "253"
+        },
+        {
+            "X": "BOX"
+        },
+        {
+            "N": "253"
+        },
+        {
+            "D": "NORTH"
+        },
+        {
+            "W": "BERGEN"
+        },
+        {
+            "T": "NJ"
+        },
+        {
+            "N": "07047"
+        }
+    ],
+    "WZWWWWW,SN,WF,FN": [
+        {
+            "W": "YALE"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "PSYCHOLOGY"
+        },
+        {
+            "W": "HARKNESS"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "S": "SUITE"
+        },
+        {
+            "N": "300"
+        },
+        {
+            "W": "NEW"
+        },
+        {
+            "F": "HAVEN"
+        },
+        {
+            "F": "CT"
+        },
+        {
+            "N": "06520-8205"
+        }
+    ],
+    "ZWTWWWZWW,NWF,SW,WW,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "W": "LOS"
+        },
+        {
+            "W": "ANGELES"
+        },
+        {
+            "W": "ANDERSON"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "MANAGEMENT"
+        },
+        {
+            "N": "110"
+        },
+        {
+            "W": "WESTWOOD"
+        },
+        {
+            "F": "PLAZA"
+        },
+        {
+            "S": "SUITE"
+        },
+        {
+            "W": "B402"
+        },
+        {
+            "W": "LOS"
+        },
+        {
+            "W": "ANGELES"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "90095-1481"
+        }
+    ],
+    "WZWWWWWW,WN,W,TN": [
+        {
+            "W": "HARVARD"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "PHYSICS"
+        },
+        {
+            "W": "JEFFERSON"
+        },
+        {
+            "W": "PHYSICAL"
+        },
+        {
+            "W": "LABORATORY"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "455"
+        },
+        {
+            "W": "CAMBRIDGE"
+        },
+        {
+            "T": "MA"
+        },
+        {
+            "N": "02138-2019"
+        }
+    ],
+    "WZWZWWWWF,NWF,SN,W,TN": [
+        {
+            "W": "STANFORD"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "GRADUATE"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "BUSINESS"
+        },
+        {
+            "W": "KNIGHT"
+        },
+        {
+            "W": "MANAGEMENT"
+        },
+        {
+            "F": "CENTER"
+        },
+        {
+            "N": "655"
+        },
+        {
+            "W": "KNIGHT"
+        },
+        {
+            "F": "WAY"
+        },
+        {
+            "S": "SUITE"
+        },
+        {
+            "N": "245"
+        },
+        {
+            "W": "STANFORD"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "94305-7298"
+        }
+    ],
+    "ZWTWZWWWWWWN,WN,NDFF,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "W": "MERCED"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "SCIENCE"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "N": "2"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "264"
+        },
+        {
+            "N": "5200"
+        },
+        {
+            "D": "NORTH"
+        },
+        {
+            "F": "LAKE"
+        },
+        {
+            "F": "ROAD"
+        },
+        {
+            "W": "MERCED"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "95343-5603"
+        }
+    ],
+    "WZWWWWWW,WN,NDNF,WW,TN": [
+        {
+            "W": "COLUMBIA"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "ECONOMICS"
+        },
+        {
+            "W": "INTERNATIONAL"
+        },
+        {
+            "W": "AFFAIRS"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "834"
+        },
+        {
+            "N": "420"
+        },
+        {
+            "D": "WEST"
+        },
+        {
+            "N": "118TH"
+        },
+        {
+            "F": "STREET"
+        },
+        {
+            "W": "NEW"
+        },
+        {
+            "W": "YORK"
+        },
+        {
+            "T": "NY"
+        },
+        {
+            "N": "10027-7297"
+        }
+    ],
+    "ZWTWZWWWW,NWF,SN,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "PENNSYLVANIA"
+        },
+        {
+            "W": "WHARTON"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "JON"
+        },
+        {
+            "W": "M"
+        },
+        {
+            "W": "HUNTSMAN"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "N": "3730"
+        },
+        {
+            "W": "WALNUT"
+        },
+        {
+            "F": "STREET"
+        },
+        {
+            "S": "SUITE"
+        },
+        {
+            "N": "500"
+        },
+        {
+            "W": "PHILADELPHIA"
+        },
+        {
+            "T": "PA"
+        },
+        {
+            "N": "19104-6340"
+        }
+    ],
+    "TWWWWWWWWW,NDTF,WN,W,TN": [
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "W": "INSTITUTE"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "TECHNOLOGY"
+        },
+        {
+            "W": "DIVISION"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "APPLIED"
+        },
+        {
+            "W": "SCIENCE"
+        },
+        {
+            "N": "1200"
+        },
+        {
+            "D": "EAST"
+        },
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "F": "BOULEVARD"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "301"
+        },
+        {
+            "W": "PASADENA"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "91125-3200"
+        }
+    ],
+    "ZWTWWWWWWWW,WN,NWF,WW,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "MICHIGAN"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "COMPUTER"
+        },
+        {
+            "W": "SCIENCE"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "BEYSTER"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "3750"
+        },
+        {
+            "N": "2260"
+        },
+        {
+            "W": "HAYWARD"
+        },
+        {
+            "F": "STREET"
+        },
+        {
+            "W": "ANN"
+        },
+        {
+            "W": "ARBOR"
+        },
+        {
+            "T": "MI"
+        },
+        {
+            "N": "48109-2121"
+        }
+    ],
+    "WZWWWWWWWW,WN,NWF,W,TN": [
+        {
+            "W": "BROWN"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "BIOLOGY"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "MEDICINE"
+        },
+        {
+            "W": "SIDNEY"
+        },
+        {
+            "W": "FRANK"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "220"
+        },
+        {
+            "N": "185"
+        },
+        {
+            "W": "MEETING"
+        },
+        {
+            "F": "STREET"
+        },
+        {
+            "W": "PROVIDENCE"
+        },
+        {
+            "T": "RI"
+        },
+        {
+            "N": "02912-0108"
+        }
+    ],
+    "ZWTWZWW,NWF,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "VIRGINIA"
+        },
+        {
+            "W": "DARDEN"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "BUSINESS"
+        },
+        {
+            "N": "100"
+        },
+        {
+            "W": "DARDEN"
+        },
+        {
+            "F": "BOULEVARD"
+        },
+        {
+            "W": "CHARLOTTESVILLE"
+        },
+        {
+            "T": "VA"
+        },
+        {
+            "N": "22903-5268"
+        }
+    ],
+    "WZWWWWWW,WN,NWF,W,TN": [
+        {
+            "W": "DUKE"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "POLITICAL"
+        },
+        {
+            "W": "SCIENCE"
+        },
+        {
+            "W": "GROSS"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "200"
+        },
+        {
+            "N": "140"
+        },
+        {
+            "W": "SCIENCE"
+        },
+        {
+            "F": "DRIVE"
+        },
+        {
+            "W": "DURHAM"
+        },
+        {
+            "T": "NC"
+        },
+        {
+            "N": "27708-0208"
+        }
+    ],
+    "WZWZWWWW,NWF,WN,W,TN": [
+        {
+            "W": "NORTHWESTERN"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "KELLOGG"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "MANAGEMENT"
+        },
+        {
+            "W": "GLOBAL"
+        },
+        {
+            "W": "HUB"
+        },
+        {
+            "N": "2211"
+        },
+        {
+            "W": "CAMPUS"
+        },
+        {
+            "F": "DRIVE"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "4235"
+        },
+        {
+            "W": "EVANSTON"
+        },
+        {
+            "T": "IL"
+        },
+        {
+            "N": "60208-2800"
+        }
+    ],
+    "ZWTWWWWWWFW,WN,NDWWF,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "TEXAS"
+        },
+        {
+            "W": "AT"
+        },
+        {
+            "W": "AUSTIN"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "CHEMICAL"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "F": "CPE"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "5208"
+        },
+        {
+            "N": "200"
+        },
+        {
+            "D": "E"
+        },
+        {
+            "W": "DEAN"
+        },
+        {
+            "W": "KEETON"
+        },
+        {
+            "F": "ST"
+        },
+        {
+            "W": "AUSTIN"
+        },
+        {
+            "T": "TX"
+        },
+        {
+            "N": "78712-1589"
+        }
+    ],
+    "ZWTWWWWWWWW,WN,NWF,TW,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "W": "SAN"
+        },
+        {
+            "W": "DIEGO"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "COGNITIVE"
+        },
+        {
+            "W": "SCIENCE"
+        },
+        {
+            "W": "MCGILL"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "3340"
+        },
+        {
+            "N": "9500"
+        },
+        {
+            "W": "GILMAN"
+        },
+        {
+            "F": "DRIVE"
+        },
+        {
+            "T": "LA"
+        },
+        {
+            "W": "JOLLA"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "92093-0515"
+        }
+    ],
+    "ZWWWZWWWF,NDWF,SN,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "CHICAGO"
+        },
+        {
+            "W": "BOOTH"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "BUSINESS"
+        },
+        {
+            "W": "HARPER"
+        },
+        {
+            "F": "CENTER"
+        },
+        {
+            "N": "5807"
+        },
+        {
+            "D": "SOUTH"
+        },
+        {
+            "W": "WOODLAWN"
+        },
+        {
+            "F": "AVENUE"
+        },
+        {
+            "S": "SUITE"
+        },
+        {
+            "N": "204"
+        },
+        {
+            "W": "CHICAGO"
+        },
+        {
+            "T": "IL"
+        },
+        {
+            "N": "60637-1610"
+        }
+    ],
+    "WZWWWWW,WW,W,TN": [
+        {
+            "W": "PRINCETON"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "CHEMISTRY"
+        },
+        {
+            "W": "FRICK"
+        },
+        {
+            "W": "LABORATORY"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "W": "B322"
+        },
+        {
+            "W": "PRINCETON"
+        },
+        {
+            "T": "NJ"
+        },
+        {
+            "N": "08544-1009"
+        }
+    ],
+    "WZWWZWWWW,WN,NDF,W,TN": [
+        {
+            "W": "CORNELL"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "JOHNSON"
+        },
+        {
+            "W": "GRADUATE"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "MANAGEMENT"
+        },
+        {
+            "W": "SAGE"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "222"
+        },
+        {
+            "N": "114"
+        },
+        {
+            "D": "EAST"
+        },
+        {
+            "F": "AVENUE"
+        },
+        {
+            "W": "ITHACA"
+        },
+        {
+            "T": "NY"
+        },
+        {
+            "N": "14853-6201"
+        }
+    ],
+    "ZWTWWWW,NWW,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "W": "BERKELEY"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "HISTORY"
+        },
+        {
+            "N": "3229"
+        },
+        {
+            "W": "DWINELLE"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "BERKELEY"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "94720-2550"
+        }
+    ],
+    "ZWTWWWWW,WN,NDWF,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "MISSOURI"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "CHEMISTRY"
+        },
+        {
+            "W": "CHEMISTRY"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "325"
+        },
+        {
+            "N": "601"
+        },
+        {
+            "D": "SOUTH"
+        },
+        {
+            "W": "COLLEGE"
+        },
+        {
+            "F": "AVENUE"
+        },
+        {
+            "W": "COLUMBIA"
+        },
+        {
+            "T": "MO"
+        },
+        {
+            "N": "65211-7600"
+        }
+    ],
+    "TWWWZWWWWDWZWWW,WN,NWFD,W,TN": [
+        {
+            "T": "GEORGIA"
+        },
+        {
+            "W": "INSTITUTE"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "TECHNOLOGY"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "MECHANICAL"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "GEORGE"
+        },
+        {
+            "D": "W"
+        },
+        {
+            "W": "WOODRUFF"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "MECHANICAL"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "200"
+        },
+        {
+            "N": "801"
+        },
+        {
+            "W": "FERST"
+        },
+        {
+            "F": "DRIVE"
+        },
+        {
+            "D": "NW"
+        },
+        {
+            "W": "ATLANTA"
+        },
+        {
+            "T": "GA"
+        },
+        {
+            "N": "30332-0405"
+        }
+    ],
+    "ZWTWWWWWW,WN,NDWF,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "W": "IRVINE"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "MATHEMATICS"
+        },
+        {
+            "W": "ROWLAND"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "621"
+        },
+        {
+            "N": "501"
+        },
+        {
+            "D": "EAST"
+        },
+        {
+            "W": "PELTASON"
+        },
+        {
+            "F": "DRIVE"
+        },
+        {
+            "W": "IRVINE"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "92697-3875"
+        }
+    ],
+    "ZWWWWW,NZF,WN,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "WISCONSIN-MADISON"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "CHEMISTRY"
+        },
+        {
+            "N": "1101"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "F": "AVENUE"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "7417"
+        },
+        {
+            "W": "MADISON"
+        },
+        {
+            "T": "WI"
+        },
+        {
+            "N": "53706-1396"
+        }
+    ],
+    "ZWWTWZWW,NWF,WW,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "SOUTHERN"
+        },
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "W": "GOULD"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "LAW"
+        },
+        {
+            "N": "699"
+        },
+        {
+            "W": "EXPOSITION"
+        },
+        {
+            "F": "BOULEVARD"
+        },
+        {
+            "W": "LOS"
+        },
+        {
+            "W": "ANGELES"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "90089-0071"
+        }
+    ],
+    "ZWTWWWWWWWWWWWW,WN,NDWF,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "ILLINOIS"
+        },
+        {
+            "W": "AT"
+        },
+        {
+            "W": "URBANA-CHAMPAIGN"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "CIVIL"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "ENVIRONMENTAL"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "NEWMARK"
+        },
+        {
+            "W": "CIVIL"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "LABORATORY"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "2110"
+        },
+        {
+            "N": "205"
+        },
+        {
+            "D": "NORTH"
+        },
+        {
+            "W": "MATHEWS"
+        },
+        {
+            "F": "AVENUE"
+        },
+        {
+            "W": "URBANA"
+        },
+        {
+            "T": "IL"
+        },
+        {
+            "N": "61801-2352"
+        }
+    ],
+    "ZWTWWWWWWWWW,WN,WF,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "MARYLAND"
+        },
+        {
+            "W": "COLLEGE"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "COMPUTER"
+        },
+        {
+            "W": "MATHEMATICAL"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "NATURAL"
+        },
+        {
+            "W": "SCIENCES"
+        },
+        {
+            "W": "CHEMISTRY"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "2240"
+        },
+        {
+            "W": "COLLEGE"
+        },
+        {
+            "F": "PARK"
+        },
+        {
+            "T": "MD"
+        },
+        {
+            "N": "20742-2021"
+        }
+    ],
+    "ZWTWWWWW,WN,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "WASHINGTON"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "PSYCHOLOGY"
+        },
+        {
+            "W": "GUTHRIE"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "222"
+        },
+        {
+            "W": "SEATTLE"
+        },
+        {
+            "T": "WA"
+        },
+        {
+            "N": "98195-1525"
+        }
+    ],
+    "TRZWWWWWW,WN,NDWF,W,TN": [
+        {
+            "T": "OHIO"
+        },
+        {
+            "R": "STATE"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "PHYSICS"
+        },
+        {
+            "W": "PHYSICS"
+        },
+        {
+            "W": "RESEARCH"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "1120"
+        },
+        {
+            "N": "191"
+        },
+        {
+            "D": "WEST"
+        },
+        {
+            "W": "WOODRUFF"
+        },
+        {
+            "F": "AVENUE"
+        },
+        {
+            "W": "COLUMBUS"
+        },
+        {
+            "T": "OH"
+        },
+        {
+            "N": "43210-1117"
+        }
+    ],
+    "ZWTWWWWWWWWW,WN,WW,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "W": "SANTA"
+        },
+        {
+            "W": "BARBARA"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "MECHANICAL"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "HAROLD"
+        },
+        {
+            "W": "FRANK"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "3164"
+        },
+        {
+            "W": "SANTA"
+        },
+        {
+            "W": "BARBARA"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "93106-5070"
+        }
+    ],
+    "ZWWWWWWNWW,WW,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "NOTRE"
+        },
+        {
+            "W": "DAME"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "ECONOMICS"
+        },
+        {
+            "N": "328"
+        },
+        {
+            "W": "MALLOY"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "NOTRE"
+        },
+        {
+            "W": "DAME"
+        },
+        {
+            "T": "IN"
+        },
+        {
+            "N": "46556-4643"
+        }
+    ],
+    "WZZWWWWWW,WN,NWF,W,TN": [
+        {
+            "W": "EMORY"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "MEDICINE"
+        },
+        {
+            "W": "WHITEHEAD"
+        },
+        {
+            "W": "BIOMEDICAL"
+        },
+        {
+            "W": "RESEARCH"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "1003"
+        },
+        {
+            "N": "615"
+        },
+        {
+            "W": "MICHAEL"
+        },
+        {
+            "F": "STREET"
+        },
+        {
+            "W": "ATLANTA"
+        },
+        {
+            "T": "GA"
+        },
+        {
+            "N": "30322-3030"
+        }
+    ],
+    "ZWWZWWWWW,WN,NWF,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "PITTSBURGH"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "LAW"
+        },
+        {
+            "W": "BARCO"
+        },
+        {
+            "W": "LAW"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "304"
+        },
+        {
+            "N": "3900"
+        },
+        {
+            "W": "FORBES"
+        },
+        {
+            "F": "AVENUE"
+        },
+        {
+            "W": "PITTSBURGH"
+        },
+        {
+            "T": "PA"
+        },
+        {
+            "N": "15260-6101"
+        }
+    ],
+    "ZWTWWWWWW,WN,WWF,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "W": "DAVIS"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "PHYSICS"
+        },
+        {
+            "W": "PHYSICS"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "2123"
+        },
+        {
+            "W": "ONE"
+        },
+        {
+            "W": "SHIELDS"
+        },
+        {
+            "F": "AVENUE"
+        },
+        {
+            "W": "DAVIS"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "95616-5270"
+        }
+    ],
+    "ZWTWWWWW,WW,NDWF,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "ARIZONA"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "ASTRONOMY"
+        },
+        {
+            "W": "STEWARD"
+        },
+        {
+            "W": "OBSERVATORY"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "W": "N204"
+        },
+        {
+            "N": "933"
+        },
+        {
+            "D": "NORTH"
+        },
+        {
+            "W": "CHERRY"
+        },
+        {
+            "F": "AVENUE"
+        },
+        {
+            "W": "TUCSON"
+        },
+        {
+            "T": "AZ"
+        },
+        {
+            "N": "85721-0065"
+        }
+    ],
+    "ZWTWWWWWWF,WWN,NWF,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "COLORADO"
+        },
+        {
+            "W": "BOULDER"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "COMPUTER"
+        },
+        {
+            "W": "SCIENCE"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "F": "CENTER"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "W": "ECCR"
+        },
+        {
+            "N": "150"
+        },
+        {
+            "N": "1111"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "F": "DRIVE"
+        },
+        {
+            "W": "BOULDER"
+        },
+        {
+            "T": "CO"
+        },
+        {
+            "N": "80309-4300"
+        }
+    ],
+    "TRZWWWWW,WN,NDWF,DW,TN": [
+        {
+            "T": "MICHIGAN"
+        },
+        {
+            "R": "STATE"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "COLLEGE"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "428"
+        },
+        {
+            "N": "428"
+        },
+        {
+            "D": "SOUTH"
+        },
+        {
+            "W": "SHAW"
+        },
+        {
+            "F": "LANE"
+        },
+        {
+            "D": "EAST"
+        },
+        {
+            "W": "LANSING"
+        },
+        {
+            "T": "MI"
+        },
+        {
+            "N": "48824-1226"
+        }
+    ],
+    "ZWTWWWWWWW,WN,NZF,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "W": "RIVERSIDE"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "CHEMISTRY"
+        },
+        {
+            "W": "CHEMICAL"
+        },
+        {
+            "W": "SCIENCES"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "1400"
+        },
+        {
+            "N": "900"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "F": "AVENUE"
+        },
+        {
+            "W": "RIVERSIDE"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "92521-0403"
+        }
+    ],
+    "ZWTZWWWWWW,WN,NZWT,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "OREGON"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "JOURNALISM"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "COMMUNICATION"
+        },
+        {
+            "W": "ALLEN"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "321"
+        },
+        {
+            "N": "1275"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "OREGON"
+        },
+        {
+            "W": "EUGENE"
+        },
+        {
+            "T": "OR"
+        },
+        {
+            "N": "97403-1275"
+        }
+    ],
+    "ZWTWWWWW,WN,NWF,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "KANSAS"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "PSYCHOLOGY"
+        },
+        {
+            "W": "FRASER"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "426"
+        },
+        {
+            "N": "1415"
+        },
+        {
+            "W": "JAYHAWK"
+        },
+        {
+            "F": "BOULEVARD"
+        },
+        {
+            "W": "LAWRENCE"
+        },
+        {
+            "T": "KS"
+        },
+        {
+            "N": "66045-7556"
+        }
+    ],
+    "ZWTWWWWWWWWW,WN,NW,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "TEXAS"
+        },
+        {
+            "W": "AT"
+        },
+        {
+            "W": "AUSTIN"
+        },
+        {
+            "W": "COLLEGE"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "EDUCATION"
+        },
+        {
+            "W": "GEORGE"
+        },
+        {
+            "W": "I"
+        },
+        {
+            "W": "SANCHEZ"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "222"
+        },
+        {
+            "N": "1912"
+        },
+        {
+            "W": "SPEEDWAY"
+        },
+        {
+            "W": "AUSTIN"
+        },
+        {
+            "T": "TX"
+        },
+        {
+            "N": "78712-1292"
+        }
+    ],
+    "ZWTWWWWWWWW,WW,TW,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "IOWA"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "PHYSICS"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "ASTRONOMY"
+        },
+        {
+            "W": "VAN"
+        },
+        {
+            "W": "ALLEN"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "W": "W290"
+        },
+        {
+            "T": "IOWA"
+        },
+        {
+            "W": "CITY"
+        },
+        {
+            "T": "IA"
+        },
+        {
+            "N": "52242-1479"
+        }
+    ],
+    "ZWWWWWWWWWW,WN,NWF,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "CINCINNATI"
+        },
+        {
+            "W": "COLLEGE"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "APPLIED"
+        },
+        {
+            "W": "SCIENCE"
+        },
+        {
+            "W": "RHODES"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "320"
+        },
+        {
+            "N": "2901"
+        },
+        {
+            "W": "WOODSIDE"
+        },
+        {
+            "F": "DRIVE"
+        },
+        {
+            "W": "CINCINNATI"
+        },
+        {
+            "T": "OH"
+        },
+        {
+            "N": "45221-0072"
+        }
+    ],
+    "ZWTWWWWWWWWWWWWW,WN,NWF,TW,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "W": "SAN"
+        },
+        {
+            "W": "DIEGO"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "COMPUTER"
+        },
+        {
+            "W": "SCIENCE"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "COMPUTER"
+        },
+        {
+            "W": "SCIENCE"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "4119"
+        },
+        {
+            "N": "9500"
+        },
+        {
+            "W": "GILMAN"
+        },
+        {
+            "F": "DRIVE"
+        },
+        {
+            "T": "LA"
+        },
+        {
+            "W": "JOLLA"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "92093-0404"
+        }
+    ],
+    "ZWTWWWWWWW,WN,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "ALABAMA"
+        },
+        {
+            "W": "COLLEGE"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "ARTS"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "SCIENCES"
+        },
+        {
+            "W": "CLARK"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "202"
+        },
+        {
+            "W": "TUSCALOOSA"
+        },
+        {
+            "T": "AL"
+        },
+        {
+            "N": "35487-0211"
+        }
+    ],
+    "ZWWWWWWWWWW,WN,NFF,WW,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "WISCONSIN-EAU"
+        },
+        {
+            "W": "CLAIRE"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "GEOGRAPHY"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "ANTHROPOLOGY"
+        },
+        {
+            "W": "CENTENNIAL"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "2212"
+        },
+        {
+            "N": "1698"
+        },
+        {
+            "F": "PARK"
+        },
+        {
+            "F": "AVENUE"
+        },
+        {
+            "W": "EAU"
+        },
+        {
+            "W": "CLAIRE"
+        },
+        {
+            "T": "WI"
+        },
+        {
+            "N": "54701-4004"
+        }
+    ],
+    "ZWTWWWWWWWWWWWWW,WW,NWF,WW,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "W": "SANTA"
+        },
+        {
+            "W": "CRUZ"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "EARTH"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "PLANETARY"
+        },
+        {
+            "W": "SCIENCES"
+        },
+        {
+            "W": "EARTH"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "MARINE"
+        },
+        {
+            "W": "SCIENCES"
+        },
+        {
+            "W": "BUILDING"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "W": "A316"
+        },
+        {
+            "N": "1156"
+        },
+        {
+            "W": "HIGH"
+        },
+        {
+            "F": "STREET"
+        },
+        {
+            "W": "SANTA"
+        },
+        {
+            "W": "CRUZ"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "95064-1077"
+        }
+    ],
+    "NFWTWSN,WW,FN": [
+        {
+            "N": "1000"
+        },
+        {
+            "F": "AVENIDA"
+        },
+        {
+            "W": "PONCE"
+        },
+        {
+            "T": "DE"
+        },
+        {
+            "W": "LEON"
+        },
+        {
+            "S": "STE"
+        },
+        {
+            "N": "5"
+        },
+        {
+            "W": "SAN"
+        },
+        {
+            "W": "JUAN"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00907"
+        }
+    ],
+    "NFTFSN,WW,FN": [
+        {
+            "N": "234"
+        },
+        {
+            "F": "CALLE"
+        },
+        {
+            "T": "DEL"
+        },
+        {
+            "F": "PARQUE"
+        },
+        {
+            "S": "APT"
+        },
+        {
+            "N": "3A"
+        },
+        {
+            "W": "SAN"
+        },
+        {
+            "W": "JUAN"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00912"
+        }
+    ],
+    "NFWWSN,WW,FN": [
+        {
+            "N": "345"
+        },
+        {
+            "F": "AVENIDA"
+        },
+        {
+            "W": "FERNANDEZ"
+        },
+        {
+            "W": "JUNCOS"
+        },
+        {
+            "S": "STE"
+        },
+        {
+            "N": "2B"
+        },
+        {
+            "W": "SAN"
+        },
+        {
+            "W": "JUAN"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00901"
+        }
+    ],
+    "NFWSN,WW,FN": [
+        {
+            "N": "678"
+        },
+        {
+            "F": "CALLE"
+        },
+        {
+            "W": "PADIAL"
+        },
+        {
+            "S": "STE"
+        },
+        {
+            "N": "4"
+        },
+        {
+            "W": "SAN"
+        },
+        {
+            "W": "JUAN"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00926"
+        }
+    ],
+    "NFWWTWSN,WW,FN": [
+        {
+            "N": "789"
+        },
+        {
+            "F": "AVENIDA"
+        },
+        {
+            "W": "JUAN"
+        },
+        {
+            "W": "PONCE"
+        },
+        {
+            "T": "DE"
+        },
+        {
+            "W": "LEON"
+        },
+        {
+            "S": "STE"
+        },
+        {
+            "N": "6A"
+        },
+        {
+            "W": "SAN"
+        },
+        {
+            "W": "JUAN"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00915"
+        }
+    ],
+    "NWTWSN,WW,FN": [
+        {
+            "N": "901"
+        },
+        {
+            "W": "CARRERA"
+        },
+        {
+            "T": "DE"
+        },
+        {
+            "W": "DIEGO"
+        },
+        {
+            "S": "STE"
+        },
+        {
+            "N": "2"
+        },
+        {
+            "W": "SAN"
+        },
+        {
+            "W": "JUAN"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00908"
+        }
+    ],
+    "NWWSN,WW,FN": [
+        {
+            "N": "5678"
+        },
+        {
+            "W": "CARRERA"
+        },
+        {
+            "W": "ASHFORD"
+        },
+        {
+            "S": "STE"
+        },
+        {
+            "N": "3A"
+        },
+        {
+            "W": "SAN"
+        },
+        {
+            "W": "JUAN"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00907"
+        }
+    ],
+    "FNFWW,W,FN": [
+        {
+            "F": "CASA"
+        },
+        {
+            "N": "10"
+        },
+        {
+            "F": "CALLE"
+        },
+        {
+            "W": "LAS"
+        },
+        {
+            "W": "FLORES"
+        },
+        {
+            "W": "AGUADILLA"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00603"
+        }
+    ],
+    "FNFFW,W,FN": [
+        {
+            "F": "CASA"
+        },
+        {
+            "N": "3"
+        },
+        {
+            "F": "AVENIDA"
+        },
+        {
+            "F": "ISLA"
+        },
+        {
+            "W": "VERDE"
+        },
+        {
+            "W": "CAROLINA"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00979"
+        }
+    ],
+    "FNWFW,W,FN": [
+        {
+            "F": "CASA"
+        },
+        {
+            "N": "7"
+        },
+        {
+            "W": "CARRERA"
+        },
+        {
+            "F": "PALMA"
+        },
+        {
+            "W": "REAL"
+        },
+        {
+            "W": "HUMACAO"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00791"
+        }
+    ],
+    "FNWW,W,FN": [
+        {
+            "F": "CASA"
+        },
+        {
+            "N": "8"
+        },
+        {
+            "W": "CARRERA"
+        },
+        {
+            "W": "MAGNOLIA"
+        },
+        {
+            "W": "PONCE"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00731"
+        }
+    ],
+    "FNFWW,WW,FN": [
+        {
+            "F": "CASA"
+        },
+        {
+            "N": "4"
+        },
+        {
+            "F": "AVENIDA"
+        },
+        {
+            "W": "SAN"
+        },
+        {
+            "W": "PATRICIO"
+        },
+        {
+            "W": "SAN"
+        },
+        {
+            "W": "JUAN"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00968"
+        }
+    ],
+    "FNFN,W,FN": [
+        {
+            "F": "CASA"
+        },
+        {
+            "N": "13"
+        },
+        {
+            "F": "CALLE"
+        },
+        {
+            "N": "44"
+        },
+        {
+            "W": "FAJARDO"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00738"
+        }
+    ],
+    "WNSND,WW,FN": [
+        {
+            "W": "C"
+        },
+        {
+            "N": "23"
+        },
+        {
+            "S": "APT"
+        },
+        {
+            "N": "4B"
+        },
+        {
+            "D": "SE"
+        },
+        {
+            "W": "SAN"
+        },
+        {
+            "W": "JUAN"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00912"
+        }
+    ],
+    "WNWN,W,FN": [
+        {
+            "W": "A"
+        },
+        {
+            "N": "12"
+        },
+        {
+            "W": "BLDG"
+        },
+        {
+            "N": "3A"
+        },
+        {
+            "W": "PONCE"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00730"
+        }
+    ],
+    "WNSND,W,FN": [
+        {
+            "W": "C"
+        },
+        {
+            "N": "45"
+        },
+        {
+            "S": "APT"
+        },
+        {
+            "N": "2C"
+        },
+        {
+            "D": "NE"
+        },
+        {
+            "W": "CAROLINA"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00987"
+        }
+    ],
+    "WNSN,W,FN": [
+        {
+            "W": "C"
+        },
+        {
+            "N": "56"
+        },
+        {
+            "S": "STE"
+        },
+        {
+            "N": "1B"
+        },
+        {
+            "W": "BAYAM\u00d3N"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00961"
+        }
+    ],
+    "WNWND,W,FN": [
+        {
+            "W": "B"
+        },
+        {
+            "N": "89"
+        },
+        {
+            "W": "BLDG"
+        },
+        {
+            "N": "7A"
+        },
+        {
+            "D": "SE"
+        },
+        {
+            "W": "AGUADILLA"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00603"
+        }
+    ],
+    "NWTFWN,WW,FN": [
+        {
+            "N": "20"
+        },
+        {
+            "W": "C"
+        },
+        {
+            "T": "DEL"
+        },
+        {
+            "F": "PARQUE"
+        },
+        {
+            "W": "BLK"
+        },
+        {
+            "N": "5"
+        },
+        {
+            "W": "SAN"
+        },
+        {
+            "W": "JUAN"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00927"
+        }
+    ],
+    "NWTTWWN,W,FN": [
+        {
+            "N": "25"
+        },
+        {
+            "W": "C"
+        },
+        {
+            "T": "DE"
+        },
+        {
+            "T": "LA"
+        },
+        {
+            "W": "LUNA"
+        },
+        {
+            "W": "BLK"
+        },
+        {
+            "N": "2"
+        },
+        {
+            "W": "BAYAM\u00d3N"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00959"
+        }
+    ],
+    "NWWWWN,W,FN": [
+        {
+            "N": "8"
+        },
+        {
+            "W": "C"
+        },
+        {
+            "W": "LAS"
+        },
+        {
+            "W": "BRISAS"
+        },
+        {
+            "W": "BLK"
+        },
+        {
+            "N": "1"
+        },
+        {
+            "W": "CAROLINA"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00987"
+        }
+    ],
+    "NWTTFWN,W,FN": [
+        {
+            "N": "22"
+        },
+        {
+            "W": "C"
+        },
+        {
+            "T": "DE"
+        },
+        {
+            "T": "LA"
+        },
+        {
+            "F": "MONTA\u00d1A"
+        },
+        {
+            "W": "BLK"
+        },
+        {
+            "N": "6"
+        },
+        {
+            "W": "MAYAG\u00dcEZ"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00682"
+        }
+    ],
+    "NWNDWN,WW,FN": [
+        {
+            "N": "20"
+        },
+        {
+            "W": "C"
+        },
+        {
+            "N": "10"
+        },
+        {
+            "D": "NE"
+        },
+        {
+            "W": "B"
+        },
+        {
+            "N": "6"
+        },
+        {
+            "W": "SAN"
+        },
+        {
+            "W": "JUAN"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00925"
+        }
+    ],
+    "NWNDWN,W,FN": [
+        {
+            "N": "15"
+        },
+        {
+            "W": "C"
+        },
+        {
+            "N": "22"
+        },
+        {
+            "D": "SW"
+        },
+        {
+            "W": "B"
+        },
+        {
+            "N": "8"
+        },
+        {
+            "W": "PONCE"
+        },
+        {
+            "F": "PR"
+        },
+        {
+            "N": "00730"
+        }
     ]
 }
