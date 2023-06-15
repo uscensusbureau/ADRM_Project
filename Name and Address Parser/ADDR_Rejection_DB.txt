@@ -1,0 +1,38 @@
+[
+    {
+        "Exception_file_name": "Kashif_Forced_ExceptionFile.json",
+        "Input": "1701 Westpark Drive, Little Rock, AR 72204",
+        "Token Pattern": "NWF,WW,TN",
+        "Rejected By": "Committee Member_2 at 2023-06-15 02:19:36.036596"
+    },
+    {
+        "Exception_file_name": "Normal_Forced_ExceptionFile.json",
+        "Input": "5506 A Street, Little Rock, AR 72205",
+        "Token Pattern": "NWF,WW,TN",
+        "Rejected By": "Committee Member_3 at 2023-06-15 04:06:39.518973"
+    },
+    {
+        "Exception_file_name": "Normal_Forced_ExceptionFile.json",
+        "Input": "5506 A Street, Little Rock, AR 72205",
+        "Token Pattern": "NWF,WW,TN",
+        "Rejected By": "Committee Member_2 at 2023-06-15 04:18:45.818274"
+    },
+    {
+        "Exception_file_name": "Normal_Forced_ExceptionFile.json",
+        "Input": "5506 A Street, Little Rock, AR 72205",
+        "Token Pattern": "NWF,WW,TN",
+        "Rejected By": "Committee Member_3 at 2023-06-15 04:19:42.212554"
+    },
+    {
+        "Exception_file_name": "Normal_Forced_ExceptionFile.json",
+        "Input": "5506 A Street, Little Rock, AR 72205",
+        "Token Pattern": "NWF,WW,TN",
+        "Rejected By": "Committee Member_2 at 2023-06-15 04:29:21.206413"
+    },
+    {
+        "Exception_file_name": "Normal_Forced_ExceptionFile.json",
+        "Input": "5506 A Street, Little Rock, AR 72205",
+        "Token Pattern": "NWF,WW,TN",
+        "Rejected By": "Committee Member_3 at 2023-06-15 04:31:45.759240"
+    }
+]

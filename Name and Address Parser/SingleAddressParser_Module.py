@@ -35,7 +35,7 @@ def throwException(originalInput,initials):
         "INPUT": originalInput,
         str(Mask_1): FirstPhaseList
     }
-    Exception_file_name = initials + '_ExceptionFile_' + str(today) + ".json"
+    Exception_file_name = initials + "_Forced_ExceptionFile.json"
     Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
     path = 'Exceptions/ForcedExceptions/' + Exception_file_name
     with open(path, 'w', encoding='utf-8') as g:
@@ -124,10 +124,10 @@ def Address_Parser(line,initials,originalInput):
                    Temp=Temp.strip()
                    Mappings[K2]=[K3,Temp]       
         try:
-            Result["Input"]= originalInput[7:]
+            Result["Input"]= originalInput
             Result["Output"]=Mappings
         except:
-            Result["Input"]= originalInput[7:]
+            Result["Input"]= originalInput
             Result["Output"]=Mappings
 
         
@@ -136,7 +136,7 @@ def Address_Parser(line,initials,originalInput):
                 "INPUT": originalInput,
                 str(Mask_1): FirstPhaseList
             }
-        Output_file_name=initials+'_Output_'+str(today)+".json"
+        Output_file_name=initials+"_Output.json"
         Output_file_name=re.sub(r'[^\w_. -]', '_', Output_file_name)
         path= 'Output/'+Output_file_name
         with open(path,'w', encoding='utf-8') as g:
@@ -150,7 +150,7 @@ def Address_Parser(line,initials,originalInput):
             "INPUT": originalInput,
             str(Mask_1): FirstPhaseList
         }
-        Exception_file_name = initials + '_ExceptionFile_' + str(today) + ".json"
+        Exception_file_name = initials + "_ExceptionFile.json"
         Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
         path = 'Exceptions/SingleException/' + Exception_file_name
         with open(path, 'w', encoding='utf-8') as g:
