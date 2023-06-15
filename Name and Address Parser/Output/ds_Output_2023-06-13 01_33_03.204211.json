@@ -1,0 +1,26 @@
+{
+    "INPUT": "3228132 bdcsd street, qhwd cas, ar 12321",
+    "NWF,WW,TN": [
+        {
+            "N": "3228132"
+        },
+        {
+            "W": "BDCSD"
+        },
+        {
+            "F": "STREET"
+        },
+        {
+            "W": "QHWD"
+        },
+        {
+            "W": "CAS"
+        },
+        {
+            "T": "AR"
+        },
+        {
+            "N": "12321"
+        }
+    ]
+}

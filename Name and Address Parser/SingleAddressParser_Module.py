@@ -12,8 +12,15 @@ import pandas as pd
 import json 
 import collections 
 #Parsing 1st program
+<<<<<<< Updated upstream
 import re
 
+=======
+# import re
+import os
+import sys
+import subprocess
+>>>>>>> Stashed changes
 
 from datetime import datetime,timedelta
 today=datetime.today()
@@ -25,12 +32,29 @@ import os.path
 file_dir = os.path.dirname(os.path.realpath('__file__'))
 
 
+
 from pathlib import Path
 
 root_folder = Path(__file__).parents[1]
 
 
+<<<<<<< Updated upstream
 def Address_Parser(line,initials):
+=======
+def throwException(originalInput,initials):
+    ExceptionDict = {
+        "INPUT": originalInput,
+        str(Mask_1): FirstPhaseList
+    }
+    Exception_file_name = initials + "_Forced_ExceptionFile.json"
+    Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
+    path = 'Exceptions/ForcedExceptions/' + Exception_file_name
+    with open(path, 'w', encoding='utf-8') as g:
+        json.dump(ExceptionDict, g, indent=4)
+    return
+def Address_Parser(line,initials,originalInput):
+    global Result, Exception_file_name, FirstPhaseList, Mask_1
+>>>>>>> Stashed changes
     Result={}
     Exception_file_name=""
     fileHandle = open('USAddressWordTable.txt', 'r',encoding="utf8")
@@ -111,8 +135,15 @@ def Address_Parser(line,initials):
                    Temp=Temp.strip()
                    Mappings[K2]=[K3,Temp]       
         try:
+<<<<<<< Updated upstream
             Result["Output"]=Mappings
         except:
+=======
+            Result["Input"]= originalInput
+            Result["Output"]=Mappings
+        except:
+            Result["Input"]= originalInput
+>>>>>>> Stashed changes
             Result["Output"]=Mappings
         
         
@@ -126,6 +157,7 @@ def Address_Parser(line,initials):
             json.dump(Stat,g,indent=4)
             g.truncate
         
+<<<<<<< Updated upstream
     else:  
         Exception_file_name=initials+'_ExceptionFile_'+str(today)+".txt"
         Exception_file_name=re.sub(r'[^\w_. -]', '_', Exception_file_name)
@@ -136,6 +168,32 @@ def Address_Parser(line,initials):
             Stat[Mask_1]=FirstPhaseList
             json.dump(Stat,g,indent=4)
             g.truncate
+=======
+    else:
+        ExceptionDict = {
+            "INPUT": originalInput,
+            str(Mask_1): FirstPhaseList
+        }
+        Exception_file_name = initials + "_ExceptionFile.json"
+        Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
+        path = 'Exceptions/SingleException/' + Exception_file_name
+        with open(path, 'w', encoding='utf-8') as g:
+            json.dump(ExceptionDict, g, indent=4)
+            
+        
+        # Exception_file_name=initials+'_ExceptionFile_'+str(today)+".txt"
+        # Exception_file_name=re.sub(r'[^\w_. -]', '_', Exception_file_name)
+        # path= 'Exceptions/SingleException/'+Exception_file_name
+        # with open(path,'w', encoding='utf-8') as g:
+        #     g.seek(0)
+        #     Stat={}
+        #     # Stat=originalInput
+        #     Stat[Mask_1]=originalInput,FirstPhaseList
+        #     json.dump(Stat,g,indent=4)
+        #     g.truncate
+        
+        
+>>>>>>> Stashed changes
     Total+=1
     print(Result)
     return (Result, Mask_1,Exception_file_name)

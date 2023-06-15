@@ -1,0 +1,8 @@
+[
+    {
+        "Exception_file_name": "Kashif_Forced_ExceptionFile.json",
+        "Input": "1701 Westpark Drive, Little Rock, AR 72204",
+        "Token Pattern": "NWF,WW,TN",
+        "Rejected By": "Committee Member_2 at 2023-06-15 02:19:36.036596"
+    }
+]
