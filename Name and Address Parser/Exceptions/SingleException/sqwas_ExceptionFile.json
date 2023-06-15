@@ -1,0 +1,26 @@
+{
+    "INPUT": "5506 A Street Little Rock, AR 72205",
+    "NWFWW,TN": [
+        {
+            "N": "5506"
+        },
+        {
+            "W": "A"
+        },
+        {
+            "F": "STREET"
+        },
+        {
+            "W": "LITTLE"
+        },
+        {
+            "W": "ROCK"
+        },
+        {
+            "T": "AR"
+        },
+        {
+            "N": "72205"
+        }
+    ]
+}

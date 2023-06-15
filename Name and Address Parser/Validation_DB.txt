@@ -1,0 +1,182 @@
+[
+    {
+        "Exception_file_name": "Normal_Forced_ExceptionFile.json",
+        "Input": "5506 A Street, Little Rock, AR 72205",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-15 04:18:54.894665",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                ""
+            ],
+            [
+                "W",
+                "A",
+                ""
+            ],
+            [
+                "F",
+                "STREET",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "AR",
+                ""
+            ],
+            [
+                "N",
+                "72205",
+                ""
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "Normal_Forced_ExceptionFile.json",
+        "Input": "5506 A Street, Little Rock, AR 72205",
+        "Region": "US",
+        "Type": "PO Box Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_3 at 2023-06-15 04:19:29.222029",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                ""
+            ],
+            [
+                "W",
+                "A",
+                ""
+            ],
+            [
+                "F",
+                "STREET",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "AR",
+                ""
+            ],
+            [
+                "N",
+                "72205",
+                ""
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "Normal_Forced_ExceptionFile.json",
+        "Input": "5506 A Street, Little Rock, AR 72205",
+        "Region": "US",
+        "Type": "PO Box Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-15 04:29:06.059645",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                ""
+            ],
+            [
+                "W",
+                "A",
+                ""
+            ],
+            [
+                "F",
+                "STREET",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "AR",
+                ""
+            ],
+            [
+                "N",
+                "72205",
+                ""
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "Normal_Forced_ExceptionFile.json",
+        "Input": "5506 A Street, Little Rock, AR 72205",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_3 at 2023-06-15 04:32:15.737572",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                ""
+            ],
+            [
+                "W",
+                "A",
+                ""
+            ],
+            [
+                "F",
+                "STREET",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "AR",
+                ""
+            ],
+            [
+                "N",
+                "72205",
+                ""
+            ]
+        ]
+    }
+]
