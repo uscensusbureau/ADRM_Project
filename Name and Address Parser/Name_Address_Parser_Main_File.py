@@ -465,8 +465,9 @@ class NameAddressParser:
         def Browse_File():
             global df, Stat, file_name, Input_name
             msg.showinfo("Choose File", "Select an Exception File")
-            df = fd.askopenfilenames(filetypes=[("JSON", ".json")])
+            df = fd.askopenfilenames(filetypes=[("JSON", ".json"),("TXT",".txt")])
             if df:
+                print(df[0])
                 with open(df[0], "r+", encoding="utf8") as f:
                     Stat = json.load(f)
                 Mask = list(Stat.keys())[1]
@@ -477,6 +478,7 @@ class NameAddressParser:
                 else:
                     Input_name = ""
                     msg.showwarning("FileError", "Please Select an Appropriate Exception file.")
+                    return
                 Exception_file_name_entry = ttk.Entry(form_frame, font=("Arial", 12),width=42)
                 Exception_file_name_entry.insert(0,file_name)
                 Exception_file_name_entry.configure(state=DISABLED)

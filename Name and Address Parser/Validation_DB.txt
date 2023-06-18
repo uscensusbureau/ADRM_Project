@@ -178,5 +178,50 @@
                 ""
             ]
         ]
+    },
+    {
+        "Exception_file_name": "sada_ExceptionFile_2023-06-15 04_19_10.034768.json",
+        "Input": "5506 A Street Little Rock, AR 72205",
+        "Region": "Puerto Rico",
+        "Type": "Military Address",
+        "Token Pattern": "NWFWW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-17 21:38:21.341515",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "A",
+                "USAD_SNO"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "AR",
+                ""
+            ],
+            [
+                "N",
+                "72205",
+                ""
+            ]
+        ]
     }
 ]
