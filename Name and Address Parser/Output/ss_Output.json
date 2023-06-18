@@ -1,26 +1,56 @@
 {
-    "INPUT": "HC 68 BOX 23 Chicago, IL 44432",
-    "FNXNW,TN": [
+    "INPUT": "Stanford University Graduate School of Business Knight Management Center, 655 Knight Way, Suite 245, Stanford, CA 94305-7298",
+    "WZWZWWWWF,NWF,SN,W,TN": [
         {
-            "F": "HC"
+            "W": "STANFORD"
         },
         {
-            "N": "68"
+            "Z": "UNIVERSITY"
         },
         {
-            "X": "BOX"
+            "W": "GRADUATE"
         },
         {
-            "N": "23"
+            "Z": "SCHOOL"
         },
         {
-            "W": "CHICAGO"
+            "W": "OF"
         },
         {
-            "T": "IL"
+            "W": "BUSINESS"
         },
         {
-            "N": "44432"
+            "W": "KNIGHT"
+        },
+        {
+            "W": "MANAGEMENT"
+        },
+        {
+            "F": "CENTER"
+        },
+        {
+            "N": "655"
+        },
+        {
+            "W": "KNIGHT"
+        },
+        {
+            "F": "WAY"
+        },
+        {
+            "S": "SUITE"
+        },
+        {
+            "N": "245"
+        },
+        {
+            "W": "STANFORD"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "94305-7298"
         }
     ]
 }
