@@ -223,5 +223,60 @@
                 ""
             ]
         ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "Attention line Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-18 19:21:34.546141",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                ""
+            ],
+            [
+                "W",
+                "WESTPARK",
+                ""
+            ],
+            [
+                "F",
+                "DRIVE",
+                ""
+            ],
+            [
+                "S",
+                "APT",
+                ""
+            ],
+            [
+                "N",
+                "110",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "ARK",
+                ""
+            ],
+            [
+                "N",
+                "72204",
+                ""
+            ]
+        ]
     }
 ]

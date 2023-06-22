@@ -226,8 +226,8 @@ class NameAddressParser:
         # text_result.grid(row=55, column=7,padx=20,pady=20)
         
         import textwrap
-
-
+        
+        
         def wrap(string, lenght=60):
             return '\n'.join(textwrap.wrap(string, lenght))
         
@@ -434,11 +434,26 @@ class NameAddressParser:
                                  row = 10)
         return
     def ApprovalForm():
+        import textwrap
+        
+        
+        def wrap(string, lenght=60):
+            return '\n'.join(textwrap.wrap(string, lenght))
         tab4 = ttk.Frame(NameAddressParser.tabControl)
+        ttk.Button(tab4, text="Choose an Exception File", width=30, command=lambda: Browse_File()).pack(side="top", padx=1, pady=1)
+
         NameAddressParser.tabControl.add(tab4, text ='Mapping Approval Form')
-        Stat={}
-        file_name = ""
-        Input_name = ""
+        
+        # Create the form frame
+        form_frame = ttk.Frame(tab4,width=400,height=1000)
+        form_frame.pack(side=tk.RIGHT,padx=10, pady=10)
+        
+        table_frame = ttk.Frame(tab4)
+        table_frame.pack(pady=4)
+        
+        canvas = tk.Canvas(table_frame, width=650, height=1000)
+        canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
         
         def DateTime():
             # Get the current date and time
@@ -453,7 +468,7 @@ class NameAddressParser:
         
             
             
-        
+
         
         def Clear():
             # Run the file again using subprocess
@@ -462,12 +477,41 @@ class NameAddressParser:
             
         
         
+        
         def Browse_File():
-            global df, Stat, file_name, Input_name
+            # global df, Stat, file_name, Input_name
+            Stat={}
+            file_name = ""
+            Input_name = ""
             msg.showinfo("Choose File", "Select an Exception File")
             df = fd.askopenfilenames(filetypes=[("JSON", ".json"),("TXT",".txt")])
+            
+            components = form_frame.winfo_children()
+
+            
+            if len(components)!=0:
+                    
+               
+                
+                # Iterate through each component and remove it
+                for component in components:
+                    component.destroy()
+                
+                components = canvas.find_all()
+
+                # Remove each component from the canvas
+                for component in components:
+                    canvas.delete(component)
+                        
+                    
+            
+            
+            
+            
+            
+            
+            
             if df:
-                print(df[0])
                 with open(df[0], "r+", encoding="utf8") as f:
                     Stat = json.load(f)
                 Mask = list(Stat.keys())[1]
@@ -479,6 +523,68 @@ class NameAddressParser:
                     Input_name = ""
                     msg.showwarning("FileError", "Please Select an Appropriate Exception file.")
                     return
+                
+                
+                
+                
+                Exception_file_name_label = ttk.Label(form_frame, text="Exception File Name:", font=("Arial", 12))
+                Exception_file_name_label.grid(row=1, column=0, sticky=tk.W, pady=5)
+                Exception_file_name_entry = ttk.Entry(form_frame, font=("Arial", 12),width=42)
+                Exception_file_name_entry.insert(0,file_name)
+                Exception_file_name_entry.configure(state=DISABLED)
+                Exception_file_name_entry.grid(row=1, column=1, pady=5)
+                Exception_file_name_entry.configure(background="#ffffff", foreground="#000000")
+                        
+                Input_label = ttk.Label(form_frame, text="Input:", font=("Arial", 12))
+                Input_label.grid(row=2, column=0, sticky=tk.W, pady=5)
+                Input_entry = ttk.Entry(form_frame, font=("Arial", 12),width=42)
+                Input_entry.insert(0,wrap(Input_name))
+                Input_entry.configure(state=DISABLED)
+                Input_entry.grid(row=2, column=1, pady=5)
+                Input_entry.configure(background="#ffffff", foreground="#000000")
+                
+                Mask_label = ttk.Label(form_frame, text="Token Pattern:", font=("Arial", 12))
+                Mask_label.grid(row=5, column=0, sticky=tk.W, pady=5)
+                # Mask_entry = ttk.Entry(form_frame, font=("Arial", 12),width=42)
+                # Mask_entry.insert(0,Mask)
+                # Mask_entry.configure(state=DISABLED)
+                # Mask_entry.grid(row=5, column=1, pady=5)
+                # Mask_entry.configure(background="#ffffff", foreground="#000000")
+                
+                region_label = ttk.Label(form_frame, text="Region: *", font=("Arial", 12))
+                region_label.grid(row=3, column=0, sticky=tk.W, pady=5)
+                regions = ["","US", "Puerto Rico"]
+                region_var = tk.StringVar(tab4)
+                region_dropdown = ttk.Combobox(form_frame, textvariable=region_var, values=regions, font=("Arial", 12),width=40)
+                region_dropdown.grid(row=3, column=1, pady=5)
+                region_dropdown.configure(state="readonly")
+                
+                Type_label = ttk.Label(form_frame, text="Type: *", font=("Arial", 12))
+                Type_label.grid(row=4, column=0, sticky=tk.W, pady=5)
+                Types=["","Individual Address","PO Box Address","Highway Contract Address","Military Address","Attention line Address","Roural Route Address","Puerto Rico Address","University Address"]
+                Type_var = tk.StringVar(tab4)
+                Type_dropdown = ttk.Combobox(form_frame, textvariable=Type_var, values=Types, font=("Arial", 12),width=40)
+                Type_dropdown.grid(row=4, column=1, pady=5)
+                Type_dropdown.configure(state = "readonly")
+                
+                
+                toggle_state = tk.StringVar(value="")
+                
+                # Create the form elements with custom styling
+                Validation_DB_Label = ttk.Label(form_frame, text="Add to DataBase Validation?", font=("Arial", 12))
+                Validation_DB_Label.grid(row=6, column=0, sticky=tk.W, pady=5)
+                toggle_dropdown = ttk.Combobox(form_frame, textvariable=toggle_state, values=["","Yes", "No"], font=("Arial", 12),width=40, state="readonly")
+                toggle_dropdown.grid(row=6, column=1, sticky=tk.W, pady=5)
+                
+                Approval_label = ttk.Label(form_frame, text="Approved By:", font=("Arial", 12))
+                Approval_label.grid(row=7, column=0, sticky=tk.W, pady=5)
+                Approval_List = ["", "Committee Member_1", "Committee Member_2", "Committee Member_3"]
+                Approval_List_var = tk.StringVar(tab4)
+                Approval_List_dropdown = ttk.Combobox(form_frame,textvariable=Approval_List_var,values=Approval_List,font=("Arial", 12),width=40)
+                Approval_List_dropdown.grid(row=7, column=1, sticky=tk.W, pady=5)
+                Approval_List_dropdown.configure(state="readonly")
+                
+                
                 Exception_file_name_entry = ttk.Entry(form_frame, font=("Arial", 12),width=42)
                 Exception_file_name_entry.insert(0,file_name)
                 Exception_file_name_entry.configure(state=DISABLED)
@@ -488,7 +594,7 @@ class NameAddressParser:
                 
                 
                 Input_entry = ttk.Entry(form_frame, font=("Arial", 12),width=42)
-                Input_entry.insert(0,Input_name)
+                Input_entry.insert(0,wrap(Input_name))
                 Input_entry.configure(state=DISABLED)
                 Input_entry.grid(row=2, column=1, pady=5)
                 Input_entry.configure(background="#ffffff", foreground="#000000")
@@ -499,6 +605,8 @@ class NameAddressParser:
                 Mask_entry.configure(state=DISABLED)
                 Mask_entry.grid(row=5, column=1, pady=5)
                 Mask_entry.configure(background="#ffffff", foreground="#000000")
+                
+                
                 def submit_form():
                     # Retrieve the entered values and process the form data
                     global Stat
@@ -733,14 +841,22 @@ class NameAddressParser:
                             set_cell_color(row[2], "#FFFFFF")  # White background
                 
                 table_rows = []
+
+            
+            
+                                
+                
                 scrollbar = ttk.Scrollbar(table_frame, orient=tk.VERTICAL, command=canvas.yview)
                 scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
                 canvas.configure(yscrollcommand=scrollbar.set)
-                # canvas.configure(scrollregion=canvas.bbox("all"))
                 canvas.configure(scrollregion=canvas.bbox("all"))
+                
+                
                 table_inner_frame = ttk.Frame(canvas)
                 table_inner_frame.pack(fill=tk.BOTH, expand=True)
                 canvas.create_window((0, 0), window=table_inner_frame, anchor=tk.NW)
+                
+
                 label1 = tk.Label(table_inner_frame, height=2, width=20, text="Mask Token")
         
                 label1.configure(font=("Arial", 12), fg="#000000", background="#ffffff", relief=tk.SOLID, state=DISABLED)
@@ -775,8 +891,8 @@ class NameAddressParser:
                         m=list(m.items())
                         add_table_row(m[0])
                         
-                submit_button = ttk.Button(tab4, text="Submit", command=submit_form, style="Submit.TButton") #, 
-                submit_button.pack(pady=10)
+                submit_button = ttk.Button(form_frame, text="Submit", command=submit_form, style="Submit.TButton") #, 
+                submit_button.grid(row=9, column=1, pady=5)
             
                 # Create a custom style for the buttons
                 style = ttk.Style(tab4)
@@ -791,85 +907,14 @@ class NameAddressParser:
                 # style.configure("Submit.TButton", font=("Arial", 12, "bold"), foreground="black", background="#4CAF50")
             else:
                 msg.showerror("Alert", "Please select an Exception File.")
-            return Stat,Input_name,file_name
-        
-        
-        ttk.Button(tab4, text="Choose an Exception File", width=30, command=Browse_File).pack(side="top", padx=1, pady=1)
-        
-        
-        # Create the form frame
-        form_frame = ttk.Frame(tab4)
-        form_frame.pack(padx=20, pady=20)
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Exception_file_name_label = ttk.Label(form_frame, text="Exception File Name:", font=("Arial", 12))
-        Exception_file_name_label.grid(row=1, column=0, sticky=tk.W, pady=5)
-        # Exception_file_name_entry = ttk.Entry(form_frame, font=("Arial", 12),width=42)
-        # Exception_file_name_entry.insert(0,file_name)
-        # Exception_file_name_entry.configure(state=DISABLED)
-        # Exception_file_name_entry.grid(row=1, column=1, pady=5)
-        # Exception_file_name_entry.configure(background="#ffffff", foreground="#000000")
                 
-        Input_label = ttk.Label(form_frame, text="Input:", font=("Arial", 12))
-        Input_label.grid(row=2, column=0, sticky=tk.W, pady=5)
-        # Input_entry = ttk.Entry(form_frame, font=("Arial", 12),width=42)
-        # Input_entry.insert(0,Input_name)
-        # Input_entry.configure(state=DISABLED)
-        # Input_entry.grid(row=2, column=1, pady=5)
-        # Input_entry.configure(background="#ffffff", foreground="#000000")
+            
+            return
         
-        Mask_label = ttk.Label(form_frame, text="Token Pattern:", font=("Arial", 12))
-        Mask_label.grid(row=5, column=0, sticky=tk.W, pady=5)
-        # Mask_entry = ttk.Entry(form_frame, font=("Arial", 12),width=42)
-        # Mask_entry.insert(0,Mask)
-        # Mask_entry.configure(state=DISABLED)
-        # Mask_entry.grid(row=5, column=1, pady=5)
-        # Mask_entry.configure(background="#ffffff", foreground="#000000")
         
-        region_label = ttk.Label(form_frame, text="Region: *", font=("Arial", 12))
-        region_label.grid(row=3, column=0, sticky=tk.W, pady=5)
-        regions = ["","US", "Puerto Rico"]
-        region_var = tk.StringVar(tab4)
-        region_dropdown = ttk.Combobox(form_frame, textvariable=region_var, values=regions, font=("Arial", 12),width=40)
-        region_dropdown.grid(row=3, column=1, pady=5)
-        region_dropdown.configure(state="readonly")
         
-        Type_label = ttk.Label(form_frame, text="Type: *", font=("Arial", 12))
-        Type_label.grid(row=4, column=0, sticky=tk.W, pady=5)
-        Types=["","Individual Address","PO Box Address","Highway Contract Address","Military Address","Attention line Address","Roural Route Address","Puerto Rico Address","University Address"]
-        Type_var = tk.StringVar(tab4)
-        Type_dropdown = ttk.Combobox(form_frame, textvariable=Type_var, values=Types, font=("Arial", 12),width=40)
-        Type_dropdown.grid(row=4, column=1, pady=5)
-        Type_dropdown.configure(state = "readonly")
         
-        table_frame = ttk.Frame(tab4)
-        table_frame.pack(pady=10)
         
-        canvas = tk.Canvas(table_frame, width=650, height=200)
-        canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         
-        toggle_state = tk.StringVar(value="")
         
-        # Create the form elements with custom styling
-        Validation_DB_Label = ttk.Label(form_frame, text="Add to DataBase Validation?", font=("Arial", 12))
-        Validation_DB_Label.grid(row=6, column=0, sticky=tk.W, pady=5)
-        toggle_dropdown = ttk.Combobox(form_frame, textvariable=toggle_state, values=["","Yes", "No"], font=("Arial", 12),width=40, state="readonly")
-        toggle_dropdown.grid(row=6, column=1, sticky=tk.W, pady=5)
-        
-        Approval_label = ttk.Label(form_frame, text="Approved By:", font=("Arial", 12))
-        Approval_label.grid(row=7, column=0, sticky=tk.W, pady=5)
-        Approval_List = ["", "Committee Member_1", "Committee Member_2", "Committee Member_3"]
-        Approval_List_var = tk.StringVar(tab4)
-        Approval_List_dropdown = ttk.Combobox(form_frame,textvariable=Approval_List_var,values=Approval_List,font=("Arial", 12),width=40)
-        Approval_List_dropdown.grid(row=7, column=1, sticky=tk.W, pady=5)
-        Approval_List_dropdown.configure(state="readonly")
-        
-        return
 name=NameAddressParser()
