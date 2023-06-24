@@ -440,19 +440,19 @@ class NameAddressParser:
         def wrap(string, lenght=60):
             return '\n'.join(textwrap.wrap(string, lenght))
         tab4 = ttk.Frame(NameAddressParser.tabControl)
-        ttk.Button(tab4, text="Choose an Exception File", width=30, command=lambda: Browse_File()).pack(side="top", padx=1, pady=1)
+        ttk.Button(tab4, text="Choose an Exception File", width=30, command=lambda: Browse_File([],False)).pack(side="top", padx=1, pady=1)
 
         NameAddressParser.tabControl.add(tab4, text ='Mapping Approval Form')
         
         # Create the form frame
         form_frame = ttk.Frame(tab4,width=400,height=1000)
-        form_frame.pack(side=tk.RIGHT,padx=10, pady=10)
+        form_frame.pack(side=tk.LEFT,padx=0, pady=10)
         
         table_frame = ttk.Frame(tab4)
         table_frame.pack(pady=4)
         
         canvas = tk.Canvas(table_frame, width=650, height=1000)
-        canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        canvas.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True)
 
         
         def DateTime():
@@ -478,44 +478,40 @@ class NameAddressParser:
         
         
         
-        def Browse_File():
+        def Browse_File(df,Iterate):
             # global df, Stat, file_name, Input_name
             Stat={}
             file_name = ""
             Input_name = ""
-            msg.showinfo("Choose File", "Select an Exception File")
-            df = fd.askopenfilenames(filetypes=[("JSON", ".json"),("TXT",".txt")])
-            
-            components = form_frame.winfo_children()
-
-            
-            if len(components)!=0:
-                    
-               
+            if Iterate==False:
                 
-                # Iterate through each component and remove it
-                for component in components:
-                    component.destroy()
-                
-                components = canvas.find_all()
+                msg.showinfo("Choose File", "Select an Exception File")
+                df = fd.askopenfilenames(filetypes=[("JSON", ".json"),("TXT",".txt")])
+            else:
+                components = form_frame.winfo_children()
 
-                # Remove each component from the canvas
-                for component in components:
-                    canvas.delete(component)
-                        
+                if len(components)!=0:
+                    # Iterate through each component and remove it
+                    print("fsdafasdfasdf")
+                    for component in components:
+                        component.destroy()
                     
-            
-            
-            
-            
-            
-            
+                    components = canvas.find_all()
+    
+                    # Remove each component from the canvas
+                    for component in components:
+                        canvas.delete(component)
             
             if df:
                 with open(df[0], "r+", encoding="utf8") as f:
                     Stat = json.load(f)
+                RevisedJSON=Stat
+                
+                Stat=Stat[0]
+                print(len(Stat))
                 Mask = list(Stat.keys())[1]
                 file_name = os.path.basename(df[0])
+                
                 if "INPUT" in Stat:
                     Input_name = Stat["INPUT"]
                     Stat.pop("INPUT")
@@ -523,10 +519,6 @@ class NameAddressParser:
                     Input_name = ""
                     msg.showwarning("FileError", "Please Select an Appropriate Exception file.")
                     return
-                
-                
-                
-                
                 Exception_file_name_label = ttk.Label(form_frame, text="Exception File Name:", font=("Arial", 12))
                 Exception_file_name_label.grid(row=1, column=0, sticky=tk.W, pady=5)
                 Exception_file_name_entry = ttk.Entry(form_frame, font=("Arial", 12),width=42)
@@ -716,6 +708,29 @@ class NameAddressParser:
                         if toggle_state.get() == "Yes":
                             msg.showinfo("Info", "Address Added to Validation DataBase!")
                             print(f"Approved By: {approval} at {today}")
+                            components = form_frame.winfo_children()
+
+                            for component in components:
+                                component.destroy()
+                            
+                            components=table_frame.winfo_children()
+                            
+                            for componenet in components:
+                                component.destroy()
+                            
+                            components = canvas.find_all()
+
+                            # Remove each component from the canvas
+                            for component in components:
+                                canvas.delete(component)
+                           
+                            RevisedJSON.pop(0)
+                                
+                            with open(df[0], 'w', encoding='utf-8') as f:                
+                                json.dump(RevisedJSON, f)
+                            if len(RevisedJSON)>0:
+                                Browse_File(df,True)
+                            
                         elif toggle_state.get() == "No":
                             msg.showinfo("Info", "Address is not Approved!")#\nPlease Select a New Exception File")
                             # Clear()
@@ -846,10 +861,10 @@ class NameAddressParser:
             
                                 
                 
-                scrollbar = ttk.Scrollbar(table_frame, orient=tk.VERTICAL, command=canvas.yview)
-                scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-                canvas.configure(yscrollcommand=scrollbar.set)
-                canvas.configure(scrollregion=canvas.bbox("all"))
+                # scrollbar = ttk.Scrollbar(table_frame, orient=tk.VERTICAL, command=canvas.yview)
+                # scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+                # canvas.configure(yscrollcommand=scrollbar.set)
+                # canvas.configure(scrollregion=canvas.bbox("all"))
                 
                 
                 table_inner_frame = ttk.Frame(canvas)
@@ -891,13 +906,22 @@ class NameAddressParser:
                         m=list(m.items())
                         add_table_row(m[0])
                         
-                submit_button = ttk.Button(form_frame, text="Submit", command=submit_form, style="Submit.TButton") #, 
-                submit_button.grid(row=9, column=1, pady=5)
-            
-                # Create a custom style for the buttons
-                style = ttk.Style(tab4)
-                style.configure("Submit.TButton", font=("Arial", 12, "bold"), foreground="black", background="#4CAF50")
+                if len(RevisedJSON)>1:
+                        
+                    submit_button = ttk.Button(form_frame, text="Save and Next", command=submit_form, style="Submit.TButton") #, 
+                    submit_button.grid(row=9, column=1, pady=5)
                 
+                    # Create a custom style for the buttons
+                    style = ttk.Style(tab4)
+                    style.configure("Submit.TButton", font=("Arial", 12, "bold"), foreground="black", background="#4CAF50")
+                else:
+                    submit_button = ttk.Button(form_frame, text="Save and Submit", command=submit_form, style="Submit.TButton") #, 
+                    submit_button.grid(row=9, column=1, pady=5)
+                    
+                
+                    # Create a custom style for the buttons
+                    style = ttk.Style(tab4)
+                    style.configure("Submit.TButton", font=("Arial", 12, "bold"), foreground="black", background="#4CAF50")
                 # Clear Button Future reference 
                 
                 # clear_button = ttk.Button(tab4, text="Clear", command=Clear, style="Submit.TButton") #, 
@@ -905,6 +929,7 @@ class NameAddressParser:
                 # # Create a custom style for the buttons
                 # style = ttk.Style(tab4)
                 # style.configure("Submit.TButton", font=("Arial", 12, "bold"), foreground="black", background="#4CAF50")
+                    
             else:
                 msg.showerror("Alert", "Please select an Exception File.")
                 

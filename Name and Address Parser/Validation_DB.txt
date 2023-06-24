@@ -278,5 +278,1740 @@
                 ""
             ]
         ]
+    },
+    {
+        "Exception_file_name": "dd_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "PO Box Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 18:32:26.546536",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SNM"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SPT"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_ANM"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_ANM"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "dd_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "Puerto Rico",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 18:35:26.394201",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SPR"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SNM"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_STA"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "dd_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_3 at 2023-06-23 19:06:03.258596",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_ANM"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SPT"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SPT"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_SPT"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "dd_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "Attention line Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-06-23 19:09:46.420498",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SFX"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_CTY"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_ANO"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "dd_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "Puerto Rico",
+        "Type": "PO Box Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_3 at 2023-06-23 19:17:12.640730",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SPR"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SNM"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_ANM"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_CTY"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "dd_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 20:21:25.424341",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SNM"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_CTY"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SNM"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_ANM"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "asds_ExceptionFile.json",
+        "Input": "5506 A Street, Little Rock AR 72205",
+        "Region": "Puerto Rico",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWF,WWTN",
+        "Approved By": "Committee Member_2 at 2023-06-23 20:27:22.083890",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "A",
+                "USAD_SPT"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "72205",
+                "USAD_SPT"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-06-23 20:30:16.550439",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SPT"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SPT"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_STA"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_CTY"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "Puerto Rico",
+        "Type": "PO Box Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 20:33:04.203944",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_ANO"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SNM"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SPT"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SNM"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_ANO"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "PO Box Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-06-23 20:36:50.235992",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SPR"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SNM"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_CTY"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "Roural Route Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_3 at 2023-06-23 20:39:12.173594",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_ANM"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SFX"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SNM"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SNM"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_ANO"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "Puerto Rico",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-06-23 20:41:48.873936",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SNM"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_ANO"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SNM"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SNM"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_ANM"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "5506 A Street Little Rock, AR 72205",
+        "Region": "Puerto Rico",
+        "Type": "Individual Address",
+        "Token Pattern": "NWFWW,TN",
+        "Approved By": "Committee Member_1 at 2023-06-23 20:42:07.244015",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "A",
+                "USAD_ANO"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SNM"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "72205",
+                "USAD_SPR"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "Military Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 20:58:40.840690",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SNO"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SPT"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_CTY"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_CTY"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "Puerto Rico Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 21:00:09.338360",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SPR"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SPT"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SNM"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SNM"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_ANO"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "Puerto Rico",
+        "Type": "Individual Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-06-23 21:03:38.278084",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SNM"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SNO"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_CTY"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "5506 A Street Little Rock, AR 72205",
+        "Region": "Puerto Rico",
+        "Type": "Individual Address",
+        "Token Pattern": "NWFWW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 21:03:51.756330",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "A",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SNM"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_CTY"
+            ],
+            [
+                "N",
+                "72205",
+                "USAD_SPR"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 21:05:24.570207",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SFX"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_STA"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_CTY"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "5506 A Street Little Rock, AR 72205",
+        "Region": "US",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFWW,TN",
+        "Approved By": "Committee Member_1 at 2023-06-23 21:05:45.234483",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "A",
+                "USAD_SPT"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "72205",
+                "USAD_SNM"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "Attention line Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 21:14:53.608049",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                ""
+            ],
+            [
+                "W",
+                "WESTPARK",
+                ""
+            ],
+            [
+                "F",
+                "DRIVE",
+                ""
+            ],
+            [
+                "S",
+                "APT",
+                ""
+            ],
+            [
+                "N",
+                "110",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "ARK",
+                ""
+            ],
+            [
+                "N",
+                "72204",
+                ""
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "PO Box Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-06-23 21:16:49.520712",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                ""
+            ],
+            [
+                "W",
+                "WESTPARK",
+                ""
+            ],
+            [
+                "F",
+                "DRIVE",
+                ""
+            ],
+            [
+                "S",
+                "APT",
+                ""
+            ],
+            [
+                "N",
+                "110",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "ARK",
+                ""
+            ],
+            [
+                "N",
+                "72204",
+                ""
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "Military Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 21:17:58.039221",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                ""
+            ],
+            [
+                "W",
+                "WESTPARK",
+                ""
+            ],
+            [
+                "F",
+                "DRIVE",
+                ""
+            ],
+            [
+                "S",
+                "APT",
+                ""
+            ],
+            [
+                "N",
+                "110",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "ARK",
+                ""
+            ],
+            [
+                "N",
+                "72204",
+                ""
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "Military Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 21:19:29.865645",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                ""
+            ],
+            [
+                "W",
+                "WESTPARK",
+                ""
+            ],
+            [
+                "F",
+                "DRIVE",
+                ""
+            ],
+            [
+                "S",
+                "APT",
+                ""
+            ],
+            [
+                "N",
+                "110",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "ARK",
+                ""
+            ],
+            [
+                "N",
+                "72204",
+                ""
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-06-23 21:22:28.811159",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                ""
+            ],
+            [
+                "W",
+                "WESTPARK",
+                ""
+            ],
+            [
+                "F",
+                "DRIVE",
+                ""
+            ],
+            [
+                "S",
+                "APT",
+                ""
+            ],
+            [
+                "N",
+                "110",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "ARK",
+                ""
+            ],
+            [
+                "N",
+                "72204",
+                ""
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "5506 A Street Little Rock, AR 72205",
+        "Region": "US",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFWW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 21:25:31.791038",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                ""
+            ],
+            [
+                "W",
+                "A",
+                ""
+            ],
+            [
+                "F",
+                "STREET",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "AR",
+                ""
+            ],
+            [
+                "N",
+                "72205",
+                ""
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "5506 A Street Little Rock, AR 72205",
+        "Region": "US",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFWW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 21:25:47.966437",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                ""
+            ],
+            [
+                "W",
+                "A",
+                ""
+            ],
+            [
+                "F",
+                "STREET",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "AR",
+                ""
+            ],
+            [
+                "N",
+                "72205",
+                ""
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "Puerto Rico",
+        "Type": "Individual Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-06-23 21:31:42.197299",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                ""
+            ],
+            [
+                "W",
+                "WESTPARK",
+                ""
+            ],
+            [
+                "F",
+                "DRIVE",
+                ""
+            ],
+            [
+                "S",
+                "APT",
+                ""
+            ],
+            [
+                "N",
+                "110",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "ARK",
+                ""
+            ],
+            [
+                "N",
+                "72204",
+                ""
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "Puerto Rico",
+        "Type": "PO Box Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_3 at 2023-06-23 21:33:29.751925",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                ""
+            ],
+            [
+                "W",
+                "WESTPARK",
+                ""
+            ],
+            [
+                "F",
+                "DRIVE",
+                ""
+            ],
+            [
+                "S",
+                "APT",
+                ""
+            ],
+            [
+                "N",
+                "110",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "ARK",
+                ""
+            ],
+            [
+                "N",
+                "72204",
+                ""
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "Puerto Rico",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 21:34:44.143729",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                ""
+            ],
+            [
+                "W",
+                "WESTPARK",
+                ""
+            ],
+            [
+                "F",
+                "DRIVE",
+                ""
+            ],
+            [
+                "S",
+                "APT",
+                ""
+            ],
+            [
+                "N",
+                "110",
+                ""
+            ],
+            [
+                "W",
+                "LITTLE",
+                ""
+            ],
+            [
+                "W",
+                "ROCK",
+                ""
+            ],
+            [
+                "T",
+                "ARK",
+                ""
+            ],
+            [
+                "N",
+                "72204",
+                ""
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "Puerto Rico",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-06-23 22:38:38.279818",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SPR"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_SFX"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "5506 A Street Little Rock, AR 72205",
+        "Region": "US",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFWW,TN",
+        "Approved By": "Committee Member_1 at 2023-06-23 22:39:14.740895",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "A",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "72205",
+                "USAD_SNM"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "1701 westpark drive apt 110, little rock, ark 72204",
+        "Region": "US",
+        "Type": "PO Box Address",
+        "Token Pattern": "NWFSN,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-06-23 22:40:35.646672",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SNO"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SPR"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "72204",
+                "USAD_ANM"
+            ]
+        ]
+    },
+    {
+        "Exception_file_name": "om_ExceptionFile.json",
+        "Input": "5506 A Street Little Rock, AR 72205",
+        "Region": "US",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFWW,TN",
+        "Approved By": "Committee Member_3 at 2023-06-23 22:41:41.952356",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "A",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_SNM"
+            ],
+            [
+                "N",
+                "72205",
+                "USAD_SPR"
+            ]
+        ]
     }
 ]
