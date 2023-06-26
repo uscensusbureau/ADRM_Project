@@ -1,4 +1,142 @@
-[{
+[
+{
+    "INPUT": "Yale University Department of Psychology Harkness Hall, Suite 300, New Haven, CT 06520-8205\n2|University of California Los Angeles Anderson School of Management, 110 Westwood Plaza, Suite B402, Los Angeles, CA 90095-1481\n3|Harvard University Department of Physics Jefferson Physical Laboratory, Room 455, Cambridge, MA 02138-2019",
+    "WZWWWWW,SN,WF,FNNWTWWWZWW,NWF,SW,WW,TNNZWWWWWW,WN,W,TN": [
+        {
+            "W": "YALE"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "PSYCHOLOGY"
+        },
+        {
+            "W": "HARKNESS"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "S": "SUITE"
+        },
+        {
+            "N": "300"
+        },
+        {
+            "W": "NEW"
+        },
+        {
+            "F": "HAVEN"
+        },
+        {
+            "F": "CT"
+        },
+        {
+            "N": "06520-8205"
+        },
+        {
+            "N": "2|UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "CALIFORNIA"
+        },
+        {
+            "W": "LOS"
+        },
+        {
+            "W": "ANGELES"
+        },
+        {
+            "W": "ANDERSON"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "MANAGEMENT"
+        },
+        {
+            "N": "110"
+        },
+        {
+            "W": "WESTWOOD"
+        },
+        {
+            "F": "PLAZA"
+        },
+        {
+            "S": "SUITE"
+        },
+        {
+            "W": "B402"
+        },
+        {
+            "W": "LOS"
+        },
+        {
+            "W": "ANGELES"
+        },
+        {
+            "T": "CA"
+        },
+        {
+            "N": "90095-1481"
+        },
+        {
+            "N": "3|HARVARD"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "PHYSICS"
+        },
+        {
+            "W": "JEFFERSON"
+        },
+        {
+            "W": "PHYSICAL"
+        },
+        {
+            "W": "LABORATORY"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "455"
+        },
+        {
+            "W": "CAMBRIDGE"
+        },
+        {
+            "T": "MA"
+        },
+        {
+            "N": "02138-2019"
+        }
+    ]
+},
+{
     "INPUT": "1701 westpark drive apt 110, little rock, ark 72204",
     "NWFSN,WW,TN": [
         {
@@ -57,3 +195,10 @@
         }
     ]
 }]
+
+
+
+
+
+
+
