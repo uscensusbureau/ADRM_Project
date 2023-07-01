@@ -15,6 +15,7 @@ import SingleNameAddressParser_Module as ADN_API
 from datetime import datetime
 import os
 import subprocess
+import hashlib
 # Main Class for the name and address parsing, on individual level
 class NameAddressParser:
     
@@ -488,10 +489,7 @@ class NameAddressParser:
             
 
         
-        def Clear():
-            # Run the file again using subprocess
-            tab4.destroy()
-            subprocess.call(["python", "Name_Address_Parser_Main_File.py"])
+        
             
         
         
@@ -526,7 +524,9 @@ class NameAddressParser:
                 RevisedJSON=Stat
                 
                 Stat=Stat[0]
-                print(len(Stat))
+                # df = df[0]
+                # print(len(df))
+                # print(len(Stat))
                 Mask = list(Stat.keys())[1]
                 file_name = os.path.basename(df[0])
                 
@@ -570,11 +570,7 @@ class NameAddressParser:
                 
                 Mask_label = ttk.Label(form_frame, text="Token Pattern:", font=("Arial", 12))
                 Mask_label.grid(row=5, column=0, sticky=tk.W, pady=5)
-                # Mask_entry = ttk.Entry(form_frame, font=("Arial", 12),width=42)
-                # Mask_entry.insert(0,Mask)
-                # Mask_entry.configure(state=DISABLED)
-                # Mask_entry.grid(row=5, column=1, pady=5)
-                # Mask_entry.configure(background="#ffffff", foreground="#000000")
+                
                 
                 region_label = ttk.Label(form_frame, text="Region: *", font=("Arial", 12))
                 region_label.grid(row=3, column=0, sticky=tk.W, pady=5)
@@ -626,30 +622,31 @@ class NameAddressParser:
                 Mask_entry.configure(background="#ffffff", foreground="#000000")
                 
                 
+                
                 def submit_form():
                     # Retrieve the entered values and process the form data
                     global Stat
                     Exception_file_name = Exception_file_name_entry.get()
-                    Input = Input_entry.get("1.0")
-                    # for i in table_rows:
-                    #     if not dropdown_var.get():
-                    #         messagebox.showerror("Error", "")
-                    #         return False
-                        
+                    Input = Input_entry.get("1.0", "end-1c")
+                    Input_bytes = Input.encode('utf-8')
                     region = region_var.get()
                     type_value = Type_var.get()
                     approval = Approval_List_var.get()
-                    pattern = Mask_entry.get("1.0")
+                    pattern = Mask_entry.get("1.0", "end-1c")
                     # component_values = dropdown_var.get()
                     table_data = []
                     today = datetime.now()
                     addValid = toggle_state.get()
+                    ID = hashlib.sha1(Input_bytes)
+                    Unique_ID = ID.hexdigest()
                     
                     for row in table_rows[1:]:
                         column1 = row[0].cget("text").strip()
                         column2 = row[1].cget("text").strip()
                         column3 = row[2].get()
-                        
+                        if not column3:
+                            msg.showerror("Error", "One or More Components are missing!.")
+                            return False
                         table_data.append((column1, column2, column3))
                     
                     # Perform validation checks
@@ -675,6 +672,7 @@ class NameAddressParser:
                     #     messagebox.showerror("Error", "All Components are required.")
                     #     return False
                     form_data = {
+                        "Unique_ID": Unique_ID,
                         "Exception_file_name": Exception_file_name,
                         "Input": Input,
                         "Region": region,
@@ -690,24 +688,8 @@ class NameAddressParser:
                         "Rejected By": (f"{approval} at {today}"),
                     }
                     
-                    print(toggle_state.get())
+                    print("Approved?" , toggle_state.get())
                     if toggle_state.get() == "Yes":
-                        # file_path = r""
-                        if not Exception_file_name:
-                            msg.showerror("Error", "Exception File Name is required.")
-                            return False
-                        if not Input:
-                            msg.showerror("Error", "Input is required.")
-                            return False
-                        if not region:
-                            msg.showerror("Error", "Region is required.")
-                            return False
-                        if not type_value:
-                            msg.showerror("Error", "Type is required.")
-                            return False
-                        if not approval:
-                            msg.showerror("Error", "Approval Field is required.")
-                            return False
                         
                         with open("Validation_DB.txt", 'r+') as file:
                             try:
@@ -726,59 +708,70 @@ class NameAddressParser:
                             file.truncate()
                         
                         # messagebox.showinfo("Demo", "Address is added to Validation DataBase")
+                        print(f"Unique_ID: {Unique_ID}")
                         print(f"Exception_file_name: {Exception_file_name}")
                         print(f"Input: {Input}")
                         print(f"Region: {region}")
                         print(f"Type: {type_value}")
                         print(f"Token Pattern: {pattern}")
                         
-                        if toggle_state.get() == "Yes":
-                            msg.showinfo("Info", "Address Added to Validation DataBase!")
-                            print(f"Approved By: {approval} at {today}")
-                            components = form_frame.winfo_children()
-                            scrollbar.destroy()
-                            for component in components:
-                                component.destroy()
-                            
-                            components=table_frame.winfo_children()
-                            
-                            for componenet in components:
-                                component.destroy()
-                            
-                            components = canvas.find_all()
-                            scrollbar.destroy()
-                            # Remove each component from the canvas
-                            for component in components:
-                                canvas.delete(component)
-                            scrollbar.destroy()
-                      
-                            RevisedJSON.pop(0)
-                            
-                                
-                            with open(df[0], 'w', encoding='utf-8') as f:                
-                                json.dump(RevisedJSON, f)
-                            if len(RevisedJSON)>0:
-                                Browse_File(df,True)
-                                scrollbar.destroy()
-                            
-                        elif toggle_state.get() == "No":
-                            msg.showinfo("Info", "Address is not Approved!")#\nPlease Select a New Exception File")
-                            # Clear()
-                        print("Table Data:")
+                
+                        msg.showinfo("Info", "Address Added to Validation DataBase!")
+                        print(f"Approved By: {approval} at {today}")
+                        components = form_frame.winfo_children()
+                        scrollbar.destroy()
+                        for component in components:
+                            component.destroy()
                         
-                        for data in table_data:
-                            print(data)
-                    
-                    # elif toggle_state.get() == "No":
-                    #     if not approval:
-                    #         messagebox.showerror("Error", "Approval Field is required.")
-                    #         return False# messagebox.showinfo("Demo", "Address not added to Validation DataBase")
+                        components=table_frame.winfo_children()
+                        
+                        for componenet in components:
+                            component.destroy()
+                        
+                        components = canvas.find_all()
+                        scrollbar.destroy()
+                        # Remove each component from the canvas
+                        for component in components:
+                            canvas.delete(component)
+                        scrollbar.destroy()
+                  
+                        RevisedJSON.pop(0)
+                        
+                            
+                        with open(df[0], 'w', encoding='utf-8') as f:                
+                            json.dump(RevisedJSON, f)
+                        if len(RevisedJSON)>0:
+                            Browse_File(df,True)
+                            scrollbar.destroy()
+                        
                     elif toggle_state.get() == "No":
-                        if not approval:
-                            msg.showerror("Error", "Approval Field is required.")
-                            return False# messagebox.showinfo("Demo", "Address not added to Validation DataBase")
+                        msg.showinfo("Info", "Address is not Approved!")#\nPlease Select a New Exception File")
+                        # Clear()
+                        components = form_frame.winfo_children()
+                        scrollbar.destroy()
+                        for component in components:
+                            component.destroy()
                         
+                        components=table_frame.winfo_children()
                         
+                        for componenet in components:
+                            component.destroy()
+                        
+                        components = canvas.find_all()
+                        scrollbar.destroy()
+                        # Remove each component from the canvas
+                        for component in components:
+                            canvas.delete(component)
+                        scrollbar.destroy()
+                  
+                        RevisedJSON.pop(0)
+                        
+                            
+                        with open(df[0], 'w', encoding='utf-8') as f:                
+                            json.dump(RevisedJSON, f)
+                        if len(RevisedJSON)>0:
+                            Browse_File(df,True)
+                            scrollbar.destroy()
                         with open("ADDR_Rejection_DB.txt", 'r+') as r_file:
                             try:
                                 previous_data = json.load(r_file)
@@ -795,8 +788,15 @@ class NameAddressParser:
                             json.dump(previous_data, r_file, indent=4)
                             r_file.truncate()
                         print(rejection_data)
-                        msg.showinfo("Info", "Address is not Approved")#\nPlease Select a New Exception File")
-                        # Clear()
+                            # msg.showinfo("Info", "Address is not Approved")#\nPlease Select a New Exception File")
+                    print("Table Data:")
+                    
+                    for data in table_data:
+                        print(data)
+                    
+                   
+                        
+                        
                     
                     return form_data, rejection_data
                 
@@ -865,13 +865,8 @@ class NameAddressParser:
                     def update_size(e=None):
                         canvas["scrollregion"] = canvas.bbox("all")
                     canvas.bind('<Configure>', update_size)
-                    # canvas.config(scrollregion=(0,0,400,800))
-                    # canvas.configure(scrollregion=canvas.bbox("all"))
                     
                     
-        
-        
-        
                 def set_cell_color(cell, color):
                     cell.configure(background=color)
         
@@ -904,46 +899,7 @@ class NameAddressParser:
                 canvas.create_window((0, 0), window=table_inner_frame, anchor=tk.NW)
                 
 
-                # label1 = tk.Label(table_inner_frame, height=2, width=20, text="Mask Token")
-                # label1.configure(font=("Arial", 12), fg="#000000", background="#ffffff",relief=tk.RAISED, state=DISABLED)
-                # label1.grid(row=len(table_rows) + 1, column=0, sticky="nsew", padx=0, pady=0)
-        
-        
-                # label2 = tk.Label(table_inner_frame, height=2, width=20,text="Adress Token")
-                # label2.configure(font=("Arial", 12), relief=tk.RAISED,state=DISABLED)
-                # label2.grid(row=len(table_rows) + 1, column=0, sticky="nsew", padx=0, pady=0)
-        
-                # label3 = tk.Label(table_inner_frame, height=2, width=20,text="Address Component")
-                # label3.configure(font=("Arial", 12), relief=tk.RAISED,state=DISABLED)
-                # label3.grid(row=len(table_rows) + 1, column=0, sticky="nsew", padx=0, pady=0)
-                # rows=[]
                 
-                # table_frame.grid_columnconfigure(0, weight=1)
-                # table_frame.grid_columnconfigure(1, weight=1)
-                # table_frame.grid_columnconfigure(2, weight=1)
-                
-                
-                # # Update the canvas scroll region
-                # canvas.update_idletasks()
-                # canvas.config(scrollregion=canvas.bbox("all"))
-                                
-                # rows.append(label1)
-                # rows.append(label2)
-                # rows.append(label3)
-                
-
-                
-                # for r in range(len(table_rows)):
-                #     table_rows[r][0].place(x=10,y=2)
-                #     table_rows[r][1].place(x=10,y=2)
-                #     table_rows[r][2].place(x=10,y=2)
-        
-                # # Append the new row to the table rows list
-                # table_rows=[]
-                # table_rows.append(rows)
-                
-        
-                # print(Stat.items())
                 for key, value in Stat.items():
                     for m in value:
                         m=list(m.items())
@@ -965,14 +921,24 @@ class NameAddressParser:
                     # Create a custom style for the buttons
                     style = ttk.Style(tab4)
                     style.configure("Submit.TButton", font=("Arial", 12, "bold"), foreground="black", background="#4CAF50")
-                # Clear Button Future reference 
+                # components = form_frame.winfo_children()
+                # scrollbar.destroy()
+                # for component in components:
+                #     component.destroy()
                 
-                # clear_button = ttk.Button(tab4, text="Clear", command=Clear, style="Submit.TButton") #, 
-                # clear_button.pack(pady=15)
-                # # Create a custom style for the buttons
-                # style = ttk.Style(tab4)
-                # style.configure("Submit.TButton", font=("Arial", 12, "bold"), foreground="black", background="#4CAF50")
-                    
+                # components=table_frame.winfo_children()
+                
+                # for componenet in components:
+                #     component.destroy()
+                
+                # components = canvas.find_all()
+                # scrollbar.destroy()
+                # # Remove each component from the canvas
+                # for component in components:
+                #     canvas.delete(component)
+                # scrollbar.destroy()
+          
+                # RevisedJSON.pop(0)    
             else:
                 msg.showerror("Alert", "Please select an Exception File.")
                 
