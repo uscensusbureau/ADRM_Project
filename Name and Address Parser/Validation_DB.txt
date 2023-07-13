@@ -109,5 +109,429 @@
                 "USAD_SPR"
             ]
         ]
+    },
+    {
+        "Unique_ID": "cb3b421dfc30b1bf51a04a147d6c820d79afa5f7",
+        "Exception_file_name": "RouralRoute_Except.JSON",
+        "Input": "RR 15 BOX 36 Austin P 16720",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "RNXNWWN",
+        "Approved By": "Committee Member_1 at 2023-07-12 12:20:43.803992",
+        "Table Data": [
+            [
+                "N",
+                "15",
+                "Route Number"
+            ],
+            [
+                "X",
+                "BOX",
+                "Box Name"
+            ],
+            [
+                "N",
+                "36",
+                "Box Number"
+            ],
+            [
+                "W",
+                "AUSTIN",
+                "City Name"
+            ],
+            [
+                "W",
+                "P",
+                "State Name"
+            ],
+            [
+                "N",
+                "16720",
+                "Zip Code"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "7df615e131c35d03483657699ecea916726ace4c",
+        "Exception_file_name": "RouralRoute_Except.JSON",
+        "Input": "RR 4 BOX 72 Grafton N 58237",
+        "Region": "US",
+        "Type": "Roural Route Address",
+        "Token Pattern": "RNXNWDN",
+        "Approved By": "Committee Member_1 at 2023-07-12 12:25:58.959439",
+        "Table Data": [
+            [
+                "N",
+                "4",
+                "Route Number"
+            ],
+            [
+                "X",
+                "BOX",
+                "Route Name"
+            ],
+            [
+                "N",
+                "72",
+                "Box Number"
+            ],
+            [
+                "W",
+                "GRAFTON",
+                "City Name"
+            ],
+            [
+                "D",
+                "N",
+                "State Name"
+            ],
+            [
+                "N",
+                "58237",
+                "Zip Code"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "7916e2782d85644bbf5d98a1e18253cbf22d3e6b",
+        "Exception_file_name": "RouralRoute_Except.JSON",
+        "Input": "RR 12 BOX 25 Fairfield W 99012",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "RNXNWDN",
+        "Approved By": "Committee Member_2 at 2023-07-12 12:38:32.169183",
+        "Table Data": [
+            [
+                "N",
+                "12",
+                "USAD_RNO"
+            ],
+            [
+                "X",
+                "BOX",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "25",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "FAIRFIELD",
+                "USAD_SNO"
+            ],
+            [
+                "D",
+                "W",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "99012",
+                "USAD_SPR"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "27cd61dc9f5981b84681583a9ac4f442e53a5edf",
+        "Exception_file_name": "RouralRoute_Except.JSON",
+        "Input": "RR 14 BOX 94 Greencastle I 46135",
+        "Region": "Puerto Rico",
+        "Type": "Military Address",
+        "Token Pattern": "RNXNWWN",
+        "Approved By": "Committee Member_2 at 2023-07-12 12:39:35.920389",
+        "Table Data": [
+            [
+                "N",
+                "14",
+                "Not Selected"
+            ],
+            [
+                "X",
+                "BOX",
+                "Not Selected"
+            ],
+            [
+                "N",
+                "94",
+                "Not Selected"
+            ],
+            [
+                "W",
+                "GREENCASTLE",
+                "Not Selected"
+            ],
+            [
+                "W",
+                "I",
+                "Not Selected"
+            ],
+            [
+                "N",
+                "46135",
+                "Not Selected"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "60deb6ef2eb8c81846579e4cb4a4e280f80877eb",
+        "Exception_file_name": "puerto_rico_Exceptions.JSON",
+        "Input": "123 Calle de la Rosa, Apt 2B Guaynabo, PR 00966",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NFTTW,SNW,FN",
+        "Approved By": "Committee Member_3 at 2023-07-12 12:47:35.666412",
+        "Table Data": [
+            [
+                "F",
+                "CALLE",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "DE",
+                "USAD_RNM"
+            ],
+            [
+                "T",
+                "LA",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "ROSA",
+                "USAD_SNO"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "2B",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "GUAYNABO",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "PR",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "00966",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "323ac150c454208fe336d8449dd5da9d3e6915bc",
+        "Exception_file_name": "puerto_rico_Exceptions.JSON",
+        "Input": "1011 Callej\u00f3n del R\u00edo, Apt 2D, Bayam\u00f3n PR 00961",
+        "Region": "US",
+        "Type": "PO Box Address",
+        "Token Pattern": "NWTW,SN,WFN",
+        "Approved By": "Committee Member_1 at 2023-07-12 12:51:04.149557",
+        "Table Data": [
+            [
+                "W",
+                "CALLEJ\u00d3N",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "DEL",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "R\u00cdO",
+                "USAD_SFX"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_CTY"
+            ],
+            [
+                "N",
+                "2D",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "BAYAM\u00d3N",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "PR",
+                "USAD_ZP4"
+            ],
+            [
+                "N",
+                "00961",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "139f29a53f6c1d970908dcee63ab4b0a2365a704",
+        "Exception_file_name": "puerto_rico_Exceptions.JSON",
+        "Input": "1213 Boulevard del Mar, Apt 1A, Ponce PR 00730",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NFTW,SN,WFN",
+        "Approved By": "Committee Member_2 at 2023-07-12 12:56:14.828734",
+        "Table Data": [
+            [
+                "F",
+                "BOULEVARD",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "DEL",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "MAR",
+                "USAD_SFX"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SPT"
+            ],
+            [
+                "N",
+                "1A",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "PONCE",
+                "USAD_ANO"
+            ],
+            [
+                "F",
+                "PR",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "00730",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "eb71e00d378032047e402b676d61a06df20450fd",
+        "Exception_file_name": "puerto_rico_Exceptions.JSON",
+        "Input": "2829 Avenida del Bosque, Apt 3B, Gurabo PR 00778",
+        "Region": "Puerto Rico",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NFTW,SN,WFN",
+        "Approved By": "Committee Member_2 at 2023-07-12 13:04:51.121259",
+        "Table Data": [
+            [
+                "N",
+                "2829",
+                "USAD_SNO"
+            ],
+            [
+                "F",
+                "AVENIDA",
+                "USAD_ANM"
+            ],
+            [
+                "T",
+                "DEL",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "BOSQUE",
+                "USAD_SPR"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "3B",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "GURABO",
+                "USAD_ZIP"
+            ],
+            [
+                "F",
+                "PR",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "00778",
+                "USAD_STA"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "d4b39086dfb82087437b381cc1c54937fa8e5b68",
+        "Exception_file_name": "multi_Exception_HC.JSON",
+        "Input": "HC 68 BOX 23 Chicago IL 44432",
+        "Region": "Puerto Rico",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "FNXNWTN",
+        "Approved By": "Committee Member_1 at 2023-07-12 14:04:04.226657",
+        "Table Data": [
+            [
+                "F",
+                "HC",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "68",
+                "USAD_ANO"
+            ],
+            [
+                "X",
+                "BOX",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "23",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "CHICAGO",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "IL",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "44432",
+                "USAD_SPR"
+            ]
+        ]
     }
 ]

@@ -598,11 +598,11 @@ class NameAddressParser:
                 toggle_dropdown.grid(row=6, column=1, sticky=tk.W, pady=5)
                 
                 Approval_label = ttk.Label(form_frame, text="Approved By:", font=("Arial", 12))
-                Approval_label.grid(row=7, column=0, sticky=tk.W, pady=5)
+                Approval_label.grid(row=8, column=0, sticky=tk.W, pady=5)
                 Approval_List = ["", "Committee Member_1", "Committee Member_2", "Committee Member_3"]
                 Approval_List_var = tk.StringVar(tab4)
                 Approval_List_dropdown = ttk.Combobox(form_frame,textvariable=Approval_List_var,values=Approval_List,font=("Arial", 12),width=40)
-                Approval_List_dropdown.grid(row=7, column=1, sticky=tk.W, pady=5)
+                Approval_List_dropdown.grid(row=8, column=1, sticky=tk.W, pady=5)
                 Approval_List_dropdown.configure(state="readonly")
                 
                 
@@ -612,6 +612,14 @@ class NameAddressParser:
                 Exception_file_name_entry.grid(row=1, column=1, pady=5)
                 Exception_file_name_entry.configure(background="#ffffff", foreground="#000000")
                 
+                Comment_label = ttk.Label(form_frame, text="Comment", font=("Arial", 12))
+                Comment_label.grid(row=7, column=0, sticky=tk.W, pady=5)
+           
+            
+                Comment_entry = tk.Text(form_frame, height=2, width=20, wrap=tk.WORD)
+                Comment_entry.configure(font=("Arial", 12),width=42)
+                Comment_entry.grid(row=7, column=1, pady=5)
+                Comment_entry.configure(background="#ffffff", foreground="#000000")
                 
                 
                 
@@ -621,6 +629,29 @@ class NameAddressParser:
                 Mask_entry.grid(row=5, column=1, pady=5)
                 Mask_entry.configure(background="#ffffff", foreground="#000000")
                 
+                
+                dropdown_values = {
+                  "Not Selected" : "",
+                  "USAD_SNO" : "Street Number",
+                  "USAD_SPR" : "Street Pre-Directional",
+                  "USAD_SNM" : "Street Name",
+                  "USAD_SFX" : "Street Suffix",
+                  "USAD_SPT" : "Street Post-Directional",
+                  "USAD_ANM" : "Secondary Address Name",
+                  "USAD_ANO" : "Secondary Address Number",
+                  "USAD_CTY" : "City Name",
+                  "USAD_STA" : "State Name",
+                  "USAD_ZIP" : "Zip Code",
+                  "USAD_ZP4" : "Zip 4 Code",
+                  "USAD_BNM" : "Box Name",
+                  "USAD_BNO" : "Box Number",
+                  "USAD_RNM" : "Route Name",
+                  "USAD_RNO" : "Route Number",
+                  "USAD_ORG" : "Organization Name",
+                  "USAD_MDG" : "Military Rd Name",
+                  "USAD_MGN" : "Military Rd Number",
+                  "USAD_HNM" : "Highway Name",
+                  "USAD_HNO" : "Highway Number"}
                 
                 
                 def submit_form():
@@ -633,6 +664,7 @@ class NameAddressParser:
                     type_value = Type_var.get()
                     approval = Approval_List_var.get()
                     pattern = Mask_entry.get("1.0", "end-1c")
+                    Comment = Comment_entry.get("1.0", "end-1c")
                     # component_values = dropdown_var.get()
                     table_data = []
                     today = datetime.now()
@@ -640,14 +672,19 @@ class NameAddressParser:
                     ID = hashlib.sha1(Input_bytes)
                     Unique_ID = ID.hexdigest()
                     
-                    for row in table_rows[1:]:
+                    for row in table_rows[0:]:
                         column1 = row[0].cget("text").strip()
                         column2 = row[1].cget("text").strip()
                         column3 = row[2].get()
+                        
+                        selected_key = next((key for key, val in dropdown_values.items() if val == column3), None)
+                        
+                        if selected_key is not None:
+                            table_data.append((column1, column2, selected_key))
                         if not column3:
                             msg.showerror("Error", "One or More Components are missing!.")
                             return False
-                        table_data.append((column1, column2, column3))
+
                     
                     # Perform validation checks
                     if not Exception_file_name:
@@ -679,6 +716,7 @@ class NameAddressParser:
                         "Type": type_value,
                         "Token Pattern": pattern,
                         "Approved By": (f"{approval} at {today}"),
+                        "Comment": Comment,
                         "Table Data": table_data
                     }
                     rejection_data = {
@@ -686,6 +724,7 @@ class NameAddressParser:
                         "Input": Input,
                         "Token Pattern": pattern,
                         "Rejected By": (f"{approval} at {today}"),
+                        "Comment": Comment
                     }
                     
                     print("Approved?" , toggle_state.get())
@@ -801,36 +840,24 @@ class NameAddressParser:
                     return form_data, rejection_data
                 
                 
-                
+
                 def add_table_row(m):
                     global Stat
                     # Add a new row to the table
                     row = []
                     
-                    dropdown_values = ["",
-                      "USAD_SNO",
-                      "USAD_SPR",
-                      "USAD_SNM",
-                      "USAD_SFX",
-                      "USAD_SPT",
-                      "USAD_ANM",
-                      "USAD_ANO",
-                      "USAD_CTY",
-                      "USAD_STA",
-                      "USAD_ZIP",
-                      "USAD_ZP4",
-                      "USAD_BNM",
-                      "USAD_BNO",
-                      "USAD_RNM",
-                      "USAD_RNO",
-                      "USAD_ORG",
-                      "USAD_MDG",
-                      "USAD_MGN",
-                      "USAD_HNM",
-                      "USAD_HNO"]
+                    
                     
                     # Create the text widgets for the first two columns with scrollbars
 
+                    def on_select(event):
+                        selected_value = dropdown_var.get()
+                        selected_key = next((key for key, val in dropdown_values.items() if val == selected_value), None)
+                        # if selected_key is not None:
+                        #     print(selected_key)
+                        # else:
+                        #     print("Key not found for selected value:", selected_value)
+  # You can perform actions based on the selected key here
                     
                     
                     text1 = tk.Label(table_inner_frame, height=1, width=20, text=m[0])
@@ -845,7 +872,10 @@ class NameAddressParser:
                     
                     # Create the dropdown for the last column
                     dropdown_var = tk.StringVar(tab4)
-                    dropdown = ttk.Combobox(table_inner_frame ,textvariable = dropdown_var,values=dropdown_values, width=18,height=2, font=("Arial", 12), state="readonly")
+                    dropdown_var.set(list(dropdown_values.values())[0])
+                    dropdown = ttk.Combobox(table_inner_frame ,textvariable = dropdown_var,values=list(dropdown_values.values()), width=18,height=2, font=("Arial", 12), state="readonly")
+                    dropdown.bind("<<ComboboxSelected>>", on_select)
+                    # dropdown.pack()
                     dropdown.configure(postcommand=lambda: dropdown.configure(height=dropdown_var),justify="center")
                     dropdown.grid(row=len(table_rows) + 1, column=2, sticky="nsew", padx=2, pady=0)
                     row.append(dropdown)
