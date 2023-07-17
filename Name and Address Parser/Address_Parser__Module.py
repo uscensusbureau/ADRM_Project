@@ -17,6 +17,12 @@ from sklearn.metrics import multilabel_confusion_matrix,confusion_matrix,classif
 #Parsing 1st program
 import warnings
 warnings.filterwarnings("ignore")
+from datetime import datetime
+today=datetime.today()
+current_time = datetime.now().time()
+
+# Format the time as HH:MM:SS
+time_string = current_time.strftime("%H:%M:%S")
 
 def Address_Parser(Address_4CAF50,TruthSet=""):
     Result={}
@@ -80,6 +86,8 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
   "20":"USAD_HNO"
 }
     Detailed_Report+="Exception and Mask Report\n"
+    ExceptionList = []
+    ExceptionDict = {}
     for line in tqdm(Lines):
         line=line.strip("\n").split("|")
         ID=line[0].strip()
@@ -168,7 +176,7 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
                 Result[ID]=Mappings
                 dataFinal[Mask_1][ID] =Mappings # <--- add `id` value.
                 
-            except:
+            except: 
                 Result[ID]=Mappings
                 Truth_Result[ID]=Mappings
                 dataFinal[Mask_1]={}
@@ -177,17 +185,33 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
                 
             
         elif not FoundExcept:  
-            with open('ExceptionFile.json', 'r+', encoding='utf8') as g:
-                try:
-                     
-                    Stat = json.load(g)
-                    Stat[Mask_1]=FirstPhaseList
-                    g.seek(0)
-                    json.dump(Stat,g,indent=4)
-                    g.truncate
-                    RuleBasedOutput[ID]=RuleBased.RuleBasedAddressParser.AddressParser(Address)
-                except:
-                    continue
+            # ExceptionList.append(ExceptionDict)
+            
+            ExceptionEntry = {
+                "INPUT": Address,
+                str(Mask_1): FirstPhaseList
+            }
+            ExceptionList.append(ExceptionEntry)
+            
+            Exception_file_name = "_MultiLine_ExceptionFile" + str(current_time) + ".json"
+            Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
+            path = 'Exceptions/MultiLine Exceptions/' + Exception_file_name
+            with open(path, 'w', encoding='utf-8') as g:
+                g.seek(0)
+                json.dump(ExceptionList, g, indent=4)
+                g.truncate
+                RuleBasedOutput[ID]=RuleBased.RuleBasedAddressParser.AddressParser(Address)
+            # with open('ExceptionFile.json', 'r+', encoding='utf8') as g:
+            #     try:
+                    
+            #         Stat = json.load(g)
+            #         Stat[Mask_1]=FirstPhaseList
+            #         g.seek(0)
+            #         json.dump(Stat,g,indent=4)
+            #         g.truncate
+            #         RuleBasedOutput[ID]=RuleBased.RuleBasedAddressParser.AddressParser(Address)
+            #     except:
+            #         continue
         else:
             try:
                     

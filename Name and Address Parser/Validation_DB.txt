@@ -533,5 +533,171 @@
                 "USAD_SPR"
             ]
         ]
+    },
+    {
+        "Unique_ID": "102643d6cc422ce9559a35b2b7a160994576bd1c",
+        "Exception_file_name": "multi_Exception_HC.JSON",
+        "Input": "HC 94 BOX 41 Buffalo Grove IL 60089",
+        "Region": "US",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "FNXNWFTN",
+        "Approved By": "Committee Member_1 at 2023-07-17 01:12:25.506472",
+        "Comment": "Hello World!",
+        "Table Data": [
+            [
+                "F",
+                "HC",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "94",
+                "USAD_SNM"
+            ],
+            [
+                "X",
+                "BOX",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "41",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "BUFFALO",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "GROVE",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "IL",
+                "USAD_CTY"
+            ],
+            [
+                "N",
+                "60089",
+                "USAD_SPR"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "e93368fb3b49c130ab51cc52a1731a42dcec0f74",
+        "Exception_file_name": "multi_Exception_HC.JSON",
+        "Input": "HC 22 BOX 12 Baton Rouge LA 70806",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "FNXNWWTN",
+        "Approved By": "Committee Member_3 at 2023-07-17 01:16:58.888799",
+        "Comment": "Hello World!",
+        "Table Data": [
+            [
+                "F",
+                "HC",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "22",
+                "USAD_SPR"
+            ],
+            [
+                "X",
+                "BOX",
+                "USAD_SNM"
+            ],
+            [
+                "N",
+                "12",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "BATON",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "ROUGE",
+                "USAD_SNM"
+            ],
+            [
+                "T",
+                "LA",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "70806",
+                "USAD_SNM"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "8c01685066124f0ab65d8bdc7aa2e83d04f0f3f4",
+        "Exception_file_name": "_MultiLine_ExceptionFile2023-07-17 10_41_56.819812.json",
+        "Input": "1701, West, park, Drive APT 110, Little Rock, ARK, 72203-22522",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "N,D,F,FSN,WW,T,N",
+        "Approved By": "Committee Member_1 at 2023-07-17 10:49:45.358161",
+        "Comment": "Everything was perfect.",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SNO"
+            ],
+            [
+                "D",
+                "WEST",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SFX"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "72203-22522",
+                "USAD_ZIP"
+            ]
+        ]
     }
 ]

@@ -753,7 +753,7 @@ class NameAddressParser:
                         print(f"Region: {region}")
                         print(f"Type: {type_value}")
                         print(f"Token Pattern: {pattern}")
-                        
+                        print(f"Comment: {Comment}")
                 
                         msg.showinfo("Info", "Address Added to Validation DataBase!")
                         print(f"Approved By: {approval} at {today}")
