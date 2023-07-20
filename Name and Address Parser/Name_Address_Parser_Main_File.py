@@ -17,6 +17,8 @@ import os
 import subprocess
 import hashlib
 # Main Class for the name and address parsing, on individual level
+scrollbar = None
+submit_button = None
 class NameAddressParser:
     
     root = tk.Tk()
@@ -464,14 +466,14 @@ class NameAddressParser:
         
         NameAddressParser.tabControl.add(tab4, text ='Mapping Approval Form')
         form_frame = ttk.Frame(tab4,width=360,height=800)
-        form_frame.pack(side=tk.RIGHT,padx=10, pady=10)
+        form_frame.pack(side=tk.RIGHT,fill=tk.BOTH,padx=10, pady=10)
 
         
         table_frame = ttk.Frame(tab4)
         table_frame.pack(pady=60)
-        
+        table_frame.configure(height=600)
         canvas = tk.Canvas(table_frame,width=580,height=600)
-        canvas.pack(side=tk.LEFT)
+        canvas.pack(side=tk.LEFT,fill=tk.BOTH,expand=True)
 
         
         def DateTime():
@@ -484,17 +486,11 @@ class NameAddressParser:
             
             DateTime_label = ttk.Label(tab4, text=f"Date: {current_date}", font=("Arial", 12))
             DateTime_label.pack(side=tk.TOP, padx=10, pady=5)
-        
-            
-            
 
         
-        
-            
-        
-        
-        
+         #S
         def Browse_File(df,Iterate):
+            global scrollbar, submit_button #S
             # global df, Stat, file_name, Input_name
             Stat={}
             file_name = ""
@@ -529,6 +525,8 @@ class NameAddressParser:
                 # print(len(Stat))
                 Mask = list(Stat.keys())[1]
                 file_name = os.path.basename(df[0])
+                
+                
                 
                 if "INPUT" in Stat:
                     Input_name = Stat["INPUT"]
@@ -892,9 +890,6 @@ class NameAddressParser:
                     set_row_colors()  # Set alternate row colors
         
                     # Update the canvas scroll region
-                    def update_size(e=None):
-                        canvas["scrollregion"] = canvas.bbox("all")
-                    canvas.bind('<Configure>', update_size)
                     
                     
                 def set_cell_color(cell, color):
@@ -917,16 +912,43 @@ class NameAddressParser:
             
             
                                 
-                
-                scrollbar = ttk.Scrollbar(table_frame, orient=tk.VERTICAL, command=canvas.yview)
-                scrollbar = ttk.Scrollbar(table_frame, orient=tk.VERTICAL, command=canvas.yview)
-                scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-                canvas.configure(yscrollcommand=scrollbar.set)
-        
+                # scrollbar = ttk.Scrollbar(table_frame, orient=tk.VERTICAL, command=canvas.yview)
+                # # scrollbar = ttk.Scrollbar(table_frame, orient=tk.VERTICAL, command=canvas.yview)
+                # scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+                # canvas.configure(yscrollcommand=scrollbar.set)
+                if scrollbar:
+                    scrollbar.destroy()
+                    scrollbar = ttk.Scrollbar(table_frame, orient=tk.VERTICAL, command=canvas.yview)
+                    scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+                    canvas.configure(yscrollcommand=scrollbar.set)
+                else:
+                    scrollbar = ttk.Scrollbar(table_frame, orient=tk.VERTICAL, command=canvas.yview)
+                    scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+                    canvas.configure(yscrollcommand=scrollbar.set)
                 
                 table_inner_frame = ttk.Frame(canvas)
                 table_inner_frame.pack(fill=tk.BOTH, expand=True)
                 canvas.create_window((0, 0), window=table_inner_frame, anchor=tk.NW)
+                # scrollbar = None
+                
+                # #S
+                # if scrollbar:
+                #     # If the scrollbar exists, update its position and command
+                #     scrollbar.grid_forget()
+                #     scrollbar = ttk.Scrollbar(table_frame, orient=tk.VERTICAL, command=canvas.yview)
+                #     scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+                #     canvas.configure(yscrollcommand=scrollbar.set)
+                # else:
+                #     # If the scrollbar doesn't exist, create it
+                #     scrollbar = ttk.Scrollbar(table_frame, orient=tk.VERTICAL, command=canvas.yview)
+                #     scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+                #     canvas.configure(yscrollcommand=scrollbar.set)
+                # #S
+                
+                def update_size(e=None):
+                    canvas["scrollregion"] = canvas.bbox("all")
+                canvas.bind('<Configure>', update_size)
+                
                 
 
                 
@@ -934,6 +956,8 @@ class NameAddressParser:
                     for m in value:
                         m=list(m.items())
                         add_table_row(m[0])
+                if submit_button:
+                    submit_button.destroy()
                         
                 if len(RevisedJSON)>1:
                         
@@ -951,6 +975,8 @@ class NameAddressParser:
                     # Create a custom style for the buttons
                     style = ttk.Style(tab4)
                     style.configure("Submit.TButton", font=("Arial", 12, "bold"), foreground="black", background="#4CAF50")
+                
+                
                 # components = form_frame.winfo_children()
                 # scrollbar.destroy()
                 # for component in components:
@@ -969,6 +995,7 @@ class NameAddressParser:
                 # scrollbar.destroy()
           
                 # RevisedJSON.pop(0)    
+                
             else:
                 msg.showerror("Alert", "Please select an Exception File.")
                 

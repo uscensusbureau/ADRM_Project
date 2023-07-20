@@ -699,5 +699,213 @@
                 "USAD_ZIP"
             ]
         ]
+    },
+    {
+        "Unique_ID": "c3bbb20d3b70d50b595eb68622ae18d23a665132",
+        "Exception_file_name": "_MultiLine_ExceptionFile01_46_15.565237.json",
+        "Input": "1234, State, Ave ,New Albany, IN, 47150",
+        "Region": "US",
+        "Type": "Puerto Rico Address",
+        "Token Pattern": "N,R,F,WW,T,N",
+        "Approved By": "Committee Member_1 at 2023-07-20 01:50:07.016250",
+        "Comment": "WDJGHBDVSC",
+        "Table Data": [
+            [
+                "N",
+                "1234",
+                "USAD_SNO"
+            ],
+            [
+                "R",
+                "STATE",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "AVE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "NEW",
+                "USAD_ZP4"
+            ],
+            [
+                "W",
+                "ALBANY",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "IN",
+                "USAD_ANO"
+            ],
+            [
+                "N",
+                "47150",
+                "USAD_HNM"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "22186e92e8b2369f44a927a38dfef216ba73312e",
+        "Exception_file_name": "_MultiLine_ExceptionFile01_46_15.565237.json",
+        "Input": "815, Marvon, St South, Ozone Park, NY 11420",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "N,W,FD,WF,TN",
+        "Approved By": "Committee Member_1 at 2023-07-20 01:56:15.149212",
+        "Comment": "H",
+        "Table Data": [
+            [
+                "N",
+                "815",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "MARVON",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_SNM"
+            ],
+            [
+                "D",
+                "SOUTH",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "OZONE",
+                "USAD_ANM"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_SPT"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_BNM"
+            ],
+            [
+                "N",
+                "11420",
+                "USAD_HNM"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "97252af0436993159ef42bcc4b5252d71df8cd3f",
+        "Exception_file_name": "_MultiLine_ExceptionFile2023-07-17 10_41_56.819812.json",
+        "Input": "7705 A, Street, Little Rock, AR 72205",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NW,F,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-07-20 11:09:52.470567",
+        "Comment": "PERFECT!",
+        "Table Data": [
+            [
+                "N",
+                "7705",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "A",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "72205",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "8c01685066124f0ab65d8bdc7aa2e83d04f0f3f4",
+        "Exception_file_name": "_MultiLine_ExceptionFile11_27_28.489810.json",
+        "Input": "1701, West, park, Drive APT 110, Little Rock, ARK, 72203-22522",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "N,D,F,FSN,WW,T,N",
+        "Approved By": "Committee Member_1 at 2023-07-20 11:14:43.842043",
+        "Comment": "ASDFERGTDG",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SNO"
+            ],
+            [
+                "D",
+                "WEST",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SPR"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SNM"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SNM"
+            ],
+            [
+                "N",
+                "72203-22522",
+                "USAD_SNM"
+            ]
+        ]
     }
 ]

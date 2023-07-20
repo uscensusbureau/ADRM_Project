@@ -29,17 +29,18 @@ from pathlib import Path
 
 root_folder = Path(__file__).parents[1]
 
-
+ExceptionList = []
 def throwException(originalInput,initials):
     ExceptionDict = {
         "INPUT": originalInput,
         str(Mask_1): FirstPhaseList
     }
+    ExceptionList.append(ExceptionDict)
     Exception_file_name = initials + "_Forced_ExceptionFile.json"
     Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
     path = 'Exceptions/ForcedExceptions/' + Exception_file_name
     with open(path, 'w', encoding='utf-8') as g:
-        json.dump(ExceptionDict, g, indent=4)
+        json.dump(ExceptionList, g, indent=4)
     return
 def Address_Parser(line,initials,originalInput):
     global Result, Exception_file_name, FirstPhaseList, Mask_1
@@ -150,11 +151,12 @@ def Address_Parser(line,initials,originalInput):
             "INPUT": originalInput,
             str(Mask_1): FirstPhaseList
         }
+        ExceptionList.append(ExceptionDict)
         Exception_file_name = initials + "_ExceptionFile.json"
         Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
         path = 'Exceptions/SingleException/' + Exception_file_name
         with open(path, 'w', encoding='utf-8') as g:
-            json.dump(ExceptionDict, g, indent=4)
+            json.dump(ExceptionList, g, indent=4)
             
         
         # Exception_file_name=initials+'_ExceptionFile_'+str(today)+".txt"
