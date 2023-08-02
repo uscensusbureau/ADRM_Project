@@ -149,9 +149,9 @@ class NameAddressParser:
         NameAddressParser.tabControl.add(tab2, text ='Address Parser')
         ttk.Label(tab2, 
           text ="Please Choose a Pipe Delimitted File").grid(column = 0, 
-                               row = 0,
-                               padx = 5,
-                               pady = 5)  
+                                row = 0,
+                                padx = 5,
+                                pady = 5)  
                                                              
         def Process_Address_Parser():
             msg.showinfo("Choose File","Select Input File")
