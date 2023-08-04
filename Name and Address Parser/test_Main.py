@@ -39,7 +39,7 @@ class NAP_GUIBuilder(tk.Tk):
         # self.geometry("1280x720")
         self.NAP_GUIBuilder_CreateTabs()
         screen_width = self.winfo_screenwidth()
-
+        
         screen_height = self.winfo_screenheight()
 
         self.geometry(f"{screen_width}x{screen_height}")
@@ -53,11 +53,16 @@ class NAP_GUIBuilder(tk.Tk):
         self.tab2 = ttk.Frame(self.tabControl)
         self.tabControl.add(self.tab2, text ='Address Parser')
         
+        # self.tab3 = ttk.Frame(self.tabControl)
+        # self.tabControl.add(self.tab3, text ='Comparison Tab')
+        
+        
         self.tab4 = ttk.Frame(self.tabControl)
         self.tabControl.add(self.tab4, text ='Mapping Approval Form')
         
         # Calling Different Methods with respect to the tab
         self.NAP_GUIBuilder_AddressParser()
+        # self.NAP_GUIBuilder_ComparisonTab()
         self.NAP_GUIBuilder_MappingApprovalForm()
         
 
@@ -67,16 +72,16 @@ class NAP_GUIBuilder(tk.Tk):
         
         Instance = mx.Address_parser_misc()
         
-        ttk.Label(self.tab2, text ="Please Choose a Pipe Delimitted File"). grid(column = 0, 
-                               row = 0,
-                               padx = 5,
-                               pady = 5)  
-        ttk.Button(self.tab2, text ="Choose Single File (input)",width=30, command=Instance.Process_Address_Parser_Single_input).grid(column = 5, 
+        # ttk.Label(self.tab2, text ="Please Choose a Pipe Delimitted File"). grid(column = 0, 
+        #                        row = 0,
+        #                        padx = 5,
+        #                        pady = 5)  
+        ttk.Button(self.tab2, text ="Choose Batch File",width=30, command=Instance.Process_Address_Parser_Single_input).grid(column = 5, 
                              row = 50,
                              padx = 10,
                              pady = 10)
         
-        ttk.Label(self.tab2,text="Enter Address").grid(column = 4, 
+        ttk.Label(self.tab2,text="Enter Single Line Address").grid(column = 3, 
                                  row = 10,
                                  padx = 10,
                                  pady = 10) 
@@ -95,30 +100,38 @@ class NAP_GUIBuilder(tk.Tk):
         s.theme_use("clam")
         s.configure('Treeview',rowheight=40)
         
-        tree = ttk.Treeview(self.tab2, column=["Address Component","Address Token","Mask Token","Exception","File"] ,show='headings',height=10)
+        tree = ttk.Treeview(self.tab2, column=["Mask Token","Address Token","Address Component","Exception","File"] ,show='headings',height=10)
 
         for item in tree.get_children():
             tree.delete(item)
-        tree.column("# 1", width=100, stretch='YES')
-        tree.heading("# 1", text="Address Component")
+        tree.column("# 1", width=60, stretch='YES')
+        tree.heading("# 1", text="Mask Token")
         
-        tree.column("# 2", width=150, stretch='YES')
+        tree.column("# 2", width=200, stretch='YES')
         tree.heading("# 2", text="Address Token")
         
-        tree.column("# 3", width=100, stretch='YES')
-        tree.heading("# 3", text="Mask Token")
+        tree.column("# 3", width=80, stretch='YES')
+        tree.heading("# 3", text="Address Component")
         
-        
-        tree.column("# 4", width=100, stretch='YES')
+        tree.column("# 4", width=60, stretch='YES')
         tree.heading("# 4", text="Exception")
         
-        tree.column("# 5", width=100, stretch='YES')
+        tree.column("# 5", width=60, stretch='YES')
         tree.heading("# 5", text="File Name")
         ttk.Button(self.tab2, text ="Submit", command=lambda:Instance.Single_Address(single_input, self.tab2,tree),width=30).grid(column = 7, 
                                  row = 10)    
         #tree.pack(side=tk.LEFT)
 
-
+    # def NAP_GUIBuilder_ComparisonTab(self):
+    #     comaprison_instance = mx.Address_parser_misc()
+    #     ttk.Button(self.tab3, text ="Choose Batch File",width=30, command=comaprison_instance.Process_Address_Parser_Test).grid(column = 0, 
+    #                          row = 0,
+    #                          padx = 10,
+    #                          pady = 10)
+        
+    #     return
+    
+    
     def NAP_GUIBuilder_MappingApprovalForm(self):
        
         import textwrap

@@ -349,11 +349,23 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
     else:
         Detailed_Report+="Output From Active Learning\n\n"
         ActiveLResult = json.dumps(Result, indent = 4,ensure_ascii=False) 
+        Detailed_Report+="\n\nNumber of Exceptions Thrown: -\t"+str(Total-Observation)+"\n"
+        Detailed_Report+="Number of Parsed Address: -\t"+str(Observation)+"\n"
+        Detailed_Report+="Percentage of Parsed Result: -\t"+str((Observation/Total)*100)+"\n"
+        # Detailed_Report+="List of Exception Mask(s): -\t\n\n"+Exception_Mask+"--"
         Detailed_Report+=str(ActiveLResult)
-        f=open("Detailed_Report.txt","w",encoding="utf8")
+        Detailed_Report_1="\nTotal Number of Addresses: -\t"+str(Total)+"\n"
+        Detailed_Report_1+="\nNumber of Exceptions Thrown: -\t"+str(Total-Observation)+"\n"
+        Detailed_Report_1+="Number of Parsed Address: -\t"+str(Observation)+"\n"
+        Detailed_Report_1+="Percentage of Parsed Result: -\t"+str((Observation/Total)*100)+"\n"
+        # Detailed_Report_1+="List of Exception Mask(s): -\t\n\n"+Exception_Mask+"--"
+        Output_file_name = "Detailed_Report_" + str(current_time) + ".txt"
+        Output_file_name = re.sub(r'[^\w_. -]', '_', Output_file_name)
+        path = 'Output/Batch File Output/' + Output_file_name
+        f=open(path,"w",encoding="utf8")
         f.write(Detailed_Report)
         f.close()
-        return (True,"Detailed_Report.txt Generated")
+        return (True,f"Detailed_Report.txt Generated \n{Detailed_Report_1}")
 
     # print("Final Correct Address Parsing Percentage",Count_of_Correct/Total_Count*100)
     # print("Address Matching Report")

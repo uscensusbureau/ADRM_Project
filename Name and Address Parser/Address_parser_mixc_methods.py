@@ -113,7 +113,7 @@ class Address_parser_misc():
                 tree.delete(item)
             tree.insert('','end',values=(self.wrap('Mask'),self.wrap(Convert[1]),"","",""))
             for k, v in Result["Output"].items():  
-                tree.insert('', 'end', values=(self.wrap(k),self.wrap(v[1]),self.wrap(v[0])))
+                tree.insert('', 'end', values=(self.wrap(v[0]),self.wrap(v[1]),self.wrap(k)))
             
         except:
            

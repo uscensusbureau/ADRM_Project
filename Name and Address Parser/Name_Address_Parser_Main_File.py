@@ -194,7 +194,7 @@ class NameAddressParser:
         #                      row = 60,
         #                      padx = 10,
         #                      pady = 10)
-        NbuttonSingle = ttk.Button(tab2, text ="Choose Single File (input)",width=30, command=Process_Address_Parser_input).grid(column = 5, 
+        NbuttonSingle = ttk.Button(tab2, text ="Choose Batch File",width=30, command=Process_Address_Parser_input).grid(column = 5, 
                              row = 50,
                              padx = 10,
                              pady = 10)

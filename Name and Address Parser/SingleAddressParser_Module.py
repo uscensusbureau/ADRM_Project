@@ -139,7 +139,7 @@ def Address_Parser(line,initials,originalInput):
             }
         Output_file_name=initials+"_Output.json"
         Output_file_name=re.sub(r'[^\w_. -]', '_', Output_file_name)
-        path= 'Output/'+Output_file_name
+        path= 'Output/Single Line Output/'+Output_file_name
         with open(path,'w', encoding='utf-8') as g:
             g.seek(0)
             # Stat=originalInput,Mappings

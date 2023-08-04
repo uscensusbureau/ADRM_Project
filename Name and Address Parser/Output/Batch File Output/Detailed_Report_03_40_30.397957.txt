@@ -1,6 +1,11 @@
 Exception and Mask Report
 Output From Active Learning
 
+
+
+Number of Exceptions Thrown: -	0
+Number of Parsed Address: -	126
+Percentage of Parsed Result: -	100.0
 {
     "1": {
         "USAD_SNO": "43",
@@ -1033,10 +1038,3 @@ Output From Active Learning
         "USAD_RNM": "RR"
     }
 }
-
-Number of Exceptions Thrown: -	0
-Number of Parsed Address: -	126
-Percentage of Parsed Result: -	100.0
-List of Exception Mask(s): -	
-
---
