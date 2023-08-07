@@ -118,7 +118,6 @@ def Address_Parser(line,initials,originalInput):
         Observation+=1
         Observation+=1
         Mappings={}
-<<<<<<< Updated upstream
         for K2,V2 in FoundDict[Mask_1].items():
             FoundDict_KB=FoundDict[Mask_1]
             sorted_Found={k: v for k ,v in sorted(FoundDict_KB.items(), key=lambda item:item[1])}
@@ -135,7 +134,6 @@ def Address_Parser(line,initials,originalInput):
                        Mappings[K2]=[K3,Temp]       
                        Merge_token+=K3
                        Mappings[K2]=[Merge_token,Temp]       
-=======
         FoundDict_KB=FoundDict[Mask_1]
         sorted_Found={k: v for k ,v in sorted(FoundDict_KB.items(), key=lambda item:item[1])}
         for K2,V2 in sorted_Found.items():
@@ -150,7 +148,6 @@ def Address_Parser(line,initials,originalInput):
                    Temp=Temp.strip()
                    Merge_token+=K3
                    Mappings[K2]=[Merge_token,Temp]       
->>>>>>> Stashed changes
         try:
             Result["Input"]= originalInput
             Result["Output"]=Mappings

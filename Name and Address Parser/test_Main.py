@@ -72,7 +72,6 @@ class NAP_GUIBuilder(tk.Tk):
         
         Instance = mx.Address_parser_misc()
         
-<<<<<<< Updated upstream
         # ttk.Label(self.tab2, text ="Please Choose a Pipe Delimitted File"). grid(column = 0, 
         #                        row = 0,
         #                        padx = 5,
@@ -82,12 +81,11 @@ class NAP_GUIBuilder(tk.Tk):
                              padx = 10,
                              pady = 10)
         
-        ttk.Label(self.tab2,text="Enter Single Line Address").grid(column = 3, 
-=======
         ttk.Label(self.tab2, text ="Please Choose a Pipe Delimitted File"). grid(column = 0, 
                                row = 0,
                                padx = 5,
                                pady = 5)  
+        
         ttk.Button(self.tab2, text ="Choose Single File (input)",width=30, command=Instance.Process_Address_Parser_Single_input).grid(column = 5, 
                              row = 30,
                              padx = 10,
@@ -99,7 +97,6 @@ class NAP_GUIBuilder(tk.Tk):
                               pady = 0)
         
         ttk.Label(self.tab2,text="Enter Address").grid(column = 4, 
->>>>>>> Stashed changes
                                  row = 10,
                                  padx = 10,
                                  pady = 10) 
