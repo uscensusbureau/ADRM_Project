@@ -1,0 +1,40 @@
+[
+    {
+        "INPUT": "1701 westpark drive, little rock apt 110 arkanasas 72204 - 4556",
+        "NWF,WWSNWNWN": [
+            {
+                "N": "1701"
+            },
+            {
+                "W": "WESTPARK"
+            },
+            {
+                "F": "DRIVE"
+            },
+            {
+                "W": "LITTLE"
+            },
+            {
+                "W": "ROCK"
+            },
+            {
+                "S": "APT"
+            },
+            {
+                "N": "110"
+            },
+            {
+                "W": "ARKANASAS"
+            },
+            {
+                "N": "72204"
+            },
+            {
+                "W": "-"
+            },
+            {
+                "N": "4556"
+            }
+        ]
+    }
+]

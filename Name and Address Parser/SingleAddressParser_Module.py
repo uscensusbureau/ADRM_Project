@@ -116,14 +116,24 @@ def Address_Parser(line,initials,originalInput):
     
     if Found:
         Observation+=1
+        Observation+=1
         Mappings={}
         for K2,V2 in FoundDict[Mask_1].items():
-            Temp=""
-            for p in V2:
-                for K3,V3 in FirstPhaseList[p-1].items():
-                   Temp+=" "+V3
-                   Temp=Temp.strip()
-                   Mappings[K2]=[K3,Temp]       
+            FoundDict_KB=FoundDict[Mask_1]
+            sorted_Found={k: v for k ,v in sorted(FoundDict_KB.items(), key=lambda item:item[1])}
+            for K2,V2 in sorted_Found.items():
+                Temp=""
+                print(V2)
+                Merge_token=""
+                for p in V2:
+                    print(p)
+                    
+                    for K3,V3 in FirstPhaseList[p-1].items():
+                       Temp+=" "+V3
+                       Temp=Temp.strip()
+                       Mappings[K2]=[K3,Temp]       
+                       Merge_token+=K3
+                       Mappings[K2]=[Merge_token,Temp]       
         try:
             Result["Input"]= originalInput
             Result["Output"]=Mappings
