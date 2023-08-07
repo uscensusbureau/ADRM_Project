@@ -1,1 +1,30 @@
-[]
+[
+    {
+        "Exception_file_name": "_MultiLine_ExceptionFile10_22_09.200131.json",
+        "Input": "PO BOX, 1065 Lullaby CA, 92880",
+        "Token Pattern": "XX,NWT,N",
+        "Rejected By": "Committee Member_1 at 2023-08-03 10:26:02.577631",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "_MultiLine_ExceptionFile10_22_09.200131.json",
+        "Input": "PO BOX, 425 Frankfort KY 40601",
+        "Token Pattern": "XX,NWFN",
+        "Rejected By": "Committee Member_1 at 2023-08-03 10:26:17.323460",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "_MultiLine_ExceptionFile10_22_09.200131.json",
+        "Input": "815, Marvon St South Ozone Park, NY 11420",
+        "Token Pattern": "N,WFDWF,TN",
+        "Rejected By": "Committee Member_2 at 2023-08-03 10:27:26.015180",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "_MultiLine_ExceptionFile10_22_09.200131.json",
+        "Input": "PO, BOX 1212  Hollywood FL 33020",
+        "Token Pattern": "X,XNWTN",
+        "Rejected By": "Committee Member_1 at 2023-08-03 10:45:19.741050",
+        "Comment": ""
+    }
+]

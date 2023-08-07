@@ -1,0 +1,26 @@
+{
+    "INPUT": "1755 westpark dr, little rock, ar 88424",
+    "NWF,WW,TN": [
+        {
+            "N": "1755"
+        },
+        {
+            "W": "WESTPARK"
+        },
+        {
+            "F": "DR"
+        },
+        {
+            "W": "LITTLE"
+        },
+        {
+            "W": "ROCK"
+        },
+        {
+            "T": "AR"
+        },
+        {
+            "N": "88424"
+        }
+    ]
+}

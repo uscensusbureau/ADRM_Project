@@ -909,6 +909,7 @@
         ]
     },
     {
+<<<<<<< Updated upstream
         "Unique_ID": "8c01685066124f0ab65d8bdc7aa2e83d04f0f3f4",
         "Exception_file_name": "_MultiLine_ExceptionFile01_36_50.352512.json",
         "Input": "1701, West, park, Drive APT 110, Little Rock, ARK, 72203-22522",
@@ -916,74 +917,162 @@
         "Type": "PO Box Address",
         "Token Pattern": "N,D,F,FSN,WW,T,N",
         "Approved By": "Committee Member_1 at 2023-08-04 01:32:04.901501",
+=======
+        "Unique_ID": "6f5af3a88e118a617e28c320f786803f558d4eba",
+        "Exception_file_name": "_MultiLine_ExceptionFile02_40_25.801053.json",
+        "Input": "PO BOX, 1065 Lullaby CA, 92880",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "XX,NWT,N",
+        "Approved By": "Committee Member_1 at 2023-08-02 03:09:07.946859",
+        "Comment": "",
+        "Table Data": [
+            [
+                "X",
+                "PO",
+                "USAD_SNO"
+            ],
+            [
+                "X",
+                "BOX",
+                "USAD_SNM"
+            ],
+            [
+                "N",
+                "1065",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "LULLABY",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "CA",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "92880",
+                "USAD_SPT"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "8c01685066124f0ab65d8bdc7aa2e83d04f0f3f4",
+        "Exception_file_name": "_MultiLine_ExceptionFile01_06_23.412052.json",
+        "Input": "1701, West, park, Drive APT 110, Little Rock, ARK, 72203-22522",
+        "Region": "US",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "N,D,F,FSN,WW,T,N",
+        "Approved By": "Committee Member_1 at 2023-08-02 03:25:42.783046",
+>>>>>>> Stashed changes
         "Comment": "",
         "Table Data": [
             [
                 "N",
                 "1701",
+<<<<<<< Updated upstream
                 "USAD_SPR"
+=======
+                "USAD_SPT"
+>>>>>>> Stashed changes
             ],
             [
                 "D",
                 "WEST",
+<<<<<<< Updated upstream
                 "USAD_SNO"
+=======
+                "USAD_SPR"
+>>>>>>> Stashed changes
             ],
             [
                 "F",
                 "PARK",
+<<<<<<< Updated upstream
                 "USAD_SNO"
+=======
+                "USAD_SFX"
+>>>>>>> Stashed changes
             ],
             [
                 "F",
                 "DRIVE",
+<<<<<<< Updated upstream
                 "USAD_SPR"
+=======
+                "USAD_ANM"
+>>>>>>> Stashed changes
             ],
             [
                 "S",
                 "APT",
+<<<<<<< Updated upstream
                 "USAD_SNM"
+=======
+                "USAD_SPR"
+>>>>>>> Stashed changes
             ],
             [
                 "N",
                 "110",
+<<<<<<< Updated upstream
                 "USAD_SNO"
+=======
+                "USAD_SNM"
+>>>>>>> Stashed changes
             ],
             [
                 "W",
                 "LITTLE",
+<<<<<<< Updated upstream
                 "USAD_SPT"
+=======
+                "USAD_SNM"
+>>>>>>> Stashed changes
             ],
             [
                 "W",
                 "ROCK",
+<<<<<<< Updated upstream
                 "USAD_SNM"
+=======
+                "USAD_SFX"
+>>>>>>> Stashed changes
             ],
             [
                 "T",
                 "ARK",
+<<<<<<< Updated upstream
                 "USAD_SPR"
+            ],
+            [
+=======
+                "USAD_SFX"
             ],
             [
                 "N",
                 "72203-22522",
-                "USAD_SNM"
+                "USAD_SFX"
             ]
         ]
     },
     {
         "Unique_ID": "97252af0436993159ef42bcc4b5252d71df8cd3f",
-        "Exception_file_name": "_MultiLine_ExceptionFile01_36_50.352512.json",
+        "Exception_file_name": "_MultiLine_ExceptionFile01_06_23.412052.json",
         "Input": "7705 A, Street, Little Rock, AR 72205",
         "Region": "US",
-        "Type": "Attention line Address",
+        "Type": "Individual Address",
         "Token Pattern": "NW,F,WW,TN",
-        "Approved By": "Committee Member_2 at 2023-08-04 01:32:43.037000",
+        "Approved By": "Committee Member_1 at 2023-08-02 03:26:10.045219",
         "Comment": "",
         "Table Data": [
             [
                 "N",
                 "7705",
-                "USAD_SNM"
+                "USAD_SFX"
             ],
             [
                 "W",
@@ -993,17 +1082,157 @@
             [
                 "F",
                 "STREET",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "72205",
+                "USAD_SNO"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "8c01685066124f0ab65d8bdc7aa2e83d04f0f3f4",
+        "Exception_file_name": "_MultiLine_ExceptionFile01_29_38.915699.json",
+        "Input": "1701, West, park, Drive APT 110, Little Rock, ARK, 72203-22522",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "N,D,F,FSN,WW,T,N",
+        "Approved By": "Committee Member_1 at 2023-08-02 03:32:00.246300",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SNM"
+            ],
+            [
+                "D",
+                "WEST",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_SPT"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SPT"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SPT"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_STA"
+            ],
+            [
+>>>>>>> Stashed changes
+                "N",
+                "72203-22522",
+                "USAD_SNM"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "97252af0436993159ef42bcc4b5252d71df8cd3f",
+<<<<<<< Updated upstream
+        "Exception_file_name": "_MultiLine_ExceptionFile01_36_50.352512.json",
+        "Input": "7705 A, Street, Little Rock, AR 72205",
+        "Region": "US",
+        "Type": "Attention line Address",
+        "Token Pattern": "NW,F,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-08-04 01:32:43.037000",
+=======
+        "Exception_file_name": "_MultiLine_ExceptionFile01_29_38.915699.json",
+        "Input": "7705 A, Street, Little Rock, AR 72205",
+        "Region": "US",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NW,F,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-02 03:32:26.299123",
+>>>>>>> Stashed changes
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "7705",
+<<<<<<< Updated upstream
+                "USAD_SNM"
+=======
+                "USAD_SPR"
+>>>>>>> Stashed changes
+            ],
+            [
+                "W",
+                "A",
+<<<<<<< Updated upstream
+                "USAD_SNM"
+=======
+                "USAD_ANO"
+>>>>>>> Stashed changes
+            ],
+            [
+                "F",
+                "STREET",
+<<<<<<< Updated upstream
                 "USAD_SNO"
             ],
             [
                 "W",
                 "LITTLE",
+=======
+>>>>>>> Stashed changes
                 "USAD_SPT"
             ],
             [
                 "W",
+<<<<<<< Updated upstream
                 "ROCK",
                 "USAD_SNO"
+=======
+                "LITTLE",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SFX"
+>>>>>>> Stashed changes
             ],
             [
                 "T",
@@ -1013,8 +1242,489 @@
             [
                 "N",
                 "72205",
+<<<<<<< Updated upstream
                 "USAD_SPR"
             ]
         ]
+=======
+                "USAD_STA"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "8c01685066124f0ab65d8bdc7aa2e83d04f0f3f4",
+        "Exception_file_name": "_MultiLine_ExceptionFile01_36_50.352512.json",
+        "Input": "1701, West, park, Drive APT 110, Little Rock, ARK, 72203-22522",
+        "Region": "US",
+        "Type": "PO Box Address",
+        "Token Pattern": "N,D,F,FSN,WW,T,N",
+        "Approved By": "Committee Member_2 at 2023-08-02 03:47:50.474525",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SNM"
+            ],
+            [
+                "D",
+                "WEST",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_SNO"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SNO"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_CTY"
+            ],
+            [
+                "N",
+                "110",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SNO"
+            ],
+            [
+                "T",
+                "ARK",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "72203-22522",
+                "USAD_SNO"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "596c38c044bf3e493510308830d49ee1a6130c30",
+        "Exception_file_name": "_MultiLine_ExceptionFile11_18_43.846734.json",
+        "Input": "PO, BOX 1212  Hollywood FL 33020",
+        "Region": "US",
+        "Type": "PO Box Address",
+        "Token Pattern": "X,XNWTN",
+        "Approved By": "Committee Member_1 at 2023-08-02 11:46:30.487536",
+        "Comment": "",
+        "Table Data": [
+            [
+                "X",
+                "PO",
+                "USAD_SNO"
+            ],
+            [
+                "X",
+                "BOX",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "1212",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "HOLLYWOOD",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "FL",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "33020",
+                "USAD_SPR"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "6f5af3a88e118a617e28c320f786803f558d4eba",
+        "Exception_file_name": "_MultiLine_ExceptionFile11_18_43.846734.json",
+        "Input": "PO BOX, 1065 Lullaby CA, 92880",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "XX,NWT,N",
+        "Approved By": "Committee Member_1 at 2023-08-02 11:46:49.531457",
+        "Comment": "",
+        "Table Data": [
+            [
+                "X",
+                "PO",
+                "USAD_SNO"
+            ],
+            [
+                "X",
+                "BOX",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "1065",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "LULLABY",
+                "USAD_SNO"
+            ],
+            [
+                "T",
+                "CA",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "92880",
+                "USAD_SPR"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "40c6d6e162e37750340a31c59145a0c07a29ffe2",
+        "Exception_file_name": "tt_Forced_ExceptionFile.json",
+        "Input": "1701 Westpark dr, little rock, ar 78845",
+        "Region": "Puerto Rico",
+        "Type": "PO Box Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-02 14:35:12.698111",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "DR",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "78845",
+                "USAD_SNO"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "596c38c044bf3e493510308830d49ee1a6130c30",
+        "Exception_file_name": "_MultiLine_ExceptionFile10_22_09.200131.json",
+        "Input": "PO, BOX 1212  Hollywood FL 33020",
+        "Region": "Puerto Rico",
+        "Type": "Individual Address",
+        "Token Pattern": "X,XNWTN",
+        "Approved By": "Committee Member_1 at 2023-08-03 10:25:42.005786",
+        "Comment": "",
+        "Table Data": [
+            [
+                "X",
+                "PO",
+                "USAD_SNM"
+            ],
+            [
+                "X",
+                "BOX",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "1212",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "HOLLYWOOD",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "FL",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "33020",
+                "USAD_SNO"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "886425203259bcf3893010bcf93358cc6e95f871",
+        "Exception_file_name": "_MultiLine_ExceptionFile10_22_09.200131.json",
+        "Input": "HC 32 BOX, 12 Raeford, NC 28376",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "FNX,NW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-03 10:26:32.618585",
+        "Comment": "",
+        "Table Data": [
+            [
+                "F",
+                "HC",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "32",
+                "USAD_SNO"
+            ],
+            [
+                "X",
+                "BOX",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "12",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "RAEFORD",
+                "USAD_SNO"
+            ],
+            [
+                "T",
+                "NC",
+                "USAD_SNM"
+            ],
+            [
+                "N",
+                "28376",
+                "USAD_SNO"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "214fd4896b47e38aa92692b77954684f7fdac488",
+        "Exception_file_name": "_MultiLine_ExceptionFile10_22_09.200131.json",
+        "Input": "HC 94, BOX 41 Buffalo Grove, IL 60089",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "FN,XNWF,TN",
+        "Approved By": "Committee Member_1 at 2023-08-03 10:26:49.434687",
+        "Comment": "",
+        "Table Data": [
+            [
+                "F",
+                "HC",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "94",
+                "USAD_SNO"
+            ],
+            [
+                "X",
+                "BOX",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "41",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "BUFFALO",
+                "USAD_SNO"
+            ],
+            [
+                "F",
+                "GROVE",
+                "USAD_SNM"
+            ],
+            [
+                "T",
+                "IL",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "60089",
+                "USAD_SNO"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "4b04b1b42b38d32e90d8f69bc1c313d7f964f65d",
+        "Exception_file_name": "_MultiLine_ExceptionFile10_22_09.200131.json",
+        "Input": "HC, 81 BOX 32 Lancaster, NY 14086",
+        "Region": "Puerto Rico",
+        "Type": "PO Box Address",
+        "Token Pattern": "F,NXNW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-03 10:27:05.454375",
+        "Comment": "",
+        "Table Data": [
+            [
+                "F",
+                "HC",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "81",
+                "USAD_SNO"
+            ],
+            [
+                "X",
+                "BOX",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "32",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "LANCASTER",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "14086",
+                "USAD_SPR"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "0063dbbe9b8b25bc3d3157727ee5ca4b608b8e15",
+        "Exception_file_name": "_MultiLine_ExceptionFile10_22_09.200131.json",
+        "Input": "6678 University, Avenue ,San Juan,PR 00926",
+        "Region": "Puerto Rico",
+        "Type": "Individual Address",
+        "Token Pattern": "NZ,F,WW,FN",
+        "Approved By": "Committee Member_2 at 2023-08-03 10:27:41.378054",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "6678",
+                "USAD_SNO"
+            ],
+            [
+                "Z",
+                "UNIVERSITY",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "AVENUE",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "SAN",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "JUAN",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "PR",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "00926",
+                "USAD_SNO"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "55db8447781cc46037652d52f0fa0ad5a96ac637",
+        "Exception_file_name": "KK_Forced_ExceptionFile.json",
+        "Input": "1701 Westpark dr, little rocck ar, 54475",
+        "Region": "Puerto Rico",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,WWT,N",
+        "Approved By": "Committee Member_1 at 2023-08-03 10:43:08.275219",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "DR",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "ROCCK",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "54475",
+                "USAD_SNO"
+            ]
+        ]
+>>>>>>> Stashed changes
     }
 ]

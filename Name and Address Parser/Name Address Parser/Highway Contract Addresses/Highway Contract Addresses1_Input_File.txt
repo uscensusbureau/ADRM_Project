@@ -35,7 +35,7 @@
 35 |  HC 878 BOX 44 Elizabethtown, PA 17022
 36 |  HC 902 box Waterford, MI 48329
 37 |  Hc 787 box 2 Henderson, KY 42420
-38 |  HC 3 box 3 Coram, NY 11727
+38 |  HC 3 box 33 Coram, NY 11727
 39 |  HC 21 box 39 Henrico, VA 23228
 40 |  HC 37 box 6 Stow, OH 44224
 41 |  HC 6224 BOX 883 Carmel, NY 10512
@@ -59,7 +59,7 @@
 59 |  hc 580 box 706 Libertyville, IL 60048
 60 |  HC 89 box 98 Tuckerton, NJ 08087
 61 |  hC 087 BOX 82 Copperas Cove, TX 76522
-62 |  HC 522 Box 522 Graham, NC 27253
+62 |  HC 523 Box 522 Graham, NC 27253
 63 |  Hc 253 BOx 253 North Bergen, NJ 07047
 64 |  Hc 047 box 42l Lacey, WA 98503
 65 |  hc 503 BOX 98 Groton, CT 06340

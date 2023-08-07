@@ -349,7 +349,7 @@ class submission_form:
                 submit_button = ttk.Button(form_frame, text="Save and Submit", command=lambda:submitform.submit_form(Exception_file_name_entry,Input_entry,region_var,Type_var,Approval_List_var,
                                 Mask_entry,Comment_entry,toggle_state,table_rows,dropdown_values,
                                 form_frame,scrollbar,canvas,df,RevisedJSON,table_frame,
-                                label1,label2,label3,tab4,), style="Submit.TButton") #, 
+                                label1,label2,label3,tab4,table_inner_frame), style="Submit.TButton") #, 
                 submit_button.grid(row=9, column=1, pady=5)
                 
             

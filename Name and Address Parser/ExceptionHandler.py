@@ -129,7 +129,11 @@ with open(FileName,'r+') as d:
             Count_Of_Masks=0
             if Break:
                 break
+<<<<<<< Updated upstream
             with open('KB_Kashif.json', 'r+', encoding='utf-8') as f:
+=======
+            with open('JSONMappingDefault.json', 'r+', encoding='utf-8') as f:
+>>>>>>> Stashed changes
                 data = json.load(f)
                 Count_Of_Masks=len(data)+1
               
@@ -137,7 +141,11 @@ with open(FileName,'r+') as d:
                 f.seek(0)        # <--- should reset file position to the beginning.
                 json.dump(data, f)
                 f.truncate()# remove remaining part
+<<<<<<< Updated upstream
          #   FirstPhaseList.pop(Key)
+=======
+            FirstPhaseList.pop(Key)
+>>>>>>> Stashed changes
             d.seek(0)        # <--- should reset file position to the beginning.
             json.dump(FirstPhaseList, d,indent=4)
             d.truncate()# remove re

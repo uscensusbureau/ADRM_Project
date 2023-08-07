@@ -1,11 +1,6 @@
 {
-<<<<<<< Updated upstream:Name and Address Parser/Output/Single Line Output/ss_Output.json
-    "INPUT": "1701 westpark drive, apt 110, little rock, ark 72202",
-    "NWF,SN,WW,TN": [
-=======
     "INPUT": "Yale University Department of Psychology Harkness Hall, Suite 300, New Haven, CT 06520-8205",
     "WZWWWWW,SN,WF,FN": [
->>>>>>> Stashed changes:Name and Address Parser/Output/ff_Output.json
         {
             "W": "YALE"
         },
@@ -31,9 +26,6 @@
             "S": "SUITE"
         },
         {
-<<<<<<< Updated upstream:Name and Address Parser/Output/Single Line Output/ss_Output.json
-            "N": "72202"
-=======
             "N": "300"
         },
         {
@@ -47,7 +39,6 @@
         },
         {
             "N": "06520-8205"
->>>>>>> Stashed changes:Name and Address Parser/Output/ff_Output.json
         }
     ]
 }

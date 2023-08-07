@@ -35,7 +35,7 @@ class NAP_GUIBuilder(tk.Tk):
         # Set the geometry of the window
         
         super().__init__()
-        self.title("Parser - US Census Bureau "+ str(date.today()))
+        self.title("Parser - "+ str(date.today()))
         # self.geometry("1280x720")
         self.NAP_GUIBuilder_CreateTabs()
         screen_width = self.winfo_screenwidth()
@@ -72,6 +72,7 @@ class NAP_GUIBuilder(tk.Tk):
         
         Instance = mx.Address_parser_misc()
         
+<<<<<<< Updated upstream
         # ttk.Label(self.tab2, text ="Please Choose a Pipe Delimitted File"). grid(column = 0, 
         #                        row = 0,
         #                        padx = 5,
@@ -82,6 +83,23 @@ class NAP_GUIBuilder(tk.Tk):
                              pady = 10)
         
         ttk.Label(self.tab2,text="Enter Single Line Address").grid(column = 3, 
+=======
+        ttk.Label(self.tab2, text ="Please Choose a Pipe Delimitted File"). grid(column = 0, 
+                               row = 0,
+                               padx = 5,
+                               pady = 5)  
+        ttk.Button(self.tab2, text ="Choose Single File (input)",width=30, command=Instance.Process_Address_Parser_Single_input).grid(column = 5, 
+                             row = 30,
+                             padx = 10,
+                             pady = 10)
+        
+        ttk.Button(self.tab2, text ="Choose Two Files (input and test)",width=30, command=Instance.Process_Address_Parser_Test).grid(column = 5, 
+                              row = 60,
+                              padx = 0,
+                              pady = 0)
+        
+        ttk.Label(self.tab2,text="Enter Address").grid(column = 4, 
+>>>>>>> Stashed changes
                                  row = 10,
                                  padx = 10,
                                  pady = 10) 
@@ -98,7 +116,7 @@ class NAP_GUIBuilder(tk.Tk):
                                pady = 0) 
         s=ttk.Style()
         s.theme_use("clam")
-        s.configure('Treeview',rowheight=40)
+        s.configure('Treeview',rowheight=45)
         
         tree = ttk.Treeview(self.tab2, column=["Mask Token","Address Token","Address Component","Exception","File"] ,show='headings',height=10)
 
@@ -181,7 +199,7 @@ class NAP_GUIBuilder(tk.Tk):
         table_frame.configure(height=650)
         canvas = tk.Canvas(table_frame,width=580,height=420)
         canvas.pack(side=tk.LEFT,fill=tk.BOTH,expand=True)
-
+        
         
         def DateTime():
             # Get the current date and time

@@ -1,0 +1,77 @@
+{
+    "INPUT": "University of Illinois at Urbana-Champaign Department of Civil and Environmental Engineering Newmark Civil Engineering Laboratory, Room 2110, 205 North Mathews Avenue, Urbana, IL 61801-2352",
+    "ZWTWWWWWWWWWWWW,WN,NDWF,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "ILLINOIS"
+        },
+        {
+            "W": "AT"
+        },
+        {
+            "W": "URBANA-CHAMPAIGN"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "CIVIL"
+        },
+        {
+            "W": "AND"
+        },
+        {
+            "W": "ENVIRONMENTAL"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "NEWMARK"
+        },
+        {
+            "W": "CIVIL"
+        },
+        {
+            "W": "ENGINEERING"
+        },
+        {
+            "W": "LABORATORY"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "2110"
+        },
+        {
+            "N": "205"
+        },
+        {
+            "D": "NORTH"
+        },
+        {
+            "W": "MATHEWS"
+        },
+        {
+            "F": "AVENUE"
+        },
+        {
+            "W": "URBANA"
+        },
+        {
+            "T": "IL"
+        },
+        {
+            "N": "61801-2352"
+        }
+    ]
+}

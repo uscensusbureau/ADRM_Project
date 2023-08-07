@@ -1,0 +1,32 @@
+{
+    "INPUT": "171 westpark drive, apt 110, little rock , ark 72204",
+    "NWF,SN,WW,TN": [
+        {
+            "N": "171"
+        },
+        {
+            "W": "WESTPARK"
+        },
+        {
+            "F": "DRIVE"
+        },
+        {
+            "S": "APT"
+        },
+        {
+            "N": "110"
+        },
+        {
+            "W": "LITTLE"
+        },
+        {
+            "W": "ROCK"
+        },
+        {
+            "T": "ARK"
+        },
+        {
+            "N": "72204"
+        }
+    ]
+}
