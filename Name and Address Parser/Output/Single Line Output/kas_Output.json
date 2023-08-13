@@ -1,0 +1,23 @@
+{
+    "INPUT": "2005 Conifer Drive , Tukwila, Washington 98168",
+    "NWF,W,TN": [
+        {
+            "N": "2005"
+        },
+        {
+            "W": "CONIFER"
+        },
+        {
+            "F": "DRIVE"
+        },
+        {
+            "W": "TUKWILA"
+        },
+        {
+            "T": "WASHINGTON"
+        },
+        {
+            "N": "98168"
+        }
+    ]
+}

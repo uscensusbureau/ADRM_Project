@@ -1,0 +1,56 @@
+{
+    "INPUT": "University of Pennsylvania Wharton School Jon M Huntsman Hall, 3730 Walnut Street, Suite 500, Philadelphia, PA 19104-6340",
+    "ZWTWZWWWW,NWF,SN,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "PENNSYLVANIA"
+        },
+        {
+            "W": "WHARTON"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "JON"
+        },
+        {
+            "W": "M"
+        },
+        {
+            "W": "HUNTSMAN"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "N": "3730"
+        },
+        {
+            "W": "WALNUT"
+        },
+        {
+            "F": "STREET"
+        },
+        {
+            "S": "SUITE"
+        },
+        {
+            "N": "500"
+        },
+        {
+            "W": "PHILADELPHIA"
+        },
+        {
+            "T": "PA"
+        },
+        {
+            "N": "19104-6340"
+        }
+    ]
+}

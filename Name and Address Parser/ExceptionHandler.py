@@ -127,7 +127,7 @@ with open(FileName,'r+') as d:
             dictData={}
             dictData[Key]=dict
             Count_Of_Masks=0
-            if Break:
+            if Break:k
                 break
             with open('KB_Kashif.json', 'r+', encoding='utf-8') as f:
                 data = json.load(f)

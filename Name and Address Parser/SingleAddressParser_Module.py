@@ -104,7 +104,7 @@ def Address_Parser(line,initials,originalInput):
     Mask_1=",".join(Mask)
     FirstPhaseList = [FirstPhaseList[b] for b in range(len(FirstPhaseList)) if FirstPhaseList[b] != ","]
     data={}
-    with open('JSONMappingDefault.json', 'r+', encoding='utf-8') as f:
+    with open('KB_Kashif.json', 'r+', encoding='utf-8') as f:
         data = json.load(f)
     Found=False
     FoundDict={}
@@ -116,14 +116,12 @@ def Address_Parser(line,initials,originalInput):
     
     if Found:
         Observation+=1
-        Observation+=1
-        Mappings={}
+        Mappings=[]
         for K2,V2 in FoundDict[Mask_1].items():
             FoundDict_KB=FoundDict[Mask_1]
             sorted_Found={k: v for k ,v in sorted(FoundDict_KB.items(), key=lambda item:item[1])}
             for K2,V2 in sorted_Found.items():
                 Temp=""
-                print(V2)
                 Merge_token=""
                 for p in V2:
                     print(p)
@@ -131,23 +129,25 @@ def Address_Parser(line,initials,originalInput):
                     for K3,V3 in FirstPhaseList[p-1].items():
                        Temp+=" "+V3
                        Temp=Temp.strip()
-                       Mappings[K2]=[K3,Temp]       
+                   #    Mappings[K2]=[K3,Temp]       
                        Merge_token+=K3
-                       Mappings[K2]=[Merge_token,Temp]       
+                       Mappings.append([K2,K3,V3])
+            break
+        print(Mappings)
         FoundDict_KB=FoundDict[Mask_1]
         sorted_Found={k: v for k ,v in sorted(FoundDict_KB.items(), key=lambda item:item[1])}
-        for K2,V2 in sorted_Found.items():
-            Temp=""
-            print(V2)
-            Merge_token=""
-            for p in V2:
-                print(p)
+        # for K2,V2 in sorted_Found.items():
+        #     Temp=""
+        #     print(V2)
+        #     Merge_token=""
+        #     for p in V2:
+        #         print(p)
                 
-                for K3,V3 in FirstPhaseList[p-1].items():
-                   Temp+=" "+V3
-                   Temp=Temp.strip()
-                   Merge_token+=K3
-                   Mappings[K2]=[Merge_token,Temp]       
+        #         for K3,V3 in FirstPhaseList[p-1].items():
+        #            Temp+=" "+V3
+        #            Temp=Temp.strip()
+        #            Merge_token+=K3
+        #         #   Mappings.append([K2,K3,V3])          
         try:
             Result["Input"]= originalInput
             Result["Output"]=Mappings

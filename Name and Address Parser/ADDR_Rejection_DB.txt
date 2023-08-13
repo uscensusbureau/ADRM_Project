@@ -26,5 +26,19 @@
         "Token Pattern": "X,XNWTN",
         "Rejected By": "Committee Member_1 at 2023-08-03 10:45:19.741050",
         "Comment": ""
+    },
+    {
+        "Exception_file_name": "test99_Forced_ExceptionFile.json",
+        "Input": "University of Pennsylvania Wharton School Jon M Huntsman Hall, 3730 Walnut Street, Suite 500, Philadelphia, PA 19104-6340",
+        "Token Pattern": "ZWTWZWWWW,NWF,SN,W,TN",
+        "Rejected By": "Committee Member_1 at 2023-08-13 02:15:02.931263",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "test99_Forced_ExceptionFile.json",
+        "Input": "California Institute of Technology Division of Engineering and Applied Science, 1200 East California Boulevard, Room 301, Pasadena, CA 91125-3200",
+        "Token Pattern": "TWWWWWWWWW,NDTF,WN,W,TN",
+        "Rejected By": "Committee Member_2 at 2023-08-13 02:15:52.103245",
+        "Comment": ""
     }
 ]

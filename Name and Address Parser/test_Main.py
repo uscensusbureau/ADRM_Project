@@ -86,10 +86,10 @@ class NAP_GUIBuilder(tk.Tk):
                                padx = 5,
                                pady = 5)  
         
-        ttk.Button(self.tab2, text ="Choose Single File (input)",width=30, command=Instance.Process_Address_Parser_Single_input).grid(column = 5, 
-                             row = 30,
-                             padx = 10,
-                             pady = 10)
+        # ttk.Button(self.tab2, text ="Choose Single File (input)",width=30, command=Instance.Process_Address_Parser_Single_input).grid(column = 5, 
+        #                      row = 30,
+        #                      padx = 10,
+        #                      pady = 10)
         
         ttk.Button(self.tab2, text ="Choose Two Files (input and test)",width=30, command=Instance.Process_Address_Parser_Test).grid(column = 5, 
                               row = 60,
@@ -113,9 +113,9 @@ class NAP_GUIBuilder(tk.Tk):
                                pady = 0) 
         s=ttk.Style()
         s.theme_use("clam")
-        s.configure('Treeview',rowheight=45)
+        s.configure('Treeview',rowheight=30)
         
-        tree = ttk.Treeview(self.tab2, column=["Mask Token","Address Token","Address Component","Exception","File"] ,show='headings',height=10)
+        tree = ttk.Treeview(self.tab2, column=["Mask Token","Address Token","Address Component","Exception","File"] ,show='headings',height=14)
 
         for item in tree.get_children():
             tree.delete(item)

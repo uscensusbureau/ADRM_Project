@@ -1,63 +1,27 @@
 [
     {
-        "INPUT": "California Institute of Technology,,, Division of Engineering and Applied Science, 1200 East California Boulevard, Room 301, Pasadena, CA 91125-3200",
-        "TWWW,,,WWWWWW,NDTF,WN,W,TN": [
+        "INPUT": "1701 Westpark dr, little rock , ar 44556",
+        "NWF,WW,TN": [
             {
-                "T": "CALIFORNIA"
+                "N": "1701"
             },
             {
-                "W": "INSTITUTE"
+                "W": "WESTPARK"
             },
             {
-                "W": "OF"
+                "F": "DR"
             },
             {
-                "W": "TECHNOLOGY"
+                "W": "LITTLE"
             },
             {
-                "W": "DIVISION"
+                "W": "ROCK"
             },
             {
-                "W": "OF"
+                "T": "AR"
             },
             {
-                "W": "ENGINEERING"
-            },
-            {
-                "W": "AND"
-            },
-            {
-                "W": "APPLIED"
-            },
-            {
-                "W": "SCIENCE"
-            },
-            {
-                "N": "1200"
-            },
-            {
-                "D": "EAST"
-            },
-            {
-                "T": "CALIFORNIA"
-            },
-            {
-                "F": "BOULEVARD"
-            },
-            {
-                "W": "ROOM"
-            },
-            {
-                "N": "301"
-            },
-            {
-                "W": "PASADENA"
-            },
-            {
-                "T": "CA"
-            },
-            {
-                "N": "91125-3200"
+                "N": "44556"
             }
         ]
     }

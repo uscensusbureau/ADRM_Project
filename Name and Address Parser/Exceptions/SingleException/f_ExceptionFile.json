@@ -1,27 +1,340 @@
 [
     {
-        "INPUT": "1701 WestPark dr, little rock ar, 88545",
-        "NWF,WWT,N": [
+        "INPUT": "Columbia University Department of Economics International Affairs Building, Room 834, 420 West 118th Street, New York, NY 10027-7297",
+        "WZWWWWWW,WN,NDNF,WW,TN": [
             {
-                "N": "1701"
+                "W": "COLUMBIA"
             },
             {
-                "W": "WESTPARK"
+                "Z": "UNIVERSITY"
             },
             {
-                "F": "DR"
+                "W": "DEPARTMENT"
             },
             {
-                "W": "LITTLE"
+                "W": "OF"
             },
             {
-                "W": "ROCK"
+                "W": "ECONOMICS"
             },
             {
-                "T": "AR"
+                "W": "INTERNATIONAL"
             },
             {
-                "N": "88545"
+                "W": "AFFAIRS"
+            },
+            {
+                "W": "BUILDING"
+            },
+            {
+                "W": "ROOM"
+            },
+            {
+                "N": "834"
+            },
+            {
+                "N": "420"
+            },
+            {
+                "D": "WEST"
+            },
+            {
+                "N": "118TH"
+            },
+            {
+                "F": "STREET"
+            },
+            {
+                "W": "NEW"
+            },
+            {
+                "W": "YORK"
+            },
+            {
+                "T": "NY"
+            },
+            {
+                "N": "10027-7297"
+            }
+        ]
+    },
+    {
+        "INPUT": "University of Pennsylvania Wharton School Jon M Huntsman Hall, 3730 Walnut Street, Suite 500, Philadelphia, PA 19104-6340",
+        "ZWTWZWWWW,NWF,SN,W,TN": [
+            {
+                "Z": "UNIVERSITY"
+            },
+            {
+                "W": "OF"
+            },
+            {
+                "T": "PENNSYLVANIA"
+            },
+            {
+                "W": "WHARTON"
+            },
+            {
+                "Z": "SCHOOL"
+            },
+            {
+                "W": "JON"
+            },
+            {
+                "W": "M"
+            },
+            {
+                "W": "HUNTSMAN"
+            },
+            {
+                "W": "HALL"
+            },
+            {
+                "N": "3730"
+            },
+            {
+                "W": "WALNUT"
+            },
+            {
+                "F": "STREET"
+            },
+            {
+                "S": "SUITE"
+            },
+            {
+                "N": "500"
+            },
+            {
+                "W": "PHILADELPHIA"
+            },
+            {
+                "T": "PA"
+            },
+            {
+                "N": "19104-6340"
+            }
+        ]
+    },
+    {
+        "INPUT": "University of Pennsylvania Wharton School Jon M Huntsman Hall, 3730 Walnut Street, Suite 500, Philadelphia, PA 19104-6340",
+        "ZWTWZWWWW,NWF,SN,W,TN": [
+            {
+                "Z": "UNIVERSITY"
+            },
+            {
+                "W": "OF"
+            },
+            {
+                "T": "PENNSYLVANIA"
+            },
+            {
+                "W": "WHARTON"
+            },
+            {
+                "Z": "SCHOOL"
+            },
+            {
+                "W": "JON"
+            },
+            {
+                "W": "M"
+            },
+            {
+                "W": "HUNTSMAN"
+            },
+            {
+                "W": "HALL"
+            },
+            {
+                "N": "3730"
+            },
+            {
+                "W": "WALNUT"
+            },
+            {
+                "F": "STREET"
+            },
+            {
+                "S": "SUITE"
+            },
+            {
+                "N": "500"
+            },
+            {
+                "W": "PHILADELPHIA"
+            },
+            {
+                "T": "PA"
+            },
+            {
+                "N": "19104-6340"
+            }
+        ]
+    },
+    {
+        "INPUT": "University of Pennsylvania Wharton School Jon M Huntsman Hall, 3730 Walnut Street, Suite 500, Philadelphia, PA 19104-6340",
+        "ZWTWZWWWW,NWF,SN,W,TN": [
+            {
+                "Z": "UNIVERSITY"
+            },
+            {
+                "W": "OF"
+            },
+            {
+                "T": "PENNSYLVANIA"
+            },
+            {
+                "W": "WHARTON"
+            },
+            {
+                "Z": "SCHOOL"
+            },
+            {
+                "W": "JON"
+            },
+            {
+                "W": "M"
+            },
+            {
+                "W": "HUNTSMAN"
+            },
+            {
+                "W": "HALL"
+            },
+            {
+                "N": "3730"
+            },
+            {
+                "W": "WALNUT"
+            },
+            {
+                "F": "STREET"
+            },
+            {
+                "S": "SUITE"
+            },
+            {
+                "N": "500"
+            },
+            {
+                "W": "PHILADELPHIA"
+            },
+            {
+                "T": "PA"
+            },
+            {
+                "N": "19104-6340"
+            }
+        ]
+    },
+    {
+        "INPUT": "University of Pennsylvania Wharton School Jon M Huntsman Hall, 3730 Walnut Street, Suite 500, Philadelphia, PA 19104-6340",
+        "ZWTWZWWWW,NWF,SN,W,TN": [
+            {
+                "Z": "UNIVERSITY"
+            },
+            {
+                "W": "OF"
+            },
+            {
+                "T": "PENNSYLVANIA"
+            },
+            {
+                "W": "WHARTON"
+            },
+            {
+                "Z": "SCHOOL"
+            },
+            {
+                "W": "JON"
+            },
+            {
+                "W": "M"
+            },
+            {
+                "W": "HUNTSMAN"
+            },
+            {
+                "W": "HALL"
+            },
+            {
+                "N": "3730"
+            },
+            {
+                "W": "WALNUT"
+            },
+            {
+                "F": "STREET"
+            },
+            {
+                "S": "SUITE"
+            },
+            {
+                "N": "500"
+            },
+            {
+                "W": "PHILADELPHIA"
+            },
+            {
+                "T": "PA"
+            },
+            {
+                "N": "19104-6340"
+            }
+        ]
+    },
+    {
+        "INPUT": "University of Pennsylvania Wharton School Jon M Huntsman Hall, 3730 Walnut Street, Suite 500, Philadelphia, PA 19104-6340",
+        "ZWTWZWWWW,NWF,SN,W,TN": [
+            {
+                "Z": "UNIVERSITY"
+            },
+            {
+                "W": "OF"
+            },
+            {
+                "T": "PENNSYLVANIA"
+            },
+            {
+                "W": "WHARTON"
+            },
+            {
+                "Z": "SCHOOL"
+            },
+            {
+                "W": "JON"
+            },
+            {
+                "W": "M"
+            },
+            {
+                "W": "HUNTSMAN"
+            },
+            {
+                "W": "HALL"
+            },
+            {
+                "N": "3730"
+            },
+            {
+                "W": "WALNUT"
+            },
+            {
+                "F": "STREET"
+            },
+            {
+                "S": "SUITE"
+            },
+            {
+                "N": "500"
+            },
+            {
+                "W": "PHILADELPHIA"
+            },
+            {
+                "T": "PA"
+            },
+            {
+                "N": "19104-6340"
             }
         ]
     }

@@ -1,5 +1,5 @@
 {
-    "INPUT": "1701 Westpark dr, little rock, ar 55412",
+    "INPUT": "1701 Westpark dr, little rock, ar 5545",
     "NWF,WW,TN": [
         {
             "N": "1701"
@@ -20,7 +20,7 @@
             "T": "AR"
         },
         {
-            "N": "55412"
+            "N": "5545"
         }
     ]
 }

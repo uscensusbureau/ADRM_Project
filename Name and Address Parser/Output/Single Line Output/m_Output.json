@@ -1,6 +1,6 @@
 {
-    "INPUT": "1701 Westpark dr, little rock, ar 55412",
-    "NWF,WW,TN": [
+    "INPUT": "1701 Westpark dr, apt 110, little rock, ar 5564",
+    "NWF,SN,WW,TN": [
         {
             "N": "1701"
         },
@@ -9,6 +9,12 @@
         },
         {
             "F": "DR"
+        },
+        {
+            "S": "APT"
+        },
+        {
+            "N": "110"
         },
         {
             "W": "LITTLE"
@@ -20,7 +26,7 @@
             "T": "AR"
         },
         {
-            "N": "55412"
+            "N": "5564"
         }
     ]
 }

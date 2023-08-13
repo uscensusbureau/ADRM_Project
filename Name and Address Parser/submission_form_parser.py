@@ -67,8 +67,9 @@ class submission_form:
             if not column3:
                 msg.showerror("Error", "One or More Components are missing!.")
                 return False
-
-        
+    
+            
+            
         # Perform validation checks
         if not Exception_file_name:
             msg.showerror("Error", "Exception File Name is required.")
@@ -215,8 +216,25 @@ class submission_form:
         for data in table_data:
             print(data)
         
-       
-            
+        i=1
+        Def_Dict={}
+        for n in table_data:
+            if n[2] in Def_Dict.keys():
+                print(Def_Dict[n[2]])
+                Val=Def_Dict[n[2]]
+                Val.append(i)
+                Def_Dict[n[2]]=Val
+            else:
+                Def_Dict[n[2]]=[i]
+            i+=1
+
+        print(Def_Dict)
+        with open('KB_Kashif.json', 'r+', encoding='utf-8') as f:
+            data = json.load(f)          
+            data[pattern] = Def_Dict# <--- add `id` value.
+            f.seek(0)        # <--- should reset file position to the beginning.
+            json.dump(data, f)
+            f.truncate()# remove remaining part
             
         
         return form_data, rejection_data

@@ -1,0 +1,56 @@
+{
+    "INPUT": "University of Pennsylvania Kashif School Jon M Farooq Hall, 3730 Salman Street, Suite 500, Philadelphia, PA 19104-6340",
+    "ZWTWZWWWW,NWF,SN,W,TN": [
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "T": "PENNSYLVANIA"
+        },
+        {
+            "W": "KASHIF"
+        },
+        {
+            "Z": "SCHOOL"
+        },
+        {
+            "W": "JON"
+        },
+        {
+            "W": "M"
+        },
+        {
+            "W": "FAROOQ"
+        },
+        {
+            "W": "HALL"
+        },
+        {
+            "N": "3730"
+        },
+        {
+            "W": "SALMAN"
+        },
+        {
+            "F": "STREET"
+        },
+        {
+            "S": "SUITE"
+        },
+        {
+            "N": "500"
+        },
+        {
+            "W": "PHILADELPHIA"
+        },
+        {
+            "T": "PA"
+        },
+        {
+            "N": "19104-6340"
+        }
+    ]
+}

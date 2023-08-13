@@ -633,14 +633,6 @@ Output From Active Learning
     }
 }
 
-<<<<<<< Updated upstream
-Number of Exceptions Thrown: -	0
-Number of Parsed Address: -	126
-Percentage of Parsed Result: -	100.0
-List of Exception Mask(s): -	
-
---
-=======
 Output Fron Rule Based Approach
 
 {}
@@ -665,4 +657,3 @@ List of Exception Mask(s): -
 7      accuracy   0.997955  0.997955  0.997955    0.997955
 8     macro avg   0.997959  0.997959  0.997945  489.000000
 9  weighted avg   0.997984  0.997955  0.997955  489.000000
->>>>>>> Stashed changes
