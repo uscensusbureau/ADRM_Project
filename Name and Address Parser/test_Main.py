@@ -53,8 +53,8 @@ class NAP_GUIBuilder(tk.Tk):
         self.tab2 = ttk.Frame(self.tabControl)
         self.tabControl.add(self.tab2, text ='Address Parser')
         
-        # self.tab3 = ttk.Frame(self.tabControl)
-        # self.tabControl.add(self.tab3, text ='Comparison Tab')
+        self.tab3 = ttk.Frame(self.tabControl)
+        self.tabControl.add(self.tab3, text ='Comparison Tab')
         
         
         self.tab4 = ttk.Frame(self.tabControl)
@@ -62,7 +62,7 @@ class NAP_GUIBuilder(tk.Tk):
         
         # Calling Different Methods with respect to the tab
         self.NAP_GUIBuilder_AddressParser()
-        # self.NAP_GUIBuilder_ComparisonTab()
+        self.NAP_GUIBuilder_ComparisonTab()
         self.NAP_GUIBuilder_MappingApprovalForm()
         
 
@@ -91,10 +91,10 @@ class NAP_GUIBuilder(tk.Tk):
         #                      padx = 10,
         #                      pady = 10)
         
-        ttk.Button(self.tab2, text ="Choose Two Files (input and test)",width=30, command=Instance.Process_Address_Parser_Test).grid(column = 5, 
-                              row = 60,
-                              padx = 0,
-                              pady = 0)
+        # ttk.Button(self.tab2, text ="Choose Two Files (input and test)",width=30, command=Instance.Process_Address_Parser_Test).grid(column = 5, 
+        #                       row = 60,
+        #                       padx = 0,
+        #                       pady = 0)
         
         ttk.Label(self.tab2,text="Enter Address").grid(column = 4, 
                                  row = 10,
@@ -137,14 +137,14 @@ class NAP_GUIBuilder(tk.Tk):
                                  row = 10)    
         #tree.pack(side=tk.LEFT)
 
-    # def NAP_GUIBuilder_ComparisonTab(self):
-    #     comaprison_instance = mx.Address_parser_misc()
-    #     ttk.Button(self.tab3, text ="Choose Batch File",width=30, command=comaprison_instance.Process_Address_Parser_Test).grid(column = 0, 
-    #                          row = 0,
-    #                          padx = 10,
-    #                          pady = 10)
+    def NAP_GUIBuilder_ComparisonTab(self):
+        comparison_instance = mx.Address_parser_misc()
+        ttk.Button(self.tab3, text ="Choose Batch File",width=30, command=comparison_instance.Process_Address_Parser_Test).grid(column = 0, 
+                              row = 0,
+                              padx = 10,
+                              pady = 10)
         
-    #     return
+        return
     
     
     def NAP_GUIBuilder_MappingApprovalForm(self):

@@ -1274,5 +1274,82 @@
                 "USAD_ZIP"
             ]
         ]
+    },
+    {
+        "Unique_ID": "1d03632c52f46cd228abf760cc5990318a21be11",
+        "Exception_file_name": "KPHB_ExceptionFile.json",
+        "Input": "Harvard University Department of Physics Jefferson Physical Laboratory, Room 455, Cambridge, MA 02138-2019",
+        "Region": "US",
+        "Type": "University Address",
+        "Token Pattern": "WZWWWWWW,WN,W,TN",
+        "Approved By": "Committee Member_1 at 2023-08-13 02:57:04.417761",
+        "Comment": "",
+        "Table Data": [
+            [
+                "W",
+                "HARVARD",
+                "USAD_ORG"
+            ],
+            [
+                "Z",
+                "UNIVERSITY",
+                "USAD_ORG"
+            ],
+            [
+                "W",
+                "DEPARTMENT",
+                "USAD_ORG"
+            ],
+            [
+                "W",
+                "OF",
+                "USAD_ORG"
+            ],
+            [
+                "W",
+                "PHYSICS",
+                "USAD_ORG"
+            ],
+            [
+                "W",
+                "JEFFERSON",
+                "USAD_ORG"
+            ],
+            [
+                "W",
+                "PHYSICAL",
+                "USAD_ORG"
+            ],
+            [
+                "W",
+                "LABORATORY",
+                "USAD_ORG"
+            ],
+            [
+                "W",
+                "ROOM",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "455",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "CAMBRIDGE",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "MA",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "02138-2019",
+                "USAD_ZIP"
+            ]
+        ]
     }
 ]

@@ -17,7 +17,8 @@ import json
 
 from datetime import datetime,timedelta
 today=datetime.today()
-
+current_time = datetime.now().time()
+time_string = current_time.strftime("%H:%M:%S")
 import os.path
 
 
@@ -36,7 +37,7 @@ def throwException(originalInput,initials):
         str(Mask_1): FirstPhaseList
     }
     ExceptionList.append(ExceptionDict)
-    Exception_file_name = initials + "_Forced_ExceptionFile.json"
+    Exception_file_name = initials+" " +str(time_string) +"_Forced_ExceptionFile.json"
     Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
     path = 'Exceptions/ForcedExceptions/' + Exception_file_name
     with open(path, 'w', encoding='utf-8') as g:
@@ -65,6 +66,7 @@ def Address_Parser(line,initials,originalInput):
     Mask=[]
     Combine=""
     LoopCheck=1
+    ID = "Single Line Exception_File " + str(initials) + "-->01"
     for A in AddressList:
         FirstPhaseDict={}
         NResult=False
@@ -158,10 +160,11 @@ def Address_Parser(line,initials,originalInput):
         
         
         OutputDict = {
+                "Record ID": ID,
                 "INPUT": originalInput,
                 str(Mask_1): FirstPhaseList
             }
-        Output_file_name=initials+"_Output.json"
+        Output_file_name=initials+str(current_time)+"_Output.json"
         Output_file_name=re.sub(r'[^\w_. -]', '_', Output_file_name)
         path= 'Output/Single Line Output/'+Output_file_name
         with open(path,'w', encoding='utf-8') as g:
@@ -172,11 +175,12 @@ def Address_Parser(line,initials,originalInput):
         
     else:
         ExceptionDict = {
+            "Record ID": ID,
             "INPUT": originalInput,
             str(Mask_1): FirstPhaseList
         }
         ExceptionList.append(ExceptionDict)
-        Exception_file_name = initials + "_ExceptionFile.json"
+        Exception_file_name = initials+ " " + str(time_string) + "_ExceptionFile.json"
         Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
         path = 'Exceptions/SingleException/' + Exception_file_name
         with open(path, 'w', encoding='utf-8') as g:

@@ -1,0 +1,44 @@
+{
+    "INPUT": "Harvard University Department of Physics Jefferson Physical Laboratory, Room 455, Cambridge, MA 02138-2019",
+    "WZWWWWWW,WN,W,TN": [
+        {
+            "W": "HARVARD"
+        },
+        {
+            "Z": "UNIVERSITY"
+        },
+        {
+            "W": "DEPARTMENT"
+        },
+        {
+            "W": "OF"
+        },
+        {
+            "W": "PHYSICS"
+        },
+        {
+            "W": "JEFFERSON"
+        },
+        {
+            "W": "PHYSICAL"
+        },
+        {
+            "W": "LABORATORY"
+        },
+        {
+            "W": "ROOM"
+        },
+        {
+            "N": "455"
+        },
+        {
+            "W": "CAMBRIDGE"
+        },
+        {
+            "T": "MA"
+        },
+        {
+            "N": "02138-2019"
+        }
+    ]
+}
