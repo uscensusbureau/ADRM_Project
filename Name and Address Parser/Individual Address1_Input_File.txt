@@ -4,9 +4,9 @@
 4 | 109 Markhan St , Corona, NY 11368
 5 | 81 Mccain Rd ,Chicago , IL 60629
 6 | 8190 Marsh Ave, The Villages, FL 32162
-7 | 7966 Beacon St ,Sun Prairie, WI 53590
-8 | 44 Sunbeam Avenue ,Pataskala, OH 43062
-9 | 151 Meadow Lane ,Toms River, NJ 08753
+7 | 7966 Beacon, St ,Sun Prairie, WI 53590
+8 | 44 Sunbeam ,Avenue ,Pataskala, OH 43062
+9 | 151 Meadow, Lane ,Toms River, NJ 08753
 10 | 88 North Lockport ,Lockport , NY 14094
 11 | 4456 Markhan Ave , Franklin Square ,NY 11010
 12 | 106 DOYERS ST , Los Angeles , CA 90011
@@ -18,7 +18,7 @@
 18 | 2169 Green Hill Road , Bentonville, Arkansas 72712
 19 | 245 Linden Avenue , Winter Park, Florida 32789
 20 | 4806 Tenmile, Los Angeles, California 90017
-21 | 634 Willow Greene Drive,Montgomery,Alabama 36116
+21 | 634 Willow ,Greene ,Drive,Montgomery,Alabama 36116
 22 | 3863 Berkshire Circle, Knoxville, Tennessee 37917
 23 | 3960 Hilltop Street,Colrain,Massachusetts 01340
 24 | 4535 Oliverio Drive,Moundridge, Kansas 67107

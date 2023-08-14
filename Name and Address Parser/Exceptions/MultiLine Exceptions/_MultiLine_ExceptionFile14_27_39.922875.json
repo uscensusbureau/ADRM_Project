@@ -1,0 +1,107 @@
+[
+    {
+        "Record ID": "7",
+        "INPUT": "7966 Beacon, St ,Sun Prairie, WI 53590",
+        "NW,F,WF,TN": [
+            {
+                "N": "7966"
+            },
+            {
+                "W": "BEACON"
+            },
+            {
+                "F": "ST"
+            },
+            {
+                "W": "SUN"
+            },
+            {
+                "F": "PRAIRIE"
+            },
+            {
+                "T": "WI"
+            },
+            {
+                "N": "53590"
+            }
+        ]
+    },
+    {
+        "Record ID": "8",
+        "INPUT": "44 Sunbeam ,Avenue ,Pataskala, OH 43062",
+        "NW,F,W,TN": [
+            {
+                "N": "44"
+            },
+            {
+                "W": "SUNBEAM"
+            },
+            {
+                "F": "AVENUE"
+            },
+            {
+                "W": "PATASKALA"
+            },
+            {
+                "T": "OH"
+            },
+            {
+                "N": "43062"
+            }
+        ]
+    },
+    {
+        "Record ID": "9",
+        "INPUT": "151 Meadow, Lane ,Toms River, NJ 08753",
+        "NF,F,WF,TN": [
+            {
+                "N": "151"
+            },
+            {
+                "F": "MEADOW"
+            },
+            {
+                "F": "LANE"
+            },
+            {
+                "W": "TOMS"
+            },
+            {
+                "F": "RIVER"
+            },
+            {
+                "T": "NJ"
+            },
+            {
+                "N": "08753"
+            }
+        ]
+    },
+    {
+        "Record ID": "21",
+        "INPUT": "634 Willow ,Greene ,Drive,Montgomery,Alabama 36116",
+        "NW,W,F,W,TN": [
+            {
+                "N": "634"
+            },
+            {
+                "W": "WILLOW"
+            },
+            {
+                "W": "GREENE"
+            },
+            {
+                "F": "DRIVE"
+            },
+            {
+                "W": "MONTGOMERY"
+            },
+            {
+                "T": "ALABAMA"
+            },
+            {
+                "N": "36116"
+            }
+        ]
+    }
+]

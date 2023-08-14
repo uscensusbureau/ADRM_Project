@@ -40,5 +40,19 @@
         "Token Pattern": "TWWWWWWWWW,NDTF,WN,W,TN",
         "Rejected By": "Committee Member_2 at 2023-08-13 02:15:52.103245",
         "Comment": ""
+    },
+    {
+        "Exception_file_name": "_MultiLine_ExceptionFile14_03_18.914629.json",
+        "Input": "1254 RODNEY STREET, CHESTER,FIELD-MISSOURI 63005",
+        "Token Pattern": "NWF,W,WN",
+        "Rejected By": "Committee Member_1 at 2023-08-14 14:04:59.505594",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "_MultiLine_ExceptionFile14_03_18.914629.json",
+        "Input": "7966 BEACON, ST ,SUN PRAIRIE, WI 53590",
+        "Token Pattern": "NW,F,WF,TN",
+        "Rejected By": "Committee Member_1 at 2023-08-14 14:17:26.627594",
+        "Comment": ""
     }
 ]

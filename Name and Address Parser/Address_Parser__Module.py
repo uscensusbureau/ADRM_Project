@@ -347,13 +347,16 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
         f.close()
         return (True,"Detailed_Report.txt and Root Cause Report.txt Generated")
     else:
-        Detailed_Report+="Output From Active Learning\n\n"
         ActiveLResult = json.dumps(Result, indent = 4,ensure_ascii=False) 
         Detailed_Report+="\n\nNumber of Exceptions Thrown: -\t"+str(Total-Observation)+"\n"
         Detailed_Report+="Number of Parsed Address: -\t"+str(Observation)+"\n"
         Detailed_Report+="Percentage of Parsed Result: -\t"+str((Observation/Total)*100)+"\n"
-        # Detailed_Report+="List of Exception Mask(s): -\t\n\n"+Exception_Mask+"--"
+        Detailed_Report+="Output From Active Learning\n\n"
         Detailed_Report+=str(ActiveLResult)
+        RuleBasedRes =json.dumps(RuleBasedOutput,indent=4)
+        Detailed_Report+="\n\nOutput Fron Rule Based Approach\n\n"
+        Detailed_Report+=str(RuleBasedRes)
+        # Detailed_Report+="List of Exception Mask(s): -\t\n\n"+Exception_Mask+"--"
         Detailed_Report_1="\nTotal Number of Addresses: -\t"+str(Total)+"\n"
         Detailed_Report_1+="\nNumber of Exceptions Thrown: -\t"+str(Total-Observation)+"\n"
         Detailed_Report_1+="Number of Parsed Address: -\t"+str(Observation)+"\n"

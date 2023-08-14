@@ -32,7 +32,9 @@ root_folder = Path(__file__).parents[1]
 
 ExceptionList = []
 def throwException(originalInput,initials):
+    ID = str(initials) + "Forced Exception_File " +  "-->01"
     ExceptionDict = {
+        "Record ID": ID,
         "INPUT": originalInput,
         str(Mask_1): FirstPhaseList
     }

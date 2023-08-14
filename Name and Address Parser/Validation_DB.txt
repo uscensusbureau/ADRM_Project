@@ -1351,5 +1351,94 @@
                 "USAD_ZIP"
             ]
         ]
+    },
+    {
+        "Unique_ID": "1f0fb3a7b5ca3a9efb8ff50d3981a2420a750d13",
+        "Exception_file_name": "AS 12_37_50_ExceptionFile.json",
+        "Input": "5506 A STREET, LITTLE ROCK, AR 72205",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-14 12:39:47.406130",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "A",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "72205",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "f6c94cbdecacccbc3f046721d9fc55a385e8a9ae",
+        "Exception_file_name": "_MultiLine_ExceptionFile14_03_18.914629.json",
+        "Input": "44 SUNBEAM ,AVENUE ,PATASKALA, OH 43062",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NW,F,W,TN",
+        "Approved By": "Committee Member_1 at 2023-08-14 14:18:46.911013",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "44",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "SUNBEAM",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "AVENUE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "PATASKALA",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "OH",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "43062",
+                "USAD_ZIP"
+            ]
+        ]
     }
 ]
