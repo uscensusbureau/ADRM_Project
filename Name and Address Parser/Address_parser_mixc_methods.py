@@ -25,7 +25,7 @@ class Address_parser_misc():
         if df:
             msg.showinfo("Choose File","Select Truth File")
             
-            truth = fd.askopenfilenames( filetypes=[("TXT", ".txt")]) #this file is used to give UI for the user to open a file
+            truth = fd.askopenfilenames( filetypes=[("TXT", ".txt"),("JSON",".json")]) #this file is used to give UI for the user to open a file
             if truth:
                 Output=AdM.Address_Parser(df[0],TruthSet=truth[0])
                 if Output[0]:
@@ -42,9 +42,9 @@ class Address_parser_misc():
     
     
     def Process_Address_Parser_Single_input(self):
-        msg.showinfo("Choose File","Select Input File")
+        msg.showinfo("Choose File","Select Input File in Pipe Delimited Format \n For Example: 1 | 'Your Address Here'")
 
-        df = fd.askopenfilenames( filetypes=[("TXT", ".txt"),("JSON",".json")]) 
+        df = fd.askopenfilenames(filetypes=[("TXT", ".txt"),("JSON",".json")]) 
         if df:
             Output=AdM.Address_Parser(df[0])
             if Output[0]:

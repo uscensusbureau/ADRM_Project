@@ -13,13 +13,14 @@ import json
 # import collections 
 #Parsing 1st program
 # import re
+import os.path
 
 
 from datetime import datetime,timedelta
 today=datetime.today()
 current_time = datetime.now().time()
 time_string = current_time.strftime("%H:%M:%S")
-import os.path
+unique = timedelta(microseconds=-1)
 
 
 
@@ -38,11 +39,21 @@ def throwException(originalInput,initials):
         "INPUT": originalInput,
         str(Mask_1): FirstPhaseList
     }
-    ExceptionList.append(ExceptionDict)
-    Exception_file_name = initials+" " +str(time_string) +"_Forced_ExceptionFile.json"
+    # oldExceptionList = ExceptionList.append(ExceptionDict)
+    
+    if ExceptionList:
+        ExceptionList[0]= ExceptionDict
+        
+    else:
+        ExceptionList.append(ExceptionDict)
+    
+    
+    
+    Exception_file_name = initials+" " +str(current_time) +"_Forced_ExceptionFile.json"
     Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
     path = 'Exceptions/ForcedExceptions/' + Exception_file_name
     with open(path, 'w', encoding='utf-8') as g:
+        
         json.dump(ExceptionList, g, indent=4)
     return
 def Address_Parser(line,initials,originalInput):
@@ -108,7 +119,7 @@ def Address_Parser(line,initials,originalInput):
     Mask_1=",".join(Mask)
     FirstPhaseList = [FirstPhaseList[b] for b in range(len(FirstPhaseList)) if FirstPhaseList[b] != ","]
     data={}
-    with open('KB_Kashif.json', 'r+', encoding='utf-8') as f:
+    with open('KB_Test.json', 'r+', encoding='utf-8') as f:
         data = json.load(f)
     Found=False
     FoundDict={}
@@ -181,12 +192,20 @@ def Address_Parser(line,initials,originalInput):
             "INPUT": originalInput,
             str(Mask_1): FirstPhaseList
         }
-        ExceptionList.append(ExceptionDict)
-        Exception_file_name = initials+ " " + str(time_string) + "_ExceptionFile.json"
+        # ExceptionList.append(ExceptionDict)
+        # oldExceptionList = ExceptionList.append(ExceptionDict)
+        
+        if ExceptionList:
+            ExceptionList[0] = ExceptionDict
+            
+        else:
+            ExceptionList.append(ExceptionDict)
+        Exception_file_name = initials+ " " + str(current_time) + "_ExceptionFile.json"
         Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
         path = 'Exceptions/SingleException/' + Exception_file_name
         with open(path, 'w', encoding='utf-8') as g:
             json.dump(ExceptionList, g, indent=4)
+            g.truncate
             
         
         # Exception_file_name=initials+'_ExceptionFile_'+str(today)+".txt"

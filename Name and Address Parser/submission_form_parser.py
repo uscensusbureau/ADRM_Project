@@ -166,6 +166,7 @@ class submission_form:
                 approval_form_instance.Browse_File(df,True,form_frame,canvas,table_frame,label1,label2,label3,tab4)
                 scrollbar.destroy()
                 table_inner_frame.destroy()
+                return
             
             
         elif toggle_state.get() == "No":
@@ -230,7 +231,7 @@ class submission_form:
                 i+=1
     
             print(Def_Dict)
-            with open('KB_Kashif.json', 'r+', encoding='utf-8') as f:
+            with open('KB_Test.json', 'r+', encoding='utf-8') as f:
                 data = json.load(f)          
                 data[pattern] = Def_Dict# <--- add `id` value.
                 f.seek(0)        # <--- should reset file position to the beginning.

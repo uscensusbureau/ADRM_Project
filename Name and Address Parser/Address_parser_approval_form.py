@@ -45,8 +45,8 @@ class submission_form:
         if Iterate == False:
             msg.showinfo("Choose File", "Select an Exception File")
             df = fd.askopenfilenames(
-                filetypes=[("JSON", ".json"), ("TXT", ".txt")])
-            components = form_frame.winfo_children()
+                filetypes=[("JSON", ".json"), ("TXT", ".txt")],initialdir = "Exceptions")
+            components = form_frame.winfo_children()    
 
             if len(components) != 0:
                 # Iterate through each component and remove it
@@ -91,12 +91,16 @@ class submission_form:
             # df = df[0]
             # print(len(df))
             # print(len(Stat))
+            # if len(Stat.keys())>= 3:
             Mask = list(Stat.keys())[2]
+            # else:
+            #     return(True,"File work Completed")
             file_name = os.path.basename(df[0])
 
             if "Record ID" in Stat:
                 ID = Stat["Record ID"]
                 Stat.pop("Record ID")
+                
             else:
                 ID = ""
                 msg.showwarning(

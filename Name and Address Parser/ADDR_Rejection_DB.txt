@@ -54,5 +54,12 @@
         "Token Pattern": "NW,F,WF,TN",
         "Rejected By": "Committee Member_1 at 2023-08-14 14:17:26.627594",
         "Comment": ""
+    },
+    {
+        "Exception_file_name": "aaaa 22_16_19.869645_Forced_ExceptionFile.json",
+        "Input": "5506 A STREET, LITTLE ROCK, AR 72205",
+        "Token Pattern": "NWF,WW,TN",
+        "Rejected By": "Committee Member_1 at 2023-08-23 22:18:52.265821",
+        "Comment": ""
     }
 ]

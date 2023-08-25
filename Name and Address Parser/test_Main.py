@@ -53,17 +53,17 @@ class NAP_GUIBuilder(tk.Tk):
         self.tab2 = ttk.Frame(self.tabControl)
         self.tabControl.add(self.tab2, text ='Address Parser')
         
-        self.tab3 = ttk.Frame(self.tabControl)
-        self.tabControl.add(self.tab3, text ='Comparison Tab')
         
         
         self.tab4 = ttk.Frame(self.tabControl)
         self.tabControl.add(self.tab4, text ='Mapping Approval Form')
         
+        # self.tab3 = ttk.Frame(self.tabControl)
+        # self.tabControl.add(self.tab3, text ='Validation & Analysis')
         # Calling Different Methods with respect to the tab
         self.NAP_GUIBuilder_AddressParser()
-        self.NAP_GUIBuilder_ComparisonTab()
         self.NAP_GUIBuilder_MappingApprovalForm()
+        # self.NAP_GUIBuilder_Validation()
         
 
     def NAP_GUIBuilder_AddressParser(self):
@@ -137,14 +137,6 @@ class NAP_GUIBuilder(tk.Tk):
                                  row = 10)    
         #tree.pack(side=tk.LEFT)
 
-    def NAP_GUIBuilder_ComparisonTab(self):
-        comparison_instance = mx.Address_parser_misc()
-        ttk.Button(self.tab3, text ="Choose Batch File",width=30, command=comparison_instance.Process_Address_Parser_Test).grid(column = 0, 
-                              row = 0,
-                              padx = 10,
-                              pady = 10)
-        
-        return
     
     
     def NAP_GUIBuilder_MappingApprovalForm(self):
@@ -185,15 +177,9 @@ class NAP_GUIBuilder(tk.Tk):
         
         table_frame = ttk.Frame(self.tab4)
 
-        # table_frame.pack(side=tk.LEFT,pady=5,padx=20)
-        # table_frame.place(x=30,y=90)
-        # table_frame.configure(height=420)
-        # canvas = tk.Canvas(table_frame,width=580,height=420)
-        # canvas.pack(side=tk.LEFT,fill=tk.BOTH,expand=True)
-        # canvas.place(x=30,y=50)
         table_frame.pack(side=tk.LEFT,pady=50,padx=0)
         table_frame.place(x=30,y=90)
-        table_frame.configure(height=650)
+        table_frame.configure(height=550)
         canvas = tk.Canvas(table_frame,width=580,height=420)
         canvas.pack(side=tk.LEFT,fill=tk.BOTH,expand=True)
         
@@ -209,6 +195,14 @@ class NAP_GUIBuilder(tk.Tk):
             DateTime_label = ttk.Label(self.tab4, text=f"Date: {current_date}", font=("Arial", 12))
             DateTime_label.pack(side=tk.TOP, padx=10, pady=5)
 
+    def NAP_GUIBuilder_Validation(self):
+        comparison_instance = mx.Address_parser_misc()
+        ttk.Button(self.tab3, text ="Choose Two Files \n(Input Test and Truth File)",width=30, command=comparison_instance.Process_Address_Parser_Test).grid(column = 0, 
+                              row = 0,
+                              padx = 10,
+                              pady = 10)
+        
+        return
     
 if __name__ == "__main__":
     Run= NAP_GUIBuilder()

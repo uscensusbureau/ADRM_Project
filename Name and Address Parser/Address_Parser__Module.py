@@ -144,7 +144,7 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
         Mask_log[ID]=Mask_1
         FirstPhaseList = [FirstPhaseList[b] for b in range(len(FirstPhaseList)) if FirstPhaseList[b] != ","]
         data={}
-        with open('JSONMappingDefault.json', 'r+', encoding='utf8') as f:
+        with open('KB_Test.json', 'r+', encoding='utf8') as f:
             data = json.load(f)
         Found=False
         FoundDict={}
@@ -347,10 +347,12 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
         f.close()
         return (True,"Detailed_Report.txt and Root Cause Report.txt Generated")
     else:
+        percentage = (Observation/Total)*100
+        percentage = "%.2f"% percentage
         ActiveLResult = json.dumps(Result, indent = 4,ensure_ascii=False) 
         Detailed_Report+="\n\nNumber of Exceptions Thrown: -\t"+str(Total-Observation)+"\n"
         Detailed_Report+="Number of Parsed Address: -\t"+str(Observation)+"\n"
-        Detailed_Report+="Percentage of Parsed Result: -\t"+str((Observation/Total)*100)+"\n"
+        Detailed_Report+="Percentage of Parsed Result: -\t"+str(percentage)+"\n"
         Detailed_Report+="Output From Active Learning\n\n"
         Detailed_Report+=str(ActiveLResult)
         RuleBasedRes =json.dumps(RuleBasedOutput,indent=4)
@@ -360,7 +362,7 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
         Detailed_Report_1="\nTotal Number of Addresses: -\t"+str(Total)+"\n"
         Detailed_Report_1+="\nNumber of Exceptions Thrown: -\t"+str(Total-Observation)+"\n"
         Detailed_Report_1+="Number of Parsed Address: -\t"+str(Observation)+"\n"
-        Detailed_Report_1+="Percentage of Parsed Result: -\t"+str((Observation/Total)*100)+"\n"
+        Detailed_Report_1+="Percentage of Parsed Result: -\t"+str(percentage)+"\n"
         # Detailed_Report_1+="List of Exception Mask(s): -\t\n\n"+Exception_Mask+"--"
         Output_file_name = "Detailed_Report_" + str(current_time) + ".txt"
         Output_file_name = re.sub(r'[^\w_. -]', '_', Output_file_name)
