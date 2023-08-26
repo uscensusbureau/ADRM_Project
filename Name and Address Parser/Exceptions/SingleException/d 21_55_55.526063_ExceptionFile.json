@@ -1,0 +1,29 @@
+[
+    {
+        "Record ID": "Single Line Exception_File d-->01",
+        "INPUT": "1701 Westpark dr, little rock, ar 66594",
+        "NWF,WW,TN": [
+            {
+                "N": "1701"
+            },
+            {
+                "W": "WESTPARK"
+            },
+            {
+                "F": "DR"
+            },
+            {
+                "W": "LITTLE"
+            },
+            {
+                "W": "ROCK"
+            },
+            {
+                "T": "AR"
+            },
+            {
+                "N": "66594"
+            }
+        ]
+    }
+]

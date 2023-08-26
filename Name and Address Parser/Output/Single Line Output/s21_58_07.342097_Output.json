@@ -1,0 +1,30 @@
+{
+    "Record ID": "Single Line Exception_File s-->01",
+    "INPUT": "693 Jerry Dove Drive,Beaufort, South Carolina 29902",
+    "NWWF,W,DWN": [
+        {
+            "N": "693"
+        },
+        {
+            "W": "JERRY"
+        },
+        {
+            "W": "DOVE"
+        },
+        {
+            "F": "DRIVE"
+        },
+        {
+            "W": "BEAUFORT"
+        },
+        {
+            "D": "SOUTH"
+        },
+        {
+            "W": "CAROLINA"
+        },
+        {
+            "N": "29902"
+        }
+    ]
+}

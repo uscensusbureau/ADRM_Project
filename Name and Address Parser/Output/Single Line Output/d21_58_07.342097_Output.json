@@ -1,0 +1,15 @@
+{
+    "Record ID": "Single Line Exception_File d-->01",
+    "INPUT": "APO AE 09427",
+    "MWN": [
+        {
+            "M": "APO"
+        },
+        {
+            "W": "AE"
+        },
+        {
+            "N": "09427"
+        }
+    ]
+}

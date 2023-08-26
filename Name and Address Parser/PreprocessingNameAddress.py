@@ -17,6 +17,7 @@ class PreProcessingNameAddress:
     def __init__(self):
         self
     def AddresssCleaning(self,line):
+        line=line.lstrip(',')
         line=re.sub(r'[^a-zñáéíóúüÑÁÉÍÓÚÜA-Z0-9\s,-]+', '',line)
 
         Address=re.sub(' +', ' ',line)

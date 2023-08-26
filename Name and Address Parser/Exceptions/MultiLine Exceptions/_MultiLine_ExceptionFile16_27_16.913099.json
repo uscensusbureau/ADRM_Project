@@ -1,0 +1,23 @@
+[
+    {
+        "Record ID": "55",
+        "INPUT": "6770 mulford avenue, , RI 2838",
+        "NWF,,TN": [
+            {
+                "N": "6770"
+            },
+            {
+                "W": "MULFORD"
+            },
+            {
+                "F": "AVENUE"
+            },
+            {
+                "T": "RI"
+            },
+            {
+                "N": "2838"
+            }
+        ]
+    }
+]

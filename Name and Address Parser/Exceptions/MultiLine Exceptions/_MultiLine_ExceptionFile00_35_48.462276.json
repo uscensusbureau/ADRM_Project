@@ -1,0 +1,188 @@
+[
+    {
+        "Record ID": "1",
+        "INPUT": "1701 Westpark dr, little rock, ar 6565",
+        "NW,WW,N": [
+            {
+                "N": "1701"
+            },
+            {
+                "W": "WESTPARK"
+            },
+            {
+                "F": "DR"
+            },
+            {
+                "W": "LITTLE"
+            },
+            {
+                "W": "ROCK"
+            },
+            {
+                "T": "AR"
+            },
+            {
+                "N": "6565"
+            }
+        ]
+    },
+    {
+        "Record ID": "2",
+        "INPUT": "815 Marvon St South, Ozone Park, NY 11420",
+        "NW,W,N": [
+            {
+                "N": "815"
+            },
+            {
+                "W": "MARVON"
+            },
+            {
+                "F": "ST"
+            },
+            {
+                "D": "SOUTH"
+            },
+            {
+                "W": "OZONE"
+            },
+            {
+                "F": "PARK"
+            },
+            {
+                "T": "NY"
+            },
+            {
+                "N": "11420"
+            }
+        ]
+    },
+    {
+        "Record ID": "3",
+        "INPUT": "6678 University, Avenue ,San Juan,PR 00926",
+        "N,,WW,N": [
+            {
+                "N": "6678"
+            },
+            {
+                "Z": "UNIVERSITY"
+            },
+            {
+                "F": "AVENUE"
+            },
+            {
+                "W": "SAN"
+            },
+            {
+                "W": "JUAN"
+            },
+            {
+                "F": "PR"
+            },
+            {
+                "N": "00926"
+            }
+        ]
+    },
+    {
+        "Record ID": "4",
+        "INPUT": "109 Markhan St , Corona, NY 11368",
+        "NW,W,N": [
+            {
+                "N": "109"
+            },
+            {
+                "W": "MARKHAN"
+            },
+            {
+                "F": "ST"
+            },
+            {
+                "W": "CORONA"
+            },
+            {
+                "T": "NY"
+            },
+            {
+                "N": "11368"
+            }
+        ]
+    },
+    {
+        "Record ID": "5",
+        "INPUT": "81 Mccain John ,Chicago , IL,  60629",
+        "NWW,W,,N": [
+            {
+                "N": "81"
+            },
+            {
+                "W": "MCCAIN"
+            },
+            {
+                "W": "JOHN"
+            },
+            {
+                "W": "CHICAGO"
+            },
+            {
+                "T": "IL"
+            },
+            {
+                "N": "60629"
+            }
+        ]
+    },
+    {
+        "Record ID": "6",
+        "INPUT": "8190 Marsh Ave, The Villages, FL 32162",
+        "NW,W,N": [
+            {
+                "N": "8190"
+            },
+            {
+                "W": "MARSH"
+            },
+            {
+                "F": "AVE"
+            },
+            {
+                "W": "THE"
+            },
+            {
+                "F": "VILLAGES"
+            },
+            {
+                "T": "FL"
+            },
+            {
+                "N": "32162"
+            }
+        ]
+    },
+    {
+        "Record ID": "7",
+        "INPUT": "7966, Beacon, St,Sun, Prairie, WI,  53590",
+        "N,W,,W,,,N": [
+            {
+                "N": "7966"
+            },
+            {
+                "W": "BEACON"
+            },
+            {
+                "F": "ST"
+            },
+            {
+                "W": "SUN"
+            },
+            {
+                "F": "PRAIRIE"
+            },
+            {
+                "T": "WI"
+            },
+            {
+                "N": "53590"
+            }
+        ]
+    }
+]

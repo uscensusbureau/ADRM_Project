@@ -1,0 +1,29 @@
+[
+    {
+        "Record ID": "Single Line Exception_File b-->01",
+        "INPUT": "874 wEST PARK, LITTLE ROCK,, AR 55646",
+        "NDF,WW,,TN": [
+            {
+                "N": "874"
+            },
+            {
+                "D": "WEST"
+            },
+            {
+                "F": "PARK"
+            },
+            {
+                "W": "LITTLE"
+            },
+            {
+                "W": "ROCK"
+            },
+            {
+                "T": "AR"
+            },
+            {
+                "N": "55646"
+            }
+        ]
+    }
+]

@@ -92,5 +92,52 @@
                 "USAD_ZIP"
             ]
         ]
+    },
+    {
+        "Unique_ID": "ca70207cbc2fe1c6b6c519374cc8b208f10abd02",
+        "Exception_file_name": "c 21_19_16.057909_ExceptionFile.json",
+        "Input": "874 WEST PARK, LITTLE ROCK,, AR 55646",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NDF,WW,,TN",
+        "Approved By": "Committee Member_1 at 2023-08-25 21:38:09.467720",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "874",
+                "USAD_SNO"
+            ],
+            [
+                "D",
+                "WEST",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "55646",
+                "USAD_ZIP"
+            ]
+        ]
     }
 ]

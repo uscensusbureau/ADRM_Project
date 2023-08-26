@@ -7,7 +7,7 @@ Created on Mon Oct 31 09:15:34 2022
 
 import re
 from tqdm import tqdm
-import AddressParserProject as RuleBased
+import Rulebased as RuleBased
 import pandas as pd
 import json 
 import collections 
@@ -61,7 +61,9 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
   "USAD_HNM": 19,
   "USAD_HNO": 20
 }
-    
+    data={}
+    with open('JSONMappingDefault.json', 'r+', encoding='utf8') as f:
+        data = json.load(f)
     USAD_CONVERSION_={
         
   "1": "USAD_SNO",
@@ -88,10 +90,18 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
     Detailed_Report+="Exception and Mask Report\n"
     ExceptionList = []
     ExceptionDict = {}
+    WordTable={}
+    for line in fileHandle:
+        fields=line.split('|')
+        WordTable[fields[0]]=fields[1][0]
     for line in tqdm(Lines):
         line=line.strip("\n").split("|")
         ID=line[0].strip()
-        line=line[1].strip()
+        try:
+            
+            line=line[1].strip()
+        except:
+            continue
         Address=line
         FirstPhaseList=[]
         PackAddress=PreProc.PreProcessingNameAddress().AddresssCleaning(line)
@@ -121,15 +131,15 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
                 FirstPhaseList.append(FirstPhaseDict)
 
             else:
-                for line in fileHandle:
-                    fields=line.split('|')
-                    if A==(fields[0]):
-                        NResult=True
-                        temp=fields[1]
-                        Combine+=temp[0]
-                        FirstPhaseDict[temp[0]] = A
-                        FirstPhaseList.append(FirstPhaseDict)
-                        TrackKey.append(temp[0])
+                if A in WordTable.keys():
+                    temp=WordTable[A]
+                    NResult=True
+                    Combine+=temp[0]
+                    FirstPhaseDict[temp[0]] = A
+                    FirstPhaseList.append(FirstPhaseDict)
+                    TrackKey.append(temp[0])
+                    
+                    
                 if NResult==False:
                     Combine+="W"
                     TrackKey.append("W")
@@ -137,27 +147,29 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
                     FirstPhaseList.append(FirstPhaseDict)
             if LoopCheck==len(AddressList):
                 Mask.append(Combine)
-            fileHandle.seek(0)
+           
             LoopCheck+=1
             
         Mask_1=",".join(Mask)
         Mask_log[ID]=Mask_1
         FirstPhaseList = [FirstPhaseList[b] for b in range(len(FirstPhaseList)) if FirstPhaseList[b] != ","]
-        data={}
-        with open('KB_Test.json', 'r+', encoding='utf8') as f:
-            data = json.load(f)
+       
         Found=False
         FoundDict={}
-        for tk,tv in data.items():
-            if(tk==Mask_1):
-                FoundDict[tk]=tv
-                Found=True
-                break
+       # print(ID)
+        if Mask_1 in data.keys():
+            FoundDict[Mask_1]=data[Mask_1]
+            Found=True
+        # for tk,tv in data.items():
+        #     if(tk==Mask_1):
+        #         FoundDict[tk]=tv
+        #         Found=True
+        #         break
         FoundExcept=False
-        with open('ExceptionFile.json', 'r+', encoding='utf8') as g:
-            Stat = json.load(g)
-            if Mask_1 in Stat.keys():
-                FoundExcept=True
+        # with open('ExceptionFile.json', 'r+', encoding='utf8') as g:
+        #     Stat = json.load(g)
+        #     if Mask_1 in Stat.keys():
+        #         FoundExcept=True
         
         if Found:
             Observation+=1
@@ -194,14 +206,8 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
             }
             ExceptionList.append(ExceptionEntry)
             
-            Exception_file_name = "_MultiLine_ExceptionFile" + str(current_time) + ".json"
-            Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
-            path = 'Exceptions/MultiLine Exceptions/' + Exception_file_name
-            with open(path, 'w', encoding='utf-8') as g:
-                g.seek(0)
-                json.dump(ExceptionList, g, indent=4)
-                g.truncate
-                RuleBasedOutput[ID]=RuleBased.RuleBasedAddressParser.AddressParser(Address)
+           
+            RuleBasedOutput[ID]=RuleBased.RuleBasedAddressParser.AddressParser(AddressList)
             # with open('ExceptionFile.json', 'r+', encoding='utf8') as g:
             #     try:
                     
@@ -216,14 +222,12 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
         else:
             try:
                     
-                RuleBasedOutput[ID]=RuleBased.RuleBasedAddressParser.AddressParser(Address)
+                RuleBasedOutput[ID]=RuleBased.RuleBasedAddressParser.AddressParser(AddressList)
                 Exception_Mask+=Mask_1+"\n"
             except:
                 continue
         Total+=1
    
-
-    
     Count_of_Correct=0
     Total_Count=0  
     y_test=[]
@@ -261,6 +265,15 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
     #                             break
     #                         else:
     #                             y_predict.append(0)
+    
+    
+    Exception_file_name = "_MultiLine_ExceptionFile" + str(current_time) + ".json"
+    Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
+    path = 'Exceptions/MultiLine Exceptions/' + Exception_file_name
+    with open(path, 'w', encoding='utf-8') as g:
+        g.seek(0)
+        json.dump(ExceptionList, g, indent=4)
+        g.truncate
     
     FishBone+="Root Cause Analysis"
     if TruthSet!="":
@@ -384,3 +397,4 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
         #     for key,value in k.items():
         #         print(i,"\t\t",key,"\t\t\t\t",value) 
         #     i+=1
+#Address_Parser("D://10k records.txt")
