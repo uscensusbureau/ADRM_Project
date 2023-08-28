@@ -1074,5 +1074,47 @@
                 "USAD_SNM"
             ]
         ]
+    },
+    {
+        "Unique_ID": "d0876f4ba9f3382dcb59c7ee044bcdf45da12d69",
+        "Exception_file_name": "_MultiLine_ExceptionFile18_06_42.793814.json",
+        "Input": "PO BOX 1232 MILLVILLE NJ 08332",
+        "Region": "Puerto Rico",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "XXNWTN",
+        "Approved By": "Committee Member_1 at 2023-08-27 20:54:38.549727",
+        "Comment": "",
+        "Table Data": [
+            [
+                "X",
+                "PO",
+                "USAD_STA"
+            ],
+            [
+                "X",
+                "BOX",
+                "USAD_ANO"
+            ],
+            [
+                "N",
+                "1232",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "MILLVILLE",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "NJ",
+                "USAD_SPT"
+            ],
+            [
+                "N",
+                "08332",
+                "USAD_CTY"
+            ]
+        ]
     }
 ]

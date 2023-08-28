@@ -21,7 +21,7 @@ class RuleBasedAddressParser:
 
         # Address=Address.upper()
         # AddressList = re.split("\s|\s,\s ", Address)
-        print(line)
+        #print(line)
         AddressList=line
         TrackKey=[]
         Mask=[]
@@ -310,7 +310,7 @@ class RuleBasedAddressParser:
                                 USAD_Mapping["USAD_ZIP"]=USAD_Mapping["USAD_ZIP"]
                                 USAD_Conversion_Dict["USAD_ZIP"]=USAD_Conversion_Dict["USAD_ZIP"].strip()
                 else:
-                    print(TrackKey)
+                   # print(TrackKey)
                     for j in range(Counts,len(TrackKey)):
                         Dictionary=FirstPhaseList[j]
                         Key=""
@@ -769,6 +769,6 @@ class RuleBasedAddressParser:
                      
         dic = {key:value for key,value in USAD_Conversion_Dict.items() if value != ''}
         return dic
-abc=RuleBasedAddressParser.AddressParser(["2169"," Green"," Hill"," Road", "Bentonville", "Arkansas","72712","John","Shark","Liverpool"])
-print (abc) 
+# abc=RuleBasedAddressParser.AddressParser(["2169"," Green"," Hill"," Road", "Bentonville", "Arkansas","72712","John","Shark","Liverpool"])
+# print (abc) 
         
