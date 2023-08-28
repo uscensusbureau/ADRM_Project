@@ -119,7 +119,7 @@ def Address_Parser(line,initials,originalInput):
     Mask_1=",".join(Mask)
     FirstPhaseList = [FirstPhaseList[b] for b in range(len(FirstPhaseList)) if FirstPhaseList[b] != ","]
     data={}
-    with open('JSONMappingDefault.json', 'r+', encoding='utf-8') as f:
+    with open('KB_Test.json', 'r+', encoding='utf-8') as f:
         data = json.load(f)
     Found=False
     FoundDict={}

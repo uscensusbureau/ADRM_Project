@@ -1,1 +1,1 @@
-{"NDF,WW,,TN": {"USAD_SNO": [1], "USAD_SNM": [2, 3], "USAD_CTY": [4, 5], "USAD_STA": [6], "USAD_ZIP": [7]}}
+{"NWF,WW,TN": {"USAD_ZP4": [1], "USAD_SFX": [2, 6], "USAD_ANM": [3, 4], "USAD_SPT": [5], "USAD_SPR": [7]}, "NWFD,WF,TN": {"USAD_STA": [1], "USAD_CTY": [2, 5], "USAD_SPT": [3, 4], "USAD_ANM": [6], "USAD_SFX": [7, 8]}, "XXNWTN": {"USAD_SPT": [1, 3, 4], "USAD_SFX": [2], "USAD_ANO": [5], "USAD_SNM": [6]}}

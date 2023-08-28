@@ -162,11 +162,7 @@ class submission_form:
                 
             with open(df[0], 'w', encoding='utf-8') as f:                
                 json.dump(RevisedJSON, f)
-            if len(RevisedJSON)>0:
-                approval_form_instance.Browse_File(df,True,form_frame,canvas,table_frame,label1,label2,label3,tab4)
-                scrollbar.destroy()
-                table_inner_frame.destroy()
-                return
+            
             
             
         elif toggle_state.get() == "No":
@@ -217,7 +213,9 @@ class submission_form:
         
         for data in table_data:
             print(data)
+      
         if toggle_state.get() == "Yes":
+            
             i=1
             Def_Dict={}
             for n in table_data:
@@ -237,6 +235,11 @@ class submission_form:
                 f.seek(0)        # <--- should reset file position to the beginning.
                 json.dump(data, f)
                 f.truncate()# remove remaining part
+            if len(RevisedJSON)>0:
+                approval_form_instance.Browse_File(df,True,form_frame,canvas,table_frame,label1,label2,label3,tab4)
+                scrollbar.destroy()
+                table_inner_frame.destroy()
+                return
             return  
         
         

@@ -1,0 +1,65 @@
+Exception and Mask Report
+
+
+Number of Exceptions Thrown: -	6
+Number of Parsed Address: -	1
+Percentage of Parsed Result: -	14.29
+Output From Active Learning
+
+{
+    "1": {
+        "USAD_SFX": "1701",
+        "USAD_SNO": "WESTPARK AR",
+        "USAD_SPR": "DR",
+        "USAD_SNM": "LITTLE 6565",
+        "USAD_CTY": "ROCK"
+    }
+}
+
+Output Fron Rule Based Approach
+
+{
+    "2": {
+        "USAD_SNO": "815",
+        "USAD_SNM": "MARVON",
+        "USAD_SFX": "ST",
+        "USAD_SPT": "SOUTH",
+        "USAD_CTY": "OZONE",
+        "USAD_STA": "NY"
+    },
+    "3": {
+        "USAD_SNO": "6678",
+        "USAD_SFX": " UNIVERSITY",
+        "USAD_CTY": "SAN JUAN"
+    },
+    "4": {
+        "USAD_SNO": "109",
+        "USAD_SNM": "MARKHAN",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "CORONA",
+        "USAD_STA": "NY",
+        "USAD_ZIP": "11368"
+    },
+    "5": {
+        "USAD_SNO": "81",
+        "USAD_SNM": "MCCAIN",
+        "USAD_SFX": "JOHN",
+        "USAD_CTY": "CHICAGO",
+        "USAD_STA": "IL",
+        "USAD_ZIP": "60629"
+    },
+    "6": {
+        "USAD_SNO": "8190",
+        "USAD_SNM": "MARSH",
+        "USAD_SFX": "AVE",
+        "USAD_CTY": "THE",
+        "USAD_STA": "FL"
+    },
+    "7": {
+        "USAD_SNO": "7966",
+        "USAD_SNM": "BEACON",
+        "USAD_SFX": "ST",
+        "USAD_CTY": "SUN",
+        "USAD_STA": "WI"
+    }
+}

@@ -139,5 +139,940 @@
                 "USAD_ZIP"
             ]
         ]
+    },
+    {
+        "Unique_ID": "8cb46038854b1dbced6f23bd5dda7361909fcdbd",
+        "Exception_file_name": "ccc 21_58_28.383089_ExceptionFile.json",
+        "Input": "1701 WESTPARK DR, LITTLE ROCK, AR 65656",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-08-26 21:59:12.820334",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SNO"
+            ],
+            [
+                "F",
+                "DR",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_SNO"
+            ],
+            [
+                "N",
+                "65656",
+                "USAD_SNM"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "672817894ea5177b01f8de677f5dfdb4fd82e49a",
+        "Exception_file_name": "_MultiLine_ExceptionFile22_03_31.627001.json",
+        "Input": "815 MARVON ST SOUTH, OZONE PARK, NY 11420",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWFD,WF,TN",
+        "Approved By": "Committee Member_1 at 2023-08-26 22:04:28.833062",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "815",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "MARVON",
+                "USAD_ANO"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_SFX"
+            ],
+            [
+                "D",
+                "SOUTH",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "OZONE",
+                "USAD_ANM"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_SNM"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "11420",
+                "USAD_SNM"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "e620b939c0fe80e323933f9e1bd78628b0edb395",
+        "Exception_file_name": "_MultiLine_ExceptionFile22_03_31.627001.json",
+        "Input": "6678 UNIVERSITY, AVENUE ,SAN JUAN,PR 00926",
+        "Region": "Puerto Rico",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NZ,F,WW,FN",
+        "Approved By": "Committee Member_1 at 2023-08-26 22:05:02.437231",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "6678",
+                "USAD_ANO"
+            ],
+            [
+                "Z",
+                "UNIVERSITY",
+                "USAD_ANM"
+            ],
+            [
+                "F",
+                "AVENUE",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "SAN",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "JUAN",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "PR",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "00926",
+                "USAD_STA"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "ecd0b4786bb4125fdf28c883da43eeaf827299f3",
+        "Exception_file_name": "_MultiLine_ExceptionFile22_03_31.627001.json",
+        "Input": "109 MARKHAN ST , CORONA, NY 11368",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,W,TN",
+        "Approved By": "Committee Member_1 at 2023-08-26 22:05:32.590673",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "109",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "MARKHAN",
+                "USAD_ANO"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "CORONA",
+                "USAD_SPT"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "11368",
+                "USAD_SFX"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "73064e2b37a5ec25502eedfb7bbbcea60a76a5b3",
+        "Exception_file_name": "_MultiLine_ExceptionFile22_03_31.627001.json",
+        "Input": "81 MCCAIN JOHN ,CHICAGO , IL,  60629",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWW,W,T,N",
+        "Approved By": "Committee Member_2 at 2023-08-26 22:05:47.287219",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "81",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "MCCAIN",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "JOHN",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "CHICAGO",
+                "USAD_SPT"
+            ],
+            [
+                "T",
+                "IL",
+                "USAD_SPR"
+            ],
+            [
+                "N",
+                "60629",
+                "USAD_SPR"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "04ca5a0df3f8298bce86da5866cfcab2643593f4",
+        "Exception_file_name": "_MultiLine_ExceptionFile22_03_31.627001.json",
+        "Input": "8190 MARSH AVE, THE VILLAGES, FL 32162",
+        "Region": "Puerto Rico",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWF,WF,TN",
+        "Approved By": "Committee Member_1 at 2023-08-26 22:06:01.805875",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "8190",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "MARSH",
+                "USAD_ANM"
+            ],
+            [
+                "F",
+                "AVE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "THE",
+                "USAD_ANM"
+            ],
+            [
+                "F",
+                "VILLAGES",
+                "USAD_HNO"
+            ],
+            [
+                "T",
+                "FL",
+                "USAD_SPT"
+            ],
+            [
+                "N",
+                "32162",
+                "USAD_ANM"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "3f3d1959f6aefa9fcd28835ada17ad10776b2131",
+        "Exception_file_name": "_MultiLine_ExceptionFile22_03_31.627001.json",
+        "Input": "7966, BEACON, ST,SUN, PRAIRIE, WI,  53590",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "N,W,F,W,F,T,N",
+        "Approved By": "Committee Member_1 at 2023-08-26 22:06:15.660148",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "7966",
+                "USAD_RNO"
+            ],
+            [
+                "W",
+                "BEACON",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_STA"
+            ],
+            [
+                "W",
+                "SUN",
+                "USAD_ANO"
+            ],
+            [
+                "F",
+                "PRAIRIE",
+                "USAD_SPT"
+            ],
+            [
+                "T",
+                "WI",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "53590",
+                "USAD_SNM"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "c98ffd36523ede0e008701b4150175a2d836b103",
+        "Exception_file_name": "_MultiLine_ExceptionFile17_42_49.736105.json",
+        "Input": "1701 WESTPARK DR, LITTLE ROCK, AR 6565",
+        "Region": "US",
+        "Type": "PO Box Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-27 17:43:59.846350",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "DR",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SPT"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "6565",
+                "USAD_CTY"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "672817894ea5177b01f8de677f5dfdb4fd82e49a",
+        "Exception_file_name": "_MultiLine_ExceptionFile17_42_49.736105.json",
+        "Input": "815 MARVON ST SOUTH, OZONE PARK, NY 11420",
+        "Region": "US",
+        "Type": "PO Box Address",
+        "Token Pattern": "NWFD,WF,TN",
+        "Approved By": "Committee Member_2 at 2023-08-27 17:47:51.142742",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "815",
+                "USAD_STA"
+            ],
+            [
+                "W",
+                "MARVON",
+                "USAD_ANO"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_ANM"
+            ],
+            [
+                "D",
+                "SOUTH",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "OZONE",
+                "USAD_ANO"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_SPT"
+            ],
+            [
+                "N",
+                "11420",
+                "USAD_ANM"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "ecd0b4786bb4125fdf28c883da43eeaf827299f3",
+        "Exception_file_name": "_MultiLine_ExceptionFile17_42_49.736105.json",
+        "Input": "109 MARKHAN ST , CORONA, NY 11368",
+        "Region": "Puerto Rico",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWF,W,TN",
+        "Approved By": "Committee Member_1 at 2023-08-27 17:49:44.819047",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "109",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "MARKHAN",
+                "USAD_ANM"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "CORONA",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_SNM"
+            ],
+            [
+                "N",
+                "11368",
+                "USAD_ANM"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "73064e2b37a5ec25502eedfb7bbbcea60a76a5b3",
+        "Exception_file_name": "_MultiLine_ExceptionFile17_42_49.736105.json",
+        "Input": "81 MCCAIN JOHN ,CHICAGO , IL,  60629",
+        "Region": "US",
+        "Type": "PO Box Address",
+        "Token Pattern": "NWW,W,T,N",
+        "Approved By": "Committee Member_1 at 2023-08-27 17:49:59.720179",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "81",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "MCCAIN",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "JOHN",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "CHICAGO",
+                "USAD_SNM"
+            ],
+            [
+                "T",
+                "IL",
+                "USAD_SNM"
+            ],
+            [
+                "N",
+                "60629",
+                "USAD_SPT"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "04ca5a0df3f8298bce86da5866cfcab2643593f4",
+        "Exception_file_name": "_MultiLine_ExceptionFile17_42_49.736105.json",
+        "Input": "8190 MARSH AVE, THE VILLAGES, FL 32162",
+        "Region": "Puerto Rico",
+        "Type": "Military Address",
+        "Token Pattern": "NWF,WF,TN",
+        "Approved By": "Committee Member_1 at 2023-08-27 17:50:13.488675",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "8190",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "MARSH",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "AVE",
+                "USAD_STA"
+            ],
+            [
+                "W",
+                "THE",
+                "USAD_SPT"
+            ],
+            [
+                "F",
+                "VILLAGES",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "FL",
+                "USAD_SPT"
+            ],
+            [
+                "N",
+                "32162",
+                "USAD_ANM"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "3f3d1959f6aefa9fcd28835ada17ad10776b2131",
+        "Exception_file_name": "_MultiLine_ExceptionFile17_42_49.736105.json",
+        "Input": "7966, BEACON, ST,SUN, PRAIRIE, WI,  53590",
+        "Region": "US",
+        "Type": "PO Box Address",
+        "Token Pattern": "N,W,F,W,F,T,N",
+        "Approved By": "Committee Member_1 at 2023-08-27 17:50:39.986382",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "7966",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "BEACON",
+                "USAD_ANM"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_STA"
+            ],
+            [
+                "W",
+                "SUN",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "PRAIRIE",
+                "USAD_SNO"
+            ],
+            [
+                "T",
+                "WI",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "53590",
+                "USAD_SPR"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "c98ffd36523ede0e008701b4150175a2d836b103",
+        "Exception_file_name": "_MultiLine_ExceptionFile17_42_49.736105.json",
+        "Input": "1701 WESTPARK DR, LITTLE ROCK, AR 6565",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-27 17:54:50.663644",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_STA"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "DR",
+                "USAD_MDG"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_RNM"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SPT"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_BNM"
+            ],
+            [
+                "N",
+                "6565",
+                "USAD_SFX"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "672817894ea5177b01f8de677f5dfdb4fd82e49a",
+        "Exception_file_name": "_MultiLine_ExceptionFile17_42_49.736105.json",
+        "Input": "815 MARVON ST SOUTH, OZONE PARK, NY 11420",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWFD,WF,TN",
+        "Approved By": "Committee Member_1 at 2023-08-27 17:58:53.593493",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "815",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "MARVON",
+                "USAD_ANM"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_ANO"
+            ],
+            [
+                "D",
+                "SOUTH",
+                "USAD_STA"
+            ],
+            [
+                "W",
+                "OZONE",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "11420",
+                "USAD_ANO"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "c98ffd36523ede0e008701b4150175a2d836b103",
+        "Exception_file_name": "_MultiLine_ExceptionFile17_42_49.736105.json",
+        "Input": "1701 WESTPARK DR, LITTLE ROCK, AR 6565",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-27 18:01:31.182414",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_BNO"
+            ],
+            [
+                "F",
+                "DR",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "6565",
+                "USAD_SPR"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "c98ffd36523ede0e008701b4150175a2d836b103",
+        "Exception_file_name": "_MultiLine_ExceptionFile18_06_42.793814.json",
+        "Input": "1701 WESTPARK DR, LITTLE ROCK, AR 6565",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-27 18:07:34.732238",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "DR",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_BNO"
+            ],
+            [
+                "N",
+                "6565",
+                "USAD_CTY"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "c98ffd36523ede0e008701b4150175a2d836b103",
+        "Exception_file_name": "_MultiLine_ExceptionFile18_06_42.793814.json",
+        "Input": "1701 WESTPARK DR, LITTLE ROCK, AR 6565",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-27 18:10:32.508645",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1701",
+                "USAD_ZP4"
+            ],
+            [
+                "W",
+                "WESTPARK",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "DR",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_SPT"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "6565",
+                "USAD_SPR"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "672817894ea5177b01f8de677f5dfdb4fd82e49a",
+        "Exception_file_name": "_MultiLine_ExceptionFile18_06_42.793814.json",
+        "Input": "815 MARVON ST SOUTH, OZONE PARK, NY 11420",
+        "Region": "Puerto Rico",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFD,WF,TN",
+        "Approved By": "Committee Member_2 at 2023-08-27 18:11:10.299554",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "815",
+                "USAD_STA"
+            ],
+            [
+                "W",
+                "MARVON",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_SPT"
+            ],
+            [
+                "D",
+                "SOUTH",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "OZONE",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_ANM"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "11420",
+                "USAD_SFX"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "f13231bdb15fcddbefbaae65731bbf05cafe0cf6",
+        "Exception_file_name": "_MultiLine_ExceptionFile18_06_42.793814.json",
+        "Input": "PO BOX 1599 WOONSOCKET RI 02895",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "XXNWTN",
+        "Approved By": "Committee Member_1 at 2023-08-27 18:12:21.774521",
+        "Comment": "",
+        "Table Data": [
+            [
+                "X",
+                "PO",
+                "USAD_SPT"
+            ],
+            [
+                "X",
+                "BOX",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "1599",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "WOONSOCKET",
+                "USAD_SPT"
+            ],
+            [
+                "T",
+                "RI",
+                "USAD_ANO"
+            ],
+            [
+                "N",
+                "02895",
+                "USAD_SNM"
+            ]
+        ]
     }
 ]

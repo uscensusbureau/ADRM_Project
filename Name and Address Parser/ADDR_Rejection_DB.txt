@@ -61,5 +61,12 @@
         "Token Pattern": "NWF,WW,TN",
         "Rejected By": "Committee Member_1 at 2023-08-23 22:18:52.265821",
         "Comment": ""
+    },
+    {
+        "Exception_file_name": "_MultiLine_ExceptionFile17_42_49.736105.json",
+        "Input": "6678 UNIVERSITY, AVENUE ,SAN JUAN,PR 00926",
+        "Token Pattern": "NZ,F,WW,FN",
+        "Rejected By": "Committee Member_2 at 2023-08-27 17:48:18.773262",
+        "Comment": ""
     }
 ]

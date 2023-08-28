@@ -9,7 +9,7 @@ class RuleBasedAddressParser:
 
         MASK=[] #In String
      
-        USAD_Conversion_Dict={"USAD_SNO":"","USAD_SPR":"","USAD_SPR":"","USAD_SNM":"","USAD_SFX":"","USAD_SPT":"","USAD_ANM":"","USAD_ANO":"","USAD_CTY":"","USAD_STA":"","USAD_ZIP":"","USAD_ZP4":"","USAD_BNM":"","USAD_BNO":"","USAD_RNM":"","USAD_RNO":"","USAD_HNM":"","USAD_HNO":"","USAD_MDG":"","USAD_MGN":""}
+        USAD_Conversion_Dict={"USAD_SNO":"","USAD_SPR":"","USAD_SPR":"","USAD_SNM":"","USAD_SFX":"","USAD_SPT":"","USAD_ANM":"","USAD_ANO":"","USAD_CTY":"","USAD_STA":"","USAD_ZIP":"","USAD_ZP4":"","USAD_BNM":"","USAD_BNO":"","USAD_RNM":"","USAD_RNO":"","USAD_HNM":"","USAD_HNO":"","USAD_MDG":"","USAD_MGN":"","USAD_NA":""}
         List=USAD_Conversion_Dict.keys()
         FirstPhaseList=[]
         # Address=line.strip()
@@ -21,6 +21,7 @@ class RuleBasedAddressParser:
 
         # Address=Address.upper()
         # AddressList = re.split("\s|\s,\s ", Address)
+        print(line)
         AddressList=line
         TrackKey=[]
         Mask=[]
@@ -62,7 +63,7 @@ class RuleBasedAddressParser:
                 Mask.append(Combine)
             fileHandle.seek(0)
             LoopCheck+=1
-        USAD_Mapping={"USAD_SNO":[],"USAD_SPR":[],"USAD_SNM":[],"USAD_SFX":[],"USAD_SPT":[],"USAD_ANM":[],"USAD_ANO":[],"USAD_CTY":[],"USAD_STA":[],"USAD_ZIP":[],"USAD_ZP4":[],"USAD_BNM":[],"USAD_BNO":[],"USAD_RNM":[],"USAD_RNO":[],"USAD_HNM":[],"USAD_HNO":[],"USAD_MDG":[],"USAD_MGN":[]}
+        USAD_Mapping={"USAD_SNO":[],"USAD_SPR":[],"USAD_SNM":[],"USAD_SFX":[],"USAD_SPT":[],"USAD_ANM":[],"USAD_ANO":[],"USAD_CTY":[],"USAD_STA":[],"USAD_ZIP":[],"USAD_ZP4":[],"USAD_BNM":[],"USAD_BNO":[],"USAD_RNM":[],"USAD_RNO":[],"USAD_HNM":[],"USAD_HNO":[],"USAD_MDG":[],"USAD_MGN":[],"USAD_NA":[]}
         Start=0
         Counts=0
         if "X" not in TrackKey:
@@ -308,6 +309,26 @@ class RuleBasedAddressParser:
                         except:
                                 USAD_Mapping["USAD_ZIP"]=USAD_Mapping["USAD_ZIP"]
                                 USAD_Conversion_Dict["USAD_ZIP"]=USAD_Conversion_Dict["USAD_ZIP"].strip()
+                else:
+                    print(TrackKey)
+                    for j in range(Counts,len(TrackKey)):
+                        Dictionary=FirstPhaseList[j]
+                        Key=""
+                        Value=""
+                        for K,V in Dictionary.items():
+                            Key=K
+                            Value=V
+                      
+                            
+                        USAD_Mapping["USAD_NA"].append(j+1)
+                        USAD_Conversion_Dict["USAD_NA"]+=" "+Value.strip()
+                        Counts+=1
+                        break
+                        # else:
+                            #SAD_Mapping["USAD_NA"]=USAD_Mapping["USAD_NA"]
+                            #USAD_Conversion_Dict["USAD_NA"]=USAD_Conversion_Dict["USAD_NA"].strip()
+                        
+                    
         elif "X" in TrackKey:
             list_of_values=[]
             for d in FirstPhaseList:
@@ -748,4 +769,6 @@ class RuleBasedAddressParser:
                      
         dic = {key:value for key,value in USAD_Conversion_Dict.items() if value != ''}
         return dic
+abc=RuleBasedAddressParser.AddressParser(["2169"," Green"," Hill"," Road", "Bentonville", "Arkansas","72712","John","Shark","Liverpool"])
+print (abc) 
         
