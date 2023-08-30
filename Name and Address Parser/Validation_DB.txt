@@ -1116,5 +1116,866 @@
                 "USAD_CTY"
             ]
         ]
+    },
+    {
+        "Unique_ID": "230d5d9fd6c62d1b5e6776752b3841b99b9943f9",
+        "Exception_file_name": "_MultiLine_ExceptionFile20_47_20.253334.json",
+        "Input": "43 STATE AVE ,NEW ALBANY, IN 47150",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NRF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-28 00:57:33.421879",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "43",
+                "USAD_SNO"
+            ],
+            [
+                "R",
+                "STATE",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "AVE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "NEW",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ALBANY",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "IN",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "47150",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "e514daaa9fb6094be012cf8f05b60836ec17f0d0",
+        "Exception_file_name": "Batch test 1 11_27_07.765601.json",
+        "Input": "6678 UNIVERSITY AVENUE ,SAN JUAN PR 00926",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NZF,WWFN",
+        "Approved By": "Committee Member_1 at 2023-08-30 11:40:27.580477",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "6678",
+                "USAD_SNO"
+            ],
+            [
+                "Z",
+                "UNIVERSITY",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "AVENUE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "SAN",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "JUAN",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "PR",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "00926",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "7ac863f9a2c2198f4674194805b4dc2afedc8fee",
+        "Exception_file_name": "Batch test 1 11_27_07.765601.json",
+        "Input": "109 MARKHAN ST, CORONA, NY 11368",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,W,TN",
+        "Approved By": "Committee Member_1 at 2023-08-30 11:42:59.553712",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "109",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "MARKHAN",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "CORONA",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "11368",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "1fb44ffb78971147ccd403943a167aa42fc9b703",
+        "Exception_file_name": "Batch test 1 11_27_07.765601.json",
+        "Input": "81 MCCAIN JOHN, CHICAGO IL 60629",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWW,WTN",
+        "Approved By": "Committee Member_1 at 2023-08-30 11:43:32.293598",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "81",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "MCCAIN",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "JOHN",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "CHICAGO",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "IL",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "60629",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "d86f680f40e30851e53c8c55765cca22c180e533",
+        "Exception_file_name": "Batch test 1 11_27_07.765601.json",
+        "Input": "8190 MARSH AVE THE VILLAGES FL 32162",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWFWFTN",
+        "Approved By": "Committee Member_1 at 2023-08-30 11:44:11.774842",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "8190",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "MARSH",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "AVE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "THE",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "VILLAGES",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "FL",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "32162",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "87c2766263502c539b98ac7b7672a20148ae89e9",
+        "Exception_file_name": "Batch test 1 11_27_07.765601.json",
+        "Input": "7966 BEACON ST,SUN PRAIRIE, WI,  53590",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,WF,T,N",
+        "Approved By": "Committee Member_2 at 2023-08-30 11:44:39.108370",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "7966",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "BEACON",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "SUN",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "PRAIRIE",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "WI",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "53590",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "672817894ea5177b01f8de677f5dfdb4fd82e49a",
+        "Exception_file_name": "Batch test 1 11_42_26.314720.json",
+        "Input": "815 MARVON ST SOUTH, OZONE PARK, NY 11420",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWFD,WF,TN",
+        "Approved By": "Committee Member_1 at 2023-08-30 11:46:31.790991",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "815",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "MARVON",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_SFX"
+            ],
+            [
+                "D",
+                "SOUTH",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "OZONE",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "11420",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "e514daaa9fb6094be012cf8f05b60836ec17f0d0",
+        "Exception_file_name": "Batch test 1 11_42_26.314720.json",
+        "Input": "6678 UNIVERSITY AVENUE ,SAN JUAN PR 00926",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NZF,WWFN",
+        "Approved By": "Committee Member_1 at 2023-08-30 11:47:09.368123",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "6678",
+                "USAD_SNO"
+            ],
+            [
+                "Z",
+                "UNIVERSITY",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "AVENUE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "SAN",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "JUAN",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "PR",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "00926",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "230d5d9fd6c62d1b5e6776752b3841b99b9943f9",
+        "Exception_file_name": "a 11_42_26.314720_Forced_ExceptionFile.json",
+        "Input": "43 STATE AVE ,NEW ALBANY, IN 47150",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NRF,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-08-30 11:49:27.345690",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "43",
+                "USAD_SNO"
+            ],
+            [
+                "R",
+                "STATE",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "AVE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "NEW",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ALBANY",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "IN",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "47150",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "230d5d9fd6c62d1b5e6776752b3841b99b9943f9",
+        "Exception_file_name": "a 11_42_26.314720_Forced_ExceptionFile.json",
+        "Input": "43 STATE AVE ,NEW ALBANY, IN 47150",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NRF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-30 11:51:24.197381",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "43",
+                "USAD_SNO"
+            ],
+            [
+                "R",
+                "STATE",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "AVE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "NEW",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ALBANY",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "IN",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "47150",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "230d5d9fd6c62d1b5e6776752b3841b99b9943f9",
+        "Exception_file_name": "GSP 11_42_26.314720_Forced_ExceptionFile.json",
+        "Input": "43 STATE AVE ,NEW ALBANY, IN 47150",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NRF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-30 11:53:33.089793",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "43",
+                "USAD_SNO"
+            ],
+            [
+                "R",
+                "STATE",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "AVE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "NEW",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ALBANY",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "IN",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "47150",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "230d5d9fd6c62d1b5e6776752b3841b99b9943f9",
+        "Exception_file_name": "fszd 12_18_51.382395_Forced_ExceptionFile.json",
+        "Input": "43 STATE AVE ,NEW ALBANY, IN 47150",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NRF,WW,TN",
+        "Approved By": "Committee Member_2 at 2023-08-30 12:24:35.012760",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "43",
+                "USAD_SNO"
+            ],
+            [
+                "R",
+                "STATE",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "AVE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "NEW",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ALBANY",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "IN",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "47150",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "230d5d9fd6c62d1b5e6776752b3841b99b9943f9",
+        "Exception_file_name": "fszd 12_18_51.382395_Forced_ExceptionFile.json",
+        "Input": "43 STATE AVE ,NEW ALBANY, IN 47150",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NRF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-30 12:26:09.178093",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "43",
+                "USAD_SNO"
+            ],
+            [
+                "R",
+                "STATE",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "AVE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "NEW",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ALBANY",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "IN",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "47150",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "230d5d9fd6c62d1b5e6776752b3841b99b9943f9",
+        "Exception_file_name": "jewgads 12_29_33.053187_Forced_ExceptionFile.json",
+        "Input": "43 STATE AVE ,NEW ALBANY, IN 47150",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NRF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-08-30 12:30:35.873291",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "43",
+                "USAD_SNO"
+            ],
+            [
+                "R",
+                "STATE",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "AVE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "NEW",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ALBANY",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "IN",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "47150",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "207c7555773e99ec72ce2a0918182a22dab48226",
+        "Exception_file_name": "dot file 14_10_34.996335.json",
+        "Input": "815 MARVON ST SOUTH OZONE PARK, NY 11420",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWFDWF,TN",
+        "Approved By": "Committee Member_2 at 2023-08-30 14:12:37.267745",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "815",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "MARVON",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_SFX"
+            ],
+            [
+                "D",
+                "SOUTH",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "OZONE",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "11420",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "207c7555773e99ec72ce2a0918182a22dab48226",
+        "Exception_file_name": "SAD 14_10_34.997374_Forced_ExceptionFile.json",
+        "Input": "815 MARVON ST SOUTH OZONE PARK, NY 11420",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWFDWF,TN",
+        "Approved By": "Committee Member_2 at 2023-08-30 14:14:22.536327",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "815",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "MARVON",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_SFX"
+            ],
+            [
+                "D",
+                "SOUTH",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "OZONE",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "11420",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "207c7555773e99ec72ce2a0918182a22dab48226",
+        "Exception_file_name": "hsa 14_10_34.997374_Forced_ExceptionFile.json",
+        "Input": "815 MARVON ST SOUTH OZONE PARK, NY 11420",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWFDWF,TN",
+        "Approved By": "Committee Member_2 at 2023-08-30 14:35:16.733040",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "815",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "MARVON",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_SFX"
+            ],
+            [
+                "D",
+                "SOUTH",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "OZONE",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "11420",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "207c7555773e99ec72ce2a0918182a22dab48226",
+        "Exception_file_name": "jad 14_10_34.997374_Forced_ExceptionFile.json",
+        "Input": "815 MARVON ST SOUTH OZONE PARK, NY 11420",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWFDWF,TN",
+        "Approved By": "Committee Member_1 at 2023-08-30 14:38:26.048917",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "815",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "MARVON",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_SFX"
+            ],
+            [
+                "D",
+                "SOUTH",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "OZONE",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "PARK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "11420",
+                "USAD_ZIP"
+            ]
+        ]
     }
 ]

@@ -55,18 +55,18 @@ class submission_form:
         ID = hashlib.sha1(Input_bytes)
         Unique_ID = ID.hexdigest()
         
-        for row in table_rows[0:]:
-            column1 = row[0].cget("text").strip()
-            column2 = row[1].cget("text").strip()
-            column3 = row[2].get()
+        # for row in table_rows[0:]:
+        #     column1 = row[0].cget("text").strip()
+        #     column2 = row[1].cget("text").strip()
+        #     column3 = row[2].get()
             
-            selected_key = next((key for key, val in dropdown_values.items() if val == column3), None)
+        #     selected_key = next((key for key, val in dropdown_values.items() if val == column3), None)
             
-            if selected_key is not None:
-                table_data.append((column1, column2, selected_key))
-            if not column3:
-                msg.showerror("Error", "One or More Components are missing!.")
-                return False
+        #     if selected_key is not None:
+        #         table_data.append((column1, column2, selected_key))
+        #     if not column3:
+        #         msg.showerror("Error", "One or More Components are missing!.")
+        #         return False
     
             
             
@@ -114,7 +114,18 @@ class submission_form:
 
         print("Approved?" , toggle_state.get())
         if toggle_state.get() == "Yes":
-            
+            for row in table_rows[0:]:
+                column1 = row[0].cget("text").strip()
+                column2 = row[1].cget("text").strip()
+                column3 = row[2].get()
+                
+                selected_key = next((key for key, val in dropdown_values.items() if val == column3), None)
+                
+                if selected_key is not None:
+                    table_data.append((column1, column2, selected_key))
+                if not column3:
+                    msg.showerror("Error", "One or More Components are missing!.")
+                    return False
             with open("Validation_DB.txt", 'r+') as file:
                 try:
                     existing_data = json.load(file)
@@ -230,8 +241,19 @@ class submission_form:
     
             print(Def_Dict)
             with open('KB_Test.json', 'r+', encoding='utf-8') as f:
-                data = json.load(f)          
-                data[pattern] = Def_Dict# <--- add `id` value.
+                data = json.load(f)
+                if pattern in data:
+                    result = messagebox.askyesno("MASK Found!", f"Mapping found for Token Pattern : {pattern} in Knowledge Base!\nDo you still want to Overwrite?")
+                    if result:
+                        for x in data:
+                            if x == pattern:
+                                data[x] = Def_Dict
+                        # data[pattern] = Def_Dict
+                    else:
+                        pass
+                else:
+                    data[pattern] = Def_Dict
+                    
                 f.seek(0)        # <--- should reset file position to the beginning.
                 json.dump(data, f)
                 f.truncate()# remove remaining part

@@ -1,0 +1,30 @@
+{
+    "Record ID": "Single Line Exception_File SJDS-->01",
+    "INPUT": "815 MARVON ST SOUTH OZONE PARK, NY 11420",
+    "NWFDWF,TN": [
+        {
+            "N": "815"
+        },
+        {
+            "W": "MARVON"
+        },
+        {
+            "F": "ST"
+        },
+        {
+            "D": "SOUTH"
+        },
+        {
+            "W": "OZONE"
+        },
+        {
+            "F": "PARK"
+        },
+        {
+            "T": "NY"
+        },
+        {
+            "N": "11420"
+        }
+    ]
+}

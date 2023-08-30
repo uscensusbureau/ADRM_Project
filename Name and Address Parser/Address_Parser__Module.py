@@ -15,6 +15,7 @@ import PreprocessingNameAddress as PreProc
 import sklearn
 from sklearn.metrics import multilabel_confusion_matrix,confusion_matrix,classification_report
 #Parsing 1st program
+import os
 import warnings
 warnings.filterwarnings("ignore")
 from datetime import datetime
@@ -32,6 +33,7 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
     Detailed_Report=""
     Mask_log={}
     Address_4CAF50=open(Address_4CAF50,"r",encoding='utf8')
+    file_name = os.path.splitext(os.path.basename(Address_4CAF50.name))[0]
     Lines = Address_4CAF50.readlines()
     fileHandle = open('USAddressWordTable.txt', 'r',encoding='utf8')
     # Strips the newline character
@@ -181,15 +183,26 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
                     for K3,V3 in FirstPhaseList[p-1].items():
                        Temp+=" "+V3
                        Temp=Temp.strip()
-                       Mappings[K2]=Temp
-         
+                       if K2 in Mappings:
+                           Mappings[K2].append([K3,Temp])
+                       else:
+                           Mappings[K2] = [[K3,Temp]]
+            
+            OutputEntry = {
+                "Record ID": ID,
+                "INPUT": Address,
+                str(Mask_1): Mappings
+            }
+            OutputList = []
+            OutputList.append(OutputEntry)
+            # print(OutputList)
             try:
                 Truth_Result[ID]=Mappings
-                Result[ID]=Mappings
+                Result[ID]=OutputList
                 dataFinal[Mask_1][ID] =Mappings # <--- add `id` value.
                 
             except: 
-                Result[ID]=Mappings
+                Result[ID]=OutputList
                 Truth_Result[ID]=Mappings
                 dataFinal[Mask_1]={}
                 dataFinal[Mask_1][ID]=Mappings
@@ -267,7 +280,8 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
     #                             y_predict.append(0)
     
     
-    Exception_file_name = "_MultiLine_ExceptionFile" + str(current_time) + ".json"
+    # Exception_file_name = "_MultiLine_ExceptionFile" + str(current_time) + ".json"
+    Exception_file_name = file_name +" "+ str(current_time) + ".json"
     Exception_file_name = re.sub(r'[^\w_. -]', '_', Exception_file_name)
     path = 'Exceptions/MultiLine Exceptions/' + Exception_file_name
     with open(path, 'w', encoding='utf-8') as g:
@@ -352,13 +366,13 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
         Detailed_Report+="\n\n Evaluation Metrics\n\n"
     
         Detailed_Report+=str(df_report)
-        f=open("Detailed_Report.txt","w",encoding="utf8")
-        f1=open("Root Cause Report.txt","w",encoding="utf8")
+        f=open(f"Detailed_Report {file_name}.txt","w",encoding="utf8")
+        f1=open(f"Root Cause Report {file_name}.txt","w",encoding="utf8")
         f1.write(FishBone)
         f1.close()
         f.write(Detailed_Report)
         f.close()
-        return (True,"Detailed_Report.txt and Root Cause Report.txt Generated")
+        return (True,f"Detailed_Report of {file_name} and Root Cause Report of {file_name} is Generated!")
     else:
         percentage = (Observation/Total)*100
         percentage = "%.2f"% percentage
@@ -377,13 +391,14 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
         Detailed_Report_1+="Number of Parsed Address: -\t"+str(Observation)+"\n"
         Detailed_Report_1+="Percentage of Parsed Result: -\t"+str(percentage)+"\n"
         # Detailed_Report_1+="List of Exception Mask(s): -\t\n\n"+Exception_Mask+"--"
-        Output_file_name = "Detailed_Report_" + str(current_time) + ".txt"
+        # Output_file_name = "Detailed_Report_" + str(current_time) + ".txt"
+        Output_file_name = "Detailed Report_"+file_name+".txt"
         Output_file_name = re.sub(r'[^\w_. -]', '_', Output_file_name)
         path = 'Output/Batch File Output/' + Output_file_name
         f=open(path,"w",encoding="utf8")
         f.write(Detailed_Report)
         f.close()
-        return (True,f"Detailed_Report.txt Generated \n{Detailed_Report_1}")
+        return (True,f"Detailed_Report of {file_name} Generated \n{Detailed_Report_1}")
 
     # print("Final Correct Address Parsing Percentage",Count_of_Correct/Total_Count*100)
     # print("Address Matching Report")

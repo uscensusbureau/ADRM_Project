@@ -1,0 +1,27 @@
+{
+    "Record ID": "Single Line Exception_File fszd-->01",
+    "INPUT": "43 State Ave ,New Albany, IN 47150",
+    "NRF,WW,TN": [
+        {
+            "N": "43"
+        },
+        {
+            "R": "STATE"
+        },
+        {
+            "F": "AVE"
+        },
+        {
+            "W": "NEW"
+        },
+        {
+            "W": "ALBANY"
+        },
+        {
+            "T": "IN"
+        },
+        {
+            "N": "47150"
+        }
+    ]
+}

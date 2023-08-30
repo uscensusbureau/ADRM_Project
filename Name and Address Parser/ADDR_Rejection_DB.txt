@@ -68,5 +68,26 @@
         "Token Pattern": "NZ,F,WW,FN",
         "Rejected By": "Committee Member_2 at 2023-08-27 17:48:18.773262",
         "Comment": ""
+    },
+    {
+        "Exception_file_name": "Batch test 1 11_27_07.765601.json",
+        "Input": "815 MARVON ST SOUTH, OZONE PARK, NY 11420",
+        "Token Pattern": "NWFD,WF,TN",
+        "Rejected By": "Committee Member_1 at 2023-08-30 11:27:41.833413",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "a 11_42_26.314720_Forced_ExceptionFile.json",
+        "Input": "43 STATE AVE ,NEW ALBANY, IN 47150",
+        "Token Pattern": "NRF,WW,TN",
+        "Rejected By": "Committee Member_1 at 2023-08-30 11:48:42.280150",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "dot file 14_10_34.996335.json",
+        "Input": "5506 A STREET 2551 AR 7225",
+        "Token Pattern": "NWFNTN",
+        "Rejected By": "Committee Member_2 at 2023-08-30 14:24:52.510712",
+        "Comment": ""
     }
 ]

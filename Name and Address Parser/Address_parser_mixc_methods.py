@@ -11,6 +11,8 @@ import tkinter as tk
 from tkinter import ttk,simpledialog,DISABLED
 import SingleAddressParser_Module as AD_API
 import textwrap
+import os
+import test_Main
 
 
 class Address_parser_misc():
@@ -26,6 +28,7 @@ class Address_parser_misc():
             msg.showinfo("Choose File","Select Truth File")
             
             truth = fd.askopenfilenames( filetypes=[("TXT", ".txt"),("JSON",".json")]) #this file is used to give UI for the user to open a file
+            
             if truth:
                 Output=AdM.Address_Parser(df[0],TruthSet=truth[0])
                 if Output[0]:
@@ -44,9 +47,10 @@ class Address_parser_misc():
     def Process_Address_Parser_Single_input(self):
         msg.showinfo("Choose File","Select Input File in Pipe Delimited Format \n For Example: 1 | 'Your Address Here'")
 
-        df = fd.askopenfilenames(filetypes=[("TXT", ".txt"),("JSON",".json")]) 
+        df = fd.askopenfilenames(filetypes=[("TXT", ".txt"),("JSON",".json")],initialdir = "Test Data") 
         if df:
             Output=AdM.Address_Parser(df[0])
+            
             if Output[0]:
                 msg.showinfo("Success",Output[1])
             else:
