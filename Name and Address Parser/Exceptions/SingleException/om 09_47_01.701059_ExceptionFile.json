@@ -1,0 +1,65 @@
+[
+    {
+        "Record ID": "Single Line Exception_File om-->01",
+        "INPUT": "California Institute of Technology Division of Engineering and Applied Science, 1200 East California Boulevard, Room 301, Pasadena, CA 91125-3200",
+        "TWWWWWWWWW,NDTF,WN,W,TN": [
+            {
+                "T": "CALIFORNIA"
+            },
+            {
+                "W": "INSTITUTE"
+            },
+            {
+                "W": "OF"
+            },
+            {
+                "W": "TECHNOLOGY"
+            },
+            {
+                "W": "DIVISION"
+            },
+            {
+                "W": "OF"
+            },
+            {
+                "W": "ENGINEERING"
+            },
+            {
+                "W": "AND"
+            },
+            {
+                "W": "APPLIED"
+            },
+            {
+                "W": "SCIENCE"
+            },
+            {
+                "N": "1200"
+            },
+            {
+                "D": "EAST"
+            },
+            {
+                "T": "CALIFORNIA"
+            },
+            {
+                "F": "BOULEVARD"
+            },
+            {
+                "W": "ROOM"
+            },
+            {
+                "N": "301"
+            },
+            {
+                "W": "PASADENA"
+            },
+            {
+                "T": "CA"
+            },
+            {
+                "N": "91125-3200"
+            }
+        ]
+    }
+]

@@ -203,7 +203,7 @@ class submission_form:
 
             # Create the form elements with custom styling
             Validation_DB_Label = ttk.Label(
-                form_frame, text="Add to DataBase Validation and Knowledge Base?", font=("Arial", 12))
+                form_frame, text="Add to DB and KB?", font=("Arial", 12))
             Validation_DB_Label.grid(row=7, column=0, sticky=tk.W, pady=5)
             toggle_dropdown = ttk.Combobox(form_frame, textvariable=toggle_state, values=[
                                            "", "Yes", "No"], font=("Arial", 12), width=40, state="readonly")
@@ -334,10 +334,14 @@ class submission_form:
 
             scrollbar = ttk.Scrollbar(
                 table_frame, orient=tk.VERTICAL, command=canvas.yview)
-            scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+           # scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+           
             # canvas.update_idletasks()
             canvas.configure(yscrollcommand=scrollbar.set)
-            table_frame.configure(scrollregion=canvas.bbox("all"))
+            def on_canvas_configure(event):
+                table_frame.configure(scrollregion=canvas.bbox("all"))
+            canvas.bind("<Configure>",on_canvas_configure)
+            scrollbar.grid(column=5,row=5,sticky="ns")
 
             def on_window_resize(event):
                 canvas.update_idletasks()

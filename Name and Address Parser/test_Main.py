@@ -36,7 +36,8 @@ class NAP_GUIBuilder(tk.Tk):
         
         super().__init__()
         self.title("Parser - "+ str(date.today()))
-        # self.geometry("1280x720")
+        #self.geometry("1024x768")
+        #self.attributes("-fullscreen",True)
         self.NAP_GUIBuilder_CreateTabs()
         screen_width = self.winfo_screenwidth()
         
@@ -161,18 +162,33 @@ class NAP_GUIBuilder(tk.Tk):
         label3.pack_forget()
         
         
-        form_frame = ttk.Frame(self.tab4,width=360,height=800)
-        form_frame.pack(side=tk.RIGHT,fill=tk.BOTH,padx=100, pady=30)
-        # form_frame.place(x=900,y=10)
+        form_frame = ttk.Frame(self.tab4,width=50,height=600)
+        form_frame.pack(side=tk.RIGHT,fill=tk.BOTH,padx=0, pady=30)
+        form_frame.place(x=650,y=40)
         
         table_frame = ttk.Frame(self.tab4)
 
-        table_frame.pack(side=tk.LEFT,pady=50,padx=0)
+        table_frame.pack(side=tk.LEFT,pady=0,padx=5)
         table_frame.place(x=30,y=90)
+        #table_frame.grid(column=1,row=1)
         table_frame.configure(height=550)
-        canvas = tk.Canvas(table_frame,width=580,height=420)
-        canvas.pack(side=tk.LEFT,fill=tk.BOTH,expand=True)
         
+        canvas = tk.Canvas(table_frame,width=580,height=420)
+        canvas.grid(column=3,row=5)
+        #canvas.pack(side=tk.LEFT,expand=True,padx=10,pady=10)
+        
+        
+        # form_frame = ttk.Frame(self.tab4,width=360,height=800)
+        # form_frame.pack(side=tk.RIGHT,padx=10, pady=10)
+
+ 
+
+        
+        # table_frame = ttk.Frame(self.tab4)
+        # table_frame.pack(pady=60)
+
+        # canvas = tk.Canvas(table_frame,width=580,height=600)
+        # canvas.pack(side=tk.LEFT)
         
         def DateTime():
             # Get the current date and time

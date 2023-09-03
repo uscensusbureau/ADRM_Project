@@ -64,7 +64,7 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
   "USAD_HNO": 20
 }
     data={}
-    with open('KB_Test.json', 'r+', encoding='utf8') as f:
+    with open('JSONMappingDefault.json', 'r+', encoding='utf8') as f:
         data = json.load(f)
     USAD_CONVERSION_={
         
