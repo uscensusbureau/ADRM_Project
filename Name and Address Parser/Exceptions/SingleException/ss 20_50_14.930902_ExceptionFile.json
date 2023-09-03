@@ -1,0 +1,29 @@
+[
+    {
+        "Record ID": "Single Line Exception_File ss-->01",
+        "INPUT": "w ili teka rd, portsmouth, RI 2911",
+        "DWWF,W,TN": [
+            {
+                "D": "W"
+            },
+            {
+                "W": "ILI"
+            },
+            {
+                "W": "TEKA"
+            },
+            {
+                "F": "RD"
+            },
+            {
+                "W": "PORTSMOUTH"
+            },
+            {
+                "T": "RI"
+            },
+            {
+                "N": "2911"
+            }
+        ]
+    }
+]
