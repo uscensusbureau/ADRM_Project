@@ -1,0 +1,53 @@
+[
+    {
+        "Record ID": "Single Line Exception_File dd-->01",
+        "INPUT": "1701 westpark drive apt 110, little rock, ar 72204",
+        "NWFSN,WW,TN": [
+            [
+                "1701",
+                "USAD_SNO",
+                "N"
+            ],
+            [
+                "WESTPARK",
+                "USAD_SNM",
+                "W"
+            ],
+            [
+                "DRIVE",
+                "USAD_SFX",
+                "F"
+            ],
+            [
+                "APT",
+                "USAD_ANM",
+                "S"
+            ],
+            [
+                "110",
+                "USAD_ANO",
+                "N"
+            ],
+            [
+                "LITTLE",
+                "USAD_CTY",
+                "W"
+            ],
+            [
+                "ROCK",
+                "USAD_CTY",
+                "W"
+            ],
+            [
+                "AR",
+                "USAD_STA",
+                "T"
+            ],
+            [
+                "72204",
+                "USAD_ZIP",
+                "N"
+            ]
+        ]
+    }
+]

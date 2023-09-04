@@ -1,0 +1,254 @@
+Exception and Mask Report
+
+
+Number of Exceptions Thrown: -	6
+Number of Parsed Address: -	1
+Percentage of Parsed Result: -	14.29
+Output From Active Learning
+
+{
+    "1": [
+        {
+            "Record ID": "1",
+            "INPUT": "43 State Ave ,New Albany, IN 47150",
+            "NRF,WW,TN": {
+                "USAD_SNO": [
+                    [
+                        "N",
+                        "43"
+                    ]
+                ],
+                "USAD_SFX": [
+                    [
+                        "R",
+                        "STATE"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "F",
+                        "AVE"
+                    ],
+                    [
+                        "W",
+                        "AVE NEW"
+                    ]
+                ],
+                "USAD_STA": [
+                    [
+                        "W",
+                        "ALBANY"
+                    ]
+                ],
+                "USAD_ZIP": [
+                    [
+                        "T",
+                        "IN"
+                    ]
+                ]
+            }
+        }
+    ]
+}
+
+Output Fron Rule Based Approach
+
+{
+    "2": [
+        [
+            "815",
+            "USAD_SNO",
+            "N"
+        ],
+        [
+            "MARVON",
+            "USAD_SNM",
+            "W"
+        ],
+        [
+            "ST",
+            "USAD_SFX",
+            "F"
+        ],
+        [
+            "SOUTH",
+            "USAD_SPT",
+            "D"
+        ],
+        [
+            "OZONE",
+            "USAD_CTY",
+            "W"
+        ],
+        [
+            "NY",
+            "USAD_STA",
+            "T"
+        ],
+        [
+            "11420",
+            "USAD_ZIP",
+            "N"
+        ]
+    ],
+    "3": [
+        [
+            "6678",
+            "USAD_SNO",
+            "N"
+        ],
+        [
+            "UNIVERSITY",
+            "USAD_SFX",
+            "Z"
+        ],
+        [
+            "SAN",
+            "USAD_CTY",
+            "W"
+        ],
+        [
+            "JUAN",
+            "USAD_CTY",
+            "W"
+        ],
+        [
+            "PR",
+            "USAD_NA",
+            "F"
+        ],
+        [
+            "00926",
+            "USAD_NA",
+            "N"
+        ]
+    ],
+    "4": [
+        [
+            "109",
+            "USAD_SNO",
+            "N"
+        ],
+        [
+            "MARKHAN",
+            "USAD_SNM",
+            "W"
+        ],
+        [
+            "ST",
+            "USAD_SFX",
+            "F"
+        ],
+        [
+            "CORONA",
+            "USAD_CTY",
+            "W"
+        ],
+        [
+            "NY",
+            "USAD_STA",
+            "T"
+        ],
+        [
+            "11368",
+            "USAD_ZIP",
+            "N"
+        ]
+    ],
+    "5": [
+        [
+            "81",
+            "USAD_SNO",
+            "N"
+        ],
+        [
+            "MCCAIN",
+            "USAD_SNM",
+            "W"
+        ],
+        [
+            "JOHN",
+            "USAD_SFX",
+            "W"
+        ],
+        [
+            "CHICAGO",
+            "USAD_CTY",
+            "W"
+        ],
+        [
+            "IL",
+            "USAD_STA",
+            "T"
+        ],
+        [
+            "60629",
+            "USAD_ZIP",
+            "N"
+        ]
+    ],
+    "6": [
+        [
+            "8190",
+            "USAD_SNO",
+            "N"
+        ],
+        [
+            "MARSH",
+            "USAD_SNM",
+            "W"
+        ],
+        [
+            "AVE",
+            "USAD_SFX",
+            "F"
+        ],
+        [
+            "THE",
+            "USAD_CTY",
+            "W"
+        ],
+        [
+            "FL",
+            "USAD_STA",
+            "T"
+        ],
+        [
+            "32162",
+            "USAD_ZIP",
+            "N"
+        ]
+    ],
+    "7": [
+        [
+            "7966",
+            "USAD_SNO",
+            "N"
+        ],
+        [
+            "BEACON",
+            "USAD_SNM",
+            "W"
+        ],
+        [
+            "ST",
+            "USAD_SFX",
+            "F"
+        ],
+        [
+            "SUN",
+            "USAD_CTY",
+            "W"
+        ],
+        [
+            "WI",
+            "USAD_STA",
+            "T"
+        ],
+        [
+            "53590",
+            "USAD_ZIP",
+            "N"
+        ]
+    ]
+}

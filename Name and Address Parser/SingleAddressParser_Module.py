@@ -14,6 +14,7 @@ import json
 #Parsing 1st program
 # import re
 import os.path
+import Rulebased as rulebased
 
 
 from datetime import datetime,timedelta
@@ -59,7 +60,7 @@ def throwException(originalInput,initials):
 def Address_Parser(line,initials,originalInput):
     global Result, Exception_file_name, FirstPhaseList, Mask_1
     Result={}
-    
+    Exception_=False
     Exception_file_name=""
     fileHandle = open('USAddressWordTable.txt', 'r',encoding="utf8")
     # Strips the newline character
@@ -187,11 +188,15 @@ def Address_Parser(line,initials,originalInput):
             g.truncate
         
     else:
+        Exception_=True
+        rules=rulebased.RuleBasedAddressParser.AddressParser(AddressList)
         ExceptionDict = {
             "Record ID": ID,
             "INPUT": originalInput,
-            str(Mask_1): FirstPhaseList
+            str(Mask_1): rules
         }
+        Result["Input"]=originalInput
+        Result["Output"]=rules
         # ExceptionList.append(ExceptionDict)
         # oldExceptionList = ExceptionList.append(ExceptionDict)
         
@@ -221,8 +226,8 @@ def Address_Parser(line,initials,originalInput):
         
         
     Total+=1
-    print(Result)
-    return (Result, Mask_1,Exception_file_name, throwException)
+   
+    return (Result, Mask_1,Exception_file_name, throwException,Exception_)
 # print("Final Correct Address Parsing Percentage",Count_of_Correct/Total_Count*100)
 # print("Address Matching Report")
 # print("Total=",Count)

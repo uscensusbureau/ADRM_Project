@@ -99,8 +99,9 @@ class Address_parser_misc():
         Convert=AD_API.Address_Parser(single_input.get("1.0","end-1c"),initial,originalInput=single_input.get("1.0","end-1c"))
         
         Result=Convert[0]
-        
-        if Result:
+       
+        if not Convert[4]:
+            print("KKKKK")
             checkbox_var = tk.IntVar()
 
             # Create the checkbox
@@ -110,21 +111,42 @@ class Address_parser_misc():
             # Create the submit button
             submit_button = ttk.Button(tab2, text="Submit", command=submit)
             submit_button.grid(row=61, column =5 , padx=10, pady=10)
+            
+            try:  
+                
+                for item in tree.get_children():
+                    tree.delete(item)
+                tree.insert('','end',values=(self.wrap('Mask'),self.wrap(Convert[1]),"","",""))
+                for m in Result["Output"]:  
+                    tree.insert('', 'end', values=(self.wrap(m[1]),self.wrap(m[2]),self.wrap(m[0])))
+                
+            except:
+               
+                for item in tree.get_children():
+                    tree.delete(item)
+                tree.insert('','end',values=("","",Convert[1],Convert[2]))
+            
         
-        try:  
-            
-            for item in tree.get_children():
-                tree.delete(item)
-            tree.insert('','end',values=(self.wrap('Mask'),self.wrap(Convert[1]),"","",""))
-            for m in Result["Output"]:  
-                tree.insert('', 'end', values=(self.wrap(m[1]),self.wrap(m[2]),self.wrap(m[0])))
-            
-        except:
-           
-            for item in tree.get_children():
-                tree.delete(item)
-            tree.insert('','end',values=("","",Convert[1],Convert[2]))
+        elif Convert[4]:
+            print("I am printer")
+            checkbox_var = tk.IntVar()
 
+            # Create the checkbox
+            checkbox = ttk.Checkbutton(tab2, text="Forced Exception", variable=checkbox_var)
+            checkbox.grid(row=60, column=5, padx=10, pady=10)
+
+            # Create the submit button
+            submit_button = ttk.Button(tab2, text="Submit", command=submit)
+            submit_button.grid(row=61, column =5 , padx=10, pady=10)
+            
+        
+            for item in tree.get_children():
+                tree.delete(item)
+            tree.insert('','end',values=(self.wrap('Mask'),self.wrap(Convert[1]),"",Convert[1],Convert[2]))
+            for m in Result["Output"]:  
+                tree.insert('', 'end', values=(self.wrap(m[2]),self.wrap(m[0]),self.wrap(m[1])))
+            
+        
 
         
         
