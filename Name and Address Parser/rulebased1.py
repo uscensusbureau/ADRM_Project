@@ -96,8 +96,12 @@ class RuleBasedAddressParser:
                             USAD_Conversion_Dict["USAD_SNO"]+=" "+Value.strip()
                             Final_Map.append([Value.strip(),"USAD_SNO",Key])
                             Counts+=1
-                        if TrackKey[j+1]!="N":
-                            USAD_Mapping["USAD_SNO"]=USAD_Mapping["USAD_SNO"]
+                        try:
+                            if TrackKey[j+1]!="N":
+                                USAD_Mapping["USAD_SNO"]=USAD_Mapping["USAD_SNO"]
+                                USAD_Conversion_Dict["USAD_SNO"]=USAD_Conversion_Dict["USAD_SNO"].strip()
+                            break
+                        except:
                             USAD_Conversion_Dict["USAD_SNO"]=USAD_Conversion_Dict["USAD_SNO"].strip()
                             break
                         
@@ -115,8 +119,15 @@ class RuleBasedAddressParser:
                             USAD_Conversion_Dict["USAD_SPR"]+=" "+Value.strip()
                             Counts+=1
                             Final_Map.append([Value.strip(),"USAD_SPR",Key])
-                        if TrackKey[j+1]!="D":
-                            USAD_Mapping["USAD_SPR"]=USAD_Mapping["USAD_SPR"]
+                    
+                        
+                        
+                        try:
+                            if TrackKey[j+1]!="N":
+                                USAD_Mapping["USAD_SPR"]=USAD_Mapping["USAD_SPR"]
+                                USAD_Conversion_Dict["USAD_SPR"]=USAD_Conversion_Dict["USAD_SPR"].strip()
+                            break
+                        except:
                             USAD_Conversion_Dict["USAD_SPR"]=USAD_Conversion_Dict["USAD_SPR"].strip()
                             break
     
@@ -388,6 +399,8 @@ class RuleBasedAddressParser:
                             USAD_Conversion_Dict["USAD_BNM"]+=Value.strip()+" "
                             Counts+=1
                             Final_Map.append([Value.strip(),"USAD_BNM",Key])
+                            
+                        
             
                 
                     for j in range(Counts,len(TrackKey)):
@@ -913,7 +926,7 @@ class RuleBasedAddressParser:
                      
         dic = {key:value for key,value in USAD_Conversion_Dict.items() if value != ''}
         return Final_Map
-abc=RuleBasedAddressParser.AddressParser(["Onais"])
+abc=RuleBasedAddressParser.AddressParser([""])
 print (abc) 
 
         

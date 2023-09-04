@@ -1,0 +1,58 @@
+[
+    {
+        "Record ID": "Single Line Exception_File zzzzz-->01",
+        "INPUT": "1701 Westpark dr, little rock ar 65656 Kashif Onais 9991",
+        "NWF,WWTNWWN": [
+            [
+                "1701",
+                "USAD_SNO",
+                "N"
+            ],
+            [
+                "WESTPARK",
+                "USAD_SNM",
+                "W"
+            ],
+            [
+                "DR",
+                "USAD_SFX",
+                "F"
+            ],
+            [
+                "LITTLE",
+                "USAD_CTY",
+                "W"
+            ],
+            [
+                "ROCK",
+                "USAD_CTY",
+                "W"
+            ],
+            [
+                "AR",
+                "USAD_STA",
+                "T"
+            ],
+            [
+                "65656",
+                "USAD_ZIP",
+                "N"
+            ],
+            [
+                "KASHIF",
+                "USAD_NA",
+                "W"
+            ],
+            [
+                "ONAIS",
+                "USAD_NA",
+                "W"
+            ],
+            [
+                "9991",
+                "USAD_NA",
+                "N"
+            ]
+        ]
+    }
+]
