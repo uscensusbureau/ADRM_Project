@@ -1977,5 +1977,178 @@
                 "USAD_ZIP"
             ]
         ]
+    },
+    {
+        "Unique_ID": "fe0806b84d584d5e707d80de7cdeeb71c5539c41",
+        "Exception_file_name": "10k records 10_17_31.861415.json",
+        "Input": "1254 RODNEY STREET, CHESTER,FIELD-MISSOURI 63005",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,W,WN",
+        "Approved By": "Committee Member_1 at 2023-09-03 10:49:21.847316",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1254",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "RODNEY",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "CHESTER",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "FIELD-MISSOURI",
+                "USAD_CTY"
+            ],
+            [
+                "N",
+                "63005",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "fe0806b84d584d5e707d80de7cdeeb71c5539c41",
+        "Exception_file_name": "10k records 10_17_31.861415.json",
+        "Input": "1254 RODNEY STREET, CHESTER,FIELD-MISSOURI 63005",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,W,WN",
+        "Approved By": "Committee Member_1 at 2023-09-03 10:54:18.981692",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1254",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "RODNEY",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "CHESTER",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "FIELD-MISSOURI",
+                "USAD_CTY"
+            ],
+            [
+                "N",
+                "63005",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "230d5d9fd6c62d1b5e6776752b3841b99b9943f9",
+        "Exception_file_name": "Individual Address1_Input_File 10_57_29.741244.json",
+        "Input": "43 STATE AVE ,NEW ALBANY, IN 47150",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NRF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-09-03 10:58:49.741462",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "43",
+                "USAD_SNO"
+            ],
+            [
+                "R",
+                "STATE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "NEW",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ALBANY",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "IN",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "47150",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "207c7555773e99ec72ce2a0918182a22dab48226",
+        "Exception_file_name": "Individual Address1_Input_File 10_57_29.741244.json",
+        "Input": "815 MARVON ST SOUTH OZONE PARK, NY 11420",
+        "Region": "US",
+        "Type": "Highway Contract Address",
+        "Token Pattern": "NWFDWF,TN",
+        "Approved By": "Committee Member_1 at 2023-09-03 10:59:23.291626",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "815",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "MARVON",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "ST",
+                "USAD_SFX"
+            ],
+            [
+                "D",
+                "SOUTH",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "OZONE",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "11420",
+                "USAD_ZIP"
+            ]
+        ]
     }
 ]

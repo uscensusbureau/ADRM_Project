@@ -221,7 +221,7 @@ class submission_form:
             print(rejection_data)
                 # msg.showinfo("Info", "Address is not Approved")#\nPlease Select a New Exception File")
         print("Table Data:")
-        
+        print(table_data)
         for data in table_data:
             print(data)
       

@@ -64,7 +64,7 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
   "USAD_HNO": 20
 }
     data={}
-    with open('JSONMappingDefault.json', 'r+', encoding='utf8') as f:
+    with open('KB_Test.json', 'r+', encoding='utf8') as f:
         data = json.load(f)
     USAD_CONVERSION_={
         
@@ -211,11 +211,11 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
             
         elif not FoundExcept:  
             # ExceptionList.append(ExceptionDict)
-            
+            rules=RuleBased.RuleBasedAddressParser.AddressParser(AddressList)
             ExceptionEntry = {
                 "Record ID": ID,
                 "INPUT": Address,
-                str(Mask_1): FirstPhaseList
+                str(Mask_1): rules
             }
             ExceptionList.append(ExceptionEntry)
             

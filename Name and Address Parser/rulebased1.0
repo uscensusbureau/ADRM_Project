@@ -813,7 +813,7 @@ class RuleBasedAddressParser:
                      
         dic = {key:value for key,value in USAD_Conversion_Dict.items() if value != ''}
         return dic
-abc=RuleBasedAddressParser.AddressParser(['W', 'ILI', 'TEKA', 'RD', 'PORTSMOUTH', 'RI', '2911','kashif','447585','onais','shark','freedom','77855','ghost','westin','cubic','atlas'])
+abc=RuleBasedAddressParser.AddressParser(['PO', 'BOX', '1599', 'Woonsocket', 'RI', '02895'])
 print (abc) 
 'W', 'ILI', 'TEKA', 'RD', 'PORTSMOUTH', 'RI', '2911','kashif','447585','onais','shark','freedom','77855','ghost','westin','cubic','atlas'
         

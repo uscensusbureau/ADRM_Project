@@ -231,7 +231,7 @@ class submission_form:
             Comment_entry.configure(background="#ffffff", foreground="#000000")
 
             dropdown_values = {
-                "Not Selected": "",
+                
                 "USAD_SNO": "Street Number",
                 "USAD_SPR": "Street Pre-Directional",
                 "USAD_SNM": "Street Name",
@@ -251,15 +251,15 @@ class submission_form:
                 "USAD_MDG": "Military Rd Name",
                 "USAD_MGN": "Military Rd Number",
                 "USAD_HNM": "Highway Name",
-                "USAD_HNO": "Highway Number"}
+                "USAD_HNO": "Highway Number", "USAD_NA":"Not Selected"}
 
             def add_table_row(m):
                 global Stat
                 # Add a new row to the table
                 row = []
-
+                
                 # Create the text widgets for the first two columns with scrollbars
-
+                print(m)
                 def on_select(event):
                     selected_value = dropdown_var.get()
                     selected_key = next(
@@ -271,7 +271,7 @@ class submission_form:
                     # You can perform actions based on the selected key here
 
                 text1 = tk.Label(table_inner_frame, height=1,
-                                 width=20, text=m[0])
+                                 width=20, text=m[2])
                 text1.configure(font=("Arial", 12), fg="#000000",
                                 background="#ffffff", relief=tk.SUNKEN)
                 text1.grid(row=len(table_rows) + 1, column=0,
@@ -279,7 +279,7 @@ class submission_form:
                 row.append(text1)
 
                 text2 = tk.Label(table_inner_frame, height=1,
-                                 width=20, text=m[1])
+                                 width=20, text=m[0])
                 text2.configure(font=("Arial", 12), fg="#000000",
                                 background="#ffffff", relief=tk.SUNKEN)
                 text2.grid(row=len(table_rows) + 1, column=1,
@@ -289,9 +289,17 @@ class submission_form:
                 # Create the dropdown for the last column
                 dropdown_var = tk.StringVar(tab4)
                 dropdown_var.set(list(dropdown_values.values())[0])
-                dropdown = ttk.Combobox(table_inner_frame, textvariable=dropdown_var, values=list(
-                    dropdown_values.values()), width=18, height=2, font=("Arial", 12), state="readonly")
-                dropdown.bind("<<ComboboxSelected>>", on_select)
+                
+                selected_item=dropdown_values[m[1]]
+                list_of_val=list(dropdown_values.values())
+                
+                list_of_val.insert(0,selected_item)
+                list_of_val=list(set(list_of_val))
+                print(selected_item)
+                
+                dropdown = ttk.Combobox(table_inner_frame,textvariable=dropdown_var, values=list_of_val, width=18, height=2, font=("Arial", 12), state="readonly")
+                #dropdown.bind("<<ComboboxSelected>>", on_select)
+                dropdown.set(selected_item)
                 # dropdown.pack()
                 dropdown.configure(postcommand=lambda: dropdown.configure(
                     height=dropdown_var), justify="center")
@@ -352,11 +360,13 @@ class submission_form:
             table_inner_frame.pack(fill=tk.BOTH, expand=True)
             canvas_config = canvas.create_window(
                 (0, 0), window=table_inner_frame, anchor=tk.NW)
-
+            
             for key, value in Stat.items():
                 for m in value:
-                    m = list(m.items())
-                    add_table_row(m[0])
+                    
+                
+                    add_table_row(m)
+                    
 
             if len(RevisedJSON) > 1:
 
