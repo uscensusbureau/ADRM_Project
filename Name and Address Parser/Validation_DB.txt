@@ -2150,5 +2150,89 @@
                 "USAD_ZIP"
             ]
         ]
+    },
+    {
+        "Unique_ID": "704e15cb8f1cede29cd2036143a5caf64cc9c865",
+        "Exception_file_name": "Individual Address1_Input_File 02_20_15.389657.json",
+        "Input": "6678 UNIVERSITY AVENUE ,SAN JUAN,PR 00926",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NZF,WW,FN",
+        "Approved By": "Committee Member_1 at 2023-09-04 02:33:51.131540",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "6678",
+                "USAD_SNO"
+            ],
+            [
+                "Z",
+                "UNIVERSITY",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "SAN",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "JUAN",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "PR",
+                "USAD_NA"
+            ],
+            [
+                "N",
+                "00926",
+                "USAD_NA"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "6f49e8fd43419deaa7b404a4db293623bb8b4862",
+        "Exception_file_name": "Individual Address1_Input_File 02_20_15.389657.json",
+        "Input": "81 MCCAIN RD ,CHICAGO , IL 60629",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,W,TN",
+        "Approved By": "Committee Member_2 at 2023-09-04 02:34:26.276838",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "81",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "MCCAIN",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "RD",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "CHICAGO",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "IL",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "60629",
+                "USAD_ZIP"
+            ]
+        ]
     }
 ]

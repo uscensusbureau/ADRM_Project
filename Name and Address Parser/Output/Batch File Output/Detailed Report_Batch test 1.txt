@@ -1,9 +1,9 @@
 Exception and Mask Report
 
 
-Number of Exceptions Thrown: -	6
-Number of Parsed Address: -	1
-Percentage of Parsed Result: -	14.29
+Number of Exceptions Thrown: -	5
+Number of Parsed Address: -	2
+Percentage of Parsed Result: -	28.57
 Output From Active Learning
 
 {
@@ -48,6 +48,50 @@ Output From Active Learning
                 ]
             }
         }
+    ],
+    "4": [
+        {
+            "Record ID": "4",
+            "INPUT": "109 Markhan St, Corona, NY 11368",
+            "NWF,W,TN": {
+                "USAD_SNO": [
+                    [
+                        "N",
+                        "109"
+                    ]
+                ],
+                "USAD_SNM": [
+                    [
+                        "W",
+                        "MARKHAN"
+                    ]
+                ],
+                "USAD_SFX": [
+                    [
+                        "F",
+                        "ST"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "W",
+                        "CORONA"
+                    ]
+                ],
+                "USAD_STA": [
+                    [
+                        "T",
+                        "NY"
+                    ]
+                ],
+                "USAD_ZIP": [
+                    [
+                        "N",
+                        "11368"
+                    ]
+                ]
+            }
+        }
     ]
 }
 
@@ -56,60 +100,30 @@ Output Fron Rule Based Approach
 {
     "2": [
         [
-            "815",
-            "USAD_SNO",
-            "N"
-        ],
-        [
-            "MARVON",
-            "USAD_SNM",
-            "W"
-        ],
-        [
-            "ST",
+            "PARK",
             "USAD_SFX",
             "F"
-        ],
-        [
-            "SOUTH",
-            "USAD_SPT",
-            "D"
-        ],
-        [
-            "OZONE",
-            "USAD_CTY",
-            "W"
-        ],
-        [
-            "NY",
-            "USAD_STA",
-            "T"
-        ],
-        [
-            "11420",
-            "USAD_ZIP",
-            "N"
         ]
     ],
     "3": [
         [
-            "6678",
-            "USAD_SNO",
-            "N"
-        ],
-        [
             "UNIVERSITY",
-            "USAD_SFX",
+            "USAD_NA",
             "Z"
         ],
         [
+            "AVENUE",
+            "USAD_NA",
+            "F"
+        ],
+        [
             "SAN",
-            "USAD_CTY",
+            "USAD_NA",
             "W"
         ],
         [
             "JUAN",
-            "USAD_CTY",
+            "USAD_NA",
             "W"
         ],
         [
@@ -123,132 +137,19 @@ Output Fron Rule Based Approach
             "N"
         ]
     ],
-    "4": [
-        [
-            "109",
-            "USAD_SNO",
-            "N"
-        ],
-        [
-            "MARKHAN",
-            "USAD_SNM",
-            "W"
-        ],
-        [
-            "ST",
-            "USAD_SFX",
-            "F"
-        ],
-        [
-            "CORONA",
-            "USAD_CTY",
-            "W"
-        ],
-        [
-            "NY",
-            "USAD_STA",
-            "T"
-        ],
-        [
-            "11368",
-            "USAD_ZIP",
-            "N"
-        ]
-    ],
-    "5": [
-        [
-            "81",
-            "USAD_SNO",
-            "N"
-        ],
-        [
-            "MCCAIN",
-            "USAD_SNM",
-            "W"
-        ],
-        [
-            "JOHN",
-            "USAD_SFX",
-            "W"
-        ],
-        [
-            "CHICAGO",
-            "USAD_CTY",
-            "W"
-        ],
-        [
-            "IL",
-            "USAD_STA",
-            "T"
-        ],
-        [
-            "60629",
-            "USAD_ZIP",
-            "N"
-        ]
-    ],
+    "5": [],
     "6": [
         [
-            "8190",
-            "USAD_SNO",
-            "N"
-        ],
-        [
-            "MARSH",
-            "USAD_SNM",
-            "W"
-        ],
-        [
-            "AVE",
+            "VILLAGES",
             "USAD_SFX",
             "F"
-        ],
-        [
-            "THE",
-            "USAD_CTY",
-            "W"
-        ],
-        [
-            "FL",
-            "USAD_STA",
-            "T"
-        ],
-        [
-            "32162",
-            "USAD_ZIP",
-            "N"
         ]
     ],
     "7": [
         [
-            "7966",
-            "USAD_SNO",
-            "N"
-        ],
-        [
-            "BEACON",
-            "USAD_SNM",
-            "W"
-        ],
-        [
-            "ST",
+            "PRAIRIE",
             "USAD_SFX",
             "F"
-        ],
-        [
-            "SUN",
-            "USAD_CTY",
-            "W"
-        ],
-        [
-            "WI",
-            "USAD_STA",
-            "T"
-        ],
-        [
-            "53590",
-            "USAD_ZIP",
-            "N"
         ]
     ]
 }

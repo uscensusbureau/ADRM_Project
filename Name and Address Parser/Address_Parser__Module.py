@@ -211,6 +211,8 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
             
         elif not FoundExcept:  
             # ExceptionList.append(ExceptionDict)
+            print(AddressList)
+            AddressList=[item for item in AddressList if item!=","]
             rules=RuleBased.RuleBasedAddressParser.AddressParser(AddressList)
             ExceptionEntry = {
                 "Record ID": ID,
@@ -220,7 +222,7 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
             ExceptionList.append(ExceptionEntry)
             
       
-            AddressList=[item for item in AddressList if item!=","]
+            
             print(AddressList)
             RuleBasedOutput[ID]=RuleBased.RuleBasedAddressParser.AddressParser(AddressList)
             print( RuleBasedOutput[ID])

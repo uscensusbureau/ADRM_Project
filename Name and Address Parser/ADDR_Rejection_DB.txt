@@ -96,5 +96,12 @@
         "Token Pattern": "NWFWTN",
         "Rejected By": "Committee Member_1 at 2023-09-03 10:49:48.194488",
         "Comment": ""
+    },
+    {
+        "Exception_file_name": "Individual Address1_Input_File 02_20_15.389657.json",
+        "Input": "109 MARKHAN ST , CORONA, NY 11368",
+        "Token Pattern": "NWF,W,TN",
+        "Rejected By": "Committee Member_1 at 2023-09-04 02:34:08.997629",
+        "Comment": ""
     }
 ]

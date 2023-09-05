@@ -1,55 +1,55 @@
 [
     {
-        "Record ID": "Single Line Exception_File zzzzz-->01",
-        "INPUT": "1701 Westpark dr, little rock ar 65656 Kashif Onais 9991",
-        "NWF,WWTNWWN": [
+        "Record ID": "Single Line Exception_File m-->01",
+        "INPUT": "10026 niagara st, 8th floor unit 81, unit dacula, GA 66545",
+        "NWFNWSNSWTN": [
             [
-                "1701",
+                "10026",
                 "USAD_SNO",
                 "N"
             ],
             [
-                "WESTPARK",
+                "NIAGARA",
                 "USAD_SNM",
                 "W"
             ],
             [
-                "DR",
+                "ST",
                 "USAD_SFX",
                 "F"
             ],
             [
-                "LITTLE",
+                "8TH",
+                "USAD_ANO",
+                "N"
+            ],
+            [
+                "FLOOR",
                 "USAD_CTY",
                 "W"
             ],
             [
-                "ROCK",
-                "USAD_CTY",
-                "W"
-            ],
-            [
-                "AR",
-                "USAD_STA",
-                "T"
-            ],
-            [
-                "65656",
+                "81",
                 "USAD_ZIP",
                 "N"
             ],
             [
-                "KASHIF",
+                "UNIT",
+                "USAD_NA",
+                "S"
+            ],
+            [
+                "DACULA",
                 "USAD_NA",
                 "W"
             ],
             [
-                "ONAIS",
+                "GA",
                 "USAD_NA",
-                "W"
+                "T"
             ],
             [
-                "9991",
+                "66545",
                 "USAD_NA",
                 "N"
             ]

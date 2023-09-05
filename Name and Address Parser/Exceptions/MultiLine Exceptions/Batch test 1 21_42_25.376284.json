@@ -37,6 +37,11 @@
                 "11420",
                 "USAD_ZIP",
                 "N"
+            ],
+            [
+                "PARK",
+                "USAD_NA",
+                "F"
             ]
         ]
     },
@@ -51,17 +56,22 @@
             ],
             [
                 "UNIVERSITY",
-                "USAD_SFX",
+                "USAD_NA",
                 "Z"
             ],
             [
+                "AVENUE",
+                "USAD_NA",
+                "F"
+            ],
+            [
                 "SAN",
-                "USAD_CTY",
+                "USAD_NA",
                 "W"
             ],
             [
                 "JUAN",
-                "USAD_CTY",
+                "USAD_NA",
                 "W"
             ],
             [
@@ -72,42 +82,6 @@
             [
                 "00926",
                 "USAD_NA",
-                "N"
-            ]
-        ]
-    },
-    {
-        "Record ID": "4",
-        "INPUT": "109 Markhan St, Corona, NY 11368",
-        "NWF,W,TN": [
-            [
-                "109",
-                "USAD_SNO",
-                "N"
-            ],
-            [
-                "MARKHAN",
-                "USAD_SNM",
-                "W"
-            ],
-            [
-                "ST",
-                "USAD_SFX",
-                "F"
-            ],
-            [
-                "CORONA",
-                "USAD_CTY",
-                "W"
-            ],
-            [
-                "NY",
-                "USAD_STA",
-                "T"
-            ],
-            [
-                "11368",
-                "USAD_ZIP",
                 "N"
             ]
         ]
@@ -181,6 +155,11 @@
                 "32162",
                 "USAD_ZIP",
                 "N"
+            ],
+            [
+                "VILLAGES",
+                "USAD_NA",
+                "F"
             ]
         ]
     },
@@ -217,6 +196,11 @@
                 "53590",
                 "USAD_ZIP",
                 "N"
+            ],
+            [
+                "PRAIRIE",
+                "USAD_NA",
+                "F"
             ]
         ]
     }

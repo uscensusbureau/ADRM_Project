@@ -79,11 +79,14 @@ class RuleBasedAddressParser:
                 
         
         Final_Map=[]
-        
+        Dup_Address_List=AddressList
+        Dup_FirstPhaseList=FirstPhaseList[:]
+        print(Dup_FirstPhaseList)
+
+        print("******")
         if "X" not in TrackKey:
             
             for R in USAD_Conversion_Dict:
-                
                 if R=="USAD_SNO":
                     for j in range(Counts,len(TrackKey)):
                         Dictionary=FirstPhaseList[j]
@@ -97,6 +100,10 @@ class RuleBasedAddressParser:
                             USAD_Conversion_Dict["USAD_SNO"]+=" "+Value.strip()
                             Final_Map.append([Value.strip(),"USAD_SNO",Key])
                             Counts+=1
+                            Dup_Address_List.remove(Value.strip())
+                            #Dup_FirstPhaseList.pop(j)
+                            Dup_FirstPhaseList[j]=""
+                            
                         try:
                             if TrackKey[j+1]!="N":
                                 USAD_Mapping["USAD_SNO"]=USAD_Mapping["USAD_SNO"]
@@ -109,7 +116,7 @@ class RuleBasedAddressParser:
                             
                 elif R=="USAD_SPR":
                     for j in range(Counts,len(TrackKey)):
-                        Dictionary=FirstPhaseList[Counts]
+                        Dictionary=FirstPhaseList[j]
                         Key=""
                         Value=""
                         for K,V in Dictionary.items():
@@ -120,7 +127,11 @@ class RuleBasedAddressParser:
                             USAD_Conversion_Dict["USAD_SPR"]+=" "+Value.strip()
                             Counts+=1
                             Final_Map.append([Value.strip(),"USAD_SPR",Key])
-                    
+                            Dup_Address_List.remove(Value.strip())
+                           # Dup_FirstPhaseList.pop(j)
+                            Dup_FirstPhaseList[j]=""
+                            
+                            
                         
                         
                         try:
@@ -148,6 +159,10 @@ class RuleBasedAddressParser:
                             USAD_Conversion_Dict["USAD_SNM"]+=" "+Value.strip()
                             Counts+=1
                             Final_Map.append([Value.strip(),"USAD_SNM",Key])
+                            Dup_Address_List.remove(Value.strip())
+                            #Dup_FirstPhaseList.pop(j)
+                            Dup_FirstPhaseList[j]=""
+                            
                         try:
                             if TrackKey[j+1]!="N":
                                 USAD_Mapping["USAD_SNM"]=USAD_Mapping["USAD_SNM"]
@@ -166,15 +181,20 @@ class RuleBasedAddressParser:
                             Key=K
                             Value=V
                         
-                        USAD_Mapping["USAD_SFX"].append(j+1)
-                        USAD_Conversion_Dict["USAD_SFX"]+=" "+Value.strip()
-                        Counts+=1
-                        Final_Map.append([Value.strip(),"USAD_SFX",Key])
+                        if Key=="F" or Key=="W" or Key=="S":
+                            USAD_Mapping["USAD_SFX"].append(j+1)
+                            USAD_Conversion_Dict["USAD_SFX"]+=" "+Value.strip()
+                            Counts+=1
+                            Final_Map.append([Value.strip(),"USAD_SFX",Key])
+                            Dup_Address_List.remove(Value.strip())
+                           # Dup_FirstPhaseList.pop(j)
+                            Dup_FirstPhaseList[j]=""
+                            
                             
                             
                         try:
                             if TrackKey[j+1]!="F":
-                                USAD_Mapping["USAF_SFX"]=USAD_Mapping["USAD_SFX"]
+                                USAD_Mapping["USAD_SFX"]=USAD_Mapping["USAD_SFX"]
     
                                 USAD_Conversion_Dict["USAD_SFX"]=USAD_Conversion_Dict["USAD_SFX"].strip()
                             break
@@ -204,6 +224,10 @@ class RuleBasedAddressParser:
                             USAD_Conversion_Dict["USAD_SPT"]+=" "+Value.strip()
                             Counts+=1
                             Final_Map.append([Value.strip(),"USAD_SPT",Key])
+                            Dup_Address_List.remove(Value.strip())
+                            #Dup_FirstPhaseList.pop(j)
+                            Dup_FirstPhaseList[j]=""
+                            
                         try:
                             if TrackKey[j+1]!="N":
                                 USAD_Mapping["USAD_SPT"]=USAD_Mapping["USAD_SPT"]
@@ -234,6 +258,10 @@ class RuleBasedAddressParser:
                             USAD_Conversion_Dict["USAD_ANM"]+=" "+Value.strip()
                             Counts+=1
                             Final_Map.append([Value.strip(),"USAD_ANM",Key])
+                            Dup_Address_List.remove(Value.strip())
+                           # Dup_FirstPhaseList.pop(j)
+                            Dup_FirstPhaseList[j]=""
+                            
                         try:
                             if TrackKey[j+1]!="N":
                                 USAD_Mapping["USAD_ANM"]=USAD_Mapping["USAD_ANM"]
@@ -255,6 +283,10 @@ class RuleBasedAddressParser:
                             USAD_Conversion_Dict["USAD_ANO"]+=" "+Value.strip()
                             Counts+=1
                             Final_Map.append([Value.strip(),"USAD_ANO",Key])
+                            Dup_Address_List.remove(Value.strip())
+                            #Dup_FirstPhaseList.pop(j)
+                            Dup_FirstPhaseList[j]=""
+                            
                         try:
                             if TrackKey[j+1]!="N":
                                 USAD_Mapping["USAD_ANO"]=USAD_Mapping["USAD_ANO"]
@@ -279,6 +311,10 @@ class RuleBasedAddressParser:
                             USAD_Conversion_Dict["USAD_CTY"]+=" "+Value.strip()
                             Counts+=1
                             Final_Map.append([Value.strip(),"USAD_CTY",Key])
+                            Dup_Address_List.remove(Value.strip())
+                            #Dup_FirstPhaseList.pop(j)
+                            Dup_FirstPhaseList[j]=""
+                            
                         try:
                                 
                             if TrackKey[j+1]!="W":
@@ -311,6 +347,10 @@ class RuleBasedAddressParser:
                             USAD_Conversion_Dict["USAD_STA"]+=" "+Value.strip()
                             Counts+=1
                             Final_Map.append([Value.strip(),"USAD_STA",Key])
+                            Dup_Address_List.remove(Value.strip())
+                           # Dup_FirstPhaseList.pop(j)
+                            Dup_FirstPhaseList[j]=""
+                            
                         try:
                                 
                             if TrackKey[j+1]!="T":
@@ -324,6 +364,11 @@ class RuleBasedAddressParser:
     
                 elif R=="USAD_ZIP":
                     for j in range(Counts,len(TrackKey)):
+                        print(FirstPhaseList)
+                        print("LIST")
+                        
+                        print(j)
+                        print(Counts)
                         Dictionary=FirstPhaseList[j]
                         Key=""
                         Value=""
@@ -336,6 +381,9 @@ class RuleBasedAddressParser:
                             USAD_Conversion_Dict["USAD_ZIP"]+=" "+Value.strip()
                             Counts+=1
                             Final_Map.append([Value.strip(),"USAD_ZIP",Key])
+                            Dup_Address_List.remove(Value.strip())
+                            #Dup_FirstPhaseList.pop(j)
+                            Dup_FirstPhaseList[j]=""
                         try:
                             if TrackKey[j+1]!="N":
                                 USAD_Mapping["USAD_ZIP"]=USAD_Mapping["USAD_ZIP"]
@@ -346,30 +394,32 @@ class RuleBasedAddressParser:
                                 USAD_Conversion_Dict["USAD_ZIP"]=USAD_Conversion_Dict["USAD_ZIP"].strip()
                 else:
                    # print(TrackKey)
-                    for j in range(Counts,len(TrackKey)):
-                        Dictionary=FirstPhaseList[j]
+                    Dup_FirstPhaseList=[item for item in Dup_FirstPhaseList if item!=""]
+                    for j in range(0,len(Dup_FirstPhaseList)):
+                    
+                        Dictionary=Dup_FirstPhaseList[j]
                         Key=""
                         Value=""
                         for K,V in Dictionary.items():
                             Key=K
                             Value=V
                         sublist=[sublist[0] for sublist in Final_Map]
-                        if Value.strip() not in sublist:
+                        if True:
                                 
                             USAD_Mapping["USAD_NA"].append(j+1)
                             USAD_Conversion_Dict["USAD_NA"]+=" "+Value.strip()
-                            Counts+=1
                             Final_Map.append([Value.strip(),"USAD_NA",Key])
                             
-                            try:
-                                if True:
-                                    USAD_Mapping["USAD_NA"]=USAD_Mapping["USAD_NA"]
-                                    USAD_Conversion_Dict["USAD_NA"]=USAD_Conversion_Dict["USAD_NA"].strip()
-                                    break
-                            except:
-                                    USAD_Mapping["USAD_NA"]=USAD_Mapping["USAD_NA"]
-                                    USAD_Conversion_Dict["USAD_NA"]=USAD_Conversion_Dict["USAD_NA"].strip()
-                        
+                    break
+                            #try:
+                            #     if True:
+                            #         USAD_Mapping["USAD_NA"]=USAD_Mapping["USAD_NA"]
+                            #         USAD_Conversion_Dict["USAD_NA"]=USAD_Conversion_Dict["USAD_NA"].strip()
+                            #         break
+                            # except:
+                            #         USAD_Mapping["USAD_NA"]=USAD_Mapping["USAD_NA"]
+                            #         USAD_Conversion_Dict["USAD_NA"]=USAD_Conversion_Dict["USAD_NA"].strip()
+                            #         break
                             # USAD_Mapping["USAD_NA"].append(j+1)
                             # USAD_Conversion_Dict["USAD_NA"]+=" "+Value.strip()
                             # Counts+=1
@@ -490,7 +540,16 @@ class RuleBasedAddressParser:
                             Counts+=1
                             Final_Map.append([Value.strip(),"USAD_ZIP",Key])
                             break
-                            
+                        
+                        try:          
+                            if TrackKey[j+1]!="T":
+                                USAD_Mapping["USAD_ZIP"]=USAD_Mapping["USAD_ZIP"]
+        
+                                USAD_Conversion_Dict["USAD_ZIP"]=USAD_Conversion_Dict["USAD_ZIP"].strip()
+                                break
+                        except:
+                            USAD_Mapping["USAD_ZIP"]=USAD_Mapping["USAD_ZIP"]
+                            USAD_Conversion_Dict["USAD_ZIP"]=USAD_Conversion_Dict["USAD_ZIP"].strip()
                   
                             
                     for j in range(Counts,len(TrackKey)):
@@ -927,7 +986,7 @@ class RuleBasedAddressParser:
                      
         dic = {key:value for key,value in USAD_Conversion_Dict.items() if value != ''}
         return Final_Map
-abc=RuleBasedAddressParser.AddressParser([""])
+abc=RuleBasedAddressParser.AddressParser(["43","State","Ave","New","Albany","IN","47150"])
 print (abc) 
 
         

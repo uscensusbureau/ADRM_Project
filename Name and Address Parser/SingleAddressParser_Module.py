@@ -75,6 +75,7 @@ def Address_Parser(line,initials,originalInput):
     #Address=re.sub('#','',Address)    
     Address=Address.upper()
     AddressList = re.split("\s|\s,\s ", Address)
+    AddressList= [item for item in AddressList if item != ","]
     #del(AddressList[len(AddressList)-1])
     TrackKey=[]
     Mask=[]
@@ -190,6 +191,7 @@ def Address_Parser(line,initials,originalInput):
     else:
         Exception_=True
         rules=rulebased.RuleBasedAddressParser.AddressParser(AddressList)
+        print(rules)
         ExceptionDict = {
             "Record ID": ID,
             "INPUT": originalInput,

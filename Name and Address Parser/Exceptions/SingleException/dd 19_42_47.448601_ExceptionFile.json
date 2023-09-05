@@ -1,51 +1,51 @@
 [
     {
         "Record ID": "Single Line Exception_File dd-->01",
-        "INPUT": "1701 westpark drive apt 110, little rock, ar 72204",
-        "NWFSN,WW,TN": [
+        "INPUT": "10026 niagara st, 8th floor unit 81, dacula, GA 66545",
+        "NWFNWSNWTN": [
             [
-                "1701",
+                "10026",
                 "USAD_SNO",
                 "N"
             ],
             [
-                "WESTPARK",
+                "NIAGARA",
                 "USAD_SNM",
                 "W"
             ],
             [
-                "DRIVE",
+                "ST",
                 "USAD_SFX",
                 "F"
             ],
             [
-                "APT",
-                "USAD_ANM",
-                "S"
-            ],
-            [
-                "110",
+                "8TH",
                 "USAD_ANO",
                 "N"
             ],
             [
-                "LITTLE",
+                "FLOOR",
                 "USAD_CTY",
                 "W"
             ],
             [
-                "ROCK",
-                "USAD_CTY",
+                "81",
+                "USAD_ZIP",
+                "N"
+            ],
+            [
+                "DACULA",
+                "USAD_NA",
                 "W"
             ],
             [
-                "AR",
-                "USAD_STA",
+                "GA",
+                "USAD_NA",
                 "T"
             ],
             [
-                "72204",
-                "USAD_ZIP",
+                "66545",
+                "USAD_NA",
                 "N"
             ]
         ]

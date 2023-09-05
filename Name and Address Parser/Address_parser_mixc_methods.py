@@ -101,7 +101,7 @@ class Address_parser_misc():
         Result=Convert[0]
        
         if not Convert[4]:
-            print("KKKKK")
+            # print("KKKKK")
             checkbox_var = tk.IntVar()
 
             # Create the checkbox
@@ -128,7 +128,7 @@ class Address_parser_misc():
             
         
         elif Convert[4]:
-            print("I am printer")
+            
             checkbox_var = tk.IntVar()
 
             # Create the checkbox
