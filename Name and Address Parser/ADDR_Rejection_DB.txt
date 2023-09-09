@@ -103,5 +103,187 @@
         "Token Pattern": "NWF,W,TN",
         "Rejected By": "Committee Member_1 at 2023-09-04 02:34:08.997629",
         "Comment": ""
+    },
+    {
+        "Exception_file_name": "New_Test 22_40_15.031714.json",
+        "Input": "88 N PINE DRIVE OLYMPIA WASHINGTON 72733",
+        "Token Pattern": "NDFFWTN",
+        "Rejected By": "Committee Member_1 at 2023-09-04 23:01:49.475178",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "New_Test 22_40_15.031714.json",
+        "Input": "878 NE BIRCH LANE PORTLAND OREGON 72734",
+        "Token Pattern": "NDWFWTN",
+        "Rejected By": "Committee Member_2 at 2023-09-04 23:02:14.623546",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "New_Test 22_40_15.031714.json",
+        "Input": "78 SE CEDAR COURT MIAMI FLORIDA 72735",
+        "Token Pattern": "NDWFWTN",
+        "Rejected By": "Committee Member_3 at 2023-09-04 23:07:28.207475",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "New_Test 22_40_15.031714.json",
+        "Input": "7687 N MAIN ST ANCHORAGE ALASKA 99501",
+        "Token Pattern": "NDWFWTN",
+        "Rejected By": "Committee Member_3 at 2023-09-04 23:08:05.799981",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "New_Test 22_40_15.031714.json",
+        "Input": "5678 W ELM AVE JUNEAU ALASKA 99801",
+        "Token Pattern": "NDWFWTN",
+        "Rejected By": "Committee Member_2 at 2023-09-04 23:08:48.784793",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "New_Test 22_40_15.031714.json",
+        "Input": "55 MAPLE AVENUE CALIFORNIA 94993",
+        "Token Pattern": "NWFTN",
+        "Rejected By": "Committee Member_1 at 2023-09-04 23:11:59.915602",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "New_Test 22_40_15.031714.json",
+        "Input": "5678 PINE STREET STOCKTON CALIFORNIA 95202",
+        "Token Pattern": "NFFWTN",
+        "Rejected By": "Committee Member_1 at 2023-09-04 23:12:34.381876",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "New_Test 22_40_15.031714.json",
+        "Input": "9876 ELM DRIVE BENTONVILLE ARKANSAS 72712",
+        "Token Pattern": "NWFWTN",
+        "Rejected By": "Committee Member_2 at 2023-09-04 23:13:11.916399",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "HC_Test 22_40_15.031714.json",
+        "Input": "HC 68 BOX 23 CHICAGO IL 44432-11323",
+        "Token Pattern": "FNXNWTN",
+        "Rejected By": "Committee Member_2 at 2023-09-04 23:16:20.074333",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "HC_Test 22_40_15.031714.json",
+        "Input": "HC 32 BOX 12 RAEFORD NC 28376",
+        "Token Pattern": "FNXNWTN",
+        "Rejected By": "Committee Member_2 at 2023-09-04 23:16:38.677213",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "HC_Test 22_40_15.031714.json",
+        "Input": "HC 02 BOX 45 STERLING HEIGHTS MI 48310",
+        "Token Pattern": "FNXNWFTN",
+        "Rejected By": "Committee Member_3 at 2023-09-04 23:17:43.629179",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "RR_Test 22_40_15.031714.json",
+        "Input": "RR 2 BOX 152 GREENFIELD OH 23456",
+        "Token Pattern": "RNXNWTN",
+        "Rejected By": "Committee Member_3 at 2023-09-04 23:23:30.884916",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "RR_Test 22_40_15.031714.json",
+        "Input": "RR 40 BOX 63 DALLAS TX 75202",
+        "Token Pattern": "RNXNWTN",
+        "Rejected By": "Committee Member_2 at 2023-09-04 23:23:43.132076",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "RR_Test 22_40_15.031714.json",
+        "Input": "RR 2 BOX 2013 PORTLAND OR 97218",
+        "Token Pattern": "RNXNWTN",
+        "Rejected By": "Committee Member_3 at 2023-09-04 23:23:59.072350",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "RR_Test 22_40_15.031714.json",
+        "Input": "RR 77 BOX 134 SAN FRANCISCO CA 94115",
+        "Token Pattern": "RNXNWWTN",
+        "Rejected By": "Committee Member_1 at 2023-09-04 23:24:20.731979",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "Military_Test 22_40_15.031714.json",
+        "Input": "APO AE 09427-5655",
+        "Token Pattern": "MWN",
+        "Rejected By": "Committee Member_1 at 2023-09-04 23:28:12.275223",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "Military_Test 22_40_15.031714.json",
+        "Input": "FPO AP 96377-7564",
+        "Token Pattern": "MWN",
+        "Rejected By": "Committee Member_3 at 2023-09-04 23:28:23.912041",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "Attention Line_Test 22_40_15.031714.json",
+        "Input": "POWER COMPANY 1401 MAIN ST FALLS CHURCH, VA 22042-1441",
+        "Token Pattern": "WWNWFFW,TN",
+        "Rejected By": "Committee Member_2 at 2023-09-04 23:33:39.285377",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "Attention Line_Test 22_40_15.031714.json",
+        "Input": "HAMIL PLC 42 SHUB FARM LANE SODDY DAISY, TN 37379",
+        "Token Pattern": "WWNWRFWW,TN",
+        "Rejected By": "Committee Member_1 at 2023-09-04 23:34:10.404016",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "Attention Line_Test 22_40_15.031714.json",
+        "Input": "SCHIMMEL INC 40 SW MANHATTAN ST HAMPTON, VA 23666",
+        "Token Pattern": "WWNDWFW,TN",
+        "Rejected By": "Committee Member_1 at 2023-09-04 23:34:45.307151",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "Attention Line_Test 22_40_15.031714.json",
+        "Input": "ROWE LTD 7383 BIRCH HILL STREET SILVER SPRING, MD 20901",
+        "Token Pattern": "WWNWFFWF,TN",
+        "Rejected By": "Committee Member_1 at 2023-09-04 23:35:19.904883",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "Attention Line_Test 22_40_15.031714.json",
+        "Input": "LACY VASQUEZ GOYETTE GROUP 6 MYRTLE CIRCLE ROCKLEDGE, FL 32955",
+        "Token Pattern": "WWWWNWFW,TN",
+        "Rejected By": "Committee Member_1 at 2023-09-04 23:36:01.816954",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "Attention Line_Test 22_40_15.031714.json",
+        "Input": "HUEL LTD 33 HAMILTON RD DEFIANCE, OH 43512",
+        "Token Pattern": "WWNWFW,TN",
+        "Rejected By": "Committee Member_1 at 2023-09-04 23:36:14.671781",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "Attention Line_Test 22_40_15.031714.json",
+        "Input": "FARRELL-GRANT INC 84 N ANN DR OXNARD, CA 93035",
+        "Token Pattern": "WWNDWFW,TN",
+        "Rejected By": "Committee Member_2 at 2023-09-04 23:36:33.290014",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "Attention Line_Test 22_40_15.031714.json",
+        "Input": "KUHIC AND SONS 7024 WEST SANTA CLARA AVE COACHELLA, CA 92236",
+        "Token Pattern": "WWWNDWWFW,TN",
+        "Rejected By": "Committee Member_3 at 2023-09-04 23:37:23.458091",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "Attention Line_Test 22_40_15.031714.json",
+        "Input": "ORN LLC 262 EAST CENTRAL ST ALTAMONTE SPRINGS, FL 32714",
+        "Token Pattern": "WWNDWFWF,TN",
+        "Rejected By": "Committee Member_3 at 2023-09-04 23:37:31.668653",
+        "Comment": ""
     }
 ]

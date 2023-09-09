@@ -1,0 +1,48 @@
+[
+    {
+        "Record ID": "Single Line Exception_File EA-->01",
+        "INPUT": "RR 193 BOX 316 HICKARY HILLS IL 64162",
+        "RNXNWFTN": [
+            [
+                "RR",
+                "USAD_RNM",
+                "R"
+            ],
+            [
+                "193",
+                "USAD_RNO",
+                "N"
+            ],
+            [
+                "BOX",
+                "USAD_BNM",
+                "X"
+            ],
+            [
+                "316",
+                "USAD_BNO",
+                "N"
+            ],
+            [
+                "HICKARY",
+                "USAD_CTY",
+                "W"
+            ],
+            [
+                "IL",
+                "USAD_STA",
+                "T"
+            ],
+            [
+                "64162",
+                "USAD_ZIP",
+                "N"
+            ],
+            [
+                "HILLS",
+                "USAD_NA",
+                "F"
+            ]
+        ]
+    }
+]

@@ -211,7 +211,7 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
             
         elif not FoundExcept:  
             # ExceptionList.append(ExceptionDict)
-            print(AddressList)
+            # print(AddressList)
             AddressList=[item for item in AddressList if item!=","]
             rules=RuleBased.RuleBasedAddressParser.AddressParser(AddressList)
             ExceptionEntry = {
@@ -223,10 +223,10 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
             
       
             
-            print(AddressList)
-            RuleBasedOutput[ID]=RuleBased.RuleBasedAddressParser.AddressParser(AddressList)
-            print( RuleBasedOutput[ID])
-            print(ID)
+            # print(AddressList)
+            # RuleBasedOutput[ID]=RuleBased.RuleBasedAddressParser.AddressParser(AddressList)
+            # print( RuleBasedOutput[ID])
+            # print(ID)
             # with open('ExceptionFile.json', 'r+', encoding='utf8') as g:
             #     try:
                     

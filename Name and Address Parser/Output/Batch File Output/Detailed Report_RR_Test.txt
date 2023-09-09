@@ -1,0 +1,13 @@
+Exception and Mask Report
+
+
+Number of Exceptions Thrown: -	67
+Number of Parsed Address: -	0
+Percentage of Parsed Result: -	0.00
+Output From Active Learning
+
+{}
+
+Output Fron Rule Based Approach
+
+{}

@@ -113,6 +113,7 @@ class submission_form:
         approval_form_instance=approvalform.submission_form()
 
         print("Approved?" , toggle_state.get())
+        
         if toggle_state.get() == "Yes":
             for row in table_rows[0:]:
                 column1 = row[0].cget("text").strip()
@@ -123,7 +124,7 @@ class submission_form:
                 
                 if selected_key is not None:
                     table_data.append((column1, column2, selected_key))
-                if not column3:
+                if not column3 or column3 == "Not Selected":
                     msg.showerror("Error", "One or More Components are missing!.")
                     return False
             with open("Validation_DB.txt", 'r+') as file:

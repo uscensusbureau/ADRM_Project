@@ -2234,5 +2234,57 @@
                 "USAD_ZIP"
             ]
         ]
+    },
+    {
+        "Unique_ID": "05960af4bf6d66f4d55243be0e822c7e3aeedf8e",
+        "Exception_file_name": "New_Test 22_40_15.031714.json",
+        "Input": "402 S OAK ROAD MANCHESTER NEW HAMPSHIRE 72732",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NDWFWWWN",
+        "Approved By": "Committee Member_2 at 2023-09-04 22:54:07.623757",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "402",
+                "USAD_SNO"
+            ],
+            [
+                "D",
+                "S",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "OAK",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "ROAD",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "MANCHESTER",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "NEW",
+                "USAD_STA"
+            ],
+            [
+                "W",
+                "HAMPSHIRE",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "72732",
+                "USAD_ZIP"
+            ]
+        ]
     }
 ]

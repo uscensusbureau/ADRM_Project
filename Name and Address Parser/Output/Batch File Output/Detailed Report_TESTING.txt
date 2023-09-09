@@ -1,0 +1,54 @@
+Exception and Mask Report
+
+
+Number of Exceptions Thrown: -	3
+Number of Parsed Address: -	1
+Percentage of Parsed Result: -	25.00
+Output From Active Learning
+
+{
+    "3": [
+        {
+            "Record ID": "3",
+            "INPUT": "6678 University Avenue ,San Juan,PR 00926",
+            "NZF,WW,FN": {
+                "USAD_SNO": [
+                    [
+                        "N",
+                        "6678"
+                    ]
+                ],
+                "USAD_SFX": [
+                    [
+                        "Z",
+                        "UNIVERSITY"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "F",
+                        "AVENUE"
+                    ],
+                    [
+                        "W",
+                        "AVENUE SAN"
+                    ]
+                ],
+                "USAD_NA": [
+                    [
+                        "W",
+                        "JUAN"
+                    ],
+                    [
+                        "F",
+                        "JUAN PR"
+                    ]
+                ]
+            }
+        }
+    ]
+}
+
+Output Fron Rule Based Approach
+
+{}
