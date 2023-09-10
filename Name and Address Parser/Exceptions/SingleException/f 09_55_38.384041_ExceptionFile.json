@@ -1,0 +1,43 @@
+[
+    {
+        "Record ID": "Single Line Exception_File f-->01",
+        "INPUT": "1405 Spring Avenue,Fort Washington,Pennsylvania 19034",
+        "NFFFTTN": [
+            [
+                "1405",
+                "USAD_SNO",
+                "N"
+            ],
+            [
+                "SPRING",
+                "USAD_SFX",
+                "F"
+            ],
+            [
+                "AVENUE",
+                "USAD_NA",
+                "F"
+            ],
+            [
+                "FORT",
+                "USAD_NA",
+                "F"
+            ],
+            [
+                "WASHINGTON",
+                "USAD_NA",
+                "T"
+            ],
+            [
+                "PENNSYLVANIA",
+                "USAD_NA",
+                "T"
+            ],
+            [
+                "19034",
+                "USAD_NA",
+                "N"
+            ]
+        ]
+    }
+]

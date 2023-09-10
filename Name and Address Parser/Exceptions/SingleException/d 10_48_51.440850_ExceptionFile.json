@@ -1,0 +1,43 @@
+[
+    {
+        "Record ID": "Single Line Exception_File d-->01",
+        "INPUT": "5505,A,STREET,HICKARY$%@#,HILLS,IL,6045",
+        "NWFWFTN": [
+            [
+                "5505",
+                "USAD_SNO",
+                "N"
+            ],
+            [
+                "A",
+                "USAD_SNM",
+                "W"
+            ],
+            [
+                "STREET",
+                "USAD_SFX",
+                "F"
+            ],
+            [
+                "HICKARY$%@#",
+                "USAD_CTY",
+                "W"
+            ],
+            [
+                "HILLS",
+                "USAD_NA",
+                "F"
+            ],
+            [
+                "IL",
+                "USAD_STA",
+                "T"
+            ],
+            [
+                "6045",
+                "USAD_ZIP",
+                "N"
+            ]
+        ]
+    }
+]

@@ -1,0 +1,43 @@
+[
+    {
+        "Record ID": "Single Line Exception_File f-->01",
+        "INPUT": "\"5505\",\"A\",\"STREET\",\"HICKARY\",\"HILLS\",\"IL\",\"60457\"",
+        "WWWWWWW": [
+            [
+                "\"5505\"",
+                "USAD_SNM",
+                "W"
+            ],
+            [
+                "\"A\"",
+                "USAD_SFX",
+                "W"
+            ],
+            [
+                "\"STREET\"",
+                "USAD_CTY",
+                "W"
+            ],
+            [
+                "\"HICKARY\"",
+                "USAD_CTY",
+                "W"
+            ],
+            [
+                "\"HILLS\"",
+                "USAD_CTY",
+                "W"
+            ],
+            [
+                "\"IL\"",
+                "USAD_CTY",
+                "W"
+            ],
+            [
+                "\"60457\"",
+                "USAD_CTY",
+                "W"
+            ]
+        ]
+    }
+]
