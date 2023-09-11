@@ -34,6 +34,26 @@ import Address_parser_approval_form as approvalform
 
 
 class submission_form:
+    def clear_form(self,form_frame,canvas,table_frame,df,scrollbar,RevisedJSON):
+    #------------------------------------------------------
+        components = form_frame.winfo_children()
+        scrollbar.destroy()
+        for component in components:
+            component.destroy()
+        
+        components=table_frame.winfo_children()
+        
+        for componenet in components:
+            component.destroy()
+        
+        components = canvas.find_all()
+        # Remove each component from the canvas
+        for component in components:
+            canvas.delete(component)
+  
+        RevisedJSON.pop(0)
+        
+        #---------------------------------------------------
     def submit_form(self,Exception_file_name_entry,Input_entry,region_var,Type_var,Approval_List_var,
                     Mask_entry,Comment_entry,toggle_state,table_rows,dropdown_values,
                     form_frame,scrollbar,canvas,df,RevisedJSON,table_frame,

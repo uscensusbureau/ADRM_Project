@@ -45,6 +45,7 @@ class NAP_GUIBuilder(tk.Tk):
 
         self.geometry(f"{screen_width}x{screen_height}")
         self.state('zoomed')
+        self.tree = None
     def NAP_GUIBuilder_CreateTabs(self):
         
         #Create Tabs Depending on the init for root (tk.Tk)
@@ -74,10 +75,6 @@ class NAP_GUIBuilder(tk.Tk):
         Instance = mx.Address_parser_misc()
         
          
-        ttk.Button(self.tab2, text ="Choose Batch File",width=30, command=Instance.Process_Address_Parser_Single_input).grid(column = 5, 
-                             row = 50,
-                             padx = 10,
-                             pady = 10)
         
         
         ttk.Label(self.tab2, text ="Please Choose a Pipe Delimitted File"). grid(column = 0, 
@@ -102,12 +99,14 @@ class NAP_GUIBuilder(tk.Tk):
                                row = 15,
                                padx = 0,
                                pady = 0) 
+        
+    
         s=ttk.Style()
         s.theme_use("clam")
         s.configure('Treeview',rowheight=30)
         
         tree = ttk.Treeview(self.tab2, column=["Mask Token","Address Token","Address Component","Exception","File"] ,show='headings',height=14)
-
+    # elif not Batch:
         for item in tree.get_children():
             tree.delete(item)
         tree.column("# 1", width=60, stretch='YES')
@@ -125,11 +124,22 @@ class NAP_GUIBuilder(tk.Tk):
         tree.column("# 5", width=60, stretch='YES')
         tree.heading("# 5", text="File Name")
         ttk.Button(self.tab2, text ="Submit", command=lambda:Instance.Single_Address(single_input, self.tab2,tree),width=30).grid(column = 7, 
-                                 row = 10)    
-        #tree.pack(side=tk.LEFT)
-
-    
-    
+                                 row = 10)
+    #tree.pack(side=tk.LEFT)
+        
+        def clear():
+            
+            for item in tree.get_children():
+                tree.delete(item)
+            # single_input = self.tab2.nametowidget(".!notebook.!frame.!text")
+            # self.create_treeview(single_input)
+            Instance.Process_Address_Parser_Single_input()
+        ttk.Button(self.tab2, text ="Choose Batch File",width=30, command=clear).grid(column = 5, 
+                             row = 50,
+                             padx = 10,
+                             pady = 10)
+        
+        
     def NAP_GUIBuilder_MappingApprovalForm(self):
        
         import textwrap

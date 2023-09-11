@@ -55,7 +55,9 @@ class Address_parser_misc():
                 msg.showinfo("Success",Output[1])
             else:
                 msg.showerror("Error!", Output[1])
-        else: msg.showerror("Alert","Please select input file.")
+        else: 
+            pass 
+            # msg.showerror("Alert","Please select input file.")
         return
     
     def Single_Address(self, single_input ,tab2,tree):
@@ -95,19 +97,19 @@ class Address_parser_misc():
         
         
         initial = simpledialog.askstring("Optional", "Your Initials")
-        print(single_input.get("1.0","end-1c"))
+        # print(single_input.get("1.0","end-1c"))
         Convert=AD_API.Address_Parser(single_input.get("1.0","end-1c"),initial,originalInput=single_input.get("1.0","end-1c"))
-        
+        # print(Convert)
         Result=Convert[0]
-       
+        
         if not Convert[4]:
             # print("KKKKK")
             checkbox_var = tk.IntVar()
-
+            
             # Create the checkbox
             checkbox = ttk.Checkbutton(tab2, text="Forced Exception", variable=checkbox_var)
             checkbox.grid(row=60, column=5, padx=10, pady=10)
-
+            
             # Create the submit button
             submit_button = ttk.Button(tab2, text="Submit", command=submit)
             submit_button.grid(row=61, column =5 , padx=10, pady=10)
@@ -132,14 +134,14 @@ class Address_parser_misc():
             checkbox_var = tk.IntVar()
 
             # Create the checkbox
-            checkbox = ttk.Checkbutton(tab2, text="Forced Exception", variable=checkbox_var)
-            checkbox.grid(row=60, column=5, padx=10, pady=10)
+            # checkbox = ttk.Checkbutton(tab2, text="Forced Exception", variable=checkbox_var)
+            # checkbox.grid(row=60, column=5, padx=10, pady=10)
 
-            # Create the submit button
-            submit_button = ttk.Button(tab2, text="Submit", command=submit)
-            submit_button.grid(row=61, column =5 , padx=10, pady=10)
+            # # Create the submit button
+            # submit_button = ttk.Button(tab2, text="Submit", command=submit)
+            # submit_button.grid(row=61, column =5 , padx=10, pady=10)
             
-        
+
             for item in tree.get_children():
                 tree.delete(item)
             tree.insert('','end',values=(self.wrap('Mask'),self.wrap(Convert[1]),"",Convert[1],Convert[2]))

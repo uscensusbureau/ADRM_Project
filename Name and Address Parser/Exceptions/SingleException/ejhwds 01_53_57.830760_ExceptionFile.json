@@ -1,0 +1,58 @@
+[
+    {
+        "Record ID": "Single Line Exception_File ejhwds-->01",
+        "INPUT": "109 woodland hills dr, fl # 5, adamsville, FL 32812",
+        "NWFFTSNWTN": [
+            [
+                "109",
+                "USAD_SNO",
+                "N"
+            ],
+            [
+                "WOODLAND",
+                "USAD_SNM",
+                "W"
+            ],
+            [
+                "HILLS",
+                "USAD_SFX",
+                "F"
+            ],
+            [
+                "DR",
+                "USAD_NA",
+                "F"
+            ],
+            [
+                "FL",
+                "USAD_STA",
+                "T"
+            ],
+            [
+                "#",
+                "USAD_NA",
+                "S"
+            ],
+            [
+                "5",
+                "USAD_NA",
+                "N"
+            ],
+            [
+                "ADAMSVILLE",
+                "USAD_NA",
+                "W"
+            ],
+            [
+                "FL",
+                "USAD_NA",
+                "T"
+            ],
+            [
+                "32812",
+                "USAD_NA",
+                "N"
+            ]
+        ]
+    }
+]

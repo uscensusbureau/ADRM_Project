@@ -285,5 +285,12 @@
         "Token Pattern": "WWNDWFWF,TN",
         "Rejected By": "Committee Member_3 at 2023-09-04 23:37:31.668653",
         "Comment": ""
+    },
+    {
+        "Exception_file_name": "RR_Test 01_53_57.829753.json",
+        "Input": "RR 6 BOX 1730 12533 AL 12533",
+        "Token Pattern": "RNXNNTN",
+        "Rejected By": "Committee Member_2 at 2023-09-10 02:02:07.101537",
+        "Comment": ""
     }
 ]

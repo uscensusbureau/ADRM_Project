@@ -15,7 +15,8 @@ import json
 # import re
 import os.path
 import Rulebased as rulebased
-
+from tkinter import messagebox
+import PreprocessingNameAddress as PreProc
 
 from datetime import datetime,timedelta
 today=datetime.today()
@@ -68,14 +69,17 @@ def Address_Parser(line,initials,originalInput):
     Total=0
     Truth_Result={}
     dataFinal={}
+    # Address = line
     FirstPhaseList=[]
-    Address=re.sub(',',' , ',line)
-    Address=re.sub(' +', ' ',Address)
-    Address=re.sub('[.]','',Address)
+    # Address=re.sub(',',' , ',line)
+    # Address=re.sub(' +', ' ',Address)
+    # Address=re.sub('[.]','',Address)
     #Address=re.sub('#','',Address)    
-    Address=Address.upper()
-    AddressList = re.split("\s|\s,\s ", Address)
-    AddressList= [item for item in AddressList if item != ","]
+    # Address=Address.upper()
+    PackAddress=PreProc.PreProcessingNameAddress().AddresssCleaning(line)
+    # AddressList = re.split("\s|\s,\s ", Address)
+    AddressList = PackAddress[0]
+    AddressList= [item for item in AddressList if item]# != ","]
     #del(AddressList[len(AddressList)-1])
     TrackKey=[]
     Mask=[]
@@ -141,7 +145,7 @@ def Address_Parser(line,initials,originalInput):
                 Temp=""
                 Merge_token=""
                 for p in V2:
-                    print(p)
+                    print()
                     
                     for K3,V3 in FirstPhaseList[p-1].items():
                        Temp+=" "+V3
@@ -150,7 +154,7 @@ def Address_Parser(line,initials,originalInput):
                        Merge_token+=K3
                        Mappings.append([K2,K3,V3])
             break
-        print(Mappings)
+        # print(Mappings)
         FoundDict_KB=FoundDict[Mask_1]
         sorted_Found={k: v for k ,v in sorted(FoundDict_KB.items(), key=lambda item:item[1])}
         # for K2,V2 in sorted_Found.items():
@@ -168,9 +172,11 @@ def Address_Parser(line,initials,originalInput):
         try:
             Result["Input"]= originalInput
             Result["Output"]=Mappings
+            messagebox.showinfo("Success!",f"{originalInput}\n\nAddress Successfully Parsed!\n\nOutput derived from Active Learning-->")
         except:
             Result["Input"]= originalInput
             Result["Output"]=Mappings
+            messagebox.showinfo("Success!",f"{originalInput}\n\nAddress Successfully Parsed!\n\nOutput derived from Active Learning-->")
 
         
         
@@ -191,7 +197,7 @@ def Address_Parser(line,initials,originalInput):
     else:
         Exception_=True
         rules=rulebased.RuleBasedAddressParser.AddressParser(AddressList)
-        print(rules)
+        # print(rules)
         ExceptionDict = {
             "Record ID": ID,
             "INPUT": originalInput,
@@ -199,6 +205,7 @@ def Address_Parser(line,initials,originalInput):
         }
         Result["Input"]=originalInput
         Result["Output"]=rules
+        messagebox.showwarning("Exception!",f"Exception is Created for the Address\n\n{originalInput}\n\nOutput Derived from Rulebased Learning")
         # ExceptionList.append(ExceptionDict)
         # oldExceptionList = ExceptionList.append(ExceptionDict)
         

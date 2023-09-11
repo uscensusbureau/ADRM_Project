@@ -86,15 +86,14 @@ class submission_form:
             with open(df[0], "r+", encoding="utf8") as f:
                 Stat = json.load(f)
             RevisedJSON = Stat
-
-            Stat = Stat[0]
-            # df = df[0]
-            # print(len(df))
-            # print(len(Stat))
-            # if len(Stat.keys())>= 3:
-            Mask = list(Stat.keys())[2]
-            # else:
-            #     return(True,"File work Completed")
+            try:
+                Stat = Stat[0]
+                Mask = list(Stat.keys())[2]
+            except:
+                msg.showwarning(
+                    "FileError", "File is Empty or missing format\n\nPlease Select an Appropriate Exception File.")
+            
+            
             file_name = os.path.basename(df[0])
 
             if "Record ID" in Stat:
@@ -103,8 +102,7 @@ class submission_form:
                 
             else:
                 ID = ""
-                msg.showwarning(
-                    "FileError", "Please Select an Appropriate Exception File.")
+                
                 return
 
             if "INPUT" in Stat:
@@ -113,8 +111,7 @@ class submission_form:
                 Stat.pop("INPUT")
             else:
                 Input_name = ""
-                msg.showwarning(
-                    "FileError", "Please Select an Appropriate Exception File.")
+                
                 return
 
             def on_window_resize(event):
@@ -259,7 +256,7 @@ class submission_form:
                 row = []
                 
                 # Create the text widgets for the first two columns with scrollbars
-                print(m)
+                # print(m)
                 def on_select(event):
                     selected_value = dropdown_var.get()
                     selected_key = next(
@@ -295,7 +292,7 @@ class submission_form:
                 
                 list_of_val.insert(0,selected_item)
                 list_of_val=list(set(list_of_val))
-                print(selected_item)
+                # print(selected_item)
                 
                 dropdown = ttk.Combobox(table_inner_frame,textvariable=dropdown_var, values=list_of_val, width=18, height=2, font=("Arial", 12), state="readonly")
                 #dropdown.bind("<<ComboboxSelected>>", on_select)
@@ -370,7 +367,7 @@ class submission_form:
 
             if len(RevisedJSON) > 1:
 
-                submit_button = ttk.Button(form_frame, text="Save and Next", command=lambda: submitform.submit_form(Exception_file_name_entry, Input_entry, region_var, Type_var, Approval_List_var,
+                submit_button = ttk.Button(form_frame, text="Submit and Next", command=lambda: submitform.submit_form(Exception_file_name_entry, Input_entry, region_var, Type_var, Approval_List_var,
                                                                                                                     Mask_entry, Comment_entry, toggle_state, table_rows, dropdown_values,
                                                                                                                     form_frame, scrollbar, canvas, df, RevisedJSON, table_frame,
                                                                                                                     label1, label2, label3, tab4, table_inner_frame), style="Submit.TButton")  # ,
@@ -380,8 +377,16 @@ class submission_form:
                 style = ttk.Style(tab4)
                 style.configure("Submit.TButton", font=(
                     "Arial", 12, "bold"), foreground="black", background="#4CAF50")
+                
+                # clear_button = ttk.Button(form_frame, text="Save and Exit", command=lambda: submitform.clear_form(form_frame, canvas,table_frame,scrollbar, RevisedJSON), style="Submit.TButton")  # ,
+                # clear_button.grid(row=12, column=1, pady=5)
+
+                # # Create a custom style for the buttons
+                # style = ttk.Style(tab4)
+                # style.configure("Submit.TButton", font=(
+                #     "Arial", 12, "bold"), foreground="black", background="#4CAF50")
             else:
-                submit_button = ttk.Button(form_frame, text="Save and Submit", command=lambda: submitform.submit_form(Exception_file_name_entry, Input_entry, region_var, Type_var, Approval_List_var,
+                submit_button = ttk.Button(form_frame, text="Submit", command=lambda: submitform.submit_form(Exception_file_name_entry, Input_entry, region_var, Type_var, Approval_List_var,
                                                                                                                       Mask_entry, Comment_entry, toggle_state, table_rows, dropdown_values,
                                                                                                                       form_frame, scrollbar, canvas, df, RevisedJSON, table_frame,
                                                                                                                       label1, label2, label3, tab4, table_inner_frame), style="Submit.TButton")  # ,
@@ -391,3 +396,11 @@ class submission_form:
                 style = ttk.Style(tab4)
                 style.configure("Submit.TButton", font=(
                     "Arial", 12, "bold"), foreground="black", background="#4CAF50")
+
+            clear_button = ttk.Button(form_frame, text="Save and Exit", command=lambda: submitform.clear_form(form_frame, canvas,table_frame,df,scrollbar, RevisedJSON), style="Clear.TButton")  # ,
+            clear_button.grid(row=12, column=1, pady=5)
+
+            # Create a custom style for the buttons
+            style = ttk.Style(tab4)
+            style.configure("Clear.TButton", font=(
+                "Arial", 12, "bold"), foreground="black", background="#FF0000")

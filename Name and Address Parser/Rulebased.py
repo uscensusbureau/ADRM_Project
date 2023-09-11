@@ -81,11 +81,11 @@ class RuleBasedAddressParser:
         Final_Map=[]
         Dup_Address_List=AddressList
         Dup_FirstPhaseList=FirstPhaseList[:]
-        print(Dup_FirstPhaseList)
+        # print(Dup_FirstPhaseList)
         
         for i in FirstPhaseList:
             Final_Map.append("")
-        print("******")
+        # print("******")
         if "X" not in TrackKey:
             
             for R in USAD_Conversion_Dict:
@@ -369,11 +369,11 @@ class RuleBasedAddressParser:
     
                 elif R=="USAD_ZIP":
                     for j in range(Counts,len(TrackKey)):
-                        print(FirstPhaseList)
-                        print("LIST")
+                        # 1(FirstPhaseList)
+                        # print("LIST")
                         
-                        print(j)
-                        print(Counts)
+                        # print(j)
+                        # print(Counts)
                         Dictionary=FirstPhaseList[j]
                         Key=""
                         Value=""
@@ -406,7 +406,7 @@ class RuleBasedAddressParser:
                     #         sorting_[i]=Dup_FirstPhaseList[i]
                     for j in range(0,len(Dup_FirstPhaseList)):
                         if Dup_FirstPhaseList[j]!="":
-                            print(Dup_FirstPhaseList[j])
+                            # print(Dup_FirstPhaseList[j])
                             Dictionary=Dup_FirstPhaseList[j]
                             Key=""
                             Value=""
@@ -582,7 +582,7 @@ class RuleBasedAddressParser:
                             
                     for j in range(0,len(Dup_FirstPhaseList)):
                         if Dup_FirstPhaseList[j]!="":
-                            print(Dup_FirstPhaseList[j])
+                            # print(Dup_FirstPhaseList[j])
                             Dictionary=Dup_FirstPhaseList[j]
                             Key=""
                             Value=""
@@ -726,7 +726,7 @@ class RuleBasedAddressParser:
                 
                 
                     for j in range(Counts,len(TrackKey)):
-                        print(True)
+                        # print(True)
                         Dictionary=FirstPhaseList[j]
                         Key=""
                         Value=""
@@ -1059,7 +1059,7 @@ class RuleBasedAddressParser:
                             
                     for j in range(0,len(Dup_FirstPhaseList)):
                         if Dup_FirstPhaseList[j]!="":
-                            print(Dup_FirstPhaseList[j])
+                            # print(Dup_FirstPhaseList[j])
                             Dictionary=Dup_FirstPhaseList[j]
                             Key=""
                             Value=""
@@ -1076,7 +1076,7 @@ class RuleBasedAddressParser:
                      
         dic = {key:value for key,value in USAD_Conversion_Dict.items() if value != ''}
         return Final_Map
-abc=RuleBasedAddressParser.AddressParser(["HC","22","BOX","12","Baton","Rouge","6900","LA","70806"])
-print (abc) 
+# abc=RuleBasedAddressParser.AddressParser(["HC","22","BOX","12","Baton","Rouge","6900","LA","70806"])
+# print (abc) 
 
         

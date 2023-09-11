@@ -1,12 +1,410 @@
 Exception and Mask Report
 
 
-Number of Exceptions Thrown: -	45
-Number of Parsed Address: -	46
-Percentage of Parsed Result: -	50.55
+Number of Exceptions Thrown: -	34
+Number of Parsed Address: -	57
+Percentage of Parsed Result: -	62.64
 Output From Active Learning
 
 {
+    "1": [
+        {
+            "Record ID": "1",
+            "INPUT": "402 S Oak Road Manchester New Hampshire 72732",
+            "NDWFWWWN": {
+                "USAD_SNO": [
+                    [
+                        "N",
+                        "402"
+                    ]
+                ],
+                "USAD_SPR": [
+                    [
+                        "D",
+                        "S"
+                    ]
+                ],
+                "USAD_SNM": [
+                    [
+                        "W",
+                        "OAK"
+                    ]
+                ],
+                "USAD_SFX": [
+                    [
+                        "F",
+                        "ROAD"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "W",
+                        "MANCHESTER"
+                    ]
+                ],
+                "USAD_STA": [
+                    [
+                        "W",
+                        "NEW"
+                    ],
+                    [
+                        "W",
+                        "NEW HAMPSHIRE"
+                    ]
+                ],
+                "USAD_ZIP": [
+                    [
+                        "N",
+                        "72732"
+                    ]
+                ]
+            }
+        }
+    ],
+    "2": [
+        {
+            "Record ID": "2",
+            "INPUT": "88 N Pine Drive Olympia Washington 72733",
+            "NDFFWTN": {
+                "USAD_SNO": [
+                    [
+                        "N",
+                        "88"
+                    ]
+                ],
+                "USAD_SPR": [
+                    [
+                        "D",
+                        "N"
+                    ]
+                ],
+                "USAD_SFX": [
+                    [
+                        "F",
+                        "PINE"
+                    ],
+                    [
+                        "F",
+                        "PINE DRIVE"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "W",
+                        "OLYMPIA"
+                    ]
+                ],
+                "USAD_STA": [
+                    [
+                        "T",
+                        "WASHINGTON"
+                    ]
+                ],
+                "USAD_ZIP": [
+                    [
+                        "N",
+                        "72733"
+                    ]
+                ]
+            }
+        }
+    ],
+    "3": [
+        {
+            "Record ID": "3",
+            "INPUT": "878 NE Birch Lane Portland Oregon 72734",
+            "NDWFWTN": {
+                "USAD_SNO": [
+                    [
+                        "N",
+                        "878"
+                    ]
+                ],
+                "USAD_SPR": [
+                    [
+                        "D",
+                        "NE"
+                    ]
+                ],
+                "USAD_SNM": [
+                    [
+                        "W",
+                        "BIRCH"
+                    ]
+                ],
+                "USAD_SFX": [
+                    [
+                        "F",
+                        "LANE"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "W",
+                        "PORTLAND"
+                    ]
+                ],
+                "USAD_STA": [
+                    [
+                        "T",
+                        "OREGON"
+                    ]
+                ],
+                "USAD_ZIP": [
+                    [
+                        "N",
+                        "72734"
+                    ]
+                ]
+            }
+        }
+    ],
+    "4": [
+        {
+            "Record ID": "4",
+            "INPUT": "78 SE Cedar Court Miami Florida 72735",
+            "NDWFWTN": {
+                "USAD_SNO": [
+                    [
+                        "N",
+                        "78"
+                    ]
+                ],
+                "USAD_SPR": [
+                    [
+                        "D",
+                        "SE"
+                    ]
+                ],
+                "USAD_SNM": [
+                    [
+                        "W",
+                        "CEDAR"
+                    ]
+                ],
+                "USAD_SFX": [
+                    [
+                        "F",
+                        "COURT"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "W",
+                        "MIAMI"
+                    ]
+                ],
+                "USAD_STA": [
+                    [
+                        "T",
+                        "FLORIDA"
+                    ]
+                ],
+                "USAD_ZIP": [
+                    [
+                        "N",
+                        "72735"
+                    ]
+                ]
+            }
+        }
+    ],
+    "5": [
+        {
+            "Record ID": "5",
+            "INPUT": "7687 N Main St Anchorage Alaska 99501",
+            "NDWFWTN": {
+                "USAD_SNO": [
+                    [
+                        "N",
+                        "7687"
+                    ]
+                ],
+                "USAD_SPR": [
+                    [
+                        "D",
+                        "N"
+                    ]
+                ],
+                "USAD_SNM": [
+                    [
+                        "W",
+                        "MAIN"
+                    ]
+                ],
+                "USAD_SFX": [
+                    [
+                        "F",
+                        "ST"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "W",
+                        "ANCHORAGE"
+                    ]
+                ],
+                "USAD_STA": [
+                    [
+                        "T",
+                        "ALASKA"
+                    ]
+                ],
+                "USAD_ZIP": [
+                    [
+                        "N",
+                        "99501"
+                    ]
+                ]
+            }
+        }
+    ],
+    "6": [
+        {
+            "Record ID": "6",
+            "INPUT": "5678 W Elm Ave Juneau Alaska 99801",
+            "NDWFWTN": {
+                "USAD_SNO": [
+                    [
+                        "N",
+                        "5678"
+                    ]
+                ],
+                "USAD_SPR": [
+                    [
+                        "D",
+                        "W"
+                    ]
+                ],
+                "USAD_SNM": [
+                    [
+                        "W",
+                        "ELM"
+                    ]
+                ],
+                "USAD_SFX": [
+                    [
+                        "F",
+                        "AVE"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "W",
+                        "JUNEAU"
+                    ]
+                ],
+                "USAD_STA": [
+                    [
+                        "T",
+                        "ALASKA"
+                    ]
+                ],
+                "USAD_ZIP": [
+                    [
+                        "N",
+                        "99801"
+                    ]
+                ]
+            }
+        }
+    ],
+    "12": [
+        {
+            "Record ID": "12",
+            "INPUT": "9876 E Pine Rd Fairbanks Alaska 99701",
+            "NDFFWTN": {
+                "USAD_SNO": [
+                    [
+                        "N",
+                        "9876"
+                    ]
+                ],
+                "USAD_SPR": [
+                    [
+                        "D",
+                        "E"
+                    ]
+                ],
+                "USAD_SFX": [
+                    [
+                        "F",
+                        "PINE"
+                    ],
+                    [
+                        "F",
+                        "PINE RD"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "W",
+                        "FAIRBANKS"
+                    ]
+                ],
+                "USAD_STA": [
+                    [
+                        "T",
+                        "ALASKA"
+                    ]
+                ],
+                "USAD_ZIP": [
+                    [
+                        "N",
+                        "99701"
+                    ]
+                ]
+            }
+        }
+    ],
+    "13": [
+        {
+            "Record ID": "13",
+            "INPUT": "6 DOYERS ST , Los Angeles , CA 90011",
+            "NWF,WW,TN": {
+                "USAD_SNO": [
+                    [
+                        "N",
+                        "6"
+                    ]
+                ],
+                "USAD_SNM": [
+                    [
+                        "W",
+                        "DOYERS"
+                    ]
+                ],
+                "USAD_SFX": [
+                    [
+                        "F",
+                        "ST"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "W",
+                        "LOS"
+                    ],
+                    [
+                        "W",
+                        "LOS ANGELES"
+                    ]
+                ],
+                "USAD_STA": [
+                    [
+                        "T",
+                        "CA"
+                    ]
+                ],
+                "USAD_ZIP": [
+                    [
+                        "N",
+                        "90011"
+                    ]
+                ]
+            }
+        }
+    ],
     "14": [
         {
             "Record ID": "14",
@@ -354,6 +752,54 @@ Output From Active Learning
                     [
                         "N",
                         "32139"
+                    ]
+                ]
+            }
+        }
+    ],
+    "29": [
+        {
+            "Record ID": "29",
+            "INPUT": "1990 Richards Avenue,San Gabriel,California 91775",
+            "NWF,WW,TN": {
+                "USAD_SNO": [
+                    [
+                        "N",
+                        "1990"
+                    ]
+                ],
+                "USAD_SNM": [
+                    [
+                        "W",
+                        "RICHARDS"
+                    ]
+                ],
+                "USAD_SFX": [
+                    [
+                        "F",
+                        "AVENUE"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "W",
+                        "SAN"
+                    ],
+                    [
+                        "W",
+                        "SAN GABRIEL"
+                    ]
+                ],
+                "USAD_STA": [
+                    [
+                        "T",
+                        "CALIFORNIA"
+                    ]
+                ],
+                "USAD_ZIP": [
+                    [
+                        "N",
+                        "91775"
                     ]
                 ]
             }
@@ -975,6 +1421,54 @@ Output From Active Learning
             }
         }
     ],
+    "52": [
+        {
+            "Record ID": "52",
+            "INPUT": "00 Maple Road, San Antonio, TX 78205",
+            "NWF,WW,TN": {
+                "USAD_SNO": [
+                    [
+                        "N",
+                        "00"
+                    ]
+                ],
+                "USAD_SNM": [
+                    [
+                        "W",
+                        "MAPLE"
+                    ]
+                ],
+                "USAD_SFX": [
+                    [
+                        "F",
+                        "ROAD"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "W",
+                        "SAN"
+                    ],
+                    [
+                        "W",
+                        "SAN ANTONIO"
+                    ]
+                ],
+                "USAD_STA": [
+                    [
+                        "T",
+                        "TX"
+                    ]
+                ],
+                "USAD_ZIP": [
+                    [
+                        "N",
+                        "78205"
+                    ]
+                ]
+            }
+        }
+    ],
     "53": [
         {
             "Record ID": "53",
@@ -1322,6 +1816,54 @@ Output From Active Learning
                     [
                         "N",
                         "19104"
+                    ]
+                ]
+            }
+        }
+    ],
+    "65": [
+        {
+            "Record ID": "65",
+            "INPUT": "90 Richards Avenue,San Gabriel,California 91775",
+            "NWF,WW,TN": {
+                "USAD_SNO": [
+                    [
+                        "N",
+                        "90"
+                    ]
+                ],
+                "USAD_SNM": [
+                    [
+                        "W",
+                        "RICHARDS"
+                    ]
+                ],
+                "USAD_SFX": [
+                    [
+                        "F",
+                        "AVENUE"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "W",
+                        "SAN"
+                    ],
+                    [
+                        "W",
+                        "SAN GABRIEL"
+                    ]
+                ],
+                "USAD_STA": [
+                    [
+                        "T",
+                        "CALIFORNIA"
+                    ]
+                ],
+                "USAD_ZIP": [
+                    [
+                        "N",
+                        "91775"
                     ]
                 ]
             }
