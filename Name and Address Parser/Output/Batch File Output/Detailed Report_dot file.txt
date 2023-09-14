@@ -18,32 +18,38 @@ Output From Active Learning
                         "43"
                     ]
                 ],
-                "USAD_SFX": [
+                "USAD_SNM": [
                     [
                         "R",
                         "STATE"
                     ]
                 ],
-                "USAD_CTY": [
+                "USAD_SFX": [
                     [
                         "F",
                         "AVE"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "W",
+                        "NEW"
                     ],
                     [
                         "W",
-                        "AVE NEW"
+                        "NEW ALBANY"
                     ]
                 ],
                 "USAD_STA": [
                     [
-                        "W",
-                        "ALBANY"
+                        "T",
+                        "IN"
                     ]
                 ],
                 "USAD_ZIP": [
                     [
-                        "T",
-                        "IN"
+                        "N",
+                        "47150"
                     ]
                 ]
             }
@@ -72,28 +78,30 @@ Output From Active Learning
                         "ST"
                     ]
                 ],
-                "USAD_SPT": [
+                "USAD_CTY": [
                     [
                         "D",
                         "SOUTH"
-                    ]
-                ],
-                "USAD_CTY": [
+                    ],
                     [
                         "W",
-                        "OZONE"
+                        "SOUTH OZONE"
+                    ],
+                    [
+                        "F",
+                        "SOUTH OZONE PARK"
                     ]
                 ],
                 "USAD_STA": [
                     [
-                        "F",
-                        "PARK"
+                        "T",
+                        "NY"
                     ]
                 ],
                 "USAD_ZIP": [
                     [
-                        "T",
-                        "NY"
+                        "N",
+                        "11420"
                     ]
                 ]
             }
@@ -110,32 +118,38 @@ Output From Active Learning
                         "43"
                     ]
                 ],
-                "USAD_SFX": [
+                "USAD_SNM": [
                     [
                         "R",
                         "STATE"
                     ]
                 ],
-                "USAD_CTY": [
+                "USAD_SFX": [
                     [
                         "F",
                         "AVE"
+                    ]
+                ],
+                "USAD_CTY": [
+                    [
+                        "W",
+                        "NEW"
                     ],
                     [
                         "W",
-                        "AVE NEW"
+                        "NEW ALBANY"
                     ]
                 ],
                 "USAD_STA": [
                     [
-                        "W",
-                        "ALBANY"
+                        "T",
+                        "IN"
                     ]
                 ],
                 "USAD_ZIP": [
                     [
-                        "T",
-                        "IN"
+                        "N",
+                        "47150"
                     ]
                 ]
             }

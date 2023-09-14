@@ -22,6 +22,8 @@ class PreProcessingNameAddress:
 
         Address=re.sub(' +', ' ',line)
         Address=re.sub(',',' , ',Address)
+        Address=re.sub('#',' # ',Address)
+        
         Address=Address.upper()
 
         AddressList = re.split("\s|\s,\s", Address)
@@ -33,5 +35,5 @@ class PreProcessingNameAddress:
 
         return (AddressList,Address)
     
-cleaning = PreProcessingNameAddress.AddresssCleaning(0,"1701 westpark drive, apt #&%105, Little Rock, AR 72204")
-print(cleaning)
+# cleaning = PreProcessingNameAddress.AddresssCleaning(0,"1701 westpark drive, apt #&%105, Little Rock, AR 72204")
+# print(cleaning)

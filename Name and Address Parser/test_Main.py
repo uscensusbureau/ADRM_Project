@@ -131,6 +131,9 @@ class NAP_GUIBuilder(tk.Tk):
             
             for item in tree.get_children():
                 tree.delete(item)
+            # Clear the text in the Text widget
+            single_input.delete(1.0, tk.END)
+
             # single_input = self.tab2.nametowidget(".!notebook.!frame.!text")
             # self.create_treeview(single_input)
             Instance.Process_Address_Parser_Single_input()

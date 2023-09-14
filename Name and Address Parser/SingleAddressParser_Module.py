@@ -35,11 +35,12 @@ root_folder = Path(__file__).parents[1]
 
 ExceptionList = []
 def throwException(originalInput,initials):
+    rules=rulebased.RuleBasedAddressParser.AddressParser(AddressList)
     ID = str(initials) + "Forced Exception_File " +  "-->01"
     ExceptionDict = {
         "Record ID": ID,
         "INPUT": originalInput,
-        str(Mask_1): FirstPhaseList
+        str(Mask_1): rules
     }
     # oldExceptionList = ExceptionList.append(ExceptionDict)
     
@@ -59,7 +60,7 @@ def throwException(originalInput,initials):
         json.dump(ExceptionList, g, indent=4)
     return
 def Address_Parser(line,initials,originalInput):
-    global Result, Exception_file_name, FirstPhaseList, Mask_1
+    global Result, Exception_file_name, FirstPhaseList, Mask_1, AddressList, rules
     Result={}
     Exception_=False
     Exception_file_name=""
@@ -145,8 +146,6 @@ def Address_Parser(line,initials,originalInput):
                 Temp=""
                 Merge_token=""
                 for p in V2:
-                    print()
-                    
                     for K3,V3 in FirstPhaseList[p-1].items():
                        Temp+=" "+V3
                        Temp=Temp.strip()
@@ -183,7 +182,7 @@ def Address_Parser(line,initials,originalInput):
         OutputDict = {
                 "Record ID": ID,
                 "INPUT": originalInput,
-                str(Mask_1): FirstPhaseList
+                str(Mask_1): Mappings
             }
         Output_file_name=initials+str(current_time)+"_Output.json"
         Output_file_name=re.sub(r'[^\w_. -]', '_', Output_file_name)

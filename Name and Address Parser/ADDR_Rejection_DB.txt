@@ -292,5 +292,26 @@
         "Token Pattern": "RNXNNTN",
         "Rejected By": "Committee Member_2 at 2023-09-10 02:02:07.101537",
         "Comment": ""
+    },
+    {
+        "Exception_file_name": "2020 13_35_55.023247.json",
+        "Input": "10233\tNORTH BURGHER AVENUE\t\tANYTOWN\tUS\t0",
+        "Token Pattern": "NDWFWRN",
+        "Rejected By": "Committee Member_1 at 2023-09-11 14:04:19.042613",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "2020 13_35_55.023247.json",
+        "Input": "10233\tNORTH BURGHER AVENUE\t\tANYTOWN\tUS\t0",
+        "Token Pattern": "NDWFWRN",
+        "Rejected By": "Committee Member_1 at 2023-09-11 14:05:13.538539",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "400K records 14_00_50.500008.json",
+        "Input": "STREET_NUMBER STREET_NAME,UNIT_NUMBER,CITY, STATE ZIPCODE",
+        "Token Pattern": "WW,W,W,RW",
+        "Rejected By": "Committee Member_1 at 2023-09-13 14:08:17.425648",
+        "Comment": ""
     }
 ]

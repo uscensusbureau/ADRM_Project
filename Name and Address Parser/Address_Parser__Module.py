@@ -64,7 +64,7 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
   "USAD_HNO": 20
 }
     data={}
-    with open('KB_Test.json', 'r+', encoding='utf8') as f:
+    with open('JSONMappingDefault.json', 'r+', encoding='utf8') as f:
         data = json.load(f)
     USAD_CONVERSION_={
         
@@ -175,18 +175,21 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
         
         if Found:
             Observation+=1
-            Mappings={}
+            Mappings=[]
             
             for K2,V2 in FoundDict[Mask_1].items():
                 Temp=""
+                Merge_token=""
                 for p in V2:
                     for K3,V3 in FirstPhaseList[p-1].items():
                        Temp+=" "+V3
                        Temp=Temp.strip()
-                       if K2 in Mappings:
-                           Mappings[K2].append([K3,Temp])
-                       else:
-                           Mappings[K2] = [[K3,Temp]]
+                       Merge_token+=K3
+                       Mappings.append([K2,K3,V3])
+                       # if K2 in Mappings:
+                       #     Mappings[K2].append([K3,Temp])
+                       # else:
+                       #     Mappings[K2] = [[K3,Temp]]
             
             OutputEntry = {
                 "Record ID": ID,
@@ -224,7 +227,8 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
       
             
             # print(AddressList)
-            # RuleBasedOutput[ID]=RuleBased.RuleBasedAddressParser.AddressParser(AddressList)
+            RuleBasedOutput[ID]=rules
+            
             # print( RuleBasedOutput[ID])
             # print(ID)
             # with open('ExceptionFile.json', 'r+', encoding='utf8') as g:
@@ -388,6 +392,7 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
         Detailed_Report+="Percentage of Parsed Result: -\t"+str(percentage)+"\n"
         Detailed_Report+="Output From Active Learning\n\n"
         Detailed_Report+=str(ActiveLResult)
+        
         RuleBasedRes =json.dumps(RuleBasedOutput,indent=4)
         Detailed_Report+="\n\nOutput Fron Rule Based Approach\n\n"
         Detailed_Report+=str(RuleBasedRes)

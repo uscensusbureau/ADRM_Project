@@ -3308,5 +3308,419 @@
                 "USAD_ZIP"
             ]
         ]
+    },
+    {
+        "Unique_ID": "a86194f6310532109b547d9bfda2289cffbe957f",
+        "Exception_file_name": "Attention Line_Test 22_40_15.031714.json",
+        "Input": "ACCENT-E-TECHNOLOGY 642 PLEASANT AVE UNIONTOWN, PA 15401",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "WNWFW,TN",
+        "Approved By": "Committee Member_1 at 2023-09-11 13:41:54.630735",
+        "Comment": "",
+        "Table Data": [
+            [
+                "W",
+                "ACCENT-E-TECHNOLOGY",
+                "USAD_ORG"
+            ],
+            [
+                "N",
+                "642",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "PLEASANT",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "AVE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "UNIONTOWN",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "PA",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "15401",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "c95db3970441a8be3728d416a63d97aab771af1a",
+        "Exception_file_name": "400K records 14_00_50.500008.json",
+        "Input": "4640 GROMO CT, APT NBR 1R, FORT COLLINS, CO  80537",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,SWN,FW,TN",
+        "Approved By": "Committee Member_1 at 2023-09-13 14:09:40.630493",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "4640",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "GROMO",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "CT",
+                "USAD_SFX"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "NBR",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "1R",
+                "USAD_ANO"
+            ],
+            [
+                "F",
+                "FORT",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "COLLINS",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "CO",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "80537",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "160b1d9d809079567a49df338438ab47273af536",
+        "Exception_file_name": "400K records 14_00_50.500008.json",
+        "Input": "30 ELLWINE DR, NUMBER L FLOOR 3, EAGLE MOUNTAIN, UT  84041",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,WWWN,WF,TN",
+        "Approved By": "Committee Member_1 at 2023-09-13 14:10:38.847120",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "30",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "ELLWINE",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "DR",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "NUMBER",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "L",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "FLOOR",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "3",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "EAGLE",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "MOUNTAIN",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "UT",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "84041",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "980895461f09a28e352e7757380fe3f5d87218c6",
+        "Exception_file_name": "400K records 14_00_50.500008.json",
+        "Input": "1889 KANDT DR, G F APARTMENT 1022, NEWHALL, CA  94559",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,WWSN,W,TN",
+        "Approved By": "Committee Member_2 at 2023-09-13 14:11:26.144387",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1889",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "KANDT",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "DR",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "G",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "F",
+                "USAD_ANM"
+            ],
+            [
+                "S",
+                "APARTMENT",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "1022",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "NEWHALL",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "CA",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "94559",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "e78ff0d78a24606f90d28898e5d528acb15cc877",
+        "Exception_file_name": "400K records 14_00_50.500008.json",
+        "Input": "720 KENSINGTON CT, FL NO 2, MARKTON, AL  36608",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,TWN,W,TN",
+        "Approved By": "Committee Member_1 at 2023-09-13 14:12:13.907430",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "720",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "KENSINGTON",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "CT",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "FL",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "NO",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "2",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "MARKTON",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "AL",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "36608",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "61420255c8573d58e966a2ac7ec22c39868fa228",
+        "Exception_file_name": "400K records 14_00_50.500008.json",
+        "Input": "3716 HUNTERS MILL RD, 10TH FL, MADISON, SD  57004",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWFF,NT,W,TN",
+        "Approved By": "Committee Member_2 at 2023-09-13 14:13:18.022748",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "3716",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "HUNTERS",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "MILL",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "RD",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "10TH",
+                "USAD_ANO"
+            ],
+            [
+                "T",
+                "FL",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "MADISON",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "SD",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "57004",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "165f8d27972f5d7643bb929d1b67437fe4256b68",
+        "Exception_file_name": "400K records 14_00_50.500008.json",
+        "Input": "2330 NW CHIPMAN RD, APRT NO 10046, ALLEN, TX  77433",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NDWF,WWN,W,TN",
+        "Approved By": "Committee Member_1 at 2023-09-13 14:14:02.907332",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "2330",
+                "USAD_SNO"
+            ],
+            [
+                "D",
+                "NW",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "CHIPMAN",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "RD",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "APRT",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "NO",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "10046",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "ALLEN",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "TX",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "77433",
+                "USAD_ZIP"
+            ]
+        ]
     }
 ]

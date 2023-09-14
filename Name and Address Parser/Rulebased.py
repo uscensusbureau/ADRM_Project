@@ -1076,7 +1076,7 @@ class RuleBasedAddressParser:
                      
         dic = {key:value for key,value in USAD_Conversion_Dict.items() if value != ''}
         return Final_Map
-# abc=RuleBasedAddressParser.AddressParser(["HC","22","BOX","12","Baton","Rouge","6900","LA","70806"])
-# print (abc) 
+abc=RuleBasedAddressParser.AddressParser(["6678","UNIVERSITY","AVENUE","SAN","JUAN", "PR","00926"])
+print (abc) 
 
         

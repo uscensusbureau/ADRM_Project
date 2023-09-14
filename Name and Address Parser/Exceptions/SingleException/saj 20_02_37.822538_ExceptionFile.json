@@ -1,0 +1,43 @@
+[
+    {
+        "Record ID": "Single Line Exception_File saj-->01",
+        "INPUT": "8190 Marsh Ave The Villages FL 32162",
+        "NWFWFTN": [
+            [
+                "8190",
+                "USAD_SNO",
+                "N"
+            ],
+            [
+                "MARSH",
+                "USAD_SNM",
+                "W"
+            ],
+            [
+                "AVE",
+                "USAD_SFX",
+                "F"
+            ],
+            [
+                "THE",
+                "USAD_CTY",
+                "W"
+            ],
+            [
+                "VILLAGES",
+                "USAD_NA",
+                "F"
+            ],
+            [
+                "FL",
+                "USAD_STA",
+                "T"
+            ],
+            [
+                "32162",
+                "USAD_ZIP",
+                "N"
+            ]
+        ]
+    }
+]
