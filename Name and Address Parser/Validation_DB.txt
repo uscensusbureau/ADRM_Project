@@ -3722,5 +3722,67 @@
                 "USAD_ZIP"
             ]
         ]
+    },
+    {
+        "Unique_ID": "57b6769a7d569ab31c5eef0b3725824051ddb6ca",
+        "Exception_file_name": "aslk 19_32_42.707500_ExceptionFile.json",
+        "Input": "5506 A STREET, APT #8656, LITTLE ROCK, AR 72205",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,SSN,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-09-17 02:23:51.449551",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "A",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SFX"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_ANM"
+            ],
+            [
+                "S",
+                "#",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "8656",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "72205",
+                "USAD_ZIP"
+            ]
+        ]
     }
 ]

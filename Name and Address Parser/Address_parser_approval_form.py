@@ -32,6 +32,7 @@ import Address_parser_mixc_methods as mx
 import submission_form_parser as submissionform
 
 
+
 class submission_form:
     def Browse_File(self, df, Iterate, form_frame, canvas, table_frame, label1, label2, label3, tab4):
         global scrollbar, submit_button  # S
@@ -249,6 +250,37 @@ class submission_form:
                 "USAD_MGN": "Military Rd Number",
                 "USAD_HNM": "Highway Name",
                 "USAD_HNO": "Highway Number", "USAD_NA":"Not Selected"}
+            desired_order = [
+                "USAD_SNO",
+                "USAD_SPR",
+                "USAD_SNM",
+                "USAD_SFX",
+                "USAD_SPT",
+                "USAD_ANM",
+                "USAD_ANO",
+                "USAD_CTY",
+                "USAD_STA",
+                "USAD_ZIP",
+                "USAD_ZP4",
+                "USAD_BNM",
+                "USAD_BNO",
+                "USAD_RNM",
+                "USAD_RNO",
+                "USAD_ORG",
+                "USAD_MDG",
+                "USAD_MGN",
+                "USAD_HNM",
+                "USAD_HNO", 
+                "USAD_NA",
+                ]
+            
+            # sorted_items = sorted(dropdown_values.items())
+
+            # # Create a new dictionary from the sorted list
+            # sorted_dict = dict(sorted_items)
+            
+            # # Print the sorted dictionary
+            # print(sorted_dict)
 
             def add_table_row(m):
                 global Stat
@@ -282,27 +314,48 @@ class submission_form:
                 text2.grid(row=len(table_rows) + 1, column=1,
                            sticky="nsew", padx=1, pady=0)
                 row.append(text2)
-
-                # Create the dropdown for the last column
+                #-----------------------------------------------------------------------------
+                
+                # Create a Combobox and populate it with values in the desired order
                 dropdown_var = tk.StringVar(tab4)
-                dropdown_var.set(list(dropdown_values.values())[0])
+                dropdown_var.set(dropdown_values[desired_order[0]])  # Set the default value
                 
-                selected_item=dropdown_values[m[1]]
-                list_of_val=list(dropdown_values.values())
+                selected_item = dropdown_values[m[1]]
                 
-                list_of_val.insert(0,selected_item)
-                list_of_val=list(set(list_of_val))
-                # print(selected_item)
+                list_of_val = [dropdown_values[key] for key in desired_order]
+                list_of_val.insert(0, selected_item)
                 
-                dropdown = ttk.Combobox(table_inner_frame,textvariable=dropdown_var, values=list_of_val, width=18, height=2, font=("Arial", 12), state="readonly")
-                #dropdown.bind("<<ComboboxSelected>>", on_select)
+                dropdown = ttk.Combobox(
+                    table_inner_frame, textvariable=dropdown_var, values=list_of_val, width=18, height=2, font=("Arial", 12), state="readonly")
                 dropdown.set(selected_item)
-                # dropdown.pack()
+                
                 dropdown.configure(postcommand=lambda: dropdown.configure(
                     height=dropdown_var), justify="center")
-                dropdown.grid(row=len(table_rows) + 1, column=2,
-                              sticky="nsew", padx=2, pady=0)
+                dropdown.grid(row=len(table_rows) + 1, column=2, sticky="nsew", padx=2, pady=0)
                 row.append(dropdown)
+                
+                #-----------------------------------------------------------------------------
+                
+                # # Create the dropdown for the last column
+                # dropdown_var = tk.StringVar(tab4)
+                # dropdown_var.set(list(dropdown_values.values())[0])
+                
+                # selected_item=dropdown_values[m[1]]
+                # list_of_val=list(dropdown_values.values())
+                
+                # list_of_val.insert(0,selected_item)
+                # list_of_val=list(set(list_of_val))
+                # # print(selected_item)
+                
+                # dropdown = ttk.Combobox(table_inner_frame,textvariable=dropdown_var, values=list_of_val, width=18, height=2, font=("Arial", 12), state="readonly")
+                # #dropdown.bind("<<ComboboxSelected>>", on_select)
+                # dropdown.set(selected_item)
+                # # dropdown.pack()
+                # dropdown.configure(postcommand=lambda: dropdown.configure(
+                #     height=dropdown_var), justify="center")
+                # dropdown.grid(row=len(table_rows) + 1, column=2,
+                #               sticky="nsew", padx=2, pady=0)
+                # row.append(dropdown)
 
                 # Update the row-span for the labels in the previous rows
                 for r in range(len(table_rows)):

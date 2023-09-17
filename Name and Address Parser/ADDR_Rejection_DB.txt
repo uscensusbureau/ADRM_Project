@@ -313,5 +313,12 @@
         "Token Pattern": "WW,W,W,RW",
         "Rejected By": "Committee Member_1 at 2023-09-13 14:08:17.425648",
         "Comment": ""
+    },
+    {
+        "Exception_file_name": "Batch test 1 20_10_01.868128.json",
+        "Input": "6678 UNIVERSITY AVENUE ,SAN JUAN PR 00926",
+        "Token Pattern": "NZF,WWFN",
+        "Rejected By": "Committee Member_2 at 2023-09-17 03:16:55.597690",
+        "Comment": ""
     }
 ]
