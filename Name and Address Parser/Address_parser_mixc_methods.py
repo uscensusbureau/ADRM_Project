@@ -21,49 +21,50 @@ class Address_parser_misc():
     
     
     def Process_Address_Parser_Test(self):
-        msg.showinfo("Choose File","Select Input File")
-
-        df = fd.askopenfilenames( filetypes=[("TXT", ".txt"),("JSON",".json")]) 
-        if df:
-            msg.showinfo("Choose File","Select Truth File")
-            
-            truth = fd.askopenfilenames( filetypes=[("TXT", ".txt"),("JSON",".json")]) #this file is used to give UI for the user to open a file
-            
-            if truth:
-                Output=AdM.Address_Parser(df[0],TruthSet=truth[0])
-                if Output[0]:
-                    msg.showinfo("Success",Output[1])
-                else:
-                    msg.showerror("Error!", Output[1])                
+        popup = msg.askokcancel("Choose File","Select Input File")
+        if popup:
+            df = fd.askopenfilenames( filetypes=[("TXT", ".txt"),("JSON",".json")]) 
+            if df:
+                msg.showinfo("Choose File","Select Truth File")
                 
-              
-                # except:
-                #     msg.showinfo("Alert!","File Reading Error !")
-            else: msg.showerror("Alert!","Truth file is required!")
-        else: msg.showerror("Alert","Please select input file.")
+                truth = fd.askopenfilenames( filetypes=[("TXT", ".txt"),("JSON",".json")]) #this file is used to give UI for the user to open a file
+                
+                if truth:
+                    Output=AdM.Address_Parser(df[0],TruthSet=truth[0])
+                    if Output[0]:
+                        msg.showinfo("Success",Output[1])
+                    else:
+                        msg.showerror("Error!", Output[1])                
+                    
+                  
+                    # except:
+                    #     msg.showinfo("Alert!","File Reading Error !")
+                else: msg.showerror("Alert!","Truth file is required!")
+            else: msg.showerror("Alert","Please select input file.")
         return
     
     
     def Process_Address_Parser_Single_input(self,Progress):
-        msg.showinfo("Choose File","Select Input File in Pipe Delimited Format \n For Example: 1 | 'Your Address Here'")
-        df = fd.askopenfilenames(filetypes=[("TXT", ".txt"),("JSON",".json")],initialdir = "Test Data") 
-        if df:
-            Output=AdM.Address_Parser(df[0],Progress)
-            
-            if Output[0]:
-                msg.showinfo("Success",Output[1])
-            else:
-                msg.showerror("Error!", Output[1])
-        else: 
-            pass 
-            # msg.showerror("Alert","Please select input file.")
+        popup = msg.askokcancel("Choose File","Select Input File in Pipe Delimited Format \n For Example: 1 | 'Your Address Here'")
+        if popup:
+            df = fd.askopenfilenames(filetypes=[("TXT", ".txt"),("JSON",".json")],initialdir = "Test Data") 
+            if df:
+                Output=AdM.Address_Parser(df[0],Progress)
+                
+                if Output[0]:
+                    msg.showinfo("Success",Output[1])
+                else:
+                    msg.showerror("Error!", Output[1])
+            else: 
+                pass 
+                # msg.showerror("Alert","Please select input file.")
         return
     
     def Single_Address(self, single_input ,tab2,tree):
         
         def submit():
             # Get the checkbox state
-            checkbox_state = checkbox_var.get()
+            # checkbox_state = checkbox_var.get()
             # Print the checkbox state
             if checkbox_var.get():
                 # AD_API.Address_Parser()
@@ -107,11 +108,11 @@ class Address_parser_misc():
             
             # Create the checkbox
             checkbox = ttk.Checkbutton(tab2, text="Forced Exception", variable=checkbox_var)
-            checkbox.grid(row=60, column=5, padx=10, pady=10)
+            checkbox.grid(row=70, column=5, padx=10, pady=10)
             
             # Create the submit button
             submit_button = ttk.Button(tab2, text="Submit", command=submit)
-            submit_button.grid(row=61, column =5 , padx=10, pady=10)
+            submit_button.grid(row=71, column =5 , padx=10, pady=10)
             
             try:  
                 
@@ -152,7 +153,7 @@ class Address_parser_misc():
         
         
         
-        tree.grid(row=55, column=5, sticky=tk.EW)
+        tree.grid(row=65, column=5, sticky=tk.EW)
         
 
     def wrap(self, string, lenght=36):

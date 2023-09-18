@@ -44,26 +44,27 @@ class submission_form:
         Input_name = ""
         ID = ""
         if Iterate == False:
-            msg.showinfo("Choose File", "Select an Exception File")
-            df = fd.askopenfilenames(
-                filetypes=[("JSON", ".json"), ("TXT", ".txt")],initialdir = "Exceptions")
-            components = form_frame.winfo_children()    
-
-            if len(components) != 0:
-                # Iterate through each component and remove it
-                for component in components:
-                    component.destroy()
-
-                components = canvas.find_all()
-
-                # Remove each component from the canvas
-                for component in components:
-                    canvas.delete(component)
-            try:
-
-                scrollbar.destroy()
-            except:
-                True
+            popup = msg.askokcancel("Choose File", "Select an Exception File")
+            if popup:
+                df = fd.askopenfilenames(
+                    filetypes=[("JSON", ".json"), ("TXT", ".txt")],initialdir = "Exceptions")
+                components = form_frame.winfo_children()    
+    
+                if len(components) != 0:
+                    # Iterate through each component and remove it
+                    for component in components:
+                        component.destroy()
+    
+                    components = canvas.find_all()
+    
+                    # Remove each component from the canvas
+                    for component in components:
+                        canvas.delete(component)
+                try:
+    
+                    scrollbar.destroy()
+                except:
+                    True
         else:
             components = form_frame.winfo_children()
 

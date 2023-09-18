@@ -55,6 +55,10 @@ class NAP_GUIBuilder(tk.Tk):
         self.tab2 = ttk.Frame(self.tabControl)
         self.tabControl.add(self.tab2, text ='Address Parser')
         
+        # self.tab5 = ttk.Frame(self.tabControl)
+        # self.tabControl.add(self.tab5, text ='Address Parser')
+        
+        
         
         
         self.tab4 = ttk.Frame(self.tabControl)
@@ -64,6 +68,7 @@ class NAP_GUIBuilder(tk.Tk):
         # self.tabControl.add(self.tab3, text ='Validation & Analysis')
         # Calling Different Methods with respect to the tab
         self.NAP_GUIBuilder_AddressParser()
+        # self.NAP_GUIBuilder_AddressParserFile()
         self.NAP_GUIBuilder_MappingApprovalForm()
         # self.NAP_GUIBuilder_Validation()
         
@@ -108,6 +113,7 @@ class NAP_GUIBuilder(tk.Tk):
         s.configure("TProgressbar", foreground='red', background='green')
         
         tree = ttk.Treeview(self.tab2, column=["Mask Token","Address Token","Address Component","Exception","File"] ,show='headings',height=14)
+        
     # elif not Batch:
         for item in tree.get_children():
             tree.delete(item)
@@ -233,6 +239,34 @@ class NAP_GUIBuilder(tk.Tk):
                               row = 0,
                               padx = 10,
                               pady = 10)
+        
+        return
+    def NAP_GUIBuilder_AddressParserFile(self):
+        Instance = mx.Address_parser_misc()
+        s=ttk.Style()
+        s.theme_use("clam")
+
+        s.configure("TProgressbar", foreground='red', background='green')
+        def Threading(Progress):
+            thread1=threading.Thread(target=lambda:Instance.Process_Address_Parser_Single_input(Progress))
+            #thread2=threading.Thread(target=Progress.start)
+           # thread3=threading.Thread(target=Progress.stop)
+            
+            thread1.start()
+      #  thread1.join()
+      
+        #Progress.stop()
+        ttk.Label(self.tab5,text="Please Choose A Pipe Delimitted File").grid(column = 0, 
+                                 row = 0,
+                                 padx = 10,
+                                 pady = 10) 
+        Progress = ttk.Progressbar(self.tab5, orient=tk.HORIZONTAL,length=300,mode='determinate',style="TProgressbar")
+        Progress.grid( column=5,row=11,padx=10,pady=10)
+        
+        ttk.Button(self.tab5, text ="Choose Batch File",width=30, command=lambda:Threading(Progress)).grid(column = 5, 
+                             row = 10,
+                             padx = 10,
+                             pady = 10)
         
         return
     

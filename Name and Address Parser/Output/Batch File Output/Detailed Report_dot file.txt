@@ -11,152 +11,171 @@ Output From Active Learning
         {
             "Record ID": "1",
             "INPUT": "43 State Ave ,New Albany, IN 47150",
-            "NRF,WW,TN": {
-                "USAD_SNO": [
-                    [
-                        "N",
-                        "43"
-                    ]
+            "NRF,WW,TN": [
+                [
+                    "USAD_SNO",
+                    "N",
+                    "43"
                 ],
-                "USAD_SNM": [
-                    [
-                        "R",
-                        "STATE"
-                    ]
+                [
+                    "USAD_SNM",
+                    "R",
+                    "STATE"
                 ],
-                "USAD_SFX": [
-                    [
-                        "F",
-                        "AVE"
-                    ]
+                [
+                    "USAD_SFX",
+                    "F",
+                    "AVE"
                 ],
-                "USAD_CTY": [
-                    [
-                        "W",
-                        "NEW"
-                    ],
-                    [
-                        "W",
-                        "NEW ALBANY"
-                    ]
+                [
+                    "USAD_CTY",
+                    "W",
+                    "NEW"
                 ],
-                "USAD_STA": [
-                    [
-                        "T",
-                        "IN"
-                    ]
+                [
+                    "USAD_CTY",
+                    "W",
+                    "ALBANY"
                 ],
-                "USAD_ZIP": [
-                    [
-                        "N",
-                        "47150"
-                    ]
+                [
+                    "USAD_STA",
+                    "T",
+                    "IN"
+                ],
+                [
+                    "USAD_ZIP",
+                    "N",
+                    "47150"
                 ]
-            }
+            ]
         }
     ],
     "2": [
         {
             "Record ID": "2",
             "INPUT": "815 Marvon St South Ozone Park, NY 11420",
-            "NWFDWF,TN": {
-                "USAD_SNO": [
-                    [
-                        "N",
-                        "815"
-                    ]
+            "NWFDWF,TN": [
+                [
+                    "USAD_SNO",
+                    "N",
+                    "815"
                 ],
-                "USAD_SNM": [
-                    [
-                        "W",
-                        "MARVON"
-                    ]
+                [
+                    "USAD_SNM",
+                    "W",
+                    "MARVON"
                 ],
-                "USAD_SFX": [
-                    [
-                        "F",
-                        "ST"
-                    ]
+                [
+                    "USAD_SFX",
+                    "F",
+                    "ST"
                 ],
-                "USAD_CTY": [
-                    [
-                        "D",
-                        "SOUTH"
-                    ],
-                    [
-                        "W",
-                        "SOUTH OZONE"
-                    ],
-                    [
-                        "F",
-                        "SOUTH OZONE PARK"
-                    ]
+                [
+                    "USAD_CTY",
+                    "D",
+                    "SOUTH"
                 ],
-                "USAD_STA": [
-                    [
-                        "T",
-                        "NY"
-                    ]
+                [
+                    "USAD_CTY",
+                    "W",
+                    "OZONE"
                 ],
-                "USAD_ZIP": [
-                    [
-                        "N",
-                        "11420"
-                    ]
+                [
+                    "USAD_CTY",
+                    "F",
+                    "PARK"
+                ],
+                [
+                    "USAD_STA",
+                    "T",
+                    "NY"
+                ],
+                [
+                    "USAD_ZIP",
+                    "N",
+                    "11420"
                 ]
-            }
+            ]
         }
     ],
     "3": [
         {
             "Record ID": "3",
             "INPUT": "43 State Ave ,New Albany, IN 47150",
-            "NRF,WW,TN": {
-                "USAD_SNO": [
-                    [
-                        "N",
-                        "43"
-                    ]
+            "NRF,WW,TN": [
+                [
+                    "USAD_SNO",
+                    "N",
+                    "43"
                 ],
-                "USAD_SNM": [
-                    [
-                        "R",
-                        "STATE"
-                    ]
+                [
+                    "USAD_SNM",
+                    "R",
+                    "STATE"
                 ],
-                "USAD_SFX": [
-                    [
-                        "F",
-                        "AVE"
-                    ]
+                [
+                    "USAD_SFX",
+                    "F",
+                    "AVE"
                 ],
-                "USAD_CTY": [
-                    [
-                        "W",
-                        "NEW"
-                    ],
-                    [
-                        "W",
-                        "NEW ALBANY"
-                    ]
+                [
+                    "USAD_CTY",
+                    "W",
+                    "NEW"
                 ],
-                "USAD_STA": [
-                    [
-                        "T",
-                        "IN"
-                    ]
+                [
+                    "USAD_CTY",
+                    "W",
+                    "ALBANY"
                 ],
-                "USAD_ZIP": [
-                    [
-                        "N",
-                        "47150"
-                    ]
+                [
+                    "USAD_STA",
+                    "T",
+                    "IN"
+                ],
+                [
+                    "USAD_ZIP",
+                    "N",
+                    "47150"
                 ]
-            }
+            ]
         }
     ]
 }
 
 Output Fron Rule Based Approach
 
-{}
+{
+    "4": [
+        [
+            "5506",
+            "USAD_SNO",
+            "N"
+        ],
+        [
+            "A",
+            "USAD_SNM",
+            "W"
+        ],
+        [
+            "STREET",
+            "USAD_SFX",
+            "F"
+        ],
+        [
+            "2551",
+            "USAD_ANO",
+            "N"
+        ],
+        [
+            "AR",
+            "USAD_STA",
+            "T"
+        ],
+        [
+            "7225",
+            "USAD_ZIP",
+            "N"
+        ]
+    ]
+}
