@@ -44,12 +44,11 @@ class Address_parser_misc():
         return
     
     
-    def Process_Address_Parser_Single_input(self):
+    def Process_Address_Parser_Single_input(self,Progress):
         msg.showinfo("Choose File","Select Input File in Pipe Delimited Format \n For Example: 1 | 'Your Address Here'")
-
         df = fd.askopenfilenames(filetypes=[("TXT", ".txt"),("JSON",".json")],initialdir = "Test Data") 
         if df:
-            Output=AdM.Address_Parser(df[0])
+            Output=AdM.Address_Parser(df[0],Progress)
             
             if Output[0]:
                 msg.showinfo("Success",Output[1])

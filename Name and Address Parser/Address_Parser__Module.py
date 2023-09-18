@@ -25,7 +25,7 @@ current_time = datetime.now().time()
 # Format the time as HH:MM:SS
 time_string = current_time.strftime("%H:%M:%S")
 
-def Address_Parser(Address_4CAF50,TruthSet=""):
+def Address_Parser(Address_4CAF50,Progress,TruthSet=""):
     Result={}
     RuleBasedOutput={}
     Exception_Mask=""
@@ -64,7 +64,7 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
   "USAD_HNO": 20
 }
     data={}
-    with open('KB_Test.json', 'r+', encoding='utf8') as f:
+    with open('JSONMappingDefault.json', 'r+', encoding='utf8') as f:
         data = json.load(f)
     USAD_CONVERSION_={
         
@@ -93,10 +93,17 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
     ExceptionList = []
     ExceptionDict = {}
     WordTable={}
+ 
     for line in fileHandle:
+     
         fields=line.split('|')
         WordTable[fields[0]]=fields[1][0]
+    Progress.start()
+    CNT=100/len(Lines)
+    CN=0
     for line in tqdm(Lines):
+        CN=CN+CNT
+        Progress["value"]=CN
         line=line.strip("\n").split("|")
         ID=line[0].strip()
         try:
@@ -409,6 +416,7 @@ def Address_Parser(Address_4CAF50,TruthSet=""):
         f=open(path,"w",encoding="utf8")
         f.write(Detailed_Report)
         f.close()
+        Progress.stop()
         return (True,f"Detailed_Report of {file_name} Generated \n{Detailed_Report_1}")
 
     # print("Final Correct Address Parsing Percentage",Count_of_Correct/Total_Count*100)

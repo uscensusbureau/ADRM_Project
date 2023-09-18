@@ -768,7 +768,6 @@ class RuleBasedAddressParser:
                             
                     for j in range(0,len(Dup_FirstPhaseList)):
                         if Dup_FirstPhaseList[j]!="":
-                            print(Dup_FirstPhaseList[j])
                             Dictionary=Dup_FirstPhaseList[j]
                             Key=""
                             Value=""
@@ -962,7 +961,6 @@ class RuleBasedAddressParser:
                             
                     for j in range(0,len(Dup_FirstPhaseList)):
                         if Dup_FirstPhaseList[j]!="":
-                            print(Dup_FirstPhaseList[j])
                             Dictionary=Dup_FirstPhaseList[j]
                             Key=""
                             Value=""
