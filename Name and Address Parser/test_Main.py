@@ -53,29 +53,29 @@ class NAP_GUIBuilder(tk.Tk):
         self.tabControl = ttk.Notebook(self)
         self.tabControl.pack(expand = 1, fill ="both")
         self.tab2 = ttk.Frame(self.tabControl)
-        self.tabControl.add(self.tab2, text ='Address Parser')
+        self.tabControl.add(self.tab2, text ='SingleLine Address Parser')
         
-        # self.tab5 = ttk.Frame(self.tabControl)
-        # self.tabControl.add(self.tab5, text ='Address Parser')
+        self.tab5 = ttk.Frame(self.tabControl)
+        self.tabControl.add(self.tab5, text ='Batch Parser')
         
         
         
         
         self.tab4 = ttk.Frame(self.tabControl)
-        self.tabControl.add(self.tab4, text ='Mapping Approval Form')
+        self.tabControl.add(self.tab4, text ='Map Creation Form')
         
         # self.tab3 = ttk.Frame(self.tabControl)
         # self.tabControl.add(self.tab3, text ='Validation & Analysis')
         # Calling Different Methods with respect to the tab
         self.NAP_GUIBuilder_AddressParser()
-        # self.NAP_GUIBuilder_AddressParserFile()
+        self.NAP_GUIBuilder_AddressParserFile()
         self.NAP_GUIBuilder_MappingApprovalForm()
         # self.NAP_GUIBuilder_Validation()
         
 
     def NAP_GUIBuilder_AddressParser(self):
         
-        # adress_misc = ad_misc()
+        
         
         Instance = mx.Address_parser_misc()
         
@@ -99,11 +99,11 @@ class NAP_GUIBuilder(tk.Tk):
                                  row = 10,
                                  padx = 10,
                                  pady = 10) 
-        ttk.Label(self.tab2, 
-          text ="OR").grid(column = 5, 
-                               row = 15,
-                               padx = 0,
-                               pady = 0) 
+        # ttk.Label(self.tab2, 
+        #   text ="OR").grid(column = 5, 
+        #                        row = 15,
+        #                        padx = 0,
+        #                        pady = 0) 
         
     
         s=ttk.Style()
@@ -114,7 +114,7 @@ class NAP_GUIBuilder(tk.Tk):
         
         tree = ttk.Treeview(self.tab2, column=["Mask Token","Address Token","Address Component","Exception","File"] ,show='headings',height=14)
         
-    # elif not Batch:
+    
         for item in tree.get_children():
             tree.delete(item)
         tree.column("# 1", width=60, stretch='YES')
@@ -135,31 +135,28 @@ class NAP_GUIBuilder(tk.Tk):
                                  row = 10)
     #tree.pack(side=tk.LEFT)
         
-        def clear(Progress):
+        # def clear(Progress):
             
-            for item in tree.get_children():
-                tree.delete(item)
-            # Clear the text in the Text widget
-            single_input.delete(1.0, tk.END)
+        #     for item in tree.get_children():
+        #         tree.delete(item)
+        #     # Clear the text in the Text widget
+        #     single_input.delete(1.0, tk.END)
 
-            # single_input = self.tab2.nametowidget(".!notebook.!frame.!text")
-            # self.create_treeview(single_input)
-            #Progress.start()
+        #     # single_input = self.tab2.nametowidget(".!notebook.!frame.!text")
+        #     # self.create_treeview(single_input)
+        #     #Progress.start()
             
-            thread1=threading.Thread(target=lambda:Instance.Process_Address_Parser_Single_input(Progress))
-            #thread2=threading.Thread(target=Progress.start)
-           # thread3=threading.Thread(target=Progress.stop)
+        #     thread1=threading.Thread(target=lambda:Instance.Process_Address_Parser_Single_input(Progress))
             
-            thread1.start()
-          #  thread1.join()
+            
+        #     thread1.start()
           
-            #Progress.stop()
-        Progress = ttk.Progressbar(self.tab2, orient=tk.HORIZONTAL,length=300,mode='determinate',style="TProgressbar")
-        Progress.grid( column=5,row=60,padx=10,pady=10)
-        ttk.Button(self.tab2, text ="Choose Batch File",width=30, command=lambda:clear(Progress)).grid(column = 5, 
-                             row = 50,
-                             padx = 10,
-                             pady = 10)
+        # Progress = ttk.Progressbar(self.tab2, orient=tk.HORIZONTAL,length=300,mode='determinate',style="TProgressbar")
+        # Progress.grid( column=5,row=60,padx=10,pady=10)
+        # ttk.Button(self.tab2, text ="Choose Batch File",width=30, command=lambda:clear(Progress)).grid(column = 5, 
+        #                      row = 50,
+        #                      padx = 10,
+        #                      pady = 10)
         
         
     def NAP_GUIBuilder_MappingApprovalForm(self):
@@ -207,31 +204,9 @@ class NAP_GUIBuilder(tk.Tk):
         
         canvas = tk.Canvas(table_frame,width=580,height=420)
         canvas.grid(column=3,row=5)
-        #canvas.pack(side=tk.LEFT,expand=True,padx=10,pady=10)
         
         
-        # form_frame = ttk.Frame(self.tab4,width=360,height=800)
-        # form_frame.pack(side=tk.RIGHT,padx=10, pady=10)
-
- 
-
         
-        # table_frame = ttk.Frame(self.tab4)
-        # table_frame.pack(pady=60)
-
-        # canvas = tk.Canvas(table_frame,width=580,height=600)
-        # canvas.pack(side=tk.LEFT)
-        
-        def DateTime():
-            # Get the current date and time
-            # label = ""
-            now = datetime.now()
-            current_date = now.strftime("%m-%d-%Y")
-            
-        
-            
-            DateTime_label = ttk.Label(self.tab4, text=f"Date: {current_date}", font=("Arial", 12))
-            DateTime_label.pack(side=tk.TOP, padx=10, pady=5)
 
     def NAP_GUIBuilder_Validation(self):
         comparison_instance = mx.Address_parser_misc()

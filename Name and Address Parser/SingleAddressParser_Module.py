@@ -171,11 +171,11 @@ def Address_Parser(line,initials,originalInput):
         try:
             Result["Input"]= originalInput
             Result["Output"]=Mappings
-            messagebox.showinfo("Success!",f"{originalInput}\n\nAddress Successfully Parsed!\n\nOutput derived from Active Learning-->")
+            messagebox.showinfo("Success!",f"{originalInput}\n\nAddress Successfully Parsed!\n\nOutput derived from Active Learning")
         except:
             Result["Input"]= originalInput
             Result["Output"]=Mappings
-            messagebox.showinfo("Success!",f"{originalInput}\n\nAddress Successfully Parsed!\n\nOutput derived from Active Learning-->")
+            messagebox.showinfo("Success!",f"{originalInput}\n\nAddress Successfully Parsed!\n\nOutput derived from Active Learning")
 
         
         
