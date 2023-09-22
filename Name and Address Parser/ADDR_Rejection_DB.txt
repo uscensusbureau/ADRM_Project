@@ -320,5 +320,12 @@
         "Token Pattern": "NZF,WWFN",
         "Rejected By": "Committee Member_2 at 2023-09-17 03:16:55.597690",
         "Comment": ""
+    },
+    {
+        "Exception_file_name": "400K records 01_43_58.852169.json",
+        "Input": "STREET_NUMBER STREET_NAME,UNIT_NUMBER,CITY, STATE ZIPCODE",
+        "Token Pattern": "WW,W,W,RW",
+        "Rejected By": "Committee Member_2 at 2023-09-20 02:00:33.174186",
+        "Comment": ""
     }
 ]

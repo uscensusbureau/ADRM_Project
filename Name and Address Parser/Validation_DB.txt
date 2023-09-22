@@ -3831,5 +3831,520 @@
                 "USAD_ZIP"
             ]
         ]
+    },
+    {
+        "Unique_ID": "c95db3970441a8be3728d416a63d97aab771af1a",
+        "Exception_file_name": "400K records 01_43_58.852169.json",
+        "Input": "4640 GROMO CT, APT NBR 1R, FORT COLLINS, CO  80537",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,SWN,FW,TN",
+        "Approved By": "Committee Member_1 at 2023-09-20 02:04:23.417172",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "4640",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "GROMO",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "CT",
+                "USAD_SFX"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "NBR",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "1R",
+                "USAD_ANO"
+            ],
+            [
+                "F",
+                "FORT",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "COLLINS",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "CO",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "80537",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "1f0fb3a7b5ca3a9efb8ff50d3981a2420a750d13",
+        "Exception_file_name": "drs 01_43_58.854170_Forced_ExceptionFile.json",
+        "Input": "5506 A STREET, LITTLE ROCK, AR 72205",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-09-20 02:06:52.181833",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "A",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "72205",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "05960af4bf6d66f4d55243be0e822c7e3aeedf8e",
+        "Exception_file_name": "New_Test 10_06_51.235653.json",
+        "Input": "402 S OAK ROAD MANCHESTER NEW HAMPSHIRE 72732",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NDWFWWWN",
+        "Approved By": "Committee Member_1 at 2023-09-20 10:22:34.511649",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "402",
+                "USAD_SNO"
+            ],
+            [
+                "D",
+                "S",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "OAK",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "ROAD",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "MANCHESTER",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "NEW",
+                "USAD_STA"
+            ],
+            [
+                "W",
+                "HAMPSHIRE",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "72732",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "511efa8b3168de50a6afd577be5ac33dbfea62f7",
+        "Exception_file_name": "New_Test 10_06_51.235653.json",
+        "Input": "88 N PINE DRIVE OLYMPIA WASHINGTON 72733",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NDFFWTN",
+        "Approved By": "Committee Member_1 at 2023-09-20 10:23:50.440734",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "88",
+                "USAD_SNO"
+            ],
+            [
+                "D",
+                "N",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "PINE",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "OLYMPIA",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "WASHINGTON",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "72733",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "3d2094b6ff09be295a463cceeffb03f2512a8be5",
+        "Exception_file_name": "New_Test 10_06_51.235653.json",
+        "Input": "878 NE BIRCH LANE PORTLAND OREGON 72734",
+        "Region": "US",
+        "Type": "Individual Address",
+        "Token Pattern": "NDWFWTN",
+        "Approved By": "Committee Member_1 at 2023-09-20 10:28:28.301236",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "878",
+                "USAD_SNO"
+            ],
+            [
+                "D",
+                "NE",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "BIRCH",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "LANE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "PORTLAND",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "OREGON",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "72734",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "04b9f73e9c03a43b5b563e8cb31db16fd1f183c3",
+        "Exception_file_name": "Sja 14_07_05.407680_Forced_ExceptionFile.json",
+        "Input": "5506 A Street, Little Rock, AR 72205",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-09-20 14:10:52.583605",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "A",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "72205",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "31702cf8bd3bf2c03b0bd341647b95708a401e9b",
+        "Exception_file_name": "New_Test 14_07_05.404915.json",
+        "Input": "402 S Oak Road Manchester New Hampshire 72732",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NDWFWWWN",
+        "Approved By": "Committee Member_1 at 2023-09-20 14:12:44.829087",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "402",
+                "USAD_SNO"
+            ],
+            [
+                "D",
+                "S",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "OAK",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "ROAD",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "MANCHESTER",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "NEW",
+                "USAD_STA"
+            ],
+            [
+                "W",
+                "HAMPSHIRE",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "72732",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "2072170eddbe7bfb0de6c9b0c99d5194bf505bc4",
+        "Exception_file_name": "New_Test 14_07_05.404915.json",
+        "Input": "88 N Pine Drive Olympia Washington 72733",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NDFFWTN",
+        "Approved By": "Committee Member_1 at 2023-09-20 14:13:37.594189",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "88",
+                "USAD_SNO"
+            ],
+            [
+                "D",
+                "N",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "PINE",
+                "USAD_SFX"
+            ],
+            [
+                "F",
+                "DRIVE",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "OLYMPIA",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "WASHINGTON",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "72733",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "c9d0ca0271f0ce339e40ed6ac31c3654864b5c70",
+        "Exception_file_name": "TESTING 20_26_27.734076_ExceptionFile.json",
+        "Input": "30 ellwine dr, number l floor 3, eagle mountain, UT 82314",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NWF,WWWN,WF,TN",
+        "Approved By": "Committee Member_1 at 2023-09-20 20:31:48.081670",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "30",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "ELLWINE",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "DR",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "NUMBER",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "L",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "FLOOR",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "3",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "EAGLE",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "MOUNTAIN",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "UT",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "82314",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "04b9f73e9c03a43b5b563e8cb31db16fd1f183c3",
+        "Exception_file_name": "jsa 04_39_21.571261_ExceptionFile.json",
+        "Input": "5506 A Street, Little Rock, AR 72205",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NWF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-09-22 04:43:30.432948",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "5506",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "A",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "LITTLE",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "ROCK",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "72205",
+                "USAD_ZIP"
+            ]
+        ]
     }
 ]

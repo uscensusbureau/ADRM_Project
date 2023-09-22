@@ -112,7 +112,7 @@ class NAP_GUIBuilder(tk.Tk):
 
         s.configure("TProgressbar", foreground='red', background='green')
         
-        tree = ttk.Treeview(self.tab2, column=["Mask Token","Address Token","Address Component","Exception","File"] ,show='headings',height=14)
+        tree = ttk.Treeview(self.tab2, column=["Mask Token","Address Token","Address Component","Component Description","Parsed By"] ,show='headings',height=14)
         
     
         for item in tree.get_children():
@@ -120,17 +120,17 @@ class NAP_GUIBuilder(tk.Tk):
         tree.column("# 1", width=60, stretch='YES')
         tree.heading("# 1", text="Mask Token")
         
-        tree.column("# 2", width=200, stretch='YES')
+        tree.column("# 2", width=100, stretch='YES')
         tree.heading("# 2", text="Address Token")
         
         tree.column("# 3", width=80, stretch='YES')
         tree.heading("# 3", text="Address Component")
         
-        tree.column("# 4", width=60, stretch='YES')
-        tree.heading("# 4", text="Exception")
+        tree.column("# 4", width=100, stretch='YES')
+        tree.heading("# 4", text="Component Description")
         
-        tree.column("# 5", width=60, stretch='YES')
-        tree.heading("# 5", text="File Name")
+        tree.column("# 5", width=50, stretch='YES')
+        tree.heading("# 5", text="Parsed By")
         ttk.Button(self.tab2, text ="Submit", command=lambda:Instance.Single_Address(single_input, self.tab2,tree),width=30).grid(column = 7, 
                                  row = 10)
     #tree.pack(side=tk.LEFT)
@@ -225,16 +225,15 @@ class NAP_GUIBuilder(tk.Tk):
         def Threading(Progress):
             thread1=threading.Thread(target=lambda:Instance.Process_Address_Parser_Single_input(Progress))
             #thread2=threading.Thread(target=Progress.start)
-           # thread3=threading.Thread(target=Progress.stop)
+            #thread3=threading.Thread(target=Progress.stop)
             
             thread1.start()
-      #  thread1.join()
-      
+        #thread1.join()
         #Progress.stop()
         ttk.Label(self.tab5,text="Please Choose A Pipe Delimitted File").grid(column = 0, 
                                  row = 0,
                                  padx = 10,
-                                 pady = 10) 
+                                 pady = 10)
         Progress = ttk.Progressbar(self.tab5, orient=tk.HORIZONTAL,length=300,mode='determinate',style="TProgressbar")
         Progress.grid( column=5,row=11,padx=10,pady=10)
         

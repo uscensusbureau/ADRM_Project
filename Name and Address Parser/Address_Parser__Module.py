@@ -64,7 +64,7 @@ def Address_Parser(Address_4CAF50,Progress,TruthSet=""):
   "USAD_HNO": 20
 }
     data={}
-    with open('JSONMappingDefault.json', 'r+', encoding='utf8') as f:
+    with open('KB_FM.json', 'r+', encoding='utf8') as f:
         data = json.load(f)
     USAD_CONVERSION_={
         
@@ -394,9 +394,11 @@ def Address_Parser(Address_4CAF50,Progress,TruthSet=""):
         percentage = (Observation/Total)*100
         percentage = "%.2f"% percentage
         ActiveLResult = json.dumps(Result, indent = 4,ensure_ascii=False) 
-        Detailed_Report+="\n\nNumber of Exceptions Thrown: -\t"+str(Total-Observation)+"\n"
-        Detailed_Report+="Number of Parsed Address: -\t"+str(Observation)+"\n"
-        Detailed_Report+="Percentage of Parsed Result: -\t"+str(percentage)+"\n"
+        # Detailed_Report+="\nNumber of Exceptions Thrown: -\t\t"+"{:,}".format(Total-Observation)+"\n"
+        Detailed_Report+="\nNumber of Pattern Parsed Addresses: -\t"+"{:,}".format(Observation)+"\n"
+        Detailed_Report+="Percentage of Patterns Parsed Result:  -\t"+"{:.2f}%".format(float(percentage))+"\n"
+        Detailed_Report+="\nNumber of Exceptions Thrown: -\t\t"+"{:,}".format(Total-Observation)+"\n"
+        Detailed_Report+="Percentage of RuleBased Parsed Result: -\t"+"{:.2f}%".format(100-float(percentage))+"\n"
         Detailed_Report+="Output From Active Learning\n\n"
         Detailed_Report+=str(ActiveLResult)
         

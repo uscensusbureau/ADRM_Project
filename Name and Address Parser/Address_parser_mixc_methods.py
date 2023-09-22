@@ -92,7 +92,28 @@ class Address_parser_misc():
 
         ### toggle_button.grid(row=5, column=0,columnspan=2, pady=5)
         ### style.configure("Toggle.TCheckbutton", font=("Arial", 14))
-        
+        USAD_Descriptions = {
+            
+            "USAD_SNO": "Street Number",
+            "USAD_SPR": "Street Pre-Directional",
+            "USAD_SNM": "Street Name",
+            "USAD_SFX": "Street Suffix",
+            "USAD_SPT": "Street Post-Directional",
+            "USAD_ANM": "Secondary Address Name",
+            "USAD_ANO": "Secondary Address Number",
+            "USAD_CTY": "City Name",
+            "USAD_STA": "State Name",
+            "USAD_ZIP": "Zip Code",
+            "USAD_ZP4": "Zip 4 Code",
+            "USAD_BNM": "Box Name",
+            "USAD_BNO": "Box Number",
+            "USAD_RNM": "Route Name",
+            "USAD_RNO": "Route Number",
+            "USAD_ORG": "Organization Name",
+            "USAD_MDG": "Military Rd Name",
+            "USAD_MGN": "Military Rd Number",
+            "USAD_HNM": "Highway Name",
+            "USAD_HNO": "Highway Number", "USAD_NA":"Not Selected"}
         
         
         
@@ -114,19 +135,15 @@ class Address_parser_misc():
             submit_button = ttk.Button(tab2, text="Submit", command=submit)
             submit_button.grid(row=71, column =5 , padx=10, pady=10)
             
-            try:  
                 
-                for item in tree.get_children():
-                    tree.delete(item)
-                tree.insert('','end',values=(self.wrap('Mask'),self.wrap(Convert[1]),"","",""))
-                for m in Result["Output"]:  
-                    tree.insert('', 'end', values=(self.wrap(m[1]),self.wrap(m[2]),self.wrap(m[0])))
-                
-            except:
-               
-                for item in tree.get_children():
-                    tree.delete(item)
-                tree.insert('','end',values=("","",Convert[1],Convert[2]))
+            for item in tree.get_children():
+                tree.delete(item)
+            tree.insert('','end',values=(self.wrap('Mask'),self.wrap(Convert[1]),"","","Active Learning"))
+            for m in Result["Output"]: 
+                if m[0] in USAD_Descriptions:
+                    m1_display = USAD_Descriptions[m[0]]
+                tree.insert('', 'end', values=(self.wrap(m[1]),self.wrap(m[2]),self.wrap(m[0]),self.wrap(m1_display)))
+            
             
         
         elif Convert[4]:
@@ -144,9 +161,11 @@ class Address_parser_misc():
 
             for item in tree.get_children():
                 tree.delete(item)
-            tree.insert('','end',values=(self.wrap('Mask'),self.wrap(Convert[1]),"",Convert[1],Convert[2]))
-            for m in Result["Output"]:  
-                tree.insert('', 'end', values=(self.wrap(m[2]),self.wrap(m[0]),self.wrap(m[1])))
+            tree.insert('','end',values=(self.wrap('Mask'),self.wrap(Convert[1]),"","","RuleBased"))
+            for m in Result["Output"]:
+                if m[1] in USAD_Descriptions:
+                    m1_display = USAD_Descriptions[m[1]]
+                tree.insert('', 'end', values=(self.wrap(m[2]),self.wrap(m[0]),self.wrap(m[1]),self.wrap(m1_display)))
             
         
 

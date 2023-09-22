@@ -109,7 +109,7 @@ class submission_form:
 
             if "INPUT" in Stat:
                 Input_name = Stat["INPUT"]
-                Input_name = Input_name.upper()
+                Input_name = Input_name
                 Stat.pop("INPUT")
             else:
                 Input_name = ""
@@ -190,7 +190,7 @@ class submission_form:
             Type_label = ttk.Label(
                 form_frame, text="Type: *", font=("Arial", 12))
             Type_label.grid(row=5, column=0, sticky=tk.W, pady=5)
-            Types = ["", "Individual Address", "PO Box Address", "Highway Contract Address", "Military Address",
+            Types = ["", "Street Address", "PO Box Address", "Highway Contract Address", "Military Address",
                      "Attention line Address", "Roural Route Address", "Puerto Rico Address", "University Address"]
             Type_var = tk.StringVar(tab4)
             Type_dropdown = ttk.Combobox(
@@ -202,7 +202,7 @@ class submission_form:
 
             # Create the form elements with custom styling
             Validation_DB_Label = ttk.Label(
-                form_frame, text="Add to DB and KB?", font=("Arial", 12))
+                form_frame, text="Add to V_DB and KB?", font=("Arial", 12))
             Validation_DB_Label.grid(row=7, column=0, sticky=tk.W, pady=5)
             toggle_dropdown = ttk.Combobox(form_frame, textvariable=toggle_state, values=[
                                            "", "Yes", "No"], font=("Arial", 12), width=40, state="readonly")
