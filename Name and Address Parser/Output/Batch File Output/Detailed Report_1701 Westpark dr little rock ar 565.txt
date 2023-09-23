@@ -1,0 +1,58 @@
+Exception and Mask Report
+
+Number of Pattern Parsed Addresses: -	1
+Percentage of Patterns Parsed Result:  -	100.00%
+
+Number of Exceptions Thrown: -		0
+Percentage of RuleBased Parsed Result: -	0.00%
+Output From Active Learning
+
+{
+    "1": [
+        {
+            "Record ID": "1",
+            "INPUT": "1701 Westpark dr little rock ar 56565",
+            "NWFWWTN": [
+                [
+                    "USAD_SNO",
+                    "N",
+                    "1701"
+                ],
+                [
+                    "USAD_SNM",
+                    "W",
+                    "WESTPARK"
+                ],
+                [
+                    "USAD_SFX",
+                    "F",
+                    "DR"
+                ],
+                [
+                    "USAD_ANO",
+                    "W",
+                    "LITTLE"
+                ],
+                [
+                    "USAD_CTY",
+                    "W",
+                    "ROCK"
+                ],
+                [
+                    "USAD_STA",
+                    "T",
+                    "AR"
+                ],
+                [
+                    "USAD_ZIP",
+                    "N",
+                    "56565"
+                ]
+            ]
+        }
+    ]
+}
+
+Output Fron Rule Based Approach
+
+{}

@@ -49,7 +49,12 @@ class Address_parser_misc():
         if popup:
             df = fd.askopenfilenames(filetypes=[("TXT", ".txt"),("JSON",".json")],initialdir = "Test Data") 
             if df:
-                Output=AdM.Address_Parser(df[0],Progress)
+                try:
+                    
+                    Output=AdM.Address_Parser(df[0],Progress)
+                except:
+                    Progress.stop()
+                    msg.showerror("Alert","Incorrect file format!")
                 
                 if Output[0]:
                     msg.showinfo("Success",Output[1])

@@ -217,12 +217,13 @@ class NAP_GUIBuilder(tk.Tk):
         
         return
     def NAP_GUIBuilder_AddressParserFile(self):
+        
         Instance = mx.Address_parser_misc()
         s=ttk.Style()
         s.theme_use("clam")
 
         s.configure("TProgressbar", foreground='red', background='green')
-        def Threading(Progress):
+        def Threads(Progress):
             thread1=threading.Thread(target=lambda:Instance.Process_Address_Parser_Single_input(Progress))
             #thread2=threading.Thread(target=Progress.start)
             #thread3=threading.Thread(target=Progress.stop)
@@ -237,7 +238,7 @@ class NAP_GUIBuilder(tk.Tk):
         Progress = ttk.Progressbar(self.tab5, orient=tk.HORIZONTAL,length=300,mode='determinate',style="TProgressbar")
         Progress.grid( column=5,row=11,padx=10,pady=10)
         
-        ttk.Button(self.tab5, text ="Choose Batch File",width=30, command=lambda:Threading(Progress)).grid(column = 5, 
+        ttk.Button(self.tab5, text ="Choose Batch File",width=30, command=lambda:Threads(Progress)).grid(column = 5, 
                              row = 10,
                              padx = 10,
                              pady = 10)

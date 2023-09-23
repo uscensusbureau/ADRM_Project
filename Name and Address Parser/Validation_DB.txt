@@ -4346,5 +4346,52 @@
                 "USAD_ZIP"
             ]
         ]
+    },
+    {
+        "Unique_ID": "c9a292bbac6ec2d15538bd4db22bfabcdf496564",
+        "Exception_file_name": "10k records 23_02_52.301878.json",
+        "Input": "43 State Ave ,New Albany, IN 47150",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NRF,WW,TN",
+        "Approved By": "Committee Member_1 at 2023-09-22 23:04:28.136164",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "43",
+                "USAD_SNO"
+            ],
+            [
+                "R",
+                "STATE",
+                "USAD_SPR"
+            ],
+            [
+                "F",
+                "AVE",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "NEW",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "ALBANY",
+                "USAD_SPR"
+            ],
+            [
+                "T",
+                "IN",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "47150",
+                "USAD_STA"
+            ]
+        ]
     }
 ]

@@ -391,26 +391,26 @@ class submission_form:
 
             table_rows = []
 
+           
+           # scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+            table_inner_frame = ttk.Frame(canvas)
+            table_inner_frame.pack(fill=tk.BOTH, expand=True)
+            canvas_config = canvas.create_window(
+                (0, 0), window=table_inner_frame, anchor=tk.NW)
             scrollbar = ttk.Scrollbar(
                 table_frame, orient=tk.VERTICAL, command=canvas.yview)
-           # scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-           
-            # canvas.update_idletasks()
             canvas.configure(yscrollcommand=scrollbar.set)
-            def on_canvas_configure(event):
-                table_frame.configure(scrollregion=canvas.bbox("all"))
-            canvas.bind("<Configure>",on_canvas_configure)
+            
+            table_frame.bind("<Configure>",lambda e:canvas.configure(scrollregion=canvas.bbox("all")))
             scrollbar.grid(column=5,row=5,sticky="ns")
-
+            #canvas.update_idletasks()
+           # canvas.configure(scrollregion=canvas.bbox("all"))
             def on_window_resize(event):
                 canvas.update_idletasks()
                 canvas.configure(scrollregion=canvas.bbox("all"))
 
             tab4.bind("<Configure>", on_window_resize)
-            table_inner_frame = ttk.Frame(canvas)
-            table_inner_frame.pack(fill=tk.BOTH, expand=True)
-            canvas_config = canvas.create_window(
-                (0, 0), window=table_inner_frame, anchor=tk.NW)
+           
             
             for key, value in Stat.items():
                 for m in value:
