@@ -1,0 +1,36 @@
+{
+    "Record ID": "Single Line Exception_File GFV-->01",
+    "INPUT": "PO BOX 1599 Woonsocket RI 02895",
+    "XXNWTN": [
+        [
+            "USAD_BNM",
+            "X",
+            "PO"
+        ],
+        [
+            "USAD_BNM",
+            "X",
+            "BOX"
+        ],
+        [
+            "USAD_BNO",
+            "N",
+            "1599"
+        ],
+        [
+            "USAD_CTY",
+            "W",
+            "WOONSOCKET"
+        ],
+        [
+            "USAD_STA",
+            "T",
+            "RI"
+        ],
+        [
+            "USAD_ZIP",
+            "N",
+            "02895"
+        ]
+    ]
+}

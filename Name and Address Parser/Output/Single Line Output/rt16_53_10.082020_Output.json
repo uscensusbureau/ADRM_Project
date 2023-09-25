@@ -1,0 +1,51 @@
+{
+    "Record ID": "Single Line Exception_File rt-->01",
+    "INPUT": "POWER COMPANY 1401 MAIN ST FALLS CHURCH, VA 22042-1441",
+    "WWNWFFW,TN": [
+        [
+            "USAD_ORG",
+            "W",
+            "POWER"
+        ],
+        [
+            "USAD_ORG",
+            "W",
+            "COMPANY"
+        ],
+        [
+            "USAD_SNO",
+            "N",
+            "1401"
+        ],
+        [
+            "USAD_SNM",
+            "W",
+            "MAIN"
+        ],
+        [
+            "USAD_SNM",
+            "F",
+            "ST"
+        ],
+        [
+            "USAD_CTY",
+            "F",
+            "FALLS"
+        ],
+        [
+            "USAD_CTY",
+            "W",
+            "CHURCH"
+        ],
+        [
+            "USAD_STA",
+            "T",
+            "VA"
+        ],
+        [
+            "USAD_ZP4",
+            "N",
+            "22042-1441"
+        ]
+    ]
+}

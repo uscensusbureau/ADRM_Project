@@ -18,7 +18,7 @@ class PreProcessingNameAddress:
         self
     def AddresssCleaning(self,line):
         line=line.lstrip(',')
-        line=re.sub(r'[^a-zñáéíóúüÑÁÉÍÓÚÜA-Z0-9\s,-]+', '',line)
+        line=re.sub(r'[^a-zñáéíóúüÑÁÉÍÓÚÜA-Z0-9\s#,-]+', '',line)
 
         Address=re.sub(' +', ' ',line)
         Address=re.sub(',',' , ',Address)
@@ -35,5 +35,5 @@ class PreProcessingNameAddress:
 
         return (AddressList,Address)
     
-cleaning = PreProcessingNameAddress.AddresssCleaning(0,"1701 westpark drive, apt #&%105, Little Rock, AR 72204")
-print(cleaning)
+# cleaning = PreProcessingNameAddress.AddresssCleaning(0,"1701 westpark drive, apt #&%105, Little Rock, AR 72204")
+# print(cleaning)

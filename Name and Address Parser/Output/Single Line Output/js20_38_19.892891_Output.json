@@ -1,0 +1,56 @@
+{
+    "Record ID": "Single Line Exception_File js-->01",
+    "INPUT": "3757 Calle de las Flores, Apt 2C, Naguabo, PR 00718",
+    "NFTWW,SN,W,FN": [
+        [
+            "USAD_SNO",
+            "N",
+            "3757"
+        ],
+        [
+            "USAD_SFX",
+            "F",
+            "CALLE"
+        ],
+        [
+            "USAD_SNM",
+            "T",
+            "DE"
+        ],
+        [
+            "USAD_SNM",
+            "W",
+            "LAS"
+        ],
+        [
+            "USAD_SNM",
+            "W",
+            "FLORES"
+        ],
+        [
+            "USAD_ANM",
+            "S",
+            "APT"
+        ],
+        [
+            "USAD_ANO",
+            "N",
+            "2C"
+        ],
+        [
+            "USAD_CTY",
+            "W",
+            "NAGUABO"
+        ],
+        [
+            "USAD_STA",
+            "F",
+            "PR"
+        ],
+        [
+            "USAD_ZIP",
+            "N",
+            "00718"
+        ]
+    ]
+}
