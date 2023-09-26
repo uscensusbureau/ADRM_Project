@@ -64,7 +64,7 @@ def Address_Parser(Address_4CAF50,Progress,TruthSet=""):
   "USAD_HNO": 20
 }
     data={}
-    with open('JSONMappingDefault.json', 'r+', encoding='utf8') as f:
+    with open('KB_PSDADR.json', 'r+', encoding='utf8') as f:
         data = json.load(f)
     USAD_CONVERSION_={
         
@@ -183,8 +183,10 @@ def Address_Parser(Address_4CAF50,Progress,TruthSet=""):
         if Found:
             Observation+=1
             Mappings=[]
-            
             for K2,V2 in FoundDict[Mask_1].items():
+                FoundDict_KB=FoundDict[Mask_1]
+                sorted_Found={k: v for k ,v in sorted(FoundDict_KB.items(), key=lambda item:item[1])}
+            for K2,V2 in sorted_Found.items():
                 Temp=""
                 Merge_token=""
                 for p in V2:
@@ -192,11 +194,22 @@ def Address_Parser(Address_4CAF50,Progress,TruthSet=""):
                        Temp+=" "+V3
                        Temp=Temp.strip()
                        Merge_token+=K3
-                       Mappings.append([K2,K3,V3])
-                       # if K2 in Mappings:
-                       #     Mappings[K2].append([K3,Temp])
-                       # else:
-                       #     Mappings[K2] = [[K3,Temp]]
+                       found = False
+                       for entry in Mappings:
+                           if entry[0] == K2:
+                               # Append V3 to existing entry
+                               entry[1] += K3
+                               entry[2] = ""
+                               entry[2] += Temp
+                               found = True
+                               break
+                       if not found:
+                         # Add a new entry to Mappings
+                           Mappings.append([K2, K3, V3])
+
+            FoundDict_KB=FoundDict[Mask_1]
+            sorted_Found={k: v for k ,v in sorted(FoundDict_KB.items(), key=lambda item:item[1])}
+            
             
             OutputEntry = {
                 "Record ID": ID,

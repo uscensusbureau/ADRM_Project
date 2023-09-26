@@ -126,7 +126,7 @@ def Address_Parser(line,initials,originalInput):
     Mask_1=",".join(Mask)
     FirstPhaseList = [FirstPhaseList[b] for b in range(len(FirstPhaseList)) if FirstPhaseList[b] != ","]
     data={}
-    with open('JSONMappingDefault.json', 'r+', encoding='utf-8') as f:
+    with open('KB_PSDADR.json', 'r+', encoding='utf-8') as f:
         data = json.load(f)
     Found=False
     FoundDict={}
@@ -139,20 +139,33 @@ def Address_Parser(line,initials,originalInput):
     if Found:
         Observation+=1
         Mappings=[]
+        uiMappings = []
         for K2,V2 in FoundDict[Mask_1].items():
             FoundDict_KB=FoundDict[Mask_1]
             sorted_Found={k: v for k ,v in sorted(FoundDict_KB.items(), key=lambda item:item[1])}
-            for K2,V2 in sorted_Found.items():
-                Temp=""
-                Merge_token=""
-                for p in V2:
-                    for K3,V3 in FirstPhaseList[p-1].items():
-                       Temp+=" "+V3
-                       Temp=Temp.strip()
-                   #    Mappings[K2]=[K3,Temp]       
-                       Merge_token+=K3
-                       Mappings.append([K2,K3,V3])
-            break
+        for K2,V2 in sorted_Found.items():
+            Temp=""
+            Merge_token=""
+            for p in V2:
+                for K3,V3 in FirstPhaseList[p-1].items():
+                   Temp+=" "+V3
+                   Temp=Temp.strip()      
+                   Merge_token+= ""+K3
+                   uiMappings.append([K2, K3, V3])
+                   found = False
+                   for entry in Mappings:
+                       if entry[0] == K2:
+                           # Append V3 to existing entry
+                           # entry[1] = ""
+                           entry[1] += K3
+                           entry[2] = ""
+                           entry[2] += Temp
+                           found = True
+                           break
+                   if not found:
+                     # Add a new entry to Mappings
+                       Mappings.append([K2, K3, V3])
+                       break
         # print(Mappings)
         FoundDict_KB=FoundDict[Mask_1]
         sorted_Found={k: v for k ,v in sorted(FoundDict_KB.items(), key=lambda item:item[1])}
@@ -170,11 +183,11 @@ def Address_Parser(line,initials,originalInput):
         #         #   Mappings.append([K2,K3,V3])          
         try:
             Result["Input"]= originalInput
-            Result["Output"]=Mappings
+            Result["Output"]=uiMappings
             messagebox.showinfo("Success!",f"{originalInput}\n\nAddress Successfully Parsed!\n\nOutput derived from Active Learning")
         except:
             Result["Input"]= originalInput
-            Result["Output"]=Mappings
+            Result["Output"]=uiMappings
             messagebox.showinfo("Success!",f"{originalInput}\n\nAddress Successfully Parsed!\n\nOutput derived from Active Learning")
 
         

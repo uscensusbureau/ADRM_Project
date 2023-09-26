@@ -2,7 +2,7 @@
 """
 Created on Sun Jul 23 11:22:18 2023
 
-@author: onais
+@author: Onais, Salman & Kashif
 """
 import tkinter as tk
 from tkinter import messagebox
@@ -36,8 +36,7 @@ class NAP_GUIBuilder(tk.Tk):
         
         super().__init__()
         self.title("Parser - "+ str(date.today()))
-        #self.geometry("1024x768")
-        #self.attributes("-fullscreen",True)
+        
         self.NAP_GUIBuilder_CreateTabs()
         screen_width = self.winfo_screenwidth()
         
@@ -64,13 +63,12 @@ class NAP_GUIBuilder(tk.Tk):
         self.tab4 = ttk.Frame(self.tabControl)
         self.tabControl.add(self.tab4, text ='Map Creation Form')
         
-        # self.tab3 = ttk.Frame(self.tabControl)
-        # self.tabControl.add(self.tab3, text ='Validation & Analysis')
+        
         # Calling Different Methods with respect to the tab
         self.NAP_GUIBuilder_AddressParser()
         self.NAP_GUIBuilder_AddressParserFile()
         self.NAP_GUIBuilder_MappingApprovalForm()
-        # self.NAP_GUIBuilder_Validation()
+        
         
 
     def NAP_GUIBuilder_AddressParser(self):
@@ -99,11 +97,6 @@ class NAP_GUIBuilder(tk.Tk):
                                  row = 10,
                                  padx = 10,
                                  pady = 10) 
-        # ttk.Label(self.tab2, 
-        #   text ="OR").grid(column = 5, 
-        #                        row = 15,
-        #                        padx = 0,
-        #                        pady = 0) 
         
     
         s=ttk.Style()
@@ -133,30 +126,6 @@ class NAP_GUIBuilder(tk.Tk):
         tree.heading("# 5", text="Parsed By")
         ttk.Button(self.tab2, text ="Submit", command=lambda:Instance.Single_Address(single_input, self.tab2,tree),width=30).grid(column = 7, 
                                  row = 10)
-    #tree.pack(side=tk.LEFT)
-        
-        # def clear(Progress):
-            
-        #     for item in tree.get_children():
-        #         tree.delete(item)
-        #     # Clear the text in the Text widget
-        #     single_input.delete(1.0, tk.END)
-
-        #     # single_input = self.tab2.nametowidget(".!notebook.!frame.!text")
-        #     # self.create_treeview(single_input)
-        #     #Progress.start()
-            
-        #     thread1=threading.Thread(target=lambda:Instance.Process_Address_Parser_Single_input(Progress))
-            
-            
-        #     thread1.start()
-          
-        # Progress = ttk.Progressbar(self.tab2, orient=tk.HORIZONTAL,length=300,mode='determinate',style="TProgressbar")
-        # Progress.grid( column=5,row=60,padx=10,pady=10)
-        # ttk.Button(self.tab2, text ="Choose Batch File",width=30, command=lambda:clear(Progress)).grid(column = 5, 
-        #                      row = 50,
-        #                      padx = 10,
-        #                      pady = 10)
         
         
     def NAP_GUIBuilder_MappingApprovalForm(self):
@@ -208,14 +177,7 @@ class NAP_GUIBuilder(tk.Tk):
         
         
 
-    def NAP_GUIBuilder_Validation(self):
-        comparison_instance = mx.Address_parser_misc()
-        ttk.Button(self.tab3, text ="Choose Two Files \n(Input Test and Truth File)",width=30, command=comparison_instance.Process_Address_Parser_Test).grid(column = 0, 
-                              row = 0,
-                              padx = 10,
-                              pady = 10)
-        
-        return
+    
     def NAP_GUIBuilder_AddressParserFile(self):
         
         Instance = mx.Address_parser_misc()
@@ -225,12 +187,8 @@ class NAP_GUIBuilder(tk.Tk):
         s.configure("TProgressbar", foreground='red', background='green')
         def Threads(Progress):
             thread1=threading.Thread(target=lambda:Instance.Process_Address_Parser_Single_input(Progress))
-            #thread2=threading.Thread(target=Progress.start)
-            #thread3=threading.Thread(target=Progress.stop)
             
             thread1.start()
-        #thread1.join()
-        #Progress.stop()
         ttk.Label(self.tab5,text="Please Choose A Pipe Delimitted File").grid(column = 0, 
                                  row = 0,
                                  padx = 10,
