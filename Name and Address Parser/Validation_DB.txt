@@ -4393,5 +4393,102 @@
                 "USAD_STA"
             ]
         ]
+    },
+    {
+        "Unique_ID": "27bb621b812996c1abe3db0298110b19fceb0860",
+        "Exception_file_name": "hsasa 23_13_05.138506_ExceptionFile.json",
+        "Input": "Stanford University Graduate School of Business Knight Management Center, 655 Knight Way, Suite 245, Stanford, CA 94305-7298",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "WZWZWWWWF,NWF,SN,W,TN",
+        "Approved By": "Committee Member_1 at 2023-09-25 23:16:38.438916",
+        "Comment": "",
+        "Table Data": [
+            [
+                "W",
+                "STANFORD",
+                "USAD_ORG"
+            ],
+            [
+                "Z",
+                "UNIVERSITY",
+                "USAD_ORG"
+            ],
+            [
+                "W",
+                "GRADUATE",
+                "USAD_ORG"
+            ],
+            [
+                "Z",
+                "SCHOOL",
+                "USAD_ORG"
+            ],
+            [
+                "W",
+                "OF",
+                "USAD_ORG"
+            ],
+            [
+                "W",
+                "BUSINESS",
+                "USAD_ORG"
+            ],
+            [
+                "W",
+                "KNIGHT",
+                "USAD_ORG"
+            ],
+            [
+                "W",
+                "MANAGEMENT",
+                "USAD_ORG"
+            ],
+            [
+                "F",
+                "CENTER",
+                "USAD_ORG"
+            ],
+            [
+                "N",
+                "655",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "KNIGHT",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "WAY",
+                "USAD_SFX"
+            ],
+            [
+                "S",
+                "SUITE",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "245",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "STANFORD",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "CA",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "94305-7298",
+                "USAD_ZIP"
+            ]
+        ]
     }
 ]

@@ -126,7 +126,7 @@ def Address_Parser(line,initials,originalInput):
     Mask_1=",".join(Mask)
     FirstPhaseList = [FirstPhaseList[b] for b in range(len(FirstPhaseList)) if FirstPhaseList[b] != ","]
     data={}
-    with open('KB_PSDADR.json', 'r+', encoding='utf-8') as f:
+    with open('JSONMappingDefault.json', 'r+', encoding='utf-8') as f:
         data = json.load(f)
     Found=False
     FoundDict={}
@@ -143,6 +143,19 @@ def Address_Parser(line,initials,originalInput):
         for K2,V2 in FoundDict[Mask_1].items():
             FoundDict_KB=FoundDict[Mask_1]
             sorted_Found={k: v for k ,v in sorted(FoundDict_KB.items(), key=lambda item:item[1])}
+        dict_found={}
+        for k,v in sorted_Found.items():
+            for i in v:
+                dict_found[i]=k
+        nest_list=[]
+        mask=Mask_1.replace(",","")
+        for i in range(0,len(FirstPhaseList)):
+            token=""
+            for k,v in FirstPhaseList[i].items():
+                token=v
+            uiMappings.append([dict_found[i+1],mask[i],token])
+        # print(uiMappings)
+        
         for K2,V2 in sorted_Found.items():
             Temp=""
             Merge_token=""
@@ -151,36 +164,22 @@ def Address_Parser(line,initials,originalInput):
                    Temp+=" "+V3
                    Temp=Temp.strip()      
                    Merge_token+= ""+K3
-                   uiMappings.append([K2, K3, V3])
                    found = False
                    for entry in Mappings:
                        if entry[0] == K2:
-                           # Append V3 to existing entry
-                           # entry[1] = ""
+                           
                            entry[1] += K3
                            entry[2] = ""
                            entry[2] += Temp
                            found = True
                            break
                    if not found:
-                     # Add a new entry to Mappings
                        Mappings.append([K2, K3, V3])
                        break
-        # print(Mappings)
+
         FoundDict_KB=FoundDict[Mask_1]
         sorted_Found={k: v for k ,v in sorted(FoundDict_KB.items(), key=lambda item:item[1])}
-        # for K2,V2 in sorted_Found.items():
-        #     Temp=""
-        #     print(V2)
-        #     Merge_token=""
-        #     for p in V2:
-        #         print(p)
-                
-        #         for K3,V3 in FirstPhaseList[p-1].items():
-        #            Temp+=" "+V3
-        #            Temp=Temp.strip()
-        #            Merge_token+=K3
-        #         #   Mappings.append([K2,K3,V3])          
+                  
         try:
             Result["Input"]= originalInput
             Result["Output"]=uiMappings
@@ -218,8 +217,7 @@ def Address_Parser(line,initials,originalInput):
         Result["Input"]=originalInput
         Result["Output"]=rules
         messagebox.showwarning("Exception!",f"Exception is Created for the Address\n\n{originalInput}\n\nOutput Derived from Rulebased Learning")
-        # ExceptionList.append(ExceptionDict)
-        # oldExceptionList = ExceptionList.append(ExceptionDict)
+
         
         if ExceptionList:
             ExceptionList[0] = ExceptionDict
@@ -234,16 +232,7 @@ def Address_Parser(line,initials,originalInput):
             g.truncate
             
         
-        # Exception_file_name=initials+'_ExceptionFile_'+str(today)+".txt"
-        # Exception_file_name=re.sub(r'[^\w_. -]', '_', Exception_file_name)
-        # path= 'Exceptions/SingleException/'+Exception_file_name
-        # with open(path,'w', encoding='utf-8') as g:
-        #     g.seek(0)
-        #     Stat={}
-        #     # Stat=originalInput
-        #     Stat[Mask_1]=originalInput,FirstPhaseList
-        #     json.dump(Stat,g,indent=4)
-        #     g.truncate
+       
         
         
     Total+=1

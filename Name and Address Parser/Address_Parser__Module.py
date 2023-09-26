@@ -64,7 +64,7 @@ def Address_Parser(Address_4CAF50,Progress,TruthSet=""):
   "USAD_HNO": 20
 }
     data={}
-    with open('KB_PSDADR.json', 'r+', encoding='utf8') as f:
+    with open('JSONMappingDefault.json', 'r+', encoding='utf8') as f:
         data = json.load(f)
     USAD_CONVERSION_={
         
@@ -91,9 +91,8 @@ def Address_Parser(Address_4CAF50,Progress,TruthSet=""):
 }
     Detailed_Report+="Exception and Mask Report\n"
     ExceptionList = []
-    ExceptionDict = {}
     WordTable={}
- 
+
     for line in fileHandle:
      
         fields=line.split('|')
@@ -165,20 +164,12 @@ def Address_Parser(Address_4CAF50,Progress,TruthSet=""):
        
         Found=False
         FoundDict={}
-       # print(ID)
+
         if Mask_1 in data.keys():
             FoundDict[Mask_1]=data[Mask_1]
             Found=True
-        # for tk,tv in data.items():
-        #     if(tk==Mask_1):
-        #         FoundDict[tk]=tv
-        #         Found=True
-        #         break
+
         FoundExcept=False
-        # with open('ExceptionFile.json', 'r+', encoding='utf8') as g:
-        #     Stat = json.load(g)
-        #     if Mask_1 in Stat.keys():
-        #         FoundExcept=True
         
         if Found:
             Observation+=1
@@ -232,9 +223,7 @@ def Address_Parser(Address_4CAF50,Progress,TruthSet=""):
                 
                 
             
-        elif not FoundExcept:  
-            # ExceptionList.append(ExceptionDict)
-            # print(AddressList)
+        elif not FoundExcept:
             AddressList=[item for item in AddressList if item!=","]
             rules=RuleBased.RuleBasedAddressParser.AddressParser(AddressList)
             ExceptionEntry = {
@@ -243,25 +232,7 @@ def Address_Parser(Address_4CAF50,Progress,TruthSet=""):
                 str(Mask_1): rules
             }
             ExceptionList.append(ExceptionEntry)
-            
-      
-            
-            # print(AddressList)
             RuleBasedOutput[ID]=rules
-            
-            # print( RuleBasedOutput[ID])
-            # print(ID)
-            # with open('ExceptionFile.json', 'r+', encoding='utf8') as g:
-            #     try:
-                    
-            #         Stat = json.load(g)
-            #         Stat[Mask_1]=FirstPhaseList
-            #         g.seek(0)
-            #         json.dump(Stat,g,indent=4)
-            #         g.truncate
-            #         RuleBasedOutput[ID]=RuleBased.RuleBasedAddressParser.AddressParser(Address)
-            #     except:
-            #         continue
         else:
             try:
                     
