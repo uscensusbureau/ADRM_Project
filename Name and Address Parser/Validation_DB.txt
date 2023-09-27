@@ -4490,5 +4490,642 @@
                 "USAD_ZIP"
             ]
         ]
+    },
+    {
+        "Unique_ID": "f97092321ddb8030ce08051b6c42ad4557f3f20c",
+        "Exception_file_name": "1k Rhode Island 08_38_16.591089.json",
+        "Input": "6615 spruce, pawtucket, RI 2812",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NW,W,TN",
+        "Approved By": "Committee Member_1 at 2023-09-26 21:16:18.935183",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "6615",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "SPRUCE",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "PAWTUCKET",
+                "USAD_SFX"
+            ],
+            [
+                "T",
+                "RI",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "2812",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "36fb536eb02c1fadba60470cc6cd93306e5c6f83",
+        "Exception_file_name": "KB Psd 23_30_30.597589.json",
+        "Input": "2330 nw chipman rd, aprt no 10046, allen, TX 77433",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NDWF,WWN,W,TN",
+        "Approved By": "Committee Member_1 at 2023-09-26 23:36:48.352282",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "2330",
+                "USAD_SNO"
+            ],
+            [
+                "D",
+                "NW",
+                "USAD_SPR"
+            ],
+            [
+                "W",
+                "CHIPMAN",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "RD",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "APRT",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "NO",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "10046",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "ALLEN",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "TX",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "77433",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "4e22eaca19c6d2554eda5b418c82965c31594415",
+        "Exception_file_name": "KB Psd 23_30_30.597589.json",
+        "Input": "544 boston post rd, ap 5, chandler, AZ 85309",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NWXF,WN,W,TN",
+        "Approved By": "Committee Member_1 at 2023-09-26 23:37:59.943177",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "544",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "BOSTON",
+                "USAD_SNM"
+            ],
+            [
+                "X",
+                "POST",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "RD",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "AP",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "5",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "CHANDLER",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "AZ",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "85309",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "d4b76e3f55060c309d2b9786a6fb90e7a324a47e",
+        "Exception_file_name": "KB Psd 23_30_30.597589.json",
+        "Input": "201 southwest auburn road, apt nr 59, rochester, NY 11221",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NWWF,SWN,W,TN",
+        "Approved By": "Committee Member_1 at 2023-09-26 23:39:06.398903",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "201",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "SOUTHWEST",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "AUBURN",
+                "USAD_SNO"
+            ],
+            [
+                "F",
+                "ROAD",
+                "USAD_SFX"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "NR",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "59",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "ROCHESTER",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "NY",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "11221",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "0cd043d68ac2039a93959d4fe01fa083840835b2",
+        "Exception_file_name": "KB Psd 23_30_30.597589.json",
+        "Input": "4640 gromo ct, apt nbr 1r, fort collins, CO 80537",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NWF,SWN,FW,TN",
+        "Approved By": "Committee Member_1 at 2023-09-26 23:40:02.214347",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "4640",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "GROMO",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "CT",
+                "USAD_SNM"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "NBR",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "1R",
+                "USAD_ANO"
+            ],
+            [
+                "F",
+                "FORT",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "COLLINS",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "CO",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "80537",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "e6394bb2137485cb6b3a92ec41c3b32d321a5302",
+        "Exception_file_name": "KB Psd 23_30_30.597589.json",
+        "Input": "1889 kandt dr, g f apartment 1022, newhall, CA 94559",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NWF,WWSN,W,TN",
+        "Approved By": "Committee Member_2 at 2023-09-26 23:40:59.629013",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1889",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "KANDT",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "DR",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "G",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "F",
+                "USAD_ANM"
+            ],
+            [
+                "S",
+                "APARTMENT",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "1022",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "NEWHALL",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "CA",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "94559",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "0c8d5f55200d325d0540fb2891cd6de97756806a",
+        "Exception_file_name": "KB Psd 23_30_30.597589.json",
+        "Input": "602 mause creek dr, 5th story apartment 78, fayetteville, AR 71854",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NWFF,NWSN,W,TN",
+        "Approved By": "Committee Member_1 at 2023-09-26 23:41:54.896847",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "602",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "MAUSE",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "CREEK",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "DR",
+                "USAD_SFX"
+            ],
+            [
+                "N",
+                "5TH",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "STORY",
+                "USAD_ANM"
+            ],
+            [
+                "S",
+                "APARTMENT",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "78",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "FAYETTEVILLE",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "AR",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "71854",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "51d9e7a5b8b18a689a9bd6f47aa3e69182f79ae8",
+        "Exception_file_name": "KB Psd 23_30_30.597589.json",
+        "Input": "1604 silver leaf tr ne, g f apt # 153, fairbanks, TX 78503",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NWWWD,WWSSN,W,TN",
+        "Approved By": "Committee Member_2 at 2023-09-26 23:46:59.818124",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1604",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "SILVER",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "LEAF",
+                "USAD_SNM"
+            ],
+            [
+                "W",
+                "TR",
+                "USAD_SFX"
+            ],
+            [
+                "D",
+                "NE",
+                "USAD_SPT"
+            ],
+            [
+                "W",
+                "G",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "F",
+                "USAD_ANM"
+            ],
+            [
+                "S",
+                "APT",
+                "USAD_ANM"
+            ],
+            [
+                "S",
+                "#",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "153",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "FAIRBANKS",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "TX",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "78503",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "573063ad4462b8051818ab96736ac90847d6622d",
+        "Exception_file_name": "KB Psd 23_30_30.597589.json",
+        "Input": "30 ellwine dr, number l floor 3, eagle mountain, UT 84041",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NWF,WWWN,WF,TN",
+        "Approved By": "Committee Member_2 at 2023-09-26 23:48:37.846035",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "30",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "ELLWINE",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "DR",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "NUMBER",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "L",
+                "USAD_ANM"
+            ],
+            [
+                "W",
+                "FLOOR",
+                "USAD_ANM"
+            ],
+            [
+                "N",
+                "3",
+                "USAD_ANO"
+            ],
+            [
+                "W",
+                "EAGLE",
+                "USAD_CTY"
+            ],
+            [
+                "F",
+                "MOUNTAIN",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "UT",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "84041",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "1c9ac87322525b3179295d26c0acce397e8d272a",
+        "Exception_file_name": "Individual Address1_Input_File 23_30_30.597589.json",
+        "Input": "1254 Rodney Street, Chester,field-Missouri 63005",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NWF,W,WN",
+        "Approved By": "Committee Member_1 at 2023-09-26 23:53:17.775660",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "1254",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "RODNEY",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "CHESTER",
+                "USAD_CTY"
+            ],
+            [
+                "W",
+                "FIELD-MISSOURI",
+                "USAD_CTY"
+            ],
+            [
+                "N",
+                "63005",
+                "USAD_ZIP"
+            ]
+        ]
+    },
+    {
+        "Unique_ID": "f0760182757e04ee91d3804ac493cc86f931636b",
+        "Exception_file_name": "Individual Address1_Input_File 23_30_30.597589.json",
+        "Input": "3759 Collins Street Tampa Florida 33619",
+        "Region": "US",
+        "Type": "Street Address",
+        "Token Pattern": "NWFWTN",
+        "Approved By": "Committee Member_2 at 2023-09-26 23:53:39.814873",
+        "Comment": "",
+        "Table Data": [
+            [
+                "N",
+                "3759",
+                "USAD_SNO"
+            ],
+            [
+                "W",
+                "COLLINS",
+                "USAD_SNM"
+            ],
+            [
+                "F",
+                "STREET",
+                "USAD_SFX"
+            ],
+            [
+                "W",
+                "TAMPA",
+                "USAD_CTY"
+            ],
+            [
+                "T",
+                "FLORIDA",
+                "USAD_STA"
+            ],
+            [
+                "N",
+                "33619",
+                "USAD_ZIP"
+            ]
+        ]
     }
 ]

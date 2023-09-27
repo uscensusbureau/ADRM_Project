@@ -2,7 +2,7 @@
 """
 Created on Sat Jul 29 01:15:44 2023
 
-@author: akkka
+@author: Onais, Salman, Kashif
 """
 
 import tkinter as tk

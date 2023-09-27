@@ -1,4 +1,0 @@
-{"Mask": ["Original Address",Dictionary with tokens, dictionary with indexes]}
-
-
-{Mask:Dict}

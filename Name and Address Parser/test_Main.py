@@ -2,7 +2,7 @@
 """
 Created on Sun Jul 23 11:22:18 2023
 
-@author: Onais, Salman & Kashif
+@author: Onais, Salman, Kashif
 """
 import tkinter as tk
 from tkinter import messagebox

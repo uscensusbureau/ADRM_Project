@@ -432,5 +432,19 @@
         "Token Pattern": "NW,W,TN",
         "Rejected By": "Committee Member_2 at 2023-09-23 10:57:34.209818",
         "Comment": ""
+    },
+    {
+        "Exception_file_name": "1000 records 21_29_36.377885.json",
+        "Input": "1254 Rodney Street, Chester,field-Missouri 63005",
+        "Token Pattern": "NWF,W,WN",
+        "Rejected By": "Committee Member_1 at 2023-09-26 21:34:49.613977",
+        "Comment": ""
+    },
+    {
+        "Exception_file_name": "1000 records 21_29_36.377885.json",
+        "Input": "3759 Collins Street Tampa Florida 33619",
+        "Token Pattern": "NWFWTN",
+        "Rejected By": "Committee Member_1 at 2023-09-26 21:35:13.246402",
+        "Comment": ""
     }
 ]

@@ -2,7 +2,7 @@
 """
 Created on Sat Jul 29 01:23:26 2023
 
-@author: akkka
+@author: Onais, Salman, Kashif
 """
 
 import tkinter as tk
@@ -261,7 +261,7 @@ class submission_form:
                 i+=1
     
             print(Def_Dict)
-            with open('KB_FM.json', 'r+', encoding='utf-8') as f:
+            with open('JSONMappingDefault.json', 'r+', encoding='utf-8') as f:
                 data = json.load(f)
                 if pattern in data:
                     result = messagebox.askyesno("MASK Found!", f"Mapping found for Token Pattern : {pattern} in Knowledge Base!\nDo you still want to Overwrite?")

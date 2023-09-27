@@ -2,7 +2,7 @@
 """
 Created on Fri Jul 28 23:22:02 2023
 
-@author: akkka
+@author: Onais, Salman & Kashif
 """
 import tkinter.filedialog as fd
 import tkinter.messagebox as msg
