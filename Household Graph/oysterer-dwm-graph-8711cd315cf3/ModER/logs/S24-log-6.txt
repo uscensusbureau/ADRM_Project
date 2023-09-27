@@ -1,9 +1,0 @@
-Beta:18.0
-Sigma: 92.0
-Delta: 12.0
-GraphOG graph object
-Number of nodes: 2173
-Number of represented nodes: 2152
-Number of single nodes: 21
-Number of edges: 35993
-Modularity: -0.00015373995169938029
